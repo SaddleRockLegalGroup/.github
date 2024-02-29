@@ -1,4 +1,6 @@
-## Hi there 👋
+# Saddlerock Legal Company
+
+Welcome to Saddlerock Legal Company's internal GitHub repository. This repository serves as a central hub for our in-house legal tech projects, documentation, and collaboration efforts. It's designed to streamline our workflow, foster innovation, and enhance the services we provide to our clients.
 
 <!--
 
