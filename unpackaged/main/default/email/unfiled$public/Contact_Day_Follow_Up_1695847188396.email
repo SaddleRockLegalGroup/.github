@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+This is a follow-up from Saddle Rock Legal Group. Your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case is of utmost importance. We've made multiple attempts to reach you without success. It's crucial that we connect immediately to discuss our intake process. Please call us urgently at 844-214-2459.<br />
+<br />
+Sincerely,<br />
+<br />
+Saddle Rock Legal Group<br />
+844-214-2459<br />
+&nbsp;</body>
+</html>

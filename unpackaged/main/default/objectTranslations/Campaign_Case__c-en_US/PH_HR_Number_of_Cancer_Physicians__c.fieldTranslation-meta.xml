@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- PH HR Number of Cancer Physicians --></label>
+        <name>PH_HR_Number_of_Cancer_Physicians__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Names_of_extra_Claimants__c</fullName>
+    <description>This is used to gather information on who else is able to make a claim on the damage that occurred.  This can be related to property, vehicles, etc.  Can be related to Trusts etc.</description>
+    <inlineHelpText>Names of people that have rights to claim value from the damage occurred.</inlineHelpText>
+    <label>Names of extra Claimants</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

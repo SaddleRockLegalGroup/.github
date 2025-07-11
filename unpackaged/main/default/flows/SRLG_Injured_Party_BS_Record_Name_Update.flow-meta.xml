@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>6/9/2025 LP - added Middle name if record has the field filled out.
+6/6/2025 LP - updated formula, added &quot; | &quot; and Age, removed gender.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NewName</name>
+        <dataType>String</dataType>
+        <expression>LEFT(TRIM({!$Record.First_Name__c} &amp; 
+IF(
+      ISBLANK({!$Record.Middle_Name__c}), 
+      &#39;&#39;, 
+      &#39; &#39; &amp; {!$Record.Middle_Name__c}
+    ) &amp; 
+    &#39; &#39;  &amp; {!$Record.Last_Name__c} &amp; &#39; &#39; &amp; IF(ISBLANK(TEXT({!$Record.Suffix__c})) || ISPICKVAL({!$Record.Suffix__c}, &#39;Other&#39;), &#39;&#39;, TEXT({!$Record.Suffix__c})) &amp;&quot; | &quot; &amp;
+    IF(
+      ISBLANK({!$Record.Date_Of_Birth__c}),
+      &quot;&quot;,
+      IF(
+        ISBLANK({!$Record.Date_Of_Death__c}),
+        TEXT(FLOOR((TODAY() - {!$Record.Date_Of_Birth__c}) / 365.25)),
+        TEXT(FLOOR(({!$Record.Date_Of_Death__c} - {!$Record.Date_Of_Birth__c}) / 365.25))
+      )
+    )
+  ),
+  80
+)</expression>
+    </formulas>
+    <interviewLabel>SRLG | Injured Party: BS - Record Name Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Injured Party: BS - Record Name Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Record_Name</name>
+        <label>Update Record Name</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>NewName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Record_Name</targetReference>
+        </connector>
+        <object>srlg_Injured_Party__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

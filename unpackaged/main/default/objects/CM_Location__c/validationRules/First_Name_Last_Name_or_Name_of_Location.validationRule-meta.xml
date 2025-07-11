@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Name_Last_Name_or_Name_of_Location</fullName>
+    <active>true</active>
+    <description>Must have First Name and Last Name filled out or Name of Location in order to save the record</description>
+    <errorConditionFormula>IF(
+    Intake__r.Intake_Vendor__r.Name = &#39;Intake Desk&#39;, 
+    FALSE,
+    OR(
+        AND(
+            ISBLANK(Provider_First_Name__c),
+            NOT(ISBLANK(Provider_Last_Name__c))
+        ),
+        AND(
+            NOT(ISBLANK(Provider_First_Name__c)),
+            ISBLANK(Provider_Last_Name__c)
+        ),
+        AND(
+            ISBLANK(Provider_First_Name__c),
+            ISBLANK(Provider_Last_Name__c),
+            ISBLANK(Name_of_Location__c)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Must have First Name and Last Name filled out or Name of Location in order to save the record</errorMessage>
+</ValidationRule>

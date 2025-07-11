@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Neurobehavorial_Performance_Defects__c</fullName>
+    <description>More NPD Details to capture Granularity</description>
+    <label>Neurobehavorial_Perf_Defects_Details</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delayed recall and deficits in visual perception</fullName>
+                <default>false</default>
+                <label>Delayed recall and deficits in visual perception</label>
+            </value>
+            <value>
+                <fullName>Decreased blink reflex</fullName>
+                <default>false</default>
+                <label>Decreased blink reflex</label>
+            </value>
+            <value>
+                <fullName>Mood effects - Confusion</fullName>
+                <default>false</default>
+                <label>Mood effects - Confusion</label>
+            </value>
+            <value>
+                <fullName>Mood effects - Depression</fullName>
+                <default>false</default>
+                <label>Mood effects - Depression</label>
+            </value>
+            <value>
+                <fullName>Mood effects - Trouble Concentrating</fullName>
+                <default>false</default>
+                <label>Mood effects - Trouble Concentrating</label>
+            </value>
+            <value>
+                <fullName>Mood efects - Headaches</fullName>
+                <default>false</default>
+                <label>Mood efects - Headaches</label>
+            </value>
+            <value>
+                <fullName>Mood effects - Lack of coordination</fullName>
+                <default>false</default>
+                <label>Mood effects - Lack of coordination</label>
+            </value>
+            <value>
+                <fullName>Mood efects - Sensory disturbances</fullName>
+                <default>false</default>
+                <label>Mood efects - Sensory disturbances</label>
+            </value>
+            <value>
+                <fullName>Mood effects -  tension</fullName>
+                <default>false</default>
+                <label>Mood effects -  tension</label>
+            </value>
+            <value>
+                <fullName>PTSD</fullName>
+                <default>false</default>
+                <label>PTSD</label>
+            </value>
+            <value>
+                <fullName>Anxiety</fullName>
+                <default>false</default>
+                <label>Anxiety</label>
+            </value>
+            <value>
+                <fullName>Fatigue</fullName>
+                <default>false</default>
+                <label>Fatigue</label>
+            </value>
+            <value>
+                <fullName>Dementia</fullName>
+                <default>false</default>
+                <label>Dementia</label>
+            </value>
+            <value>
+                <fullName>Alzheimer&#39;s</fullName>
+                <default>false</default>
+                <label>Alzheimer&#39;s</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

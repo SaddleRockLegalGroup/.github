@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ending_Threshold__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Leave this field blank if this is the last Split/Fee Definition record related to the Campaign Partner</inlineHelpText>
+    <label>Ending Threshold</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

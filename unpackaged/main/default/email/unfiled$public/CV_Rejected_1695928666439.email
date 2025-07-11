@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+I hope all is well! I am with Saddle Rock Legal Group, your law firm for your&nbsp;{{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. We appreciate your trust to represent you in this matter and look forward to working with you. We have a few additional questions and remaining information we need to verify to begin working on your claim. Please call us back as soon as possible at 888-686-6454.&nbsp;<br />
+<br />
+Best regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454<br />
+&nbsp;</body>
+</html>

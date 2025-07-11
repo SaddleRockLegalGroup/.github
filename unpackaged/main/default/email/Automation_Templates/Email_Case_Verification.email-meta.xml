@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Case Verification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Case Verification</name>
+    <style>freeForm</style>
+    <subject>Legal Case Follow-Up</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I hope all is well! I am with Saddle Rock Legal Group, your law firm for your {!litify_pm__Intake__c.Case_Type_Name_del__c} case. We appreciate your trust to represent you in this matter and look forward to working with you. We have a few additional questions and remaining information we need to verify to begin working on your claim. You’ll get a call from 385-300-1263, so please answer. Or please call us back as soon as possible at {!Organization.Phone}. Thanks!
+
+Regards,
+Saddle Rock Legal Group
+Office: {!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

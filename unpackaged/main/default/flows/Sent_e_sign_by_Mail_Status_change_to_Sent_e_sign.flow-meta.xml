@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Sent e-sign by Mail Status change to Sent e-sign {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sent e-sign by Mail Status change to Sent e-sign</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>UPD</name>
+        <label>UPD</label>
+        <locationX>558</locationX>
+        <locationY>694</locationY>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>447</locationX>
+        <locationY>103</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sent E-Sign by Mail</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>day_ninety</name>
+            <connector>
+                <targetReference>UPD</targetReference>
+            </connector>
+            <label>day ninety</label>
+            <offsetNumber>90</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>1180</triggerOrder>
+</Flow>

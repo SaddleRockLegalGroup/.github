@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Partner_Update</fullName>
+    <fields>Name</fields>
+    <fields>Intake__c</fields>
+    <fields>Matter__c</fields>
+    <fields>Marketing_Category__c</fields>
+    <fields>Marketing_Score__c</fields>
+    <label>Custom Partner Update</label>
+</CompactLayout>

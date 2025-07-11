@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PH_HR_Not_Continuous_Use_Dates__c</fullName>
+    <description>Place Holder for Hair Relaxer fields for unrevised questionnaires</description>
+    <label>PH HR Not Continuous Use Dates</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

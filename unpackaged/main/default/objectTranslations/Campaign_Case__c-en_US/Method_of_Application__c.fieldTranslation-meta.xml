@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- In what situation or activity was product used in --></help>
+        <label><!-- Method of Application --></label>
+        <name>Method_of_Application__c</name>
+    </CustomFieldTranslation>

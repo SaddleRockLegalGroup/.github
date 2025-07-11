@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Blastic mantle cell lymphoma</fullName>
+        <default>false</default>
+        <label>Blastic mantle cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>B-lymphoblastic leukemia</fullName>
+        <default>false</default>
+        <label>B-lymphoblastic leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>B-lymphoblastic lymphoma</fullName>
+        <default>false</default>
+        <label>B-lymphoblastic lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>B-prolymphocytic leukemia</fullName>
+        <default>false</default>
+        <label>B-prolymphocytic leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>Burkitt lymphoma</fullName>
+        <default>false</default>
+        <label>Burkitt lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic lymphocytic leukemia</fullName>
+        <default>false</default>
+        <label>Chronic lymphocytic leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>Diffuse follicle center lymphoma, grade 1 &amp; 2</fullName>
+        <default>false</default>
+        <label>Diffuse follicle center lymphoma, grade 1 &amp; 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Diffuse large B-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Diffuse large B-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Diffuse mantle cell lymphoma</fullName>
+        <default>false</default>
+        <label>Diffuse mantle cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Extranodal marginal zone B-cell lymphoma, MALT type</fullName>
+        <default>false</default>
+        <label>Extranodal marginal zone B-cell lymphoma, MALT type</label>
+    </customValue>
+    <customValue>
+        <fullName>Follicular lymphoma in situ</fullName>
+        <default>false</default>
+        <label>Follicular lymphoma in situ</label>
+    </customValue>
+    <customValue>
+        <fullName>Follicular lymphoma, grade 1,2 &amp; 3</fullName>
+        <default>false</default>
+        <label>Follicular lymphoma, grade 1,2 &amp; 3</label>
+    </customValue>
+    <customValue>
+        <fullName>Hairy cell leukemia</fullName>
+        <default>false</default>
+        <label>Hairy cell leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>Hairy cell leukemia variant</fullName>
+        <default>false</default>
+        <label>Hairy cell leukemia variant</label>
+    </customValue>
+    <customValue>
+        <fullName>Lymphoplasmacytic lymphoma (Waldenstrom)</fullName>
+        <default>false</default>
+        <label>Lymphoplasmacytic lymphoma (Waldenstrom)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mantle cell lymphoma in situ</fullName>
+        <default>false</default>
+        <label>Mantle cell lymphoma in situ</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodal marginal zone B-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Nodal marginal zone B-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Nodular mantle cell lymphoma</fullName>
+        <default>false</default>
+        <label>Nodular mantle cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma cell dyscrasia</fullName>
+        <default>false</default>
+        <label>Plasma cell dyscrasia</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary Central Nervous System Lymphoma</fullName>
+        <default>false</default>
+        <label>Primary Central Nervous System Lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Small lymphocytic lymphoma</fullName>
+        <default>false</default>
+        <label>Small lymphocytic lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Splenic marginal zone B-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Splenic marginal zone B-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Splenic diffuse red pulp small B-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Splenic diffuse red pulp small B-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Adult T-cell lymphoma/leukemia</fullName>
+        <default>false</default>
+        <label>Adult T-cell lymphoma/leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>Aggressive NK-cell leukemia</fullName>
+        <default>false</default>
+        <label>Aggressive NK-cell leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>Anaplastic large T/null-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Anaplastic large T/null-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Angioimmunoblastic T-cell Lymphoma</fullName>
+        <default>false</default>
+        <label>Angioimmunoblastic T-cell Lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Anaplastic Large T-cell Lymphoma</fullName>
+        <default>false</default>
+        <label>Anaplastic Large T-cell Lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Cutaneous CD8-positive aggressive epidermotropic cytotoxic</fullName>
+        <default>false</default>
+        <label>Cutaneous CD8-positive aggressive epidermotropic cytotoxic</label>
+    </customValue>
+    <customValue>
+        <fullName>Cutaneous CD4-positive small/medium T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Cutaneous CD4-positive small/medium T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Enteropathy-type T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Enteropathy-type T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Enteropathy Associated T-cell Lymphoma</fullName>
+        <default>false</default>
+        <label>Enteropathy Associated T-cell Lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Hepatosplenic T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Hepatosplenic T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Mycosis fungoides</fullName>
+        <default>false</default>
+        <label>Mycosis fungoides</label>
+    </customValue>
+    <customValue>
+        <fullName>Nasal NK/T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Nasal NK/T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>NK-cell granular lymphocytic proliferation</fullName>
+        <default>false</default>
+        <label>NK-cell granular lymphocytic proliferation</label>
+    </customValue>
+    <customValue>
+        <fullName>Peripheral NK/T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Peripheral NK/T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Peripheral T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Peripheral T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Peripheral gamma-delta T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Peripheral gamma-delta T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Peripheral T-cell lymphoma, unclassifiable</fullName>
+        <default>false</default>
+        <label>Peripheral T-cell lymphoma, unclassifiable</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary cutaneous CD30-positive lymphoproliferative</fullName>
+        <default>false</default>
+        <label>Primary cutaneous CD30-positive lymphoproliferative</label>
+    </customValue>
+    <customValue>
+        <fullName>Sezary syndrome</fullName>
+        <default>false</default>
+        <label>Sezary syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Subcutaneous panniculitis-like T-cell lymphoma</fullName>
+        <default>false</default>
+        <label>Subcutaneous panniculitis-like T-cell lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>T-lymphoblastic leukemia/Lymphoma</fullName>
+        <default>false</default>
+        <label>T-lymphoblastic leukemia/Lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>T-prolymphocytic leukemia</fullName>
+        <default>false</default>
+        <label>T-prolymphocytic leukemia</label>
+    </customValue>
+    <customValue>
+        <fullName>T-cell granular lymphocytic proliferation</fullName>
+        <default>false</default>
+        <label>T-cell granular lymphocytic proliferation</label>
+    </customValue>
+    <customValue>
+        <fullName>T-cell lymphoproliferative disorder of childhood, Epstein</fullName>
+        <default>false</default>
+        <label>T-cell lymphoproliferative disorder of childhood, Epstein</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the above</fullName>
+        <default>false</default>
+        <label>None of the above</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>B-Cell Neoplasms</fullName>
+        <default>false</default>
+        <label>B-Cell Neoplasms</label>
+    </customValue>
+    <customValue>
+        <fullName>T/NK-Cell Neoplasms</fullName>
+        <default>false</default>
+        <label>T/NK-Cell Neoplasms</label>
+    </customValue>
+    <customValue>
+        <fullName>Low body temperature</fullName>
+        <default>false</default>
+        <label>Low body temperature</label>
+    </customValue>
+    <customValue>
+        <fullName>Green vomit</fullName>
+        <default>false</default>
+        <label>Green vomit</label>
+    </customValue>
+    <customValue>
+        <fullName>Apnea</fullName>
+        <default>false</default>
+        <label>Apnea</label>
+    </customValue>
+    <customValue>
+        <fullName>Hypotension</fullName>
+        <default>false</default>
+        <label>Hypotension</label>
+    </customValue>
+    <customValue>
+        <fullName>Bradycardia</fullName>
+        <default>false</default>
+        <label>Bradycardia</label>
+    </customValue>
+    <customValue>
+        <fullName>Swollen, red, or tender belly</fullName>
+        <default>false</default>
+        <label>Swollen, red, or tender belly</label>
+    </customValue>
+    <customValue>
+        <fullName>Trouble feeding</fullName>
+        <default>false</default>
+        <label>Trouble feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Constipation</fullName>
+        <default>false</default>
+        <label>Constipation</label>
+    </customValue>
+    <customValue>
+        <fullName>Lethargic</fullName>
+        <default>false</default>
+        <label>Lethargic</label>
+    </customValue>
+    <customValue>
+        <fullName>Diarrhea and/or dark bloody stools</fullName>
+        <default>false</default>
+        <label>Diarrhea and/or dark bloody stools</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Endometroid Adenocarcinoma</fullName>
+        <default>false</default>
+        <label>Endometroid Adenocarcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Adenosquamous Carcinoma</fullName>
+        <default>false</default>
+        <label>Adenosquamous Carcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Epithelial Tumors</fullName>
+        <default>false</default>
+        <label>Epithelial Tumors</label>
+    </customValue>
+    <customValue>
+        <fullName>Endometroid Carcinoma</fullName>
+        <default>false</default>
+        <label>Endometroid Carcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Clear Cell Carcinoma</fullName>
+        <default>false</default>
+        <label>Clear Cell Carcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Mucinous Carcinoma</fullName>
+        <default>false</default>
+        <label>Mucinous Carcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Stromal Tumors (Sex Cord Tumors)</fullName>
+        <default>false</default>
+        <label>Stromal Tumors (Sex Cord Tumors)</label>
+    </customValue>
+    <customValue>
+        <fullName>Granulosa Cell Tumor</fullName>
+        <default>false</default>
+        <label>Granulosa Cell Tumor</label>
+    </customValue>
+    <customValue>
+        <fullName>Sertoli Cell Tumor</fullName>
+        <default>false</default>
+        <label>Sertoli Cell Tumor</label>
+    </customValue>
+    <customValue>
+        <fullName>Sertoli-Leydig Cell Tumor</fullName>
+        <default>false</default>
+        <label>Sertoli-Leydig Cell Tumor</label>
+    </customValue>
+    <customValue>
+        <fullName>Hepatitis B</fullName>
+        <default>false</default>
+        <label>Hepatitis B</label>
+    </customValue>
+    <customValue>
+        <fullName>Hepatitis C</fullName>
+        <default>false</default>
+        <label>Hepatitis C</label>
+    </customValue>
+    <customValue>
+        <fullName>Any types of Acute Lymphoblastic Leukemia/Lymphoma</fullName>
+        <default>false</default>
+        <label>Any types of Acute Lymphoblastic Leukemia/Lymphoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Grade I</fullName>
+        <default>false</default>
+        <label>Grade I</label>
+    </customValue>
+    <customValue>
+        <fullName>Grade II</fullName>
+        <default>false</default>
+        <label>Grade II</label>
+    </customValue>
+    <customValue>
+        <fullName>Grade III</fullName>
+        <default>false</default>
+        <label>Grade III</label>
+    </customValue>
+    <customValue>
+        <fullName>Stage 1</fullName>
+        <default>false</default>
+        <label>Stage 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Stage 2</fullName>
+        <default>false</default>
+        <label>Stage 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Stage 3</fullName>
+        <default>false</default>
+        <label>Stage 3</label>
+    </customValue>
+    <customValue>
+        <fullName>Stage 4</fullName>
+        <default>false</default>
+        <label>Stage 4</label>
+    </customValue>
+    <customValue>
+        <fullName>Cutaneous B-cell lymphoma (CBCL)</fullName>
+        <default>false</default>
+        <label>Cutaneous B-cell lymphoma (CBCL)</label>
+    </customValue>
+    <customValue>
+        <fullName>Death</fullName>
+        <default>false</default>
+        <label>Death</label>
+    </customValue>
+    <description>Secondary illness related to diagnosis, form of cancer or impairments caused by diagnosis.</description>
+    <masterLabel>Sub-Diagnosis</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

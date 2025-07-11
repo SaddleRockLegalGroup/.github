@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>Name</name>
+        <dataType>String</dataType>
+        <expression>IF(LEN({!$Record.Answer__c})&gt;12, LEFT({!$Record.Answer__c}, 12) &amp; &quot;...&quot;, {!$Record.Answer__c}) &amp; &quot; | &quot; &amp; LEFT({!$Record.Questionnaire_Question__r.Question_Label__c}, 12) &amp; &quot;... | &quot; &amp; {!$Record.Intake__r.litify_pm__Case_Type__r.Name} &amp; &quot; (&quot; &amp; TEXT({!$Record.Section_Number__c}) &amp; &quot;:&quot; &amp; TEXT({!$Record.Sequence_Number__c}) &amp; &quot;)&quot;</expression>
+    </formulas>
+    <interviewLabel>SRLG | Answer: AS - Record Name Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Answer: AS - Record Name Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Answer_Record</name>
+        <label>Update Answer Record</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Answer_Record</targetReference>
+        </connector>
+        <object>Answer__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    max-width: 100%;
+}
+
+lightning-dual-listbox {
+    max-width: 100%;
+}
+
+.slds-modal__container lightning-dual-listbox {
+    max-width: 90vw;
+}

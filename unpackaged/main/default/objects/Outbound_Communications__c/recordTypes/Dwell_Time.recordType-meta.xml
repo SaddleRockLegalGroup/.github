@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dwell_Time</fullName>
+    <active>true</active>
+    <label>Dwell Time</label>
+    <picklistValues>
+        <picklist>Call_Count_API_Name__c</picklist>
+        <values>
+            <fullName>CV_Past_Due_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case_Verification_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLRS_CV_Expired_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLRS_CV_Expiring_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E_sign_Retainer_Sent_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail_Retainer_Sent_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open_and_Working_Status_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred_Out_Calls%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>Camp Lejeune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hair Relaxers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hernia Mesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meso%2FAsbestos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEC%2FBaby Formula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paraquat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Talcum Powder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tylenol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zantac</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dwell_Time_Field__c</picklist>
+        <values>
+            <fullName>Date_3P_CV_Started%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date_3P_EOF_Started%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred_OutDate%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>litify_pm%5F%5FRetainer_Agreement_Sent_Date%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intake_Status__c</picklist>
+        <values>
+            <fullName>Case Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retainer Agreement Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retainer Agreement Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turned Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intake_Sub_Status__c</picklist>
+        <values>
+            <fullName>Active Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CV Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CV Expiring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CV Past Due</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Rejected - Dual Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Rejected - Partner Firm Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined by firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not have Signed Retainer Attached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error on File</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error on File Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expiring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Records Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Records Past 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Responsive Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Firm Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Rejection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent E-Sign NR Mass Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent E-Sign by Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Error on File</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable To Reach 30%2B Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting Attorney Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internal_Name__c</picklist>
+        <values>
+            <fullName>Saddle Rock Legal Group</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Young %26 Partners</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recipient__c</picklist>
+        <values>
+            <fullName>Caller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intake Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

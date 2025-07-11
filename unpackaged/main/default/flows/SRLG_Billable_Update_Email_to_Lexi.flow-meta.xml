@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>This email is to let Lexi Masciotti know that billable was set to false from being true.</description>
+        <name>emailRecipientsOfBillable</name>
+        <label>emailRecipientsOfBillable</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>LexiMasciottiEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>$User.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Intake Billable Field Update</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>BillableAlertEmail</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Send_Email</name>
+        <label>Send Email?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Referred Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Referred Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Intake_Desk_Qualified__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Intake_Desk_Qualified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>emailRecipientsOfBillable</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>5/21 LP Removed Billable field reference.
+This flow is to send Lexi Masciotti and email when this field is set to false from being true.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>recreates the Billable formula field to use in this flow.</description>
+        <name>Billable</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+  AND(
+    ISPICKVAL({!$Record.litify_pm__Status__c}, &quot;Referred Out&quot;),
+    NOT(TEXT({!$Record.Intake_Desk_Qualified__c}) = &quot;No&quot;)
+  ),
+  TRUE,
+  FALSE
+)</expression>
+    </formulas>
+    <interviewLabel>SRLG | Billable Update Email to Lexi {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Billable Update Email to Lexi</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_Desk_Qualified__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>BillableAlertEmail</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>We wanted to notify you that the billable field on the intake form {!$Record.Id} has been set to false. This could impact the billing process for this intake.
+
+Please review the intake to ensure the correct billable status is applied. If this was not intentional or requires further adjustment, kindly update the field as needed.
+If you need assistance or further clarification, please don&#39;t hesitate to reach out to the PD team.
+
+Thank you for your attention to this matter.
+
+Best regards,
+PD Team Automation</text>
+    </textTemplates>
+    <variables>
+        <name>LexiMasciottiEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>l.masciotti@saddlerocklegal.com, l.paulson@saddlerocklegal.com</stringValue>
+        </value>
+    </variables>
+</Flow>

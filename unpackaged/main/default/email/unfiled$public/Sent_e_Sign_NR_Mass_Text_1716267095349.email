@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+We at Saddle Rock Legal Group&nbsp;hope this email finds you well.&nbsp; You have previously shown interest in a possible&nbsp;{{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. We have sent out paperwork for you to e-Sign. Please get that back to us ASAP. If you need it re-sent please let us know.<br />
+<br />
+The purpose of this email is to ensure your legal needs have been taken care of. If you still haven't signed with a law firm to represent you, please call us at&nbsp;888-686-6454 so we can ensure you're taken care of.<br />
+<br />
+Best regards,<br />
+<br />
+Saddle Rock Legal Group&nbsp;<br />
+888-686-6454</body>
+</html>

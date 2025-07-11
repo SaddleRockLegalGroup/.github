@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Contact Follow Up</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Contact Follow Up</name>
+    <style>freeForm</style>
+    <subject>Hi {!Contact.FirstName}, Important Notice from Saddle Rock Legal Group</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+Thanks so much for contacting Saddle Rock Legal Group.
+
+We have been trying to contact you about the possible {!litify_pm__Intake__c.Case_Type_Name_del__c} case. Please reach out to us as soon as possible. We can be reached at {!Organization.Phone}.
+
+Thanks!
+
+Saddle Rock Legal Group
+{!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

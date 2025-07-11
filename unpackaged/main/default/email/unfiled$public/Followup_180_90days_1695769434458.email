@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+Thank you for choosing Saddle Rock Legal Group and our partner firm, {{{litify_pm__Intake__c.Referral_Partner_Name__c}}}, for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case.<br />
+<br />
+As we collaborate with {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} on your case, we will provide you with regular updates. Please remember that if you have any additional contact information or intend to move, send us this information, or call Saddle Rock Legal at 888-686-6454 or {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} to update us. Our ability to contact you with important legal updates and potential information regarding a settlement for your case is critical to a successful resolution of your claim. Please stay connected!<br />
+<br />
+Remember that both Saddle Rock Legal and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} are representing you in your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. If you ever have any questions or concerns about our representation, please reach out so we can address any issues. We assure you we are working diligently to achieve the best outcome possible. WE ARE YOUR LAWYERS, and unless and until you hear otherwise from us, you do not need to seek representation elsewhere. These cases are difficult to litigate and often take years to reach a successful outcome, if any. We kindly ask you to be patient with the process and know we’re doing everything within our power to optimize the result for you.<br />
+<br />
+In the meantime, you are always welcome to reach out to us at 888-686-6454 or visit www.saddlerocklegal.com if you have any questions. We look forward to working with you! Our team will be in touch with next steps.<br />
+<br />
+<br />
+Your Saddle Rock Legal and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} team.</body>
+</html>

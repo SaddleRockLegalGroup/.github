@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Show status for automated comms app</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | Automated Comm Status | App Home Page {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Automated Comm Status | App Home Page</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Automated_Comms_Status</name>
+        <label>Automated Comms Status</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>display_status</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Automated Communication Status&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Org Wide Sending Enabled&lt;/strong&gt;:  {!$Setup.SRLG_Automated_Comms_Settings__c.Sending_Enabled__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://saddlerock.lightning.force.com/lightning/setup/CustomSettings/page?address=%2Fsetup%2Fui%2FlistCustomSettingsData.apexp%3Fid%3Da3t&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Go to Custom Setting&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Note: If org wide sending is not enabled, then only testing users can send automated communications provided the record has the word &quot;Test&quot; in the display name. &lt;/em&gt; &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;You are a comms testing user&lt;/strong&gt;: {!$Permission.BRIO_Automated_Comms_Tester}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://saddlerock.lightning.force.com/lightning/setup/PermSets/0PSUJ0000002IaL/PermissionSetAssignment/home&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;View Testing Permission Assignment&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Note:  If you are a testing user, then you can send active automated communications even when sending off for the org.&lt;/em&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Automated_Comms_Status</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

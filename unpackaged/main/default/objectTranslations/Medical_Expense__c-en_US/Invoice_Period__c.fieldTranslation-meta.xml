@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Returns the month and year from the Invoice Date in MM/YYYY format. --></help>
+        <label><!-- Invoice Period --></label>
+        <name>Invoice_Period__c</name>
+    </CustomFieldTranslation>

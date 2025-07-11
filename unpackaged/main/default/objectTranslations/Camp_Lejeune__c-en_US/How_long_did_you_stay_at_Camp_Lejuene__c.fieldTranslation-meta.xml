@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- How long did you stay at Camp Lejeune? --></label>
+        <name>How_long_did_you_stay_at_Camp_Lejuene__c</name>
+        <picklistValues>
+            <masterLabel>30 or more days in total (was NOT exposed in utero/ while pregnant with related injury)</masterLabel>
+            <translation><!-- 30 or more days in total (was NOT exposed in utero/ while pregnant with related injury) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 or more days in total (was ONLY exposed in utero/while pregnant with related injury)</masterLabel>
+            <translation><!-- 30 or more days in total (was ONLY exposed in utero/while pregnant with related injury) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 30 days But client was exposed in utero</masterLabel>
+            <translation><!-- Less than 30 days But client was exposed in utero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 30 days, NEVER exposed in utero</masterLabel>
+            <translation><!-- Less than 30 days, NEVER exposed in utero --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

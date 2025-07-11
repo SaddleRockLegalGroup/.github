@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The following tokens are supported: &lt;&lt;Lead First Name&gt;&gt;, &lt;&lt;Client First Name&gt;&gt;, &lt;&lt;Caller First Name&gt;&gt;, &lt;&lt;Case Type&gt;&gt; --></help>
+        <label><!-- SMS Message to Client --></label>
+        <name>SMS_Message_to_Client__c</name>
+    </CustomFieldTranslation>

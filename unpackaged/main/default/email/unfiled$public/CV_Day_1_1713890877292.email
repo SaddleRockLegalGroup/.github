@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+This is Saddle Rock Legal Group, your legal counsel for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. Your trust in our firm is greatly appreciated, and we're committed to ensuring your case progresses smoothly. However, before we can proceed further, there are some important details and additional information we need to verify to effectively move forward with your claim.<br />
+<br />
+Please anticipate a call from our team at 888-327-1194 to discuss these matters further. Alternatively, you can reach out to us directly at 888-327-1194 at your earliest convenience.<br />
+<br />
+Thank you for your prompt attention to this matter.<br />
+<br />
+<br />
+Best Regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454<br />
+<br />
+&nbsp;</body>
+</html>

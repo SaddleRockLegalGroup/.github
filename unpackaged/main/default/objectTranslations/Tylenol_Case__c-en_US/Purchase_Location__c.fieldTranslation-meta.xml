@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Purchase Location --></label>
+        <name>Purchase_Location__c</name>
+        <picklistValues>
+            <masterLabel>Amazon</masterLabel>
+            <translation><!-- Amazon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVS</masterLabel>
+            <translation><!-- CVS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other / Convenient store</masterLabel>
+            <translation><!-- Other / Convenient store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other / Grocery store</masterLabel>
+            <translation><!-- Other / Grocery store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other / Pharmacy</masterLabel>
+            <translation><!-- Other / Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rite Aid</masterLabel>
+            <translation><!-- Rite Aid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target</masterLabel>
+            <translation><!-- Target --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walgreens/Duane Reed</masterLabel>
+            <translation><!-- Walgreens/Duane Reed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walmart</masterLabel>
+            <translation><!-- Walmart --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

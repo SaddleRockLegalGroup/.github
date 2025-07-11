@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Stage_2_Short_Form</name>
+        <label>Stage 2 Short Form</label>
+        <locationX>710</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Short_Form_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Case_Type_Questionnaire_Routing</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_3_Partner_Assignment</name>
+        <label>Stage 3 Partner Assignment</label>
+        <locationX>710</locationX>
+        <locationY>1082</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Partner_Assignment_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Partner_Match_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_4_Doc_Generation</name>
+        <label>Stage 4 Doc Generation</label>
+        <locationX>710</locationX>
+        <locationY>1298</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Document_Generation_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Generate_Document</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_5_Send_for_Signing</name>
+        <label>Stage 5 Send for Signing</label>
+        <locationX>710</locationX>
+        <locationY>1514</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Send_for_Signature_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Signature_Request</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_6_Long_Form</name>
+        <label>Stage 6 Long Form</label>
+        <locationX>710</locationX>
+        <locationY>1730</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Long_Form_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Long_Form_Campaign_Questionnair_Routing</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_7_Closing_Questions</name>
+        <label>Stage 7 Closing Questions</label>
+        <locationX>710</locationX>
+        <locationY>2138</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Closing_Questions_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Closing_Questions</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_8_Final_Choices</name>
+        <label>Stage 8 Final Choices</label>
+        <locationX>710</locationX>
+        <locationY>2354</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Ending_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Final_Choices_for_Agents</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Stage_Assignment_1</name>
+        <label>Stage 1 Opener</label>
+        <locationX>710</locationX>
+        <locationY>134</locationY>
+        <assignmentItems>
+            <assignToReference>$Flow.CurrentStage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Intro_Q_Stage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Opening_Questionnaire</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Delete_Values</name>
+        <choiceText>Delete Values</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Delete Values</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Keep_Values</name>
+        <choiceText>Keep Values</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Keep Values</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_POA</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_Property_TrustEstate</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No_QC_Queue</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes_POA</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes_Property_TrustEstate</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes_QC_Queue</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <customProperties>
+        <name>ScreenProgressIndicator</name>
+        <value>
+            <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;path&quot;}</stringValue>
+        </value>
+    </customProperties>
+    <decisions>
+        <description>Routes the chosen case type questionnaire selected through case type by the agent.</description>
+        <name>Case_Type_Questionnaire_Routing</name>
+        <label>Case Type Questionnaire Routing</label>
+        <locationX>710</locationX>
+        <locationY>566</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>TalcumPowder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Talcum Powder</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_3_Partner_Assignment</targetReference>
+            </connector>
+            <label>Talcum Powder</label>
+        </rules>
+        <rules>
+            <name>Round_Up</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Round Up</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Short_Form_Round_Up</targetReference>
+            </connector>
+            <label>Round Up</label>
+        </rules>
+        <rules>
+            <name>LA_Wildfires</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LA Wildfires</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Short_Form_LA_Wildfires</targetReference>
+            </connector>
+            <label>LA Wildfires</label>
+        </rules>
+        <rules>
+            <name>Hair_Relaxers</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hair Relaxers</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_3_Partner_Assignment</targetReference>
+            </connector>
+            <label>Hair Relaxers</label>
+        </rules>
+        <rules>
+            <name>Paraquat</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Paraquat</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Paraquat_Short_Form</targetReference>
+            </connector>
+            <label>Paraquat</label>
+        </rules>
+        <rules>
+            <name>Depo_Provera</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Depo-Provera</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_3_Partner_Assignment</targetReference>
+            </connector>
+            <label>Depo Provera</label>
+        </rules>
+        <rules>
+            <name>NEC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NEC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_3_Partner_Assignment</targetReference>
+            </connector>
+            <label>NEC</label>
+        </rules>
+        <rules>
+            <name>Other</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_3_Partner_Assignment</targetReference>
+            </connector>
+            <label>Other</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Routes the chosen campaign questionnaire selected through case type by the agent.</description>
+        <name>Long_Form_Campaign_Questionnair_Routing</name>
+        <label>Long Form Campaign Questionnair Routing</label>
+        <locationX>710</locationX>
+        <locationY>1838</locationY>
+        <defaultConnector>
+            <targetReference>Stage_7_Closing_Questions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>LF_Talcum_Powder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Talcum Powder</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_7_Closing_Questions</targetReference>
+            </connector>
+            <label>LF Talcum Powder</label>
+        </rules>
+        <rules>
+            <name>LF_Round_Up</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Round Up</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Stage_8_Final_Choices</targetReference>
+            </connector>
+            <label>LF Round Up</label>
+        </rules>
+        <rules>
+            <name>LF_LA_Wildfires</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LA Wildfires</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Long_Form_LA_Wildfires</targetReference>
+            </connector>
+            <label>LF LA Wildfires</label>
+        </rules>
+        <rules>
+            <name>LF_Hair_Relaxers</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hair Relaxers</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_7_Closing_Questions</targetReference>
+            </connector>
+            <label>LF Hair Relaxers</label>
+        </rules>
+        <rules>
+            <name>LF_Paraquat</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Paraquat</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Stage_8_Final_Choices</targetReference>
+            </connector>
+            <label>LF Paraquat</label>
+        </rules>
+        <rules>
+            <name>LF_Depo_Provera</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Depo-Provera</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_7_Closing_Questions</targetReference>
+            </connector>
+            <label>LF Depo Provera</label>
+        </rules>
+        <rules>
+            <name>LF_NEC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NEC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_7_Closing_Questions</targetReference>
+            </connector>
+            <label>LF NEC</label>
+        </rules>
+        <rules>
+            <name>LF_Other</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake_at_End.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage_7_Closing_Questions</targetReference>
+            </connector>
+            <label>LF Other</label>
+        </rules>
+    </decisions>
+    <description>This is the core questionnaire function that houses the rest of the questionnaire items.  This is what will run every item through its paces and separate them so items can be worked on separately and tested separately.</description>
+    <dynamicChoiceSets>
+        <name>AffirmNoRepresentation</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Affirm_No_Other_Representation__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>AgreeToProvideInformation</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Agree_to_provide_accurate_information__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>AuthorityToSign</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Does_caller_have_authority_to_sign__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>CallingOnBehalf</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Calling_on_behalf_of_you_or_loved_one__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ConfirmCallerNextOfKin</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Confirm_if_caller_is_next_of_kin__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>List from field on intake</description>
+        <name>ConsentReceiveNotification</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Consent_Receive_Notification_oobo_SRLG__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ExecutorOfEstate</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Executor_of_Estate_EOE_Check__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>InjuredPartySuffix</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Injured_Party_Suffix__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>LovedOneLiving</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Is_your_loved_one_still_living__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>NextOfKin</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Next_of_Kin_NOK_Check__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PoaDocuments</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Do_you_have_legal_POA_documents__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>RelationshipToInjuredParty</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>What_is_your_relationship_to_IP_pk__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>WorkingWithLawFirm</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Working_with_another_law_firm__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>SRLG | Questionnaire | Core Questionnaire Function {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Questionnaire | Core Questionnaire Function</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Pulls the updated intake to reference for routing to enusre any changes are sent to the appropriate place.</description>
+        <name>Get_Updated_Intake_at_End</name>
+        <label>Get Updated Intake at End</label>
+        <locationX>710</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Stage_2_Short_Form</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <stages>
+        <name>Closing_Questions_Stage</name>
+        <isActive>true</isActive>
+        <label>Closing Questions</label>
+        <stageOrder>35</stageOrder>
+    </stages>
+    <stages>
+        <name>Document_Generation_Stage</name>
+        <isActive>true</isActive>
+        <label>Generate Doc</label>
+        <stageOrder>15</stageOrder>
+    </stages>
+    <stages>
+        <description>Final choices presented to the agent at the very end.</description>
+        <name>Ending_Stage</name>
+        <isActive>true</isActive>
+        <label>Ending</label>
+        <stageOrder>40</stageOrder>
+    </stages>
+    <stages>
+        <description>Introductory Questions</description>
+        <name>Intro_Q_Stage</name>
+        <isActive>true</isActive>
+        <label>Opener</label>
+        <stageOrder>1</stageOrder>
+    </stages>
+    <stages>
+        <name>Long_Form_Stage</name>
+        <isActive>true</isActive>
+        <label>Long Form</label>
+        <stageOrder>30</stageOrder>
+    </stages>
+    <stages>
+        <name>Loved_One_Stage</name>
+        <isActive>false</isActive>
+        <label>Loved One</label>
+        <stageOrder>2</stageOrder>
+    </stages>
+    <stages>
+        <name>Partner_Assignment_Stage</name>
+        <isActive>true</isActive>
+        <label>Partner Assignment</label>
+        <stageOrder>10</stageOrder>
+    </stages>
+    <stages>
+        <name>Send_for_Signature_Stage</name>
+        <isActive>true</isActive>
+        <label>Send for Signature</label>
+        <stageOrder>20</stageOrder>
+    </stages>
+    <stages>
+        <name>Short_Form_Stage</name>
+        <isActive>true</isActive>
+        <label>Short Form</label>
+        <stageOrder>5</stageOrder>
+    </stages>
+    <start>
+        <locationX>584</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Stage_Assignment_1</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <subflows>
+        <name>Closing_Questions</name>
+        <label>Closing Questions</label>
+        <locationX>710</locationX>
+        <locationY>2246</locationY>
+        <connector>
+            <targetReference>Stage_8_Final_Choices</targetReference>
+        </connector>
+        <flowName>SRLG_General_Closing_Questionnaire</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Final_Choices_for_Agents</name>
+        <label>Final Choices for Agents</label>
+        <locationX>710</locationX>
+        <locationY>2462</locationY>
+        <flowName>SRLG_Questionnaire_Final_Choices</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_Col_Resident_Intakes</name>
+            <value>
+                <elementReference>var_Col_Resident_Intakes</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Generate_Document</name>
+        <label>Generate Document</label>
+        <locationX>710</locationX>
+        <locationY>1406</locationY>
+        <connector>
+            <targetReference>Stage_5_Send_for_Signing</targetReference>
+        </connector>
+        <flowName>SRLG_Intake_Generate_DocRio_Engagement_Doc_Packet</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Long_Form_LA_Wildfires</name>
+        <label>Long Form LA Wildfires</label>
+        <locationX>314</locationX>
+        <locationY>1946</locationY>
+        <connector>
+            <targetReference>Stage_7_Closing_Questions</targetReference>
+        </connector>
+        <flowName>SRLG_Case_Questionnaire_Long_Form_LA_WildFires</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <description>Standrad opening Questionnaire that runs on all</description>
+        <name>Opening_Questionnaire</name>
+        <label>Opening Questionnaire</label>
+        <locationX>710</locationX>
+        <locationY>242</locationY>
+        <connector>
+            <targetReference>Get_Updated_Intake_at_End</targetReference>
+        </connector>
+        <flowName>SRLG_Questionnaire_Opening_Start</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Paraquat_Long_Form</name>
+        <label>Paraquat Long Form</label>
+        <locationX>754</locationX>
+        <locationY>782</locationY>
+        <connector>
+            <targetReference>Placeholder_for_Paraquat_Closing</targetReference>
+        </connector>
+        <flowName>SRLG_Case_Questionnaire_Long_Form_Paraquat_Subflow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Paraquat_Short_Form</name>
+        <label>Paraquat Short Form</label>
+        <locationX>754</locationX>
+        <locationY>674</locationY>
+        <connector>
+            <targetReference>Paraquat_Long_Form</targetReference>
+        </connector>
+        <flowName>SRLG_Case_Questionnaire_Short_Form_Paraquat_Subflow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Partner_Match_Check</name>
+        <label>Partner Match Check</label>
+        <locationX>710</locationX>
+        <locationY>1190</locationY>
+        <connector>
+            <targetReference>Stage_4_Doc_Generation</targetReference>
+        </connector>
+        <flowName>SRLG_Intake_Process_Assign_Campaign_Partner</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <description>this should be deleted once paraquat is moved to the proper short form and long form structure.</description>
+        <name>Placeholder_for_Paraquat_Closing</name>
+        <label>Placeholder for Paraquat Closing</label>
+        <locationX>754</locationX>
+        <locationY>890</locationY>
+        <connector>
+            <targetReference>Stage_3_Partner_Assignment</targetReference>
+        </connector>
+        <flowName>SRLG_General_Closing_Questionnaire</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <description>Short form information collected for Signature</description>
+        <name>Short_Form_LA_Wildfires</name>
+        <label>Short Form LA Wildfires</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
+        <connector>
+            <targetReference>Stage_3_Partner_Assignment</targetReference>
+        </connector>
+        <flowName>SRLG_Case_Questionnaire_Short_Form_LA_WildFires</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <description>Sends for short form specific information in order to gather partner and signature information up front.</description>
+        <name>Short_Form_Round_Up</name>
+        <label>Short Form Round Up</label>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
+        <connector>
+            <targetReference>Stage_3_Partner_Assignment</targetReference>
+        </connector>
+        <flowName>SRLG_Case_Questionnaire_Short_Form_Round_Up</flowName>
+        <inputAssignments>
+            <name>recordID</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Signature_Request</name>
+        <label>Signature Request</label>
+        <locationX>710</locationX>
+        <locationY>1622</locationY>
+        <connector>
+            <targetReference>Stage_6_Long_Form</targetReference>
+        </connector>
+        <flowName>SRLG_Intake_Dropbox_HelloSign_Send_for_Signature</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>disqualification_1</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>disqualification_2</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>disqualification_3</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>disqualification_4</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>v_Disqualification_Details</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>v_Disqualification_Reason</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_Col_Resident_Intakes</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>litify_pm__Intake__c</objectType>
+    </variables>
+</Flow>

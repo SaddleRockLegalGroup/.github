@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Treatment/Product used during the case --></help>
+        <label><!-- Treatment/Product 2 --></label>
+        <name>Treatment_Product_2__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Hello {{{litify_pm__Intake__c.Vendor_Primary_Contact_First_Name__c}}},</p>
+
+<p>Please be advised that&nbsp;{{{litify_pm__Intake__c.litify_pm__Client__c}}} for a&nbsp;{{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case has been disqualified and released from our firm. This client has provided us with information that prevents us from proceeding further.<br />
+<br />
+<strong>Reason for disqualification:</strong>&nbsp;{{{litify_pm__Intake__c.litify_pm__Turn_Down_Reason__c}}}.</p>
+
+<p><strong>Turn Down Details:</strong>&nbsp;{{{litify_pm__Intake__c.litify_pm__Turn_Down_Details__c}}}.<br />
+<br />
+Please note that this email serves as notice that this case either needs to be credited or replaced based on the terms of the governing IO and MSA.</p>
+
+<p>Thank you for your attention to this urgent issue.<br />
+<br />
+Best regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454<br />
+&nbsp;</p>
+</body>
+</html>

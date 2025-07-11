@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Stage_at_Time_of_Call__c</fullName>
+    <label>Intake Stage at Time of Call</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>Attorney Review</fullName>
+                <default>false</default>
+                <label>Attorney Review</label>
+            </value>
+            <value>
+                <fullName>Need Information</fullName>
+                <default>false</default>
+                <label>Need Information</label>
+            </value>
+            <value>
+                <fullName>Case Wanted</fullName>
+                <default>false</default>
+                <label>Case Wanted</label>
+            </value>
+            <value>
+                <fullName>Retainer Agreement Sent</fullName>
+                <default>false</default>
+                <label>Retainer Agreement Sent</label>
+            </value>
+            <value>
+                <fullName>Retainer Agreement Signed</fullName>
+                <default>false</default>
+                <label>Retainer Agreement Signed</label>
+            </value>
+            <value>
+                <fullName>Monitor</fullName>
+                <default>false</default>
+                <label>Monitor</label>
+            </value>
+            <value>
+                <fullName>Turned Down</fullName>
+                <default>false</default>
+                <label>Turned Down</label>
+            </value>
+            <value>
+                <fullName>Referred Out</fullName>
+                <default>false</default>
+                <label>Referred Out</label>
+            </value>
+            <value>
+                <fullName>Converted</fullName>
+                <default>false</default>
+                <label>Converted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

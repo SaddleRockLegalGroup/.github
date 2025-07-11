@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A&amp;T case follow-up</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>A&amp;T Talc | 90 Day Retention Follow-Up</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>Talcum Powder Case Follow-Up - Saddle Rock Legal and Andrews &amp; Thornton</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

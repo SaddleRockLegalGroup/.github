@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Sub_Status__c</fullName>
+    <description>Only send this communication when one of these sub status values match the intake in question.  If blank then sub status will not be checked</description>
+    <inlineHelpText>Only send this communication when one of these sub status values match the intake in question.  If blank then sub status will not be checked</inlineHelpText>
+    <label>Intake Sub-Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <label>Disqualified</label>
+            </value>
+            <value>
+                <fullName>External Party</fullName>
+                <default>false</default>
+                <label>External Party</label>
+            </value>
+            <value>
+                <fullName>Error on File</fullName>
+                <default>false</default>
+                <label>Error on File</label>
+            </value>
+            <value>
+                <fullName>Third Party Error on File</fullName>
+                <default>false</default>
+                <label>Third Party Error on File</label>
+            </value>
+            <value>
+                <fullName>Non Responsive Clients</fullName>
+                <default>false</default>
+                <label>Non Responsive Clients</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Number</label>
+            </value>
+            <value>
+                <fullName>Pending Rejection</fullName>
+                <default>false</default>
+                <label>Pending Rejection</label>
+            </value>
+            <value>
+                <fullName>CV Past Due</fullName>
+                <default>false</default>
+                <label>CV Past Due</label>
+            </value>
+            <value>
+                <fullName>CV Expired</fullName>
+                <default>false</default>
+                <label>CV Expired</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Expiring</fullName>
+                <default>false</default>
+                <label>Expiring</label>
+            </value>
+            <value>
+                <fullName>Medical Records Inquiry</fullName>
+                <default>false</default>
+                <label>Medical Records Inquiry</label>
+            </value>
+            <value>
+                <fullName>Medical Records Past 30</fullName>
+                <default>false</default>
+                <label>Medical Records Past 30</label>
+            </value>
+            <value>
+                <fullName>Unable To Reach 30+ Days</fullName>
+                <default>false</default>
+                <label>Unable To Reach 30+ Days</label>
+            </value>
+            <value>
+                <fullName>Sent E-Sign by Mail</fullName>
+                <default>false</default>
+                <label>Sent E-Sign by Mail</label>
+            </value>
+            <value>
+                <fullName>Sent E-Sign NR Mass Text</fullName>
+                <default>false</default>
+                <label>Sent E-Sign NR Mass Text</label>
+            </value>
+            <value>
+                <fullName>Waiting Attorney Call</fullName>
+                <default>false</default>
+                <label>Waiting Attorney Call</label>
+            </value>
+            <value>
+                <fullName>Does not have Signed Retainer Attached</fullName>
+                <default>false</default>
+                <label>Does not have Signed Retainer Attached</label>
+            </value>
+            <value>
+                <fullName>Scheduled Appointment</fullName>
+                <default>false</default>
+                <label>Scheduled Appointment</label>
+            </value>
+            <value>
+                <fullName>Error on File Review</fullName>
+                <default>false</default>
+                <label>Error on File Review</label>
+            </value>
+            <value>
+                <fullName>Active Review</fullName>
+                <default>false</default>
+                <label>Active Review</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Case Rejected</fullName>
+                <default>false</default>
+                <label>Case Rejected</label>
+            </value>
+            <value>
+                <fullName>Declined by firm</fullName>
+                <default>false</default>
+                <label>Declined by firm</label>
+            </value>
+            <value>
+                <fullName>CV Expiring</fullName>
+                <default>false</default>
+                <label>CV Expiring</label>
+            </value>
+            <value>
+                <fullName>Case Rejected - Dual Rep</fullName>
+                <default>false</default>
+                <label>Case Rejected - Dual Rep</label>
+            </value>
+            <value>
+                <fullName>Case Rejected - Partner Firm Only</fullName>
+                <default>false</default>
+                <label>Case Rejected - Partner Firm Only</label>
+            </value>
+            <value>
+                <fullName>Partner Firm Review</fullName>
+                <default>false</default>
+                <label>Partner Firm Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- PH HR Represented for Talcum --></label>
+        <name>PH_HR_Represented_for_Talcum__c</name>
+        <picklistValues>
+            <masterLabel>Currently signed with another firm</masterLabel>
+            <translation><!-- Currently signed with another firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not currently signed with another firm regarding this matter</masterLabel>
+            <translation><!-- Not currently signed with another firm regarding this matter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

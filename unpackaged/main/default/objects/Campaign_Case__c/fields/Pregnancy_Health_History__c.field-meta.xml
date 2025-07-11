@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pregnancy_Health_History__c</fullName>
+    <description>Used to allow reps to select from person and family history options to provide any evidence of diagnosis or behaviors that may attribute to the case.  This is specific to Pregnancy history for the mother on any cases related to pregnancies and/or children.</description>
+    <inlineHelpText>Health History specific to pregnancies</inlineHelpText>
+    <label>Pregnancy Health History</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Family_History</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

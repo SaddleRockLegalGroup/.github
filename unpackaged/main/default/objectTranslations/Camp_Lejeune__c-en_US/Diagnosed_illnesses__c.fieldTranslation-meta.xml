@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Have you been diagnosed with any of the following illnesses? --></help>
+        <label><!-- Diagnosed illnesses --></label>
+        <name>Diagnosed_illnesses__c</name>
+        <picklistValues>
+            <masterLabel>Aplastic Anemia</masterLabel>
+            <translation><!-- Aplastic Anemia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bladder Cancer</masterLabel>
+            <translation><!-- Bladder Cancer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kidney Cancer</masterLabel>
+            <translation><!-- Kidney Cancer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kidney Disease/Renal Toxicity</masterLabel>
+            <translation><!-- Kidney Disease/Renal Toxicity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leukemias</masterLabel>
+            <translation><!-- Leukemias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liver Cancer</masterLabel>
+            <translation><!-- Liver Cancer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Cardiac Birth Defects</masterLabel>
+            <translation><!-- Major Cardiac Birth Defects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Myeloma</masterLabel>
+            <translation><!-- Multiple Myeloma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Hodgkin Lymphoma</masterLabel>
+            <translation><!-- Non-Hodgkin Lymphoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None of the above</masterLabel>
+            <translation><!-- None of the above --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Myelodysplastic Syndromes</masterLabel>
+            <translation><!-- Other Myelodysplastic Syndromes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parkinson’s Disease</masterLabel>
+            <translation><!-- Parkinson’s Disease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systemic Sclerosis/Scleroderma</masterLabel>
+            <translation><!-- Systemic Sclerosis/Scleroderma --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

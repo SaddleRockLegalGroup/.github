@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Time length of use in years. Help measure liability measurements of exposure etc. --></help>
+        <label><!-- Years Used --></label>
+        <name>Years_Used__c</name>
+    </CustomFieldTranslation>

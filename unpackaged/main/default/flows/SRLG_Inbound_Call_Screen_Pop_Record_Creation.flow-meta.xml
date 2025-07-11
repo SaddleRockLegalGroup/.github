@@ -1,0 +1,3691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Case_Type</name>
+        <label>Assign Case Type</label>
+        <locationX>974</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Intake.litify_pm__Case_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Phone_To_Case_Type</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Inbound_Call_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment</name>
+        <label>Tier Assignment</label>
+        <locationX>50</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_RoundUpTier</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_RU_Question2_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question3</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_RU_Question3_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RoundUp_Legal_Representation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_RU_Question1_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_RoundUp_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_RoundUp_DQ_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>RoundUp_Campaign_Case_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment_Depo</name>
+        <label>Tier Assignment Depo</label>
+        <locationX>314</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Depo_Tier_Score_Final</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Depo_Provera_4_Use</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Depo_Question3_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Depo_Legal_Representation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Depo_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Depo_DQ_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Depo_Campaign_Case_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment_Eaton_Fires</name>
+        <label>Tier Assignment Eaton Fires</label>
+        <locationX>1634</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_LAWildfires_Tiering</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LAwildfire_TieringQuestion_HowWereYouAffected</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LAW_Tiering_FireAffectedBy</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LAWildfires_Legal_Representation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_LAWildfires_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_LAWildfires_DQ_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question3</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LAW_Tier_HomeOrPropertyDamaged</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LAWildfires_Campaign_Case_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment_NEC</name>
+        <label>Tier Assignment NEC</label>
+        <locationX>842</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_NEC_Tiering</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NEC_Question1_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_NEC_Question2_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question3</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_NEC_Question3_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NEC_Legal_Representation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question5</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_NEC_Question5_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_NEC_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_NEC_DQ_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>NEC_Campaign_Case_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment_Paraquat</name>
+        <label>Tier Assignment Paraquat</label>
+        <locationX>1106</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Paraquat_Tiering</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PQ_Question1_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PQ_Question2_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Paraquat_Legal_Representation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Paraquat_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Paraquat_DQ_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Paraquat_Campaign_Case_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment_PFAS</name>
+        <label>Tier Assignment PFAS</label>
+        <locationX>1370</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PFASTier</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PFAS_Question1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>In_what_year_were_you_or_your_loved_one_diagnose</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question3</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PFAS_Question3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Have_you_previously_signed_documents_either_physically_or_electronically_regardi</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PFAS_DQ_Reasons</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_PFAS_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PFAS_Intake_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Tier_Assignment_Talc</name>
+        <label>Tier Assignment Talc</label>
+        <locationX>578</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>LeadTierValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_TalcTier</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Talc_Question1_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Talc_Question2_MarketingTranslation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Question4</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Talc_Legal_Representation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Talc_DQ_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_Talc_DQ_Reason</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Talc_Case_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>updateTurndownInfoForConsent</name>
+        <label>updateTurndownInfoForConsent</label>
+        <locationX>842</locationX>
+        <locationY>1838</locationY>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NoConsentDQReason</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>v_Disqualification_Details</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NoConsentDQDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Qualifying_Check</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <description>Acute Lymphocytic Leukemia (ALL)</description>
+        <name>Acute_Lymphocytic</name>
+        <choiceText>Acute Lymphocytic Leukemia (ALL)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Acute Lymphocytic Leukemia (ALL)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>After_2005</name>
+        <choiceText>After 2005</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>After 2005</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Before_2005</name>
+        <choiceText>Before 2005</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Before 2005</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_CommercialPropertyOwner</name>
+        <choiceText>Commercial Property Owner</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Commercial Property Owner</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Eaton</name>
+        <choiceText>Eaton</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Eaton</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Homeowner</name>
+        <choiceText>Homeowner</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Homeowner</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_LossOfFamilyMember</name>
+        <choiceText>Loss of family member (death)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Loss of family member (death)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Malibu</name>
+        <choiceText>Malibu</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Malibu</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_NoneOfTheAbove</name>
+        <choiceText>None of the Above</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>None of the Above</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Other</name>
+        <choiceText>Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Palisades</name>
+        <choiceText>Palisades</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Palisades</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Pasadena</name>
+        <choiceText>Pasadena</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pasadena</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_PhysicallyInjured</name>
+        <choiceText>Physically Injured</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Physically Injured</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_PropertyDamage</name>
+        <choiceText>Property Damaged</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Property Damaged</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Renter</name>
+        <choiceText>Renter</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Renter</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_LAW_Santa_Clarita</name>
+        <choiceText>Santa Clarita</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Sanata Clarita</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Death_by_Cancer</name>
+        <choiceText>Death by Cancer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Death by Cancer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Chronic Lymphocytic Leukemia (CLL)</description>
+        <name>DX_Chronic_Lymphocytic</name>
+        <choiceText>Chronic Lymphocytic Leukemia (CLL)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Chronic Lymphocytic Leukemia (CLL)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>DX_Depo_Meningioma</name>
+        <choiceText>Meningioma</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Meningioma</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Diffuse Large B Cell</description>
+        <name>DX_DiffuseLargeB</name>
+        <choiceText>Diffuse Large B Cell</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Diffuse Large B Cell</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Hairy Cell Leukemia</description>
+        <name>DX_HairyCellLeukemia</name>
+        <choiceText>&lt;span style=&quot;font-family: Arial; font-size: 10pt; color: rgb(0, 0, 0);&quot;&gt;Hairy Cell Leukemia&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hairy Cell Leukemia </stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>DX_Kidney_Cancer</name>
+        <choiceText>Kidney Cancer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Kidney Cancer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Mantle Cell Lymphoma</description>
+        <name>DX_MantleCellLymphoma</name>
+        <choiceText>&lt;span style=&quot;font-family: Arial; font-size: 10pt; color: rgb(0, 0, 0);&quot;&gt;Mantle Cell Lymphoma&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mantle Cell Lymphoma</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>No Cancer or Leukemia Diagnosis</description>
+        <name>DX_NoCancer_Leukemia</name>
+        <choiceText>&lt;span style=&quot;font-family: Arial; font-size: 10pt; color: rgb(0, 0, 0);&quot;&gt;No Cancer or Leukemia Diagnosis&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No Cancer or Leukemia Diagnosis</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>DX_None</name>
+        <choiceText>None</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>None</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Other</description>
+        <name>DX_Other</name>
+        <choiceText>Other</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Other</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>DX_PQ_Parkinsons</name>
+        <choiceText>Parkinson&#39;s</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Parkinson&#39;s</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Non-Hodgkins Lymphoma (NHL)</description>
+        <name>DX_RU_Non_Hodgkins</name>
+        <choiceText>Non-Hodgkins Lymphoma (NHL)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Non-Hodgkins Lymphoma (NHL)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Other Cancer</description>
+        <name>DX_RU_None_of_the_Above</name>
+        <choiceText>None of the Above</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>None of the Above</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Small Lymphocytic Lymphoma (SLL)</description>
+        <name>DX_SmallLymphocyticLymphoma</name>
+        <choiceText>&lt;span style=&quot;font-family: Arial; font-size: 10pt; color: rgb(0, 0, 0);&quot;&gt;Small Lymphocytic Lymphoma (SLL)&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Small Lymphocytic Lymphoma (SLL)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>T Cell</description>
+        <name>DX_TCell</name>
+        <choiceText>T Cell</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>T Cell</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>DX_Testicular_Cancer</name>
+        <choiceText>Testicular Cancer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Testicular Cancer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Hodgkins Lymphoma (HL)</description>
+        <name>Hodgkins_Lymphoma</name>
+        <choiceText>Hodgkins Lymphoma (HL)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hodgkins Lymphoma (HL)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_2002_2024</name>
+        <choiceText>2002-2024</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>2002-2024</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_24_Weeks</name>
+        <choiceText>24</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>24</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_25_Weeks</name>
+        <choiceText>25</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>25</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_26_Weeks</name>
+        <choiceText>26</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>26</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_27_Weeks</name>
+        <choiceText>27</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>27</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_28_Weeks</name>
+        <choiceText>28</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>28</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_29_Weeks</name>
+        <choiceText>29</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>29</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_30_Weeks</name>
+        <choiceText>30</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>30</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_31_Weeks</name>
+        <choiceText>31</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>31</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_32_Weeks</name>
+        <choiceText>32</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>32</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_33_Weeks</name>
+        <choiceText>33</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>33</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_34_Weeks</name>
+        <choiceText>34</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>34</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_35_Weeks</name>
+        <choiceText>35</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>35</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_36_Weeks</name>
+        <choiceText>36</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>36</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_37_Weeks</name>
+        <choiceText>37</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>37</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_38_Plus_Weeks</name>
+        <choiceText>38+ weeks</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>38+ weeks</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_38_Weeks</name>
+        <choiceText>38+</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>38+</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_Before_2002</name>
+        <choiceText>Before 2002</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Before 2002</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_Before_38_weeks</name>
+        <choiceText>before 38 weeks</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>before 38 weeks</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_DX_Necrotizing_Enterocolitis</name>
+        <choiceText>Necrotizing Enterocolitis</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Necrotizing Enterocolitis</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_Post_Formula</name>
+        <choiceText>Post Formula</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Post Formula</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>NEC_Prior_to_Formula</name>
+        <choiceText>Prior to Formula</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Prior to Formula</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_2004_After</name>
+        <choiceText>Living case between 2000-current</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Living case between 2000-current</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Before_2004</name>
+        <choiceText>Living case before 2000</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Living case before 2000</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Death_After_2000</name>
+        <choiceText>Death case between 2000-current</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Death case between 2000-current</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Death_before_2000</name>
+        <choiceText>Death case before 2000</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Death case before 2000</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_DeathOustideOfAcceptableTimeFrame</name>
+        <choiceText>Death cases: Outside of acceptable timeframe</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Death cases: Outside of acceptable timeframe</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Diagnosed2000_2013DeathWithin2Years</name>
+        <choiceText>Death cases: Diagnosed between 2000-2013 with death occurring within 2 years</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Death cases: Diagnosed between 2000-2013 with death occurring within 2 years</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_DiagnosedPost2014DeathAfter2024</name>
+        <choiceText>Death cases: Diagnosed after 2014 with death occurring after 2024</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Death cases: Diagnosed after 2014 with death occurring after 2024</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Direct_Contact</name>
+        <choiceText>Direct Contact</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Direct Contact</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Indirect_Contact</name>
+        <choiceText>Indirect Contact</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Indirect Contact</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RU_Recurrence_Post_2004</name>
+        <choiceText>Living case prior to 2000 BUT they had a recurrence post 2000</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Living case prior to 2000 BUT they had a recurrence post 2000</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Talc_2019_Before</name>
+        <choiceText>2019 or Before</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>2019 or Before</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Talc_2020_After</name>
+        <choiceText>2020 or After</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>2020 or After</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Thyroid_Disease</name>
+        <choiceText>Thyroid Disease</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Thyroid Disease</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Ulcerative_Colitis</name>
+        <choiceText>Ulcerative Colitis</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Ulcerative Colitis</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <constants>
+        <description>This is the turn down details for when the caller did not give consent.</description>
+        <name>NoConsentDQDetails</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>The caller did not give consent to receive automated communications</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>NoConsentDQReason</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Did not consent</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>What_illness_were_there</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Were you or your loved one diagnosed with any of the following conditions?</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Case_Type_Routing</name>
+        <label>Case Type Routing</label>
+        <locationX>974</locationX>
+        <locationY>998</locationY>
+        <defaultConnector>
+            <targetReference>Default_Generic_Routing</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>RoundUp</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Round Up</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Marketing_Questions1</targetReference>
+            </connector>
+            <label>RoundUp</label>
+        </rules>
+        <rules>
+            <name>Depo_Provera</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Depo-Provera</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Depo_Provera_Questions</targetReference>
+            </connector>
+            <label>Depo-Provera</label>
+        </rules>
+        <rules>
+            <name>Talcum</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Talcum Powder</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Talcum_Questions_Screen</targetReference>
+            </connector>
+            <label>Talcum</label>
+        </rules>
+        <rules>
+            <name>NEC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NEC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NEC_Questions</targetReference>
+            </connector>
+            <label>NEC</label>
+        </rules>
+        <rules>
+            <name>Paraquat</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Paraquat</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Paraquat_Questions</targetReference>
+            </connector>
+            <label>Paraquat</label>
+        </rules>
+        <rules>
+            <name>PFAS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PFAS</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PFAS_Questions</targetReference>
+            </connector>
+            <label>PFAS</label>
+        </rules>
+        <rules>
+            <name>LA_WildFires</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LA Wildfires</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LA_WildFire_Questions</targetReference>
+            </connector>
+            <label>LA WildFires</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Qualifying_Check</name>
+        <label>Qualifying Check</label>
+        <locationX>974</locationX>
+        <locationY>2030</locationY>
+        <defaultConnector>
+            <targetReference>Remove_Ringba_Check_Box</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tier_1_Qualified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LeadTierValue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Consent_Receive_Notification_oobo_SRLG__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Ending_Screen</targetReference>
+            </connector>
+            <label>Tier 1 Qualified</label>
+        </rules>
+        <rules>
+            <name>Tier_4_DQ</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>LeadTierValue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 4</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Consent_Receive_Notification_oobo_SRLG__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Consent_Receive_Notification_oobo_SRLG__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Ending_DQ_Screen</targetReference>
+            </connector>
+            <label>Tier 4 or No Consent DQ</label>
+        </rules>
+        <rules>
+            <name>Tier_2_Scenario</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LeadTierValue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 2</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Consent_Receive_Notification_oobo_SRLG__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier2_Scenario_Screen</targetReference>
+            </connector>
+            <label>Tier 2 Scenario</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This will check to see if we don&#39;t have consent from the caller and need to DQ based on that fact and will update the turndown reason/details</description>
+        <name>UpdateTurndownInfo</name>
+        <label>UpdateTurndownInfo</label>
+        <locationX>974</locationX>
+        <locationY>1730</locationY>
+        <defaultConnector>
+            <targetReference>Qualifying_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Consent_Given</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Consent_Receive_Notification_oobo_SRLG__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Updated_Intake.Consent_Receive_Notification_oobo_SRLG__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>LeadTierValue</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>TIer 4</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateTurndownInfoForConsent</targetReference>
+            </connector>
+            <label>No Consent Given</label>
+        </rules>
+    </decisions>
+    <description>AV- 6/24: Fixed the &quot;fx_Phone_To_Case_Type&quot;, it was missing the five9 DNIS for PFAS so the case type wasn&#39;t automatically getting filled out. I added it to the formula so that it auto fills with the case type.
+AV - 6/24: Added the new acceptable diagnoses for PFAS- &quot;Thyroid Disease&quot; and &quot;Ulcerative Colitis&quot; to the screen element and to &quot;fx_PFAS_Question1&quot; that prints that screen&#39;s dx selection.
+RE - 5/23: Fixed mapping issue with Questions for all other case types. 
+RE - 5/23: Fixed mapping issue with Questions PFAS. 
+RE - 5/23: Mapping Answers and Questions for PFAS
+VP - 2305-2025 - PFAS Tiering
+VP - 07052025 - Added PFAS questions
+VP - 04232025 - Updated the RU values for diagnosis date from 2004 to 2000
+CS - 04022025 - Updates to Round Up Questions Screen and related formulas.
+Works with inbound call center features to help guide agents create records for inbound calls. | Depo Updates 1/10/25 | &#39;Ringa&#39; field change fix 1/11 | Turn Down Details/Reason Updates - Assign CaseType from DNIS # 1/13/25 | Added Eaton Case 2/3/25 | Added Inbound Disclaimer DQ Script | Added DQ for no Consent and move to &#39;Working&#39; Status in the beginning | Added new inbound consent script with a tweak requested by intake management</description>
+    <dynamicChoiceSets>
+        <name>Disclaimer_Consent_to_terms</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Consent_Receive_Notification_oobo_SRLG__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>pulled from the talk question1 field that provides a list of diagnosis.</description>
+        <name>Talc_Diagnosis_Choices</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Question_1__c</picklistField>
+        <picklistObject>Talcum_Powder__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <description>Assigns a diagnosis value from the yes or no selection</description>
+        <name>fx_Depo_Diagnosis</name>
+        <dataType>String</dataType>
+        <expression>IF( {!Depo_diagnosed_with_a_meningioma} = &quot;Yes&quot;,
+ &quot;Meningioma&quot;,
+&quot;None of the Above&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Depo_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF({!Depo_Provera_4_Use} &lt;&gt; &quot;Yes&quot;, &quot;Did not have enough exposure to product&quot;,
+IF({!Depo_diagnosed_with_a_meningioma} &lt;&gt; &quot;Meningioma&quot;, &quot;Did not have Meningioma&quot;,
+IF({!Depo_Legal_Representation} &lt;&gt; &quot;No&quot;, &quot;Already has legal representation&quot;,
+&quot;&quot;
+)))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Depo_DQ_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF({!Depo_Provera_4_Use} &lt;&gt; &quot;Yes&quot;, &quot;Not enough exposure to the product&quot;,
+IF({!Depo_diagnosed_with_a_meningioma} &lt;&gt; &quot;Meningioma&quot;, &quot;No formal diagnosis we accept&quot;,
+IF({!Depo_Legal_Representation} &lt;&gt; &quot;No&quot;, &quot;Already represented&quot;,
+&quot;&quot;
+)))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Depo_Question3_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!Depo_diagnosed_with_a_meningioma} = &quot;Meningioma&quot;, &quot;Yes&quot;, &quot;No&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Uses part1 formula to calculate numerical values and then assign appropriate Tiers</description>
+        <name>fx_Depo_Tier_Score_Final</name>
+        <dataType>String</dataType>
+        <expression>IF( AND({!Depo_Provera_4_Use} = &quot;Yes&quot;, {!Depo_diagnosed_with_a_meningioma} = &quot;Meningioma&quot;, {!Depo_Legal_Representation} = &quot;No&quot; )
+, &quot;Tier 1&quot;
+,&quot;Tier 4&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Depo_Tier_Score_Part1</name>
+        <dataType>Number</dataType>
+        <expression>
+CASE({!Depo_Provera_4_Use},
+&quot;Yes&quot;, 1,
+&quot;No&quot;, -1,
+0)
++
+CASE({!Depo_diagnosed_with_a_meningioma},
+&quot;Yes&quot;, 1,
+&quot;No&quot;, -1,
+0)
++
+CASE({!Depo_Legal_Representation},
+&quot;Yes&quot;, -1,
+&quot;No&quot;, 1,
+0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>fx_LAWildfires_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF({!LAwildfire_TieringQuestion_HowWereYouAffected} = &quot;None of the Above&quot;, &quot;No accepted injury or property damage provided&quot;,
+IF({!LAW_Tiering_FireAffectedBy} &lt;&gt; &quot;Eaton&quot; &amp;&amp; {!LAW_Tiering_FireAffectedBy} &lt;&gt; &quot;Palisades&quot;, &quot;Not inside the accepted boundries of Wildfire&quot;,
+IF({!LAW_Tier_HomeOrPropertyDamaged} = &quot;Other&quot;, &quot;Damage did not occur to property they own or rented&quot;,
+IF({!LAWildfires_Legal_Representation} = &quot;Yes&quot;, &quot;Already has legal representation&quot;,
+&quot;&quot;
+))))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_LAWildfires_DQ_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF({!LAwildfire_TieringQuestion_HowWereYouAffected} = &quot;None of the Above&quot;, &quot;Insufficient damages&quot;,
+IF({!LAW_Tiering_FireAffectedBy} &lt;&gt; &quot;Eaton&quot; &amp;&amp; {!LAW_Tiering_FireAffectedBy} &lt;&gt; &quot;Palisades&quot;, &quot;Wrong location&quot;,
+IF({!LAW_Tier_HomeOrPropertyDamaged} = &quot;Other&quot;, &quot;Insufficient damages&quot;,
+IF({!LAWildfires_Legal_Representation} = &quot;Yes&quot;, &quot;Already Represented&quot;,
+&quot;&quot;
+))))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_LAWildfires_Tiering</name>
+        <dataType>String</dataType>
+        <expression>IF({!LAwildfire_TieringQuestion_HowWereYouAffected} = &quot;None of the Above&quot;, &quot;Tier 4&quot;,
+IF({!LAW_Tiering_FireAffectedBy} &lt;&gt; &quot;Eaton&quot; &amp;&amp; {!LAW_Tiering_FireAffectedBy} &lt;&gt; &quot;Palisades&quot;, &quot;Tier 4&quot;,
+IF({!LAW_Tier_HomeOrPropertyDamaged} = &quot;Other&quot;, &quot;Tier 4&quot;,
+IF({!LAWildfires_Legal_Representation} = &quot;Yes&quot;, &quot;Tier 4&quot;,
+&quot;Tier 1&quot;
+))))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_NEC_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF({!NEC_Week_of_Birth} = &quot;38+&quot;, &quot;Not a premature birth&quot;,
+IF({!NEC_Given_Formula_Before_Diagnosed} &lt;&gt; &quot;Post Formula&quot;, &quot;Diagnosed before receiving formula&quot;,
+IF({!NEC_Diagnosed_with_NEC} &lt;&gt; &quot;Necrotizing Enterocolitis&quot;, &quot;Doesn&#39;t have diagnosis of Necrotizing Enterocolitis&quot;,
+IF( YEAR({!NEC_Childs_Date_of_Birth}) &lt; 2001, &quot;Child not born in accepted time frame&quot;,
+IF({!NEC_Legal_Representation} = &quot;Yes&quot;, &quot;Already has legal representation&quot;,
+&quot;&quot;
+)))))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_NEC_DQ_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF({!NEC_Week_of_Birth} = &quot;38+&quot;, &quot;Questionable/No liability&quot;,
+IF({!NEC_Given_Formula_Before_Diagnosed} &lt;&gt; &quot;Post Formula&quot;, &quot;Questionable/No liability&quot;,
+IF({!NEC_Diagnosed_with_NEC} &lt;&gt; &quot;Necrotizing Enterocolitis&quot;, &quot;No formal diagnosis we accept&quot;,
+IF( YEAR({!NEC_Childs_Date_of_Birth}) &lt; 2001, &quot;Outside of Accepted Time Frame&quot;,
+IF({!NEC_Legal_Representation} = &quot;Yes&quot;, &quot;Already represented&quot;,
+&quot;&quot;
+)))))</expression>
+    </formulas>
+    <formulas>
+        <description>translates the responses into marketing accepted answers</description>
+        <name>fx_NEC_Question2_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!NEC_Given_Formula_Before_Diagnosed} = &quot;Prior to Formula&quot;, &quot;No&quot;, &quot;Yes&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>provides marketing accepted answers for the question.</description>
+        <name>fx_NEC_Question3_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!NEC_Week_of_Birth} = &quot;38+&quot;, &quot;38+ weeks&quot;, &quot;before 38 weeks&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_NEC_Question5_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF(YEAR({!NEC_Childs_Date_of_Birth}) &lt; 2002, &quot;Before 2002&quot;, &quot;2002-2024&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_NEC_Tiering</name>
+        <dataType>String</dataType>
+        <expression>IF(
+AND({!NEC_Week_of_Birth} &lt;&gt; &quot;38+&quot;, {!NEC_Given_Formula_Before_Diagnosed} = &quot;Post Formula&quot;, {!NEC_Diagnosed_with_NEC} = &quot;Necrotizing Enterocolitis&quot;, YEAR({!NEC_Childs_Date_of_Birth}) &gt; 2001, {!NEC_Legal_Representation} = &quot;No&quot;),
+&quot;Tier 1&quot;,
+&quot;Tier 4&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Paraquat_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF( {!Paraquat_exposed_to_Paraquat} &lt;&gt; &quot;Direct Contact&quot;, &quot;Never had direct exposure&quot;,
+IF( {!Paraquat_suffer_from_Parkinson} &lt;&gt; &quot;Parkinson&#39;s&quot;, &quot;Did not receive accepted Parkinson&#39;s diagnosis&quot;,
+IF( {!Paraquat_Legal_Representation} &lt;&gt; &quot;No&quot; , &quot;Already represented by firm&quot;,
+&quot;&quot;
+)))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Paraquat_DQ_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF( {!Paraquat_exposed_to_Paraquat} &lt;&gt; &quot;Direct Contact&quot;, &quot;Not enough exposure to the product&quot;,
+IF( {!Paraquat_suffer_from_Parkinson} &lt;&gt; &quot;Parkinson&#39;s&quot;, &quot;No formal diagnosis we accept&quot;,
+IF( {!Paraquat_Legal_Representation} &lt;&gt; &quot;No&quot; , &quot;Already represented&quot;,
+&quot;&quot;
+)))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Paraquat_Tiering</name>
+        <dataType>String</dataType>
+        <expression>IF(
+AND( {!Paraquat_exposed_to_Paraquat} = &quot;Direct Contact&quot;, {!Paraquat_suffer_from_Parkinson} = &quot;Parkinson&#39;s&quot;, {!Paraquat_Legal_Representation} = &quot;No&quot; ),
+&quot;Tier 1&quot;,
+&quot;Tier 4&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PFAS_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;None of the Above&quot;, 
+  &quot;No formal diagnosis we accept&quot;,
+  IF(
+    YEAR({!In_what_year_were_you_or_your_loved_one_diagnose}) &lt; 2005, 
+    &quot;Outside of acceptable timeframe&quot;, 
+    IF(
+      {!Did_you_or_a_loved_one_live_in_a_PFAS_contaminated_area_for_over_1_year} = &quot;No&quot;,
+      &quot;Not enough exposure to the product&quot;,
+      IF(
+        {!Have_you_previously_signed_documents_either_physically_or_electronically_regardi} = &quot;Yes&quot;, 
+        &quot;Already represented&quot;,
+        &quot;&quot;
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PFAS_DQ_Reasons</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;None of the Above&quot;, 
+  &quot;No formal diagnosis we accept&quot;,
+  IF(
+    YEAR({!In_what_year_were_you_or_your_loved_one_diagnose}) &lt; 2005, 
+    &quot;Outside of acceptable timeframe&quot;, 
+    IF(
+      {!Did_you_or_a_loved_one_live_in_a_PFAS_contaminated_area_for_over_1_year} = &quot;No&quot;,
+      &quot;Not enough exposure to the product&quot;,
+      IF(
+        {!Have_you_previously_signed_documents_either_physically_or_electronically_regardi} = &quot;Yes&quot;, 
+        &quot;Already represented&quot;,
+        &quot;&quot;
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PFAS_Question1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;Kidney Cancer&quot;,
+  &quot;Kidney Cancer&quot;,
+  IF(
+    {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;Testicular Cancer&quot;,
+    &quot;Testicular Cancer&quot;,
+    IF(
+      {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;Death by Cancer&quot;,
+      &quot;Death by Cancer&quot;,
+IF(
+    {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;Thyroid Disease&quot;,
+      &quot;Thyroid Disease&quot;,
+IF(
+   {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;Ulcerative Colitis&quot;,
+      &quot;Ulcerative Colitis&quot;,
+      &quot;None of the Above&quot;
+         )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PFAS_Question2</name>
+        <dataType>String</dataType>
+        <expression>IF(YEAR({!In_what_year_were_you_or_your_loved_one_diagnose}) &lt; 2005, &quot;Before 2005&quot;, &quot;After 2005&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PFAS_Question3</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!Did_you_or_a_loved_one_live_in_a_PFAS_contaminated_area_for_over_1_year} = &quot;Yes&quot;,
+  &quot;Yes&quot;,
+  &quot;No&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Tiers PFAS questions</description>
+        <name>fx_PFASTier</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  OR(
+    {!What_illness_were_you_formally_diagnosed_with_by_a_medical_professional} = &quot;None of the Above&quot;,
+    YEAR({!In_what_year_were_you_or_your_loved_one_diagnose}) &lt; 2005,
+    {!Did_you_or_a_loved_one_live_in_a_PFAS_contaminated_area_for_over_1_year} = &quot;No&quot;,
+    {!Have_you_previously_signed_documents_either_physically_or_electronically_regardi} = &quot;Yes&quot;
+  ), 
+  &quot;Tier 4&quot;, 
+  &quot;Tier 1&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Phone_To_Case_Type</name>
+        <dataType>String</dataType>
+        <expression>IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;3725&#39;), &#39;a03UJ000003vZnKYAU&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;3474&#39;), &#39;a03Dn0000054CCKIA2&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;2462&#39;), &#39;a03UJ00000Nx22KYAR&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;4479&#39;), &#39;a03UJ000003vZnMYAU&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;4511&#39;), &#39;a03UJ000003vZnLYAU&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;0882&#39;), &#39;a03UJ000003vZnNYAU&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;1927&#39;), &#39;a03UJ00000bHU2nYAG&#39;,
+IF(CONTAINS({!Get_Intake.five9DNIS__c}, &#39;3416&#39;), &#39;a03UJ00000SEzjSYAT&#39;,
+&quot;&quot;
+))))))))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PQ_Question1_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!Paraquat_exposed_to_Paraquat} = &quot;Direct Contact&quot;, &quot;Yes&quot;, &quot;No&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_PQ_Question2_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!Paraquat_suffer_from_Parkinson} = &quot;Parkinson&#39;s&quot;, &quot;Yes, diagnosed with parkinson&#39;s&quot;, &quot;No&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <description>timeframe conversion to accepted value on the backend from question answered.</description>
+        <name>fx_RoundUp_Diagnosis_Timeframe</name>
+        <dataType>String</dataType>
+        <expression>IF( {!RoundUp_What_year_were_you_or_a_loved_one_diagnosed} = &quot;Before 2004&quot;, 
+&quot;Living case before 2004&quot;,
+&quot;Living case between 2004-current&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_RoundUp_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    {!RoundUp_develop_any_symptoms} = &quot;None of the Above&quot;, 
+    &quot;Does not have acceptable diagnosis&quot;, 
+    IF(
+        {!RoundUp_you_or_a_loved_one_directly_exposed} = &quot;Indirect Contact&quot;, 
+        &quot;Never had direct contact with product&quot;,
+        IF(
+            CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;before&quot;), 
+            &quot;Was not diagnosed in accepted time frame&quot;,
+			IF(
+            CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;Outside of acceptable timeframe&quot;), 
+            &quot;Was not diagnosed in accepted time frame&quot;,
+				IF(
+					{!RoundUp_Legal_Representation} = &quot;Yes&quot;, 
+					&quot;Already represented by a firm&quot;,
+					&quot;&quot;
+				)
+			)
+        )
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_RoundUp_DQ_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    {!RoundUp_develop_any_symptoms} = &quot;None of the Above&quot;, 
+    &quot;No formal diagnosis we accept&quot;,
+    IF(
+        {!RoundUp_you_or_a_loved_one_directly_exposed} = &quot;Indirect Contact&quot;, 
+        &quot;Not enough exposure to the product&quot;,
+        IF(
+            CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;before&quot;), 
+            &quot;Outside of Accepted Time Frame&quot;,
+			IF(
+            CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;Outside of acceptable timeframe&quot;), 
+            &quot;Outside of Accepted Time Frame&quot;,
+				IF(
+					{!RoundUp_Legal_Representation} = &quot;Yes&quot;, 
+					&quot;Already represented&quot;,
+					&quot;&quot;
+				)
+			)
+        )
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <description>provide picklist values for yes or no question.</description>
+        <name>fx_RoundUp_Exposure_Type</name>
+        <dataType>String</dataType>
+        <expression>IF({!RoundUp_you_or_a_loved_one_directly_exposed} = &quot;Yes&quot;,
+&quot;Direct Contact&quot;,
+&quot;Indirect Contact&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Tiers roundup questions</description>
+        <name>fx_RoundUpTier</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    OR(
+        {!RoundUp_develop_any_symptoms} = &quot;None of the Above&quot;,
+        {!RoundUp_you_or_a_loved_one_directly_exposed} = &quot;Indirect Contact&quot;,
+        CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;before&quot;),
+		CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;Outside of acceptable timeframe&quot;),
+        {!RoundUp_Legal_Representation} = &quot;Yes&quot;
+    ), 
+    &quot;Tier 4&quot;, 
+    &quot;Tier 1&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_RU_Question1_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!RoundUp_develop_any_symptoms} = &quot;Non-Hodgkins Lymphoma (NHL)&quot;, &quot;Non-Hodgkins Lymphoma (NHL)&quot;, &quot;No cancer or Leukemia Diagnosis&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_RU_Question2_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!RoundUp_you_or_a_loved_one_directly_exposed} = &quot;Direct Contact&quot;, &quot;Yes&quot;, &quot;No&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_RU_Question3_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF(CONTAINS({!RoundUp_What_year_were_you_or_a_loved_one_diagnosed}, &quot;before&quot;), &quot;Before 2004&quot;, &quot;2004 or After&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Talc_DQ_Details</name>
+        <dataType>String</dataType>
+        <expression>IF( AND({!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Mesothelioma (women only)&quot;, {!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Primary Peritoneal&quot;, {!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Fallopian Tube Cancer&quot;, {!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Ovarian Cancer&quot;
+), &quot;Doesn&#39;t have accepted cancer&quot;,
+IF( YEAR({!Talcum_Date_of_Diagnosis}) &lt;= 2019, &quot;Outside of accepted diagnosis timeframe&quot;,
+IF({!Talc_Legal_Representation} &lt;&gt; &quot;No&quot; , &quot;Already represented by firm&quot;,
+&quot;&quot; 
+)))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Talc_DQ_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF( AND({!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Mesothelioma (women only)&quot;, {!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Primary Peritoneal&quot;, {!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Fallopian Tube Cancer&quot;, {!Talc_Did_You_Have_Cancer} &lt;&gt; &quot;Ovarian Cancer&quot;
+), &quot;No formal diagnosis we accept&quot;,
+IF( YEAR({!Talcum_Date_of_Diagnosis}) &lt;= 2019, &quot;Outside of Accepted Time Frame&quot;,
+IF({!Talc_Legal_Representation} &lt;&gt; &quot;No&quot; , &quot;Already represented&quot;,
+&quot;&quot; 
+)))</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Talc_Question1_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>CASE({!Talc_Did_You_Have_Cancer},
+&quot;Mesothelioma (women only)&quot;, &quot;Mesothelioma&quot;,
+&quot;Primary Peritoneal&quot;, &quot;Peritoneal Cancer&quot;,
+&quot;Fallopian Tube Cancer&quot;, &quot;Fallopian Tube Cancer&quot;,
+&quot;Ovarian Cancer&quot;, &quot;Ovarian Cancer&quot;,
+&quot;None of the above&quot;, &quot;No&quot;,
+&quot;Others&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Talc_Question2_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF(YEAR({!Talcum_Date_of_Diagnosis}) &gt; 2019, &quot;2020 or After&quot;, &quot;2019 or Before&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>formula to provide tiering for Talcum</description>
+        <name>fx_TalcTier</name>
+        <dataType>String</dataType>
+        <expression>IF( AND(OR({!Talc_Did_You_Have_Cancer} = &quot;Mesothelioma (women only)&quot;, {!Talc_Did_You_Have_Cancer} = &quot;Primary Peritoneal&quot;, {!Talc_Did_You_Have_Cancer} = &quot;Fallopian Tube Cancer&quot;, {!Talc_Did_You_Have_Cancer} = &quot;Ovarian Cancer&quot;
+), YEAR({!Talcum_Date_of_Diagnosis}) &gt; 2019, {!Talc_Legal_Representation} = &quot;No&quot; ), 
+&quot;Tier 1&quot;,
+IF( AND( {!Talc_Legal_Representation} = &quot;Yes&quot;, OR({!Talc_Did_You_Have_Cancer} = &quot;Mesothelioma (women only)&quot;, {!Talc_Did_You_Have_Cancer} = &quot;Primary Peritoneal&quot;, {!Talc_Did_You_Have_Cancer} = &quot;Fallopian Tube Cancer&quot;, {!Talc_Did_You_Have_Cancer} = &quot;Ovarian Cancer&quot;),
+  YEAR({!Talcum_Date_of_Diagnosis}) &gt; 2019  ),
+&quot;Tier 2&quot;,
+ &quot;Tier 4&quot; ))</expression>
+    </formulas>
+    <formulas>
+        <description>translates answers from first question into acceptable values for marketing.</description>
+        <name>NEC_Question1_MarketingTranslation</name>
+        <dataType>String</dataType>
+        <expression>IF({!NEC_Diagnosed_with_NEC} = &quot;Necrotizing Enterocolitis&quot;, &quot;Yes&quot;, &quot;No&quot;)</expression>
+    </formulas>
+    <interviewLabel>SRLG | Inbound Call | Screen Pop Record Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Inbound Call | Screen Pop Record Creation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Intake</name>
+        <label>Get Intake</label>
+        <locationX>974</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Party_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Party_Account</name>
+        <label>Get Party/Account</label>
+        <locationX>974</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Case_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.litify_pm__Client__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Updated_Intake</name>
+        <label>Get Updated Intake</label>
+        <locationX>974</locationX>
+        <locationY>890</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Case_Type_Routing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Depo_Campaign_Case_Update</name>
+        <label>Depo Campaign Case Update</label>
+        <locationX>314</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>Depo_Intake_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.Campaign_Case__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Diagnosis_1__c</field>
+            <value>
+                <elementReference>Depo_diagnosed_with_a_meningioma</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Exposure_Use_Check_3__c</field>
+            <value>
+                <elementReference>Depo_Provera_4_Use</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Campaign_Case__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Depo_Intake_Update</name>
+        <label>Depo Intake Update</label>
+        <locationX>314</locationX>
+        <locationY>1430</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <stringValue>Did you use Depo-Provera for one year or more?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>Have you been diagnosed with a meningioma?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Disqualify the intake based on responses.</description>
+        <name>DQ_Intake</name>
+        <label>DQ Intake</label>
+        <locationX>842</locationX>
+        <locationY>2246</locationY>
+        <connector>
+            <targetReference>Remove_Ringba_Check_Box</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Disqualified</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Status__c</field>
+            <value>
+                <stringValue>Turned Down</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Turn_Down_Details__c</field>
+            <value>
+                <elementReference>v_Disqualification_Details</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Turn_Down_Reason__c</field>
+            <value>
+                <elementReference>v_Disqualification_Reason</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Final_Intake2</name>
+        <label>Final Intake2</label>
+        <locationX>974</locationX>
+        <locationY>1622</locationY>
+        <connector>
+            <targetReference>UpdateTurndownInfo</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Answer_1__c</field>
+            <value>
+                <elementReference>Question1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Answer_2__c</field>
+            <value>
+                <elementReference>Question2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Answer_3__c</field>
+            <value>
+                <elementReference>Question3</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Answer_4__c</field>
+            <value>
+                <elementReference>Question4</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Answer_5__c</field>
+            <value>
+                <elementReference>Question5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake_Score__c</field>
+            <value>
+                <elementReference>LeadTierValue</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>LAW_Intake_Update</name>
+        <label>LAW Intake Update</label>
+        <locationX>1634</locationX>
+        <locationY>1430</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <stringValue>Which fire were you affected by? (If client answer is Altadena, it is the same as Eaton)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>Were you physically injured from the fires or was your property damaged?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>Are you the Homeowner, Renter, or Commercial Property Owner?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_4__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>LAWildfires_Campaign_Case_Update</name>
+        <label>LAWildfires Campaign Case Update</label>
+        <locationX>1634</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>LAW_Intake_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.Campaign_Case__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Name_of_Location_Affected__c</field>
+            <value>
+                <elementReference>LAW_Tiering_FireAffectedBy</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Relationship_to_Location__c</field>
+            <value>
+                <elementReference>LAW_Tier_HomeOrPropertyDamaged</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_of_Experience__c</field>
+            <value>
+                <elementReference>LAwildfire_TieringQuestion_HowWereYouAffected</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Campaign_Case__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>NEC_Campaign_Case_Update</name>
+        <label>NEC Campaign Case Update</label>
+        <locationX>842</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>Update_NEC_Intake</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.Campaign_Case__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Diagnosis_1__c</field>
+            <value>
+                <elementReference>NEC_Diagnosed_with_NEC</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Time_Frame_of_Use__c</field>
+            <value>
+                <elementReference>NEC_Week_of_Birth</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_of_Exposure__c</field>
+            <value>
+                <elementReference>NEC_Given_Formula_Before_Diagnosed</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Campaign_Case__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Paraquat_Campaign_Case_Update</name>
+        <label>Paraquat Campaign Case Update</label>
+        <locationX>1106</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>Paraquat_Intake_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.Campaign_Case__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Diagnosis_1__c</field>
+            <value>
+                <elementReference>Paraquat_suffer_from_Parkinson</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_of_Exposure__c</field>
+            <value>
+                <elementReference>Paraquat_exposed_to_Paraquat</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Campaign_Case__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Paraquat_Intake_Update</name>
+        <label>Paraquat Intake Update</label>
+        <locationX>1106</locationX>
+        <locationY>1430</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <stringValue>Have you been directly exposed to Paraquat?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>Have you been formally diagnosed with Parkinson&#39;s disease?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PFAS_Intake_Update</name>
+        <label>PFAS Intake Update</label>
+        <locationX>1370</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <elementReference>What_illness_were_there</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>In what year were you or your loved one diagnosed?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>Did you or a loved one live in a PFAS contaminated area for over 1 year?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_4__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>This signifies that the flow should not show up on the intake screen any longer.  When a ringba call comes in on a new record, this checkbox is checked to signify that we need this flow to run on the lightning page.</description>
+        <name>Remove_Ringba_Check_Box</name>
+        <label>Remove Ringba Check Box</label>
+        <locationX>974</locationX>
+        <locationY>2438</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>New_Ringba_Intake__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>RoundUp_Campaign_Case_Update</name>
+        <label>RoundUp Campaign Case Update</label>
+        <locationX>50</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>RU_Intake_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.Campaign_Case__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Diagnosis_1__c</field>
+            <value>
+                <elementReference>RoundUp_develop_any_symptoms</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Diagnosis_Check_1__c</field>
+            <value>
+                <elementReference>RoundUp_What_year_were_you_or_a_loved_one_diagnosed</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type_of_Exposure__c</field>
+            <value>
+                <elementReference>RoundUp_you_or_a_loved_one_directly_exposed</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Campaign_Case__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>RU_Intake_Update</name>
+        <label>RU Intake Update</label>
+        <locationX>50</locationX>
+        <locationY>1430</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <stringValue>What type of cancer were you or loved one officially diagnosed with?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>What type of Exposure did you (or your loved one) experience with Round Up?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>What year were you or a loved one diagnosed?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_4__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Talc_Case_Update</name>
+        <label>Talc Case Update</label>
+        <locationX>578</locationX>
+        <locationY>1322</locationY>
+        <connector>
+            <targetReference>Talc_Intake_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Intake.Talcum_Powder__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <elementReference>Talc_Did_You_Have_Cancer</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_7__c</field>
+            <value>
+                <elementReference>Talcum_Date_of_Diagnosis</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Talcum_Powder__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Talc_Intake_Update</name>
+        <label>Talc Intake Update</label>
+        <locationX>578</locationX>
+        <locationY>1430</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <stringValue>What type of cancer were you (or loved one) diagnosed with?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>What was the date of your cancer diagnosis?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Intake_for_case_type</name>
+        <label>Update Intake for case type</label>
+        <locationX>974</locationX>
+        <locationY>566</locationY>
+        <connector>
+            <targetReference>Update_Intake_from_Screenflow_Intro</targetReference>
+        </connector>
+        <inputReference>Get_Intake</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Intake_from_Screenflow_Intro</name>
+        <label>Update Intake from Screenflow Intro</label>
+        <locationX>974</locationX>
+        <locationY>674</locationY>
+        <connector>
+            <targetReference>Update_Party</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Consent_Receive_Notification_oobo_SRLG__c</field>
+            <value>
+                <elementReference>Internal_Do_they_agree_to_consent_to_the_above_terms</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Status__c</field>
+            <value>
+                <stringValue>Working</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_NEC_Intake</name>
+        <label>Update NEC Intake</label>
+        <locationX>842</locationX>
+        <locationY>1430</locationY>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Injured_Party_Birthdate__c</field>
+            <value>
+                <elementReference>NEC_Childs_Date_of_Birth</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_1__c</field>
+            <value>
+                <stringValue>Was your baby diagnosed with Necrotizing Enterocolitis (NEC)?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_2__c</field>
+            <value>
+                <stringValue>Was your baby Diagnosed with NEC prior to being given formula or fortifier?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_3__c</field>
+            <value>
+                <stringValue>What week in your pregnancy was your child born?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_4__c</field>
+            <value>
+                <stringValue>What is your child&#39;s date of birth?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Question_5__c</field>
+            <value>
+                <stringValue>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Party</name>
+        <label>Update Party</label>
+        <locationX>974</locationX>
+        <locationY>782</locationY>
+        <connector>
+            <targetReference>Get_Updated_Intake</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Party_Account.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>litify_pm__Email__c</field>
+            <value>
+                <elementReference>ClientEmail.value</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__First_Name__c</field>
+            <value>
+                <elementReference>May_I_please_have_your_first_name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Last_Name__c</field>
+            <value>
+                <elementReference>May_I_please_have_your_last_name</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <screens>
+        <description>Generic information and routing experience</description>
+        <name>Default_Generic_Routing</name>
+        <label>Default Generic Routing</label>
+        <locationX>1898</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>Go back to Fix</backButtonLabel>
+        <connector>
+            <targetReference>Final_Intake2</targetReference>
+        </connector>
+        <fields>
+            <name>Unrecognized_Case_Type_TEXT</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;The Case Type that was selected is not recognized as a current Campaign, please go back and select again or notify your PD Team and Manager.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>End Update</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Depo_Provera_Questions</name>
+        <label>Depo Provera Questions</label>
+        <locationX>314</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment_Depo</targetReference>
+        </connector>
+        <fields>
+            <name>Depo_Question_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Depo-Provera Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Depo_Provera_4_Use</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Exposure_Use_Check_3__c</elementReference>
+            </defaultValue>
+            <fieldText>Did you use Depo-Provera for one year or more?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Depo_diagnosed_with_a_meningioma</name>
+            <choiceReferences>DX_Depo_Meningioma</choiceReferences>
+            <choiceReferences>DX_RU_None_of_the_Above</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Diagnosis_1__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you been diagnosed with a meningioma?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Depo_Legal_Representation</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Working_with_another_law_firm__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Ending_DQ_Screen</name>
+        <label>Ending DQ Screen</label>
+        <locationX>842</locationX>
+        <locationY>2138</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>DQ_Intake</targetReference>
+        </connector>
+        <fields>
+            <name>EndingDQ_DisplayText</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Tiering Questions are Complete and the intake has been Disqualified.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Please Read:&amp;nbsp;“Unfortunately, we cannot accept your potential case at this time.&amp;nbsp;As such, we are not able to represent you and will not be filing a lawsuit on your behalf. This does not mean you don’t have a case.&amp;nbsp;Please consider contacting another law firm for a second opinion. Thank you for taking the time to speak with us at Saddle Rock Legal Group. Have a great day!”&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;**Note to Agent:&amp;nbsp;If the caller asked &#39;why&#39;, it’s okay to simply state that &#39;There’s a current lack of evidence to fit our case criteria.&#39; No further details than that.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Ending_Screen</name>
+        <label>Ending Screen</label>
+        <locationX>578</locationX>
+        <locationY>2138</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Remove_Ringba_Check_Box</targetReference>
+        </connector>
+        <fields>
+            <name>Ending_Display_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Tiering Questions Complete!&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;The screenflow is now complete. Please proceed to the questionnaire as usual. Thanks!&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Close Out Inbound Tiering</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Inbound_Call_Screen</name>
+        <label>Inbound Call Screen</label>
+        <locationX>974</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Intake_for_case_type</targetReference>
+        </connector>
+        <fields>
+            <name>Beginning_notification_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Inbound Caller New Intake Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;These questions are critical and help Marketing determine the lead’s tier. These must be asked &lt;strong&gt;before proceeding&lt;/strong&gt; with the questionnaire.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>DisplayIntroScript1</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Intro Script READ&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;&quot;Hello, thank you for calling! This is &lt;/span&gt;&lt;strong style=&quot;color: rgb(128, 128, 128);&quot;&gt;{!$User.FirstName}&lt;/strong&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt; from [SRLG or LIA]. I am happy to assist you today, but to best help you I will just need to ask you a few quick questions to get started.&quot;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;&quot;May I please have your first name?&amp;nbsp;And now may I please have your Last Name?&quot;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;&quot;How may I assist you today?&quot;&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Opening_Intro_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Update the clients name and information here&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Inbound_Call_Screen_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Inbound_Call_Screen_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>May_I_please_have_your_first_name</name>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <elementReference>Get_Party_Account.litify_pm__First_Name__c</elementReference>
+                    </defaultValue>
+                    <fieldText>May I please have your first name?</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Inbound_Call_Screen_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>May_I_please_have_your_last_name</name>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <elementReference>Get_Party_Account.litify_pm__Last_Name__c</elementReference>
+                    </defaultValue>
+                    <fieldText>May I please have your last name?</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Disclaimer_Script_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Continue Reading&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;“Hi &lt;/span&gt;&lt;strong style=&quot;color: rgb(128, 128, 128);&quot;&gt;{!May_I_please_have_your_first_name} {!May_I_please_have_your_last_name}, &lt;/strong&gt;&lt;em style=&quot;color: rgb(128, 128, 128);&quot;&gt;I have a few follow-up questions to see how we can help you with your potential {!Get_Intake.litify_pm__Case_Type__r.Name} case. Before we get started, I have a quick disclaimer to read – Please be advised this call may be recorded for quality and training purposes, and the recording will be subject to third-party AI call analytics software. Additionally, your responses will be recorded exactly as you state them and reviewed by our staff and counsel. The information you provide is very important should you have a case. You may be asked to verify your responses by affidavit, so your complete honesty is crucial. Do you agree to provide accurate information to the best of your knowledge?&quot;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;em style=&quot;color: rgb(128, 128, 128);&quot;&gt;Also, you agree to receive automated text notifications and phone calls by or on behalf of Saddle Rock to the number you are calling from regarding your potential case, please clearly say “Yes.” Your consent is not a condition of purchase.&lt;/em&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Internal_Do_they_agree_to_consent_to_the_above_terms</name>
+            <choiceReferences>Disclaimer_Consent_to_terms</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Intake.Consent_Receive_Notification_oobo_SRLG__c</elementReference>
+            </defaultValue>
+            <fieldText>[Internal] Do they agree to consent to the above terms?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>DQ_Notifications_Consent</name>
+            <fieldText>&lt;p&gt;I understand your concerns, {!Get_Intake.litify_pm__Client__r.Name}. However, in order for us to proceed, we do need your consent to contact you. The attorneys may need to reach out from time to time with important updates or to ask questions regarding your case.&lt;/p&gt;&lt;p&gt;Without your consent, we wouldn’t be able to move forward in assisting you. Would you be open to reconsidering so we can proceed?&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(If they still refuse:)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;em&gt;﻿&lt;/em&gt;&lt;strong style=&quot;color: rgb(238, 10, 10); background-color: rgb(255, 255, 255);&quot;&gt;UNFORTUNATELY THEY ARE DQ&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;I completely respect your decision. Unfortunately, without your consent to be contacted, we won’t be able to move forward with your potential case. If you change your mind, feel free to reach out to us. Thank you for your time here at Saddle Rock Legal Group!&lt;/em&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>or</conditionLogic>
+                <conditions>
+                    <leftValueReference>Internal_Do_they_agree_to_consent_to_the_above_terms</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>No</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Internal_Do_they_agree_to_consent_to_the_above_terms</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>N/A</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Case_Type_Confirmation</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Please Confirm the case you are calling about. (if already filled out. &quot;To confirm, this is the case you are calling for?&quot;)&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <objectFieldReference>Get_Intake.litify_pm__Case_Type__c</objectFieldReference>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>ClientEmail</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>placeholder</name>
+                <value>
+                    <stringValue>clientemail@example.com</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Client&#39;s Email</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>value</name>
+                <value>
+                    <elementReference>Get_Party_Account.litify_pm__Email__c</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Move to Tiering</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>LA_WildFire_Questions</name>
+        <label>LA WildFire Questions</label>
+        <locationX>1634</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment_Eaton_Fires</targetReference>
+        </connector>
+        <fields>
+            <name>LAWildfire_Questions_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;LA Wildfires Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>LAW_Tiering_FireAffectedBy</name>
+            <choiceReferences>c_LAW_Eaton</choiceReferences>
+            <choiceReferences>c_LAW_Palisades</choiceReferences>
+            <choiceReferences>c_LAW_Santa_Clarita</choiceReferences>
+            <choiceReferences>c_LAW_Malibu</choiceReferences>
+            <choiceReferences>c_LAW_Pasadena</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Which fire were you affected by? (If client answer is Altadena, it is the same as Eaton)</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>LAwildfire_TieringQuestion_HowWereYouAffected</name>
+            <choiceReferences>c_LAW_PhysicallyInjured</choiceReferences>
+            <choiceReferences>c_LAW_PropertyDamage</choiceReferences>
+            <choiceReferences>c_LAW_NoneOfTheAbove</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Were you physically injured from the fires or was your property damaged?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>LAW_Tier_HomeOrPropertyDamaged</name>
+            <choiceReferences>c_LAW_Homeowner</choiceReferences>
+            <choiceReferences>c_LAW_CommercialPropertyOwner</choiceReferences>
+            <choiceReferences>c_LAW_Renter</choiceReferences>
+            <choiceReferences>c_LAW_Other</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Are you the Homeowner, Renter, or Commercial Property Owner?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>LAWildfires_Legal_Representation</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Working_with_another_law_firm__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Questions specific to Marketing for RoundUp tiering</description>
+        <name>Marketing_Questions1</name>
+        <label>Marketing Questions1</label>
+        <locationX>50</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment</targetReference>
+        </connector>
+        <fields>
+            <name>Roundup_Question_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Round Up Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>RoundUp_develop_any_symptoms</name>
+            <choiceReferences>DX_RU_Non_Hodgkins</choiceReferences>
+            <choiceReferences>DX_RU_None_of_the_Above</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Diagnosis_1__c</elementReference>
+            </defaultValue>
+            <fieldText>What type of cancer were you or loved one officially diagnosed with?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>RoundUp_you_or_a_loved_one_directly_exposed</name>
+            <choiceReferences>RU_Direct_Contact</choiceReferences>
+            <choiceReferences>RU_Indirect_Contact</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Type_of_Exposure__c</elementReference>
+            </defaultValue>
+            <fieldText>What type of Exposure did you (or your loved one) experience with Round Up?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>RoundUp_What_year_were_you_or_a_loved_one_diagnosed</name>
+            <choiceReferences>RU_2004_After</choiceReferences>
+            <choiceReferences>RU_Before_2004</choiceReferences>
+            <choiceReferences>RU_Recurrence_Post_2004</choiceReferences>
+            <choiceReferences>RU_Diagnosed2000_2013DeathWithin2Years</choiceReferences>
+            <choiceReferences>RU_DiagnosedPost2014DeathAfter2024</choiceReferences>
+            <choiceReferences>RU_DeathOustideOfAcceptableTimeFrame</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Diagnosis_Check_1__c</elementReference>
+            </defaultValue>
+            <fieldText>What year were you or a loved one diagnosed?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>RoundUp_Legal_Representation</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Working_with_another_law_firm__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>NEC_Questions</name>
+        <label>NEC Questions</label>
+        <locationX>842</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment_NEC</targetReference>
+        </connector>
+        <fields>
+            <name>NEC_Questions_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;NEC Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>NEC_Diagnosed_with_NEC</name>
+            <choiceReferences>NEC_DX_Necrotizing_Enterocolitis</choiceReferences>
+            <choiceReferences>DX_None</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Diagnosis_1__c</elementReference>
+            </defaultValue>
+            <fieldText>Was your baby diagnosed with Necrotizing Enterocolitis (NEC)?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>NEC_Given_Formula_Before_Diagnosed</name>
+            <choiceReferences>NEC_Prior_to_Formula</choiceReferences>
+            <choiceReferences>NEC_Post_Formula</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Type_of_Exposure__c</elementReference>
+            </defaultValue>
+            <fieldText>Was your baby Diagnosed with NEC prior to being given formula or fortifier?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>NEC_Week_of_Birth</name>
+            <choiceReferences>NEC_24_Weeks</choiceReferences>
+            <choiceReferences>NEC_25_Weeks</choiceReferences>
+            <choiceReferences>NEC_26_Weeks</choiceReferences>
+            <choiceReferences>NEC_27_Weeks</choiceReferences>
+            <choiceReferences>NEC_28_Weeks</choiceReferences>
+            <choiceReferences>NEC_29_Weeks</choiceReferences>
+            <choiceReferences>NEC_30_Weeks</choiceReferences>
+            <choiceReferences>NEC_31_Weeks</choiceReferences>
+            <choiceReferences>NEC_32_Weeks</choiceReferences>
+            <choiceReferences>NEC_33_Weeks</choiceReferences>
+            <choiceReferences>NEC_34_Weeks</choiceReferences>
+            <choiceReferences>NEC_35_Weeks</choiceReferences>
+            <choiceReferences>NEC_36_Weeks</choiceReferences>
+            <choiceReferences>NEC_37_Weeks</choiceReferences>
+            <choiceReferences>NEC_38_Weeks</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Time_Frame_of_Use__c</elementReference>
+            </defaultValue>
+            <fieldText>What week in your pregnancy was your child born?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>NEC_Childs_Date_of_Birth</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Injured_Party_Birthdate__c</elementReference>
+            </defaultValue>
+            <fieldText>What is your child&#39;s date of birth?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>NEC_Legal_Representation</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Paraquat_Questions</name>
+        <label>Paraquat Questions</label>
+        <locationX>1106</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment_Paraquat</targetReference>
+        </connector>
+        <fields>
+            <name>Paraquat_Questions_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Paraquat Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Paraquat_exposed_to_Paraquat</name>
+            <choiceReferences>RU_Direct_Contact</choiceReferences>
+            <choiceReferences>RU_Indirect_Contact</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Type_of_Exposure__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you been directly exposed to Paraquat?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Paraquat_suffer_from_Parkinson</name>
+            <choiceReferences>DX_PQ_Parkinsons</choiceReferences>
+            <choiceReferences>DX_RU_None_of_the_Above</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Campaign_Case__r.Diagnosis_1__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you been formally diagnosed with Parkinson&#39;s disease?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Paraquat_Legal_Representation</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Working_with_another_law_firm__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>PFAS_Questions</name>
+        <label>PFAS</label>
+        <locationX>1370</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment_PFAS</targetReference>
+        </connector>
+        <fields>
+            <name>PFAS_Questions_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;PFAS Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>What_illness_were_you_formally_diagnosed_with_by_a_medical_professional</name>
+            <choiceReferences>DX_Kidney_Cancer</choiceReferences>
+            <choiceReferences>DX_Testicular_Cancer</choiceReferences>
+            <choiceReferences>Death_by_Cancer</choiceReferences>
+            <choiceReferences>Ulcerative_Colitis</choiceReferences>
+            <choiceReferences>Thyroid_Disease</choiceReferences>
+            <choiceReferences>DX_RU_None_of_the_Above</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>{!What_illness_were_there}</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>In_what_year_were_you_or_your_loved_one_diagnose</name>
+            <dataType>Date</dataType>
+            <fieldText>In what year were you or your loved one diagnosed?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Did_you_or_a_loved_one_live_in_a_PFAS_contaminated_area_for_over_1_year</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Did you or a loved one live in a PFAS contaminated area for over 1 year?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Have_you_previously_signed_documents_either_physically_or_electronically_regardi</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Working_with_another_law_firm__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Talcum_Questions_Screen</name>
+        <label>Talcum Questions Screen</label>
+        <locationX>578</locationX>
+        <locationY>1106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Tier_Assignment_Talc</targetReference>
+        </connector>
+        <fields>
+            <name>Talc_Question_Display</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Talcum Powder Tiering Questions&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;These answers will populate on the main questionnaire&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Talc_Did_You_Have_Cancer</name>
+            <choiceReferences>Talc_Diagnosis_Choices</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Talcum_Powder__r.Question_1__c</elementReference>
+            </defaultValue>
+            <fieldText>What type of cancer were you (or loved one) diagnosed with?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Talcum_Date_of_Diagnosis</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Talcum_Powder__r.Question_7__c</elementReference>
+            </defaultValue>
+            <fieldText>What was the date of your cancer diagnosis?</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Talc_Legal_Representation</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Updated_Intake.Working_with_another_law_firm__c</elementReference>
+            </defaultValue>
+            <fieldText>Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Tier2_Scenario_Screen</name>
+        <label>Tier2 Scenario Screen</label>
+        <locationX>1106</locationX>
+        <locationY>2138</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Remove_Ringba_Check_Box</targetReference>
+        </connector>
+        <fields>
+            <name>Tier2Scenario_DisplayText</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;Tiering Questions are complete, be aware that this client will require further legal firm questions in order to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>848</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Intake</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Case_type_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Value assigned via a formula derived from the questions asked.</description>
+        <name>LeadTierValue</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Question1</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Used to hold question 2 field answers for intake for Marketing to monitor answer values.</description>
+        <name>Question2</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Used as a placeholder to update intake question fields for marketing to review answer inputs.</description>
+        <name>Question3</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Used as a placeholder to update intake question fields for marketing to review answer inputs.</description>
+        <name>Question4</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Question5</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>v_Disqualification_Details</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>v_Disqualification_Reason</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

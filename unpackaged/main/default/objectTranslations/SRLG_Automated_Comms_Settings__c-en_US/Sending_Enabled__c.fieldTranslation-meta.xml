@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked, then the drip engine is live.  When disabled, only users with testing permissions will trigger outbound communications --></help>
+        <label><!-- Sending Enabled --></label>
+        <name>Sending_Enabled__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Created to avoid hitting SOQL limits when sending emails to a lot of recipients in a scheduled flow.</description>
+    <eventType>HighVolume</eventType>
+    <label>Send Email</label>
+    <pluralLabel>Send Emails</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

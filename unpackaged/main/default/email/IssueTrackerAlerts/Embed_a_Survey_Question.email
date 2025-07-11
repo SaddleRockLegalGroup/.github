@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="font-size: 0.875rem; font-family: 'Salesforce Sans',Arial,sans-serif;">Hello {{{Recipient.FirstName}}}...<br />
+&nbsp;
+<div style="text-align: center;">{{{SurveyQuestion.QuestionName}}}</div>
+&nbsp;
+
+<div style="text-align: center;">{{{SurveyQuestion.QuestionHtmlContent}}}</div>
+<br />
+<br />
+Thank you,<br />
+{{{Organization.Name}}}</div>
+</body>
+</html>

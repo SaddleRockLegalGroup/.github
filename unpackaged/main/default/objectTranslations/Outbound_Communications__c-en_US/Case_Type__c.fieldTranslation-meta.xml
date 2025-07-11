@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Case Type --></label>
+        <name>Case_Type__c</name>
+        <picklistValues>
+            <masterLabel>Camp Lejeune</masterLabel>
+            <translation><!-- Camp Lejeune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hair Relaxers</masterLabel>
+            <translation><!-- Hair Relaxers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hernia Mesh</masterLabel>
+            <translation><!-- Hernia Mesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meso/Asbestos</masterLabel>
+            <translation><!-- Meso/Asbestos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEC</masterLabel>
+            <translation><!-- NEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEC/Baby Formula</masterLabel>
+            <translation><!-- NEC/Baby Formula --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFAS</masterLabel>
+            <translation><!-- PFAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paraquat</masterLabel>
+            <translation><!-- Paraquat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round Up</masterLabel>
+            <translation><!-- Round Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talcum Powder</masterLabel>
+            <translation><!-- Talcum Powder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tylenol</masterLabel>
+            <translation><!-- Tylenol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zantac</masterLabel>
+            <translation><!-- Zantac --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

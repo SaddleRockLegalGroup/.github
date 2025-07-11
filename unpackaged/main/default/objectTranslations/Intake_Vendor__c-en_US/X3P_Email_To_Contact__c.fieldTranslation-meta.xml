@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Set this lookup to the contact record containing the 3P To Email address. --></help>
+        <label><!-- 3P Email To Contact --></label>
+        <name>X3P_Email_To_Contact__c</name>
+        <relationshipLabel><!-- Intake Vendors --></relationshipLabel>
+    </CustomFieldTranslation>

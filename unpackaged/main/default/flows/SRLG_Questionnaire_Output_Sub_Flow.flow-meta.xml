@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Build_Client_Address_Array</name>
+        <label>Build Client Address Array</label>
+        <locationX>152</locationX>
+        <locationY>1598</locationY>
+        <assignmentItems>
+            <assignToReference>clientAddressArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>clientAddressArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>clientAddressTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>clientAddressArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Client_Address_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Build_DX_Facility_Array</name>
+        <label>Build DX Facility Array</label>
+        <locationX>294</locationX>
+        <locationY>4082</locationY>
+        <assignmentItems>
+            <assignToReference>diagnosignFacilityArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>diagnosignFacilityArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>diagnosingFacilityTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>diagnosignFacilityArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Location_Record_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Build_Emergency_Contact_Array</name>
+        <label>Build Emergency Contact Array</label>
+        <locationX>294</locationX>
+        <locationY>3482</locationY>
+        <assignmentItems>
+            <assignToReference>emergencyContactArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>emergencyContactArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>emergencyContactTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>emergencyContactArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Emergency_Contact_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Build_Exposure_Array</name>
+        <label>Build Exposure Array</label>
+        <locationX>294</locationX>
+        <locationY>2882</locationY>
+        <assignmentItems>
+            <assignToReference>exposureArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>exposureArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>exposurePFASTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>exposureArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Exposure_Records_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Build_Injury_Array</name>
+        <label>Build Injury Array</label>
+        <locationX>294</locationX>
+        <locationY>2282</locationY>
+        <assignmentItems>
+            <assignToReference>injuryArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>injuryArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>injuryPFASTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>injuryArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Injury_Record_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Build_IP_Address_Array</name>
+        <label>Build IP Address Array</label>
+        <locationX>152</locationX>
+        <locationY>998</locationY>
+        <assignmentItems>
+            <assignToReference>ipAddressArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ipAddressArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ipAddressTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ipAddressArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IP_Address_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Build_Provider_Array</name>
+        <label>Build Provider Array</label>
+        <locationX>294</locationX>
+        <locationY>4682</locationY>
+        <assignmentItems>
+            <assignToReference>providerArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>providerArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>providerTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>providerArrayOutput</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LineBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Provider_Record_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_PFAS_Template</name>
+        <label>Set PFAS Template</label>
+        <locationX>50</locationX>
+        <locationY>5066</locationY>
+        <assignmentItems>
+            <assignToReference>QuestionnaireOutput</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PFASQuestionnaireResponseOutput</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Intake_Output_Field</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Round_Up_Template</name>
+        <label>Set Round Up Template</label>
+        <locationX>314</locationX>
+        <locationY>5066</locationY>
+        <assignmentItems>
+            <assignToReference>QuestionnaireOutput</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RoundUpQuestionnaireResponseOutput</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Intake_Output_Field</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <name>Client_Addresses</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Client Addresses</label>
+        <locationX>172</locationX>
+        <locationY>1274</locationY>
+        <assignNextValueToReference>currentItem_Client_Addresses</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_Addresses</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Client_Addresses.Client__c</leftValueReference>
+            <operator>IsNull</operator>
+            <rightValue>
+                <booleanValue>false</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>Client_Addresses_Found</targetReference>
+        </connector>
+    </collectionProcessors>
+    <collectionProcessors>
+        <name>Injured_Party_Addresses</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Injured Party Addresses</label>
+        <locationX>172</locationX>
+        <locationY>674</locationY>
+        <assignNextValueToReference>currentItem_Injured_Party_Addresses</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_Addresses</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Injured_Party_Addresses.Injured_Party__c</leftValueReference>
+            <operator>IsNull</operator>
+            <rightValue>
+                <booleanValue>false</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>IP_Addresses_Found</targetReference>
+        </connector>
+    </collectionProcessors>
+    <constants>
+        <name>Null</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Addresses_Found</name>
+        <label>Addresses Found?</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Get_Injury_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Addresses_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Addresses</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Injured_Party_Addresses</targetReference>
+            </connector>
+            <label>Addresses Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_Type</name>
+        <label>Case Type</label>
+        <locationX>314</locationX>
+        <locationY>4958</locationY>
+        <defaultConnector>
+            <targetReference>Update_Intake_Output_Field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>PFAS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Final_Intake_Outputs.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PFAS</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_PFAS_Template</targetReference>
+            </connector>
+            <label>PFAS</label>
+        </rules>
+        <rules>
+            <name>Round_Up</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Final_Intake_Outputs.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Round Up</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Round_Up_Template</targetReference>
+            </connector>
+            <label>Round Up</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Client_Addresses_Found</name>
+        <label>Client Addresses Found?</label>
+        <locationX>172</locationX>
+        <locationY>1382</locationY>
+        <defaultConnector>
+            <targetReference>Get_Injury_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Client_Addresses_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Client_Addresses</leftValueReference>
+                <operator>IsEmpty</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Client_Address_Loop</targetReference>
+            </connector>
+            <label>Client Addresses Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Emergency_Contacts_Found</name>
+        <label>Emergency Contacts Found?</label>
+        <locationX>314</locationX>
+        <locationY>3266</locationY>
+        <defaultConnector>
+            <targetReference>Get_Locations</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Emergency_Contacts_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Emergency_Contacts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Emergency_Contact_Loop</targetReference>
+            </connector>
+            <label>Emergency Contacts Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Exposure_Records_Found</name>
+        <label>Exposure Records Found?</label>
+        <locationX>314</locationX>
+        <locationY>2666</locationY>
+        <defaultConnector>
+            <targetReference>Get_Emergency_Contacts</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Exposure_Records_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Exposure_Records</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Exposure_Records_Loop</targetReference>
+            </connector>
+            <label>Exposure Records Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Injury_Records_Found</name>
+        <label>Injury Records Found?</label>
+        <locationX>314</locationX>
+        <locationY>2066</locationY>
+        <defaultConnector>
+            <targetReference>Get_Exposure_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Injury_Records_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Injury_Records</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Injury_Record_Loop</targetReference>
+            </connector>
+            <label>Injury Records Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IP_Addresses_Found</name>
+        <label>IP Addresses Found?</label>
+        <locationX>172</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>Client_Addresses</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>IP_Addresses_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Injured_Party_Addresses</leftValueReference>
+                <operator>IsEmpty</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IP_Address_Loop</targetReference>
+            </connector>
+            <label>IP Addresses Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Location_Records_Found</name>
+        <label>Location Records Found?</label>
+        <locationX>314</locationX>
+        <locationY>3866</locationY>
+        <defaultConnector>
+            <targetReference>Get_Providers</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Location_Records_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Locations</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Location_Record_Loop</targetReference>
+            </connector>
+            <label>Location Records Were Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Provider_Records_Found</name>
+        <label>Provider Records Found?</label>
+        <locationX>314</locationX>
+        <locationY>4466</locationY>
+        <defaultConnector>
+            <targetReference>Case_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Provider_Records_Were_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Providers</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Provider_Record_Loop</targetReference>
+            </connector>
+            <label>Provider Records Were Found</label>
+        </rules>
+    </decisions>
+    <description>6/9 - AV - Removed, &quot;Is the Injured Party Deceased?&quot; this one isn&#39;t needed for the output, it&#39;s more for D&amp;C&#39;s API.
+6/9 - AV - Fixed facility type mapping and removed providers from the location text template since they&#39;ll show up after using their own template.
+6/3 - AV - Made a few changes to PFAS based on changes we&#39;ve made per partner firm&#39;s request.
+Used to generate the Questionnaire Output field for each Case Type</description>
+    <environments>Default</environments>
+    <interviewLabel>SRLG | Questionnaire Output Sub Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Questionnaire Output Sub Flow</label>
+    <loops>
+        <name>Client_Address_Loop</name>
+        <label>Client Address Loop</label>
+        <locationX>64</locationX>
+        <locationY>1490</locationY>
+        <collectionReference>Client_Addresses</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_Client_Address_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Injury_Records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Emergency_Contact_Loop</name>
+        <label>Emergency Contact Loop</label>
+        <locationX>206</locationX>
+        <locationY>3374</locationY>
+        <collectionReference>Get_Emergency_Contacts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_Emergency_Contact_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Locations</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Exposure_Records_Loop</name>
+        <label>Exposure Records Loop</label>
+        <locationX>206</locationX>
+        <locationY>2774</locationY>
+        <collectionReference>Get_Exposure_Records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_Exposure_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Emergency_Contacts</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Injury_Record_Loop</name>
+        <label>Injury Record Loop</label>
+        <locationX>206</locationX>
+        <locationY>2174</locationY>
+        <collectionReference>Get_Injury_Records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_Injury_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Exposure_Records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>IP_Address_Loop</name>
+        <label>IP Address Loop</label>
+        <locationX>64</locationX>
+        <locationY>890</locationY>
+        <collectionReference>Injured_Party_Addresses</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_IP_Address_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Client_Addresses</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Location_Record_Loop</name>
+        <label>Location Record Loop</label>
+        <locationX>206</locationX>
+        <locationY>3974</locationY>
+        <collectionReference>Get_Locations</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_DX_Facility_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Providers</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Provider_Record_Loop</name>
+        <label>Provider Record Loop</label>
+        <locationX>206</locationX>
+        <locationY>4574</locationY>
+        <collectionReference>Get_Providers</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Build_Provider_Array</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Case_Type</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Addresses</name>
+        <label>Get Addresses</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Addresses_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>srlg_Address__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Because the SSN is encrypted we have to do this</description>
+        <name>Get_Client_SSN</name>
+        <label>Get Client SSN</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_IP_SSN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.litify_pm__Client__c</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>clientSSN</assignToReference>
+            <field>litify_pm__Social_Security_Number__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Emergency_Contacts</name>
+        <label>Get Emergency Contacts</label>
+        <locationX>314</locationX>
+        <locationY>3158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Emergency_Contacts_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>srlg_Emergency_Contact__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Exposure_Records</name>
+        <label>Get Exposure Records</label>
+        <locationX>314</locationX>
+        <locationY>2558</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Exposure_Records_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>srlg_Exposure__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Final_Intake_Outputs</name>
+        <label>Get Final Intake Outputs</label>
+        <locationX>314</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Client_SSN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>intakeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Injury_Records</name>
+        <label>Get Injury Records</label>
+        <locationX>314</locationX>
+        <locationY>1958</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Injury_Records_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>srlg_Injury__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Because the SSN is encrypted we have to do this</description>
+        <name>Get_IP_SSN</name>
+        <label>Get IP SSN</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Addresses</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.Injured_Party__c</elementReference>
+            </value>
+        </filters>
+        <object>srlg_Injured_Party__c</object>
+        <outputAssignments>
+            <assignToReference>ipSSN</assignToReference>
+            <field>Social_Security_Number__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Locations</name>
+        <label>Get Locations</label>
+        <locationX>314</locationX>
+        <locationY>3758</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Location_Records_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Final_Intake_Outputs.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>CM_Location__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Providers</name>
+        <label>Get Providers</label>
+        <locationX>314</locationX>
+        <locationY>4358</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Provider_Records_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Intake__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>intakeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>srlg_Provider__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Intake_Output_Field</name>
+        <label>Update Intake Output Field</label>
+        <locationX>314</locationX>
+        <locationY>5258</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>intakeId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>litify_pm__Questions_and_answers__c</field>
+            <value>
+                <elementReference>QuestionnaireOutput</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <runInMode>DefaultMode</runInMode>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Final_Intake_Outputs</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>clientAddressTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Client_Address_Loop.Client_Address__Street__s}
+{!Client_Address_Loop.Client_Address__City__s}, {!Client_Address_Loop.Client_Address__StateCode__s} {!Client_Address_Loop.Client_Address__PostalCode__s} {!Client_Address_Loop.Client_Address__CountryCode__s}
+
+Is the address provided your mailing address?
+Answer: {!Client_Address_Loop.Is_Mailing__c}
+
+Is the address provided your home of residence?
+Answer: {!Client_Address_Loop.Is_Residence__c}
+
+Is the address provided your primary address?
+Answer: {!Client_Address_Loop.Primary_Address__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>diagnosingFacilityTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Can you please specify the type of medical facility where you were diagnosed with your cancer? (DX Facility)
+Answer: {!Location_Record_Loop.Facility_Type__c}
+
+What is the name of the facility you were diagnosed at? (DX Facility)
+Answer: {!Location_Record_Loop.Name_of_Location__c}
+
+What is the address of the facility you were diagnosed at? (DX Facility):
+{!Location_Record_Loop.Business_CompoundAddress__Street__s}
+{!Location_Record_Loop.Business_CompoundAddress__City__s}, {!Location_Record_Loop.Business_CompoundAddress__StateCode__s} {!Location_Record_Loop.Business_CompoundAddress__PostalCode__s} {!Location_Record_Loop.Business_CompoundAddress__CountryCode__s}
+
+What is the phone number for this facility?
+Answer: {!Location_Record_Loop.Primary_Phone__c}
+
+What procedure did you receive at this facility?
+Answer: {!Location_Record_Loop.Procedure__c}
+
+When did you first start going to this facility?
+Answer: {!Location_Record_Loop.Start_Date__c}
+
+If applicable, when did you stop going to this facility?
+Answer: {!Location_Record_Loop.End_Date__c}
+
+Do you have any additional notes or comments about this facility?
+Answer: {!Location_Record_Loop.Notes__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>emergencyContactTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Emergency Contact First Name
+Answer: {!Emergency_Contact_Loop.First_Name__c}
+
+Emergency Contact Last Name
+Answer: {!Emergency_Contact_Loop.Last_Name__c}
+
+Emergency Contact Suffix
+Answer: {!Emergency_Contact_Loop.Suffix__c}
+
+Relationship to Emergency Contact
+Answer: {!Emergency_Contact_Loop.Relationship__c}
+
+Emergency Contact Phone
+Answer: {!Emergency_Contact_Loop.Phone__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>exposurePFASTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>What chemical were you exposed to?
+Answer: PFAS
+
+Start Date
+Answer: {!Exposure_Records_Loop.Start_Date__c}
+
+Has your exposure to PFAS stopped?
+Answer: {!Exposure_Records_Loop.Exposure_Has_Stopped__c}
+
+End Date
+Answer: {!Exposure_Records_Loop.End_Date__c}
+
+Please provide the exposure location(s) type(s)
+Answer: {!Exposure_Records_Loop.Location_Type__c}
+
+Exposure Location Address:
+{!Exposure_Records_Loop.Exposure_Location_Address__Street__s}
+{!Exposure_Records_Loop.Exposure_Location_Address__City__s}, {!Exposure_Records_Loop.Exposure_Location_Address__StateCode__s} {!Exposure_Records_Loop.Exposure_Location_Address__PostalCode__s} {!Exposure_Records_Loop.Exposure_Location_Address__CountryCode__s}
+
+What state did you reside in during the exposure?
+Answer: {!Exposure_Records_Loop.Residence_State_During_Exposure__c}
+
+Were you the property owner at the exposure address?
+Answer: {!Exposure_Records_Loop.Property_Owner__c}
+
+Do you have a water bill?
+Answer: {!Exposure_Records_Loop.Water_Bill__c}
+
+What type of water source did the property use?
+Answer: {!Exposure_Records_Loop.Water_Well_Type__c}
+
+Was the water source tested for PFAS?
+Answer: {!Exposure_Records_Loop.Water_Test__c}
+
+If yes, what was the date of the PFAS water testing?
+Answer: {!Exposure_Records_Loop.Water_Well_Tested_Date__c}
+
+Did the exposure location match a known Public Water System (PWS)?
+Answer: {!Exposure_Records_Loop.Exposure_Location_Matched__c}
+
+Do you have any other information about the exposure location?
+Answer: {!Exposure_Records_Loop.Exposure_Location_Information__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>injuryPFASTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>What illness were you formally diagnosed with by a medical professional?
+Answer: {!Injury_Record_Loop.Type__c}
+
+Is there a subtype associated with this injury (e.g., Goiter for Thyroid Disease)?
+Answer: {!Injury_Record_Loop.Sub_Type__c}
+
+What was the stage at the time of diagnosis?
+Answer: {!Injury_Record_Loop.Severity__c}
+
+When did you receive your diagnosis?
+Answer: {!Injury_Record_Loop.Diagnosis_Date__c}
+
+In which state were you diagnosed?
+Answer: {!Injury_Record_Loop.State_Of_Diagnosis__c}
+
+In which state were you living at the time of diagnosis?
+Answer: {!Injury_Record_Loop.Residence_State_At_Diagnosis__c}
+
+Have you been in remission?
+Answer: {!Injury_Record_Loop.Remission_Check__c}
+
+What was your remission start date?
+Answer: {!Injury_Record_Loop.Remission_Start_Date__c}
+
+How many years have you been in remission?
+Answer: {!Injury_Record_Loop.Years_In_Remission__c}
+
+Were you treated with surgery?
+Answer: {!Injury_Record_Loop.Treated_With_Surgery__c}
+
+Please provide any other notes regarding your surgery.
+Answer: {!Injury_Record_Loop.Surgery_Details__c}
+
+Were you treated with chemotherapy?
+Answer: {!Injury_Record_Loop.Treated_With_Chemotherapy__c}
+
+Please provide any other notes regarding your chemotherapy treatment.
+Answer: {!Injury_Record_Loop.Chemotherapy_Details__c}
+
+Were you treated with radiation therapy?
+Answer: {!Injury_Record_Loop.Treated_With_Radiation__c}
+
+Please provide any other notes regarding your radiation treatment.
+Answer: {!Injury_Record_Loop.Radiation_Details__c}
+
+Were you treated with immunotherapy?
+Answer: {!Injury_Record_Loop.Treated_With_Immunotherapy__c}
+
+Is there any additional information or notes regarding this injury?
+Answer: {!Injury_Record_Loop.Notes__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ipAddressTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!IP_Address_Loop.Client_Address__Street__s}
+{!IP_Address_Loop.Client_Address__City__s}, {!IP_Address_Loop.Client_Address__StateCode__s} {!IP_Address_Loop.Client_Address__PostalCode__s} {!IP_Address_Loop.Client_Address__CountryCode__s}
+
+Is the address provided your mailing address?
+Answer: {!IP_Address_Loop.Is_Mailing__c}
+
+Is the address provided your home of residence?
+Answer: {!IP_Address_Loop.Is_Residence__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>LineBreak</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Null}
+{!Null}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PFASQuestionnaireResponseOutput</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Questionnaire Responses
+
+Qualifying Questions:
+
+Do you agree to provide accurate information?
+Answer: {!Get_Final_Intake_Outputs.Agree_to_provide_accurate_information__c}
+
+Have you previously signed documents, either physically or electronically, regarding this particular matter with any other law firm
+Answer: {!Get_Final_Intake_Outputs.Working_with_another_law_firm__c}
+
+Case Type
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Case_Type__r.Name}
+
+What is your relation to this individual?
+Answer: {!Get_Final_Intake_Outputs.What_is_your_relationship_to_IP_pk__c}
+
+I hate to ask this, but is your loved one still living? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Is_your_loved_one_still_living__c}
+
+Do you have any official documents to show you are the POA? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Do_you_have_legal_POA_documents__c}
+
+What type of Power of Attorney do you have? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Power_Of_Attorney_Type__c}
+
+Are you the executor of the will? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Injured_Party__r.Client_Is_Executor_Of_Will__c}
+
+Are you the Executor of Estate (EOE)? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Injured_Party__r.Client_Is_Representative_Of_Estate__c}
+
+What is the date of their death (passing)? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Injured_Party__r.Date_Of_Death__c}
+
+In which state did the death occur? (MAY BE BLANK. Only asked if it’s an OBO case)
+Answer: {!Get_Final_Intake_Outputs.Injured_Party__r.State_Of_Death__c}
+
+Injured Party&#39;s First Name
+Answer: {!Get_Final_Intake_Outputs.Injured_Party_First_Name__c}
+
+Injured Party&#39;s Middle Name
+Answer: {!Get_Final_Intake_Outputs.Injured_Party_Middle_Name__c}
+
+Injured Party&#39;s Last Name
+Answer: {!Get_Final_Intake_Outputs.Injured_Party_Last_Name__c}
+
+Injured Party&#39;s Suffix
+Answer: {!Get_Final_Intake_Outputs.Injured_Party_Suffix__c}
+
+Injured Party&#39;s Address(es):
+   {!ipAddressArrayOutput}
+Diagnosis Information:
+   {!injuryArrayOutput}
+Exposure(s) Information:
+   {!exposureArrayOutput}
+Have you been tested for PFAS in your blood?
+Answer: {!Get_Final_Intake_Outputs.Additional_Case_Detail__r.Tested_Blood__c}
+
+If yes, could you provide additional details?
+Answer: {!Get_Final_Intake_Outputs.Additional_Case_Detail__r.Test_Blood_Details__c}
+
+Client/Caller&#39;s First Name
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__First_Name__c}
+
+Client/Caller&#39;s Middle Name
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.Middle_Name__c}
+
+Client/Caller&#39;s Last Name
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__Last_Name__c}
+
+Client/Caller&#39;s suffix? -- (General Question)
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.Suffix__c}
+
+Client&#39;s Mobile Phone
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__Phone_Mobile__c}
+
+Client&#39;s Home Phone
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__Phone_Home__c}
+
+What is a good email to reach you at?
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__Email__c}
+
+Client/Caller&#39;s Addresses:
+   {!clientAddressArrayOutput}
+Client/Caller&#39;s Date of Birth
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__Date_of_birth__c}
+
+Client/Caller&#39;s SSN
+Answer: {!clientSSN}
+
+What is your marital status (client)?
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.Marital_Status__c}
+
+What is the best time of day for us to reach you?
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.Best_time_to_reach_client__c}
+
+Are you currently residing in Florida?-- OR -- Were you diagnosed in Florida? -- OR -- IF DEATH -- Did the injured party pass away in Florida? -- (General Question)
+Answer: {!Get_Final_Intake_Outputs.Current_Florida_Resident__c}
+
+What is your gender? (MAY BE BLANK. Only asked for self cases)
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.litify_pm__Gender__c}
+
+What is the Injured Party&#39;s Date of Birth?
+Answer: {!Get_Final_Intake_Outputs.Injured_Party__r.Date_Of_Birth__c}
+
+Injured Party&#39;s SSN
+Answer: {!ipSSN}
+
+What is your gender (Injured Party)? (MAY BE BLANK. Only asked for OBO cases)
+Answer: {!Get_Final_Intake_Outputs.Injured_Party__r.Gender__c}
+
+What is your language of preference?
+Answer: {!Get_Final_Intake_Outputs.litify_pm__Client__r.language_Preference__c}
+
+Emergency Contacts:
+   {!emergencyContactArrayOutput}
+In your case, did you learn about a potential connection between your diagnosis and exposure to PFAS before seeing our advertising? For instance, from a doctor or a friend?
+Answer: {!Get_Final_Intake_Outputs.How_Client_Discovered_Cause__c}
+
+To the best of your knowledge, what date did you learn of this connection?
+Answer: {!Get_Final_Intake_Outputs.Discovery_Of_Cause_Date__c}
+
+Did you learn about a potential connection between your diagnosis and exposure to PFAS from seeing advertising online?
+Answer: {!Get_Final_Intake_Outputs.Client_Discovered_Cause_From_Advertising__c}
+
+To the best of your knowledge, when did you first see advertising regarding these potential claims?
+Answer: {!Get_Final_Intake_Outputs.Date_Client_First_Saw_Advertising__c}
+
+Diagnosing Medical Facilities:
+   {!diagnosignFacilityArrayOutput}
+Providers:
+   {!providerArrayOutput}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>providerTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>First Name: {!Provider_Record_Loop.First_Name__c}
+Last Name: {!Provider_Record_Loop.Last_Name__c}
+Title: {!Provider_Record_Loop.Title__c}
+NPI: {!Provider_Record_Loop.National_Provider_Identifier_Number__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>RoundUpQuestionnaireResponseOutput</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>RU</text>
+    </textTemplates>
+    <variables>
+        <name>clientAddressArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>clientSSN</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>currentItem_Client_Addresses</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>srlg_Address__c</objectType>
+    </variables>
+    <variables>
+        <name>currentItem_Injured_Party_Addresses</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>srlg_Address__c</objectType>
+    </variables>
+    <variables>
+        <name>diagnosignFacilityArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>emergencyContactArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>exposureArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>injuryArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>intakeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ipAddressArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ipSSN</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>providerArrayOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>QuestionnaireOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

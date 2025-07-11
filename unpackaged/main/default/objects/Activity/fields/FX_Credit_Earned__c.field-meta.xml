@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_Credit_Earned__c</fullName>
+    <description>Formula field - IF Questionnaire Credit &gt; 0 OR Referred Out Credit &gt; 0 OR Turn Down Rejected CV Credit &gt; 0 then true, else false</description>
+    <formula>FX_Questionnaire_Credit__c &gt; 0 || FX_Referred_Out_Credit__c &gt; 0 || FX_Turn_Down_Rejected_CV_Credit__c &gt; 0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Formula field - IF Questionnaire Credit &gt; 0 OR Referred Out Credit &gt; 0 OR Turn Down Rejected CV Credit &gt; 0 then true, else false</inlineHelpText>
+    <label>Credit Earned</label>
+    <type>Checkbox</type>
+</CustomField>

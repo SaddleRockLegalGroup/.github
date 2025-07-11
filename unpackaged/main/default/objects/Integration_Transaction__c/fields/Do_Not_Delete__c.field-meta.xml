@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Delete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A scheduled automation will run and delete all records of this type if this flag is unchecked/false.</description>
+    <inlineHelpText>A scheduled automation will run and delete all records of this type if this flag is unchecked/false.</inlineHelpText>
+    <label>Do Not Delete</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

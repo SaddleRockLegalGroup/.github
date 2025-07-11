@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Dependent Picklist Flow Component</masterLabel>
+    <description>A reusable LWC that displays two dependent picklists based on a locked input value for the first picklist.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="objectApiName" type="String" label="Object API Name" required="true"/>
+            <property name="picklist1Field" type="String" label="Controlling Picklist Field (Picklist 1)" required="true"/>
+            <property name="picklist1Value" type="String" label="Value for Picklist 1 (Hidden)" required="true"/>
+            <property name="picklist2Field" type="String" label="Dependent Picklist Field (Picklist 2)" required="true"/>
+            <property name="picklist2Label" type="String" label="Label for Picklist 2 (optional)" required="false"/>
+            <property name="picklist2Value" type="String" label="Selected Picklist 2 Value" required="false"/>
+            <property name="picklist3Field" type="String" label="Second Dependent Picklist Field (Picklist 3)" required="false"/>
+            <property name="picklist3Label" type="String" label="Label for Picklist 3 (optional)" required="false"/>
+            <property name="picklist3Value" type="String" label="Selected Picklist 3 Value" required="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

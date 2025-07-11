@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_How_many_drs_last_10_years__c</fullName>
+    <description>Converts Question 55 from picklist to number (i.e. Limiting your answer to primary care, gynecology and oncology healthcare providers, identify each doctor or other health care provider who you have seen for medical care and treatment from the ten (10) years prior to your ovarian cancer diagnosis to the p)</description>
+    <externalId>false</externalId>
+    <formula>CASE(Question_55__c,
+					&quot;1&quot;, 1,
+					&quot;2&quot;, 2,
+					&quot;3&quot;, 3,
+					&quot;4&quot;, 4,
+					&quot;5&quot;, 5,
+					0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Converts Question 55 from picklist to number (i.e. Limiting your answer to primary care, gynecology and oncology healthcare providers, identify each doctor or other health care provider who you have seen for medical care and treatment from the ten (10) years prior to your ovarian cancer diagnosis to the p)</inlineHelpText>
+    <label>How many drs last 10 years?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

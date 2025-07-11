@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- SOL STATUS --></label>
+        <name>SOL_STATUS__c</name>
+        <picklistValues>
+            <masterLabel>SOL EXPIRED</masterLabel>
+            <translation><!-- SOL EXPIRED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WITHIN SOL</masterLabel>
+            <translation><!-- WITHIN SOL --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

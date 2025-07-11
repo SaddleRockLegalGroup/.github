@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_Type__c</fullName>
+    <description>Used by D&amp;C to determine the type of treatment received by the client.</description>
+    <inlineHelpText>Type of treatment provided.</inlineHelpText>
+    <label>Category Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Provider_Type</valueSetName>
+    </valueSet>
+</CustomField>

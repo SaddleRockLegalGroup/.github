@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How did they hear about us? Details as to how. --></help>
+        <label><!-- CM How did they hear about us --></label>
+        <name>CM_How_did_they_hear_about_us__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Questionnaire</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Questionnaires</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Questionnaire Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Questionnaire Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create From Template --></label>
+        <name>Create_From_Template</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Represents a deployed, active questionnaire instance --></description>
+        <label><!-- Instance --></label>
+        <name>Instance</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to build templates --></description>
+        <label><!-- Template --></label>
+        <name>Template</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must have a Case Type --></errorMessage>
+        <name>Case_Type_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Dear {{{litify_pm__Intake__c.Vendor_Primary_Contact_First_Name__c}}},</p>
+
+<p>We have been unable to reach {{{litify_pm__Intake__c.litify_pm__Client__c}}} for 5 days regarding the {{{litify_pm__Intake__c.Case_Type_Name_del__c}}}<strong> </strong>case. As a result, we will be requesting a credit in 2 days if we do not hear back.</p>
+
+<p>Please let us know if you have any updates or need further assistance. Thank you.<br />
+<br />
+<strong>Extra Information:</strong><br />
+{{{litify_pm__Intake__c.litify_pm__Client__c}}},<br />
+{{{litify_pm__Intake__c.FX_Caller_Email__c}}},<br />
+{{{litify_pm__Intake__c.FX_Client_Phone_Mobile__c}}}.<br />
+<br />
+<br />
+Best Regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454</p>
+</body>
+</html>

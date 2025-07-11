@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Screenflow - When pressed will re-generate an external link for all files associated with the intake and bring up an email template to share that link with the Referral Partner</description>
+    <flowDefinition>BRIO_Resend_Files</flowDefinition>
+    <label>Send Non-Retainer Files</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

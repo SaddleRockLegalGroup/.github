@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What the location is called that the occurrence happened in. --></help>
+        <label><!-- Name of Location Affected --></label>
+        <name>Name_of_Location_Affected__c</name>
+    </CustomFieldTranslation>

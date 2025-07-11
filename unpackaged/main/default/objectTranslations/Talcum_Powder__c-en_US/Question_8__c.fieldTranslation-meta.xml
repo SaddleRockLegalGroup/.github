@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What subtype of cancer were you diagnosed with? --></help>
+        <label><!-- Question 8 --></label>
+        <name>Question_8__c</name>
+        <picklistValues>
+            <masterLabel>Clear Cell</masterLabel>
+            <translation><!-- Clear Cell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endometrioid</masterLabel>
+            <translation><!-- Endometrioid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germ Cell</masterLabel>
+            <translation><!-- Germ Cell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High-Grade Serous</masterLabel>
+            <translation><!-- High-Grade Serous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low-Grade Serous</masterLabel>
+            <translation><!-- Low-Grade Serous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mucinous</masterLabel>
+            <translation><!-- Mucinous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not diagnosed with one of these cancers</masterLabel>
+            <translation><!-- Not diagnosed with one of these cancers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serous (Unsure of grade)</masterLabel>
+            <translation><!-- Serous (Unsure of grade) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stromal Cell</masterLabel>
+            <translation><!-- Stromal Cell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undifferentiated</masterLabel>
+            <translation><!-- Undifferentiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

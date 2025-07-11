@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Issue_Email_Alert_Failed_Testing</fullName>
+        <description>Issue Email Alert - Failed Testing</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>litify_issue_tracker/Issue_Alert_Failed_Testing</template>
+    </alerts>
+    <alerts>
+        <fullName>Issue_Email_Alert_Issue_ready_for_Litify_Testing</fullName>
+        <description>Issue Email Alert - Issue ready for Litify Testing</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>litify_issue_tracker/Issue_Alert_Ready_for_LItify_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Issue_email_alert_Ready_for_Client_Testing</fullName>
+        <description>Issue email alert - Ready for Client Testing</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>litify_issue_tracker/Issue_Alert_Ready_for_Client_Testing</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Issue_Email_Alert</fullName>
+        <description>Issue Email Alert - New Issue to Power User</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>litify_issue_tracker/Issue_Alert_Power_User_review</template>
+    </alerts>
+</Workflow>

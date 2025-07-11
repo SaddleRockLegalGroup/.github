@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Living case between 2004-current</fullName>
+        <default>false</default>
+        <label>Living case between 2004-current</label>
+    </customValue>
+    <customValue>
+        <fullName>Death case between 2014-current</fullName>
+        <default>false</default>
+        <label>Death case between 2014-current</label>
+    </customValue>
+    <customValue>
+        <fullName>Living case before 2004</fullName>
+        <default>false</default>
+        <label>Living case before 2004</label>
+    </customValue>
+    <customValue>
+        <fullName>Death case 2013 or before</fullName>
+        <default>false</default>
+        <label>Death case 2013 or before</label>
+    </customValue>
+    <customValue>
+        <fullName>Living case prior to 2004 BUT they had a recurrence post 2004</fullName>
+        <default>false</default>
+        <label>Living case prior to 2004 BUT they had a recurrence post 2004</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Has NHL but unsure of the subtype</fullName>
+        <default>false</default>
+        <label>Has NHL but unsure of the subtype</label>
+    </customValue>
+    <customValue>
+        <fullName>Has one of the subtypes for Kline &amp; Specter</fullName>
+        <default>false</default>
+        <label>Has one of the subtypes for Kline &amp; Specter</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Between 18-80 years old when diagnosed</fullName>
+        <default>false</default>
+        <label>Between 18-80 years old when diagnosed</label>
+    </customValue>
+    <customValue>
+        <fullName>Under 18 when dx</fullName>
+        <default>false</default>
+        <label>Under 18 when dx</label>
+    </customValue>
+    <customValue>
+        <fullName>Over 80 when dx</fullName>
+        <default>false</default>
+        <label>Over 80 when dx</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes</fullName>
+        <default>false</default>
+        <label>Yes</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>1</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>2</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>3</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>4</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>5</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>6</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>7</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>8</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>9</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>10</label>
+    </customValue>
+    <customValue>
+        <fullName>I</fullName>
+        <default>false</default>
+        <label>I</label>
+    </customValue>
+    <customValue>
+        <fullName>II</fullName>
+        <default>false</default>
+        <label>II</label>
+    </customValue>
+    <customValue>
+        <fullName>III</fullName>
+        <default>false</default>
+        <label>III</label>
+    </customValue>
+    <customValue>
+        <fullName>IV</fullName>
+        <default>false</default>
+        <label>IV</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosed with Liver Disease prior to or while using Depo-Provera</fullName>
+        <default>false</default>
+        <label>Diagnosed with Liver Disease prior to or while using Depo-Provera</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosed after using Depo-Provera</fullName>
+        <default>false</default>
+        <label>Diagnosed after using Depo-Provera</label>
+    </customValue>
+    <customValue>
+        <fullName>Living case prior to 2000 BUT they had a recurrence post 2000</fullName>
+        <default>false</default>
+        <label>Living case prior to 2000 BUT they had a recurrence post 2000</label>
+    </customValue>
+    <customValue>
+        <fullName>Living case between 2000-current</fullName>
+        <default>false</default>
+        <label>Living case between 2000-current</label>
+    </customValue>
+    <customValue>
+        <fullName>Living case before 2000</fullName>
+        <default>false</default>
+        <label>Living case before 2000</label>
+    </customValue>
+    <customValue>
+        <fullName>Less than 10 years</fullName>
+        <default>false</default>
+        <label>Less than 10 years</label>
+    </customValue>
+    <customValue>
+        <fullName>More than 10 years</fullName>
+        <default>false</default>
+        <label>More than 10 years</label>
+    </customValue>
+    <customValue>
+        <fullName>No Remission</fullName>
+        <default>false</default>
+        <label>No Remission</label>
+    </customValue>
+    <customValue>
+        <fullName>Death cases: Diagnosed between 2000-2013 with death occurring within 2 years</fullName>
+        <default>false</default>
+        <label>Death cases: Diagnosed between 2000-2013 with death occurring within 2 years</label>
+    </customValue>
+    <customValue>
+        <fullName>Death cases: Diagnosed after 2014 with death occurring after 2024</fullName>
+        <default>false</default>
+        <label>Death cases: Diagnosed after 2014 with death occurring after 2024</label>
+    </customValue>
+    <customValue>
+        <fullName>Death cases: Outside of acceptable timeframe</fullName>
+        <default>false</default>
+        <label>Death cases: Outside of acceptable timeframe</label>
+    </customValue>
+    <customValue>
+        <fullName>Death case before 2000</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Death case before 2000</label>
+    </customValue>
+    <customValue>
+        <fullName>Death case between 2000-current</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Death case between 2000-current</label>
+    </customValue>
+    <description>Used for examples from LawRuler hold overs in order to go live we are placing these in until questionnaires are made proper.</description>
+    <masterLabel>Diagnosis Checks</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

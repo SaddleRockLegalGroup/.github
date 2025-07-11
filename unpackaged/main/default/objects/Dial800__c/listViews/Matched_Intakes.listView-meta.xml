@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Matched_Intakes</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Intake__c</columns>
+    <columns>ANI__c</columns>
+    <columns>Campaign__c</columns>
+    <columns>Media_Agency__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Intake__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Matched Intakes</label>
+    <sharedTo>
+        <role>Leadership</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Statute of limitations verification via Questionnaire --></help>
+        <label><!-- Statute of Limitations --></label>
+        <name>Statute_of_Limitations__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_Is_Valid_First_Date_At_Camp_Lejuene__c</fullName>
+    <description>IF First Date is before 8/1/1953 OR After 12/31/1987 THEN False ELSE True</description>
+    <formula>IF(ISBLANK(First_Date_at_Camp_Lejuene__c), TRUE,
+IF(First_Date_at_Camp_Lejuene__c &lt; DATE(1953, 8, 1), FALSE, 
+IF(First_Date_at_Camp_Lejuene__c &gt; DATE(1987, 12, 31), FALSE, 
+TRUE)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>IF First Date is before 8/1/1953 OR After 12/31/1987 THEN False ELSE True</inlineHelpText>
+    <label>Is Valid First Date At Camp Lejeune?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

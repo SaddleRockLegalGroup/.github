@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HubSpot_Record_ID__c</fullName>
+    <description>Field to Receive HubSpot Record ID from HubSpot on their &quot;Company&quot; Object from field &quot;Record ID&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field to Receive HubSpot Record ID from HubSpot on their &quot;Company&quot; Object from field &quot;Record ID&quot;.</inlineHelpText>
+    <label>HubSpot Record ID</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

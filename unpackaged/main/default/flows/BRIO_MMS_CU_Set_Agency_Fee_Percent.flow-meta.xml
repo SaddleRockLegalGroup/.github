@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>On creation of MMS record or on update to the Source field, set Agency Fee Percent to matching field on Source record.</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | MMS | CU | Set Agency Fee Percent {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | MMS | CU | Set Agency Fee Percent</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Agency_Fee_Percentage</name>
+        <label>Set Agency Fee Percentage</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Agency_Fee_Percent__c</field>
+            <value>
+                <elementReference>$Record.litify_mktgROI__Source__r.Agency_Fee_Percent__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Agency_Fee_Percentage</targetReference>
+        </connector>
+        <filterFormula>(ISNEW() &amp;&amp; NOT(ISNULL({!$Record.litify_mktgROI__Source__c}))) || ISCHANGED({!$Record.litify_mktgROI__Source__c}) &amp;&amp; (NOT(ISNULL({!$Record.litify_mktgROI__Source__c})))</filterFormula>
+        <object>litify_mktgROI__Monthly_Marketing_Spend__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

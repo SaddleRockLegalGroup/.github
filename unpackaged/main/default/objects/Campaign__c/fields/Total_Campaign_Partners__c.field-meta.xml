@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Campaign_Partners__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Set by automation. Equals the total number of campaign partners related to this campaign.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set by automation. Equals the total number of campaign partners related to this campaign.</inlineHelpText>
+    <label>Total Campaign Partners</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

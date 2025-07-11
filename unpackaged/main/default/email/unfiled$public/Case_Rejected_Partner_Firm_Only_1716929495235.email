@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+You recently signed an engagement agreement with our firm, Saddle Rock Legal Group, and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} claim.<br />
+<br />
+We appreciate your interest, but we understand that you were already being represented by us at Saddle Rock Legal Group and our other co-counsel. As such, we are releasing you from {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} claim.<br />
+<br />
+To be clear, Saddle Rock Legal Group still represents you on your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case along with our co-counsel so it’s important you don’t sign with any other firm regarding this matter.<br />
+<br />
+Should you have any questions regarding the progress of your claim, you can reach us at the contact information below.<br />
+<br />
+We appreciate the opportunity to represent you. You are in great hands with Saddle Rock Legal Group and our legal team.<br />
+<br />
+Best regards,</span></span><br />
+<br />
+<br />
+Shannon Overcash, Managing Partner<br />
+Saddle Rock Legal Group<br />
+888-686-6454</body>
+</html>

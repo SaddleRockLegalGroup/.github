@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Taking_ADHD_Med__c</fullName>
+    <description>33.How long has the child been taking this medication for their ADHD?</description>
+    <externalId>false</externalId>
+    <label>Time Taking ADHD Med</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

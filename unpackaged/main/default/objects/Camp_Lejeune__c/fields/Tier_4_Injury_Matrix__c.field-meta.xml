@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tier_4_Injury_Matrix__c</fullName>
+    <description>If no to the previous question, have you been diagnosed with the following? (TIER 4)</description>
+    <label>Tier-4 Injury Matrix</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Neurobehavioral effects</fullName>
+                <default>false</default>
+                <label>Neurobehavioral effects</label>
+            </value>
+            <value>
+                <fullName>ALS</fullName>
+                <default>false</default>
+                <label>ALS</label>
+            </value>
+            <value>
+                <fullName>Bile Duct Cancer</fullName>
+                <default>false</default>
+                <label>Bile Duct Cancer</label>
+            </value>
+            <value>
+                <fullName>Colon Cancer (Intestinal, Appendix)</fullName>
+                <default>false</default>
+                <label>Colon Cancer (Intestinal, Appendix)</label>
+            </value>
+            <value>
+                <fullName>Laryngeal Cancer</fullName>
+                <default>false</default>
+                <label>Laryngeal Cancer</label>
+            </value>
+            <value>
+                <fullName>Oral Cancer</fullName>
+                <default>false</default>
+                <label>Oral Cancer</label>
+            </value>
+            <value>
+                <fullName>Pharyngeal Cancer</fullName>
+                <default>false</default>
+                <label>Pharyngeal Cancer</label>
+            </value>
+            <value>
+                <fullName>Pancreatic Cancer</fullName>
+                <default>false</default>
+                <label>Pancreatic Cancer</label>
+            </value>
+            <value>
+                <fullName>Thyroid Cancer</fullName>
+                <default>false</default>
+                <label>Thyroid Cancer</label>
+            </value>
+            <value>
+                <fullName>Autoimmune Disease</fullName>
+                <default>false</default>
+                <label>Autoimmune Disease</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+            <value>
+                <fullName>Cervical Cancer</fullName>
+                <default>false</default>
+                <label>Cervical Cancer</label>
+            </value>
+            <value>
+                <fullName>Ovarian Cancer</fullName>
+                <default>false</default>
+                <label>Ovarian Cancer</label>
+            </value>
+            <value>
+                <fullName>Colon Cancer (Colorectal, Intestinal, Appendix)</fullName>
+                <default>false</default>
+                <label>Colon Cancer (Colorectal, Intestinal, Appendix)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

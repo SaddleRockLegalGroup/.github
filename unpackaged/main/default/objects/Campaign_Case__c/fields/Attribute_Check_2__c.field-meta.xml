@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attribute_Check_2__c</fullName>
+    <description>Used purely for checking attributes of the particular person, case, symptoms, scenarios, that check off generic concepts. Used mainly for place holders that are throughout all questionnaires and ones we don&#39;t generally need to report on, but could if we had to figure it out as long as it wasn&#39;t cross reporting, only individual campaign reporting.
+-- All based on hold over methods of bad questionnaire builds from LawRuler, Use until better methods can be created.</description>
+    <inlineHelpText>Generic Attribution checks in questionnaires</inlineHelpText>
+    <label>Attribute Check 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Generic_Responses</valueSetName>
+    </valueSet>
+</CustomField>

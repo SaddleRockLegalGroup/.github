@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_How_Many_Hospitalizations__c</fullName>
+    <description>Converts Question 120 from picklist to number (i.e. Limiting your response to visits for issues related to cancer and to gynecologic issues other than pregnancy, identify each hospital, clinic, or health care facility where you were hospitalized (inpatient, out-patient, or emergency room visit) from the (1)</description>
+    <externalId>false</externalId>
+    <formula>CASE(Question_120__c,
+&quot;1&quot;, 1,
+&quot;2&quot;, 2,
+&quot;3&quot;, 3,
+&quot;4&quot;, 4,
+&quot;5&quot;, 5,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Converts Question 120 from picklist to number (i.e. Limiting your response to visits for issues related to cancer and to gynecologic issues other than pregnancy, identify each hospital, clinic, or health care facility where you were hospitalized (inpatient, out-patient, or emergency room visit) from the (1)</inlineHelpText>
+    <label>How Many Hospitalizations?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

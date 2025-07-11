@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>6/5/2025 LP - updated formula to add &quot; | &quot; and IP Full Name, removed Date and State of Dx, changed from fast field update to actions and related records.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>newName</name>
+        <dataType>String</dataType>
+        <expression>LEFT(
+  TRIM(
+    TEXT({!$Record.Type__c}) &amp;
+    IF(
+      ISBLANK(TEXT({!$Record.SubType__c})),
+      &quot;&quot;,
+      &quot;, &quot; &amp; TEXT({!$Record.SubType__c})
+    ) &amp;
+    &quot; | &quot; &amp;
+    {!$Record.Intake__r.Injured_Party_Full_Name__c}
+  ),
+  80
+)</expression>
+    </formulas>
+    <interviewLabel>SRLGInjury {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Injury: BS - Record Name Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Record_Name</name>
+        <label>Update Record Name</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>newName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Record_Name</targetReference>
+        </connector>
+        <object>srlg_Injury__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

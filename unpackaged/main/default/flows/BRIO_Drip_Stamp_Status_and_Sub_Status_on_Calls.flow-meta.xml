@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>used to determine if this should qualify for the other part of the flow.</description>
+        <name>Check_for_intake_reference</name>
+        <label>Check for intake reference</label>
+        <locationX>723</locationX>
+        <locationY>537</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Other_update</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.WhatId_First_3_Chars__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a0C</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Intake</targetReference>
+            </connector>
+            <label>Other update</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>checks for a call and updates accordingly.</description>
+        <name>Is_it_a_call</name>
+        <label>Is it a call?</label>
+        <locationX>756</locationX>
+        <locationY>389</locationY>
+        <defaultConnector>
+            <targetReference>Get_Intake</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_a_call</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>Call</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_task</targetReference>
+            </connector>
+            <label>Is a call</label>
+        </rules>
+    </decisions>
+    <description>When new Calls are placed and related to an Intake, stamp their Intake Status and Sub Status at the time of the call.
+9/9/24 - Update to all tasks to mark them as calls or not</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | Drip | Stamp Status and Sub Status on Calls {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Drip | Stamp Status and Sub Status on Calls</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Intake</name>
+        <label>Get Intake</label>
+        <locationX>1123</locationX>
+        <locationY>337</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Stamp_Status_and_Sub_Status_on_Call</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Stamp_Status_and_Sub_Status_on_Call</name>
+        <label>Stamp Status and Sub Status on Call</label>
+        <locationX>1119</locationX>
+        <locationY>481</locationY>
+        <inputAssignments>
+            <field>Intake_Status__c</field>
+            <value>
+                <elementReference>Get_Intake.litify_pm__Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake_Sub_Status__c</field>
+            <value>
+                <elementReference>Get_Intake.Sub_Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates task with type</description>
+        <name>Update_the_task</name>
+        <label>Update the task</label>
+        <locationX>598</locationX>
+        <locationY>481</locationY>
+        <connector>
+            <targetReference>Check_for_intake_reference</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Call</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Is_it_a_call</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>WhatId_First_3_Chars__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>a0C</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Subject</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>Call</stringValue>
+            </value>
+        </filters>
+        <object>Task</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[First Name : {!litify_pm__Intake__c.litify_pm__First_Name__c}<br>Last Name : {!litify_pm__Intake__c.litify_pm__Last_Name__c}<br>Phone: {!litify_pm__Intake__c.litify_pm__Phone__c}<br>Email: {!litify_pm__Intake__c.litify_pm__Email__c}<br>Zip:&nbsp;{!litify_pm__Intake__c.Zip__c}<br>State: {!litify_pm__Intake__c.State__c}<br>City: {!litify_pm__Intake__c.City__c}<br>Type Of Case:&nbsp;{!litify_pm__Intake__c.Case_Type_Name_del__c}<br>Status: {!litify_pm__Intake__c.litify_pm__Status__c}<br>Lead source: {!litify_pm__Intake__c.Source_Name__c}]]></td>
+</tr>
+</table>

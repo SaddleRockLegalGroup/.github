@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Diagnosis_2__c</fullName>
+    <description>Used to house Diagnoses that are related to the primary diagnosis. This allows sub-categories of a diagnosis or injury.</description>
+    <inlineHelpText>Sub-Category of the primary diagnosis. Related illness.</inlineHelpText>
+    <label>Related Diagnosis 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Sub_Diagnosis</valueSetName>
+    </valueSet>
+</CustomField>

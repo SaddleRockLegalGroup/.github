@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If not used continuously, what was the total number of years used? (OCPP) --></help>
+        <label><!-- Question 231 --></label>
+        <name>Question_231__c</name>
+    </CustomFieldTranslation>

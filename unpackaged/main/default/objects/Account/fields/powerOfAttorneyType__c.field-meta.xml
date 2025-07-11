@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>powerOfAttorneyType__c</fullName>
+    <label>Power Of Attorney Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>type1</fullName>
+                <default>false</default>
+                <label>type1</label>
+            </value>
+            <value>
+                <fullName>Medical Directive</fullName>
+                <default>false</default>
+                <label>Medical Directive</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Covers rights of estate</fullName>
+                <default>false</default>
+                <label>Covers rights of estate</label>
+            </value>
+            <value>
+                <fullName>Unsure</fullName>
+                <default>false</default>
+                <label>Unsure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

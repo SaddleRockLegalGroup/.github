@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Esignature_Template__c</fullName>
+    <description>Esignature packet that will be generated/sent on an Intake assigned to this Campaign Partner</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Esignature packet that will be generated/sent on an Intake assigned to this Campaign Partner</inlineHelpText>
+    <label>Esignature Template</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

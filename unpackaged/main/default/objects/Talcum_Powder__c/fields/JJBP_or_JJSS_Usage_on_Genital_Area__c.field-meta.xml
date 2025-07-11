@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JJBP_or_JJSS_Usage_on_Genital_Area__c</fullName>
+    <description>Did you use JJ&#39;s Baby Powder or Shower to Shower on Genital Area?</description>
+    <label>JJBP or JJSS Usage on Genital Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>JJBP</fullName>
+                <default>false</default>
+                <label>JJBP</label>
+            </value>
+            <value>
+                <fullName>JJSS</fullName>
+                <default>false</default>
+                <label>JJSS</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+Thank you for choosing Saddle Rock Legal Group and our co-counsel firm, {{{litify_pm__Intake__c.Referral_Partner_Name__c}}}, for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case.&nbsp;<br />
+<br />
+As we collaborate with {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} on your case, we will provide you with regular updates. We will begin the process of collecting your medical records, and if you happen to have copies or access to them, we kindly ask that you share them with us. Alternatively, you may prefer to gather your medical records and provide them to us yourself, which we would greatly appreciate. Upon receiving your records, we will conduct a thorough examination of them along with the information you provided during your intake. You can expect to hear from a member of {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} within the next week, and a member of the Saddle Rock client team will remain in touch consistently to ensure that we have the most accurate contact and case information. Thank you for your cooperation and trust in us.<br />
+<br />
+<br />
+&nbsp;Here are a few reminders:<br />
+<br />
+If you have any additional contact information or intend to move, please send us this information, or call Saddle Rock Legal at 888-686-6454 or {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} to update us. Our ability to contact you with important legal updates and potential information regarding a settlement for your case is critical to a successful resolution of your claim. &nbsp;Please stay connected!<br />
+You have signed an agreement with Saddle Rock Legal and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} to represent you in your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. If you ever have any questions or concerns about our representation, please reach out so we can address any issues. We assure you we are working diligently to achieve the best outcome possible. With that in mind, it’s important that while represented by Saddle Rock Legal and &nbsp;{{{litify_pm__Intake__c.Referral_Partner_Name__c}}} that you don’t sign an additional representation agreement with another law firm for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case without first informing our firms. &nbsp;WE ARE YOUR LAWYERS, and unless and until you hear otherwise from us, you do not need to seek representation elsewhere.<br />
+A copy of your signed documents was emailed to you from info@saddlerocklegal.com, with the subject line "Saddle Rock Legal Group LLC Received from {{{Recipient.Name}}}." Keep in mind, these emails will often times go to your junk/spam folder. Please let us know if you did not receive those documents by emailing us at intake@saddlerocklegal.com.&nbsp;<br />
+These cases are difficult to litigate and often take years to reach a successful outcome, if any. We kindly ask you to be patient with the process and know we’re doing everything within our power to optimize the result for you.<br />
+In the meantime, you are always welcome to reach out to us at 888-686-6454 or visit www.saddlerocklegal.com if you have any questions. We look forward to working with you! Our team will be in touch with next steps.<br />
+<br />
+<br />
+Your Saddle Rock Legal and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} team.</body>
+</html>

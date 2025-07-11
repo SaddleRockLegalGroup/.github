@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>When a new Call Task is logged, stamp the related Intake with the Call Result of the Task.</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | Drip | Stamp Last Call {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Drip | Stamp Last Call Result on Intake</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Last_Call_Result_c_on_related_Intake</name>
+        <label>Update Last_Call_Result__c on related Intake</label>
+        <locationX>50</locationX>
+        <locationY>276</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Call_Result__c</field>
+            <value>
+                <elementReference>$Record.CallDisposition</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Last_Call_Result_c_on_related_Intake</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2) AND 3</filterLogic>
+        <filters>
+            <field>CallObject</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TaskSubtype</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Call</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>WhatId_First_3_Chars__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>a0C</stringValue>
+            </value>
+        </filters>
+        <object>Task</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

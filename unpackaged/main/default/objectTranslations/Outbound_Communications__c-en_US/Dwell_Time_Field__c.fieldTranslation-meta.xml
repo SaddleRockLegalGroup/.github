@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Dwell Time Field --></label>
+        <name>Dwell_Time_Field__c</name>
+        <picklistValues>
+            <masterLabel>Date_3P_CV_Started__c</masterLabel>
+            <translation><!-- Date_3P_CV_Started__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date_3P_EOF_Started__c</masterLabel>
+            <translation><!-- Date_3P_EOF_Started__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred_OutDate__c</masterLabel>
+            <translation><!-- Referred_OutDate__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>litify_pm__Retainer_Agreement_Sent_Date__c</masterLabel>
+            <translation><!-- litify_pm__Retainer_Agreement_Sent_Date__c --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

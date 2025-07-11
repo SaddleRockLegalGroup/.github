@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Full_Name__c</fullName>
+    <description>Used for Document creation to reference the full name from all the inputs from a questionnaire and to have it auto update depending on choices made from Suffix etc.</description>
+    <externalId>false</externalId>
+    <formula>litify_pm__First_Name__c + &quot; &quot; +  Middle_Name__c + &quot; &quot; +  litify_pm__Last_Name__c +
+IF( ISPICKVAL( Suffix__c, &#39;N/A&#39;), &quot;&quot;, &quot; &quot; + TEXT(Suffix__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Full name that will show up on Signature Documents for the Client</inlineHelpText>
+    <label>Client Full Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

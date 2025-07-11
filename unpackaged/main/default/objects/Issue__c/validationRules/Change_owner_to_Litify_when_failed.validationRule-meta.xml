@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_owner_to_Litify_when_failed</fullName>
+    <active>true</active>
+    <description>If status is failed testing, change owner to Litify Services</description>
+    <errorConditionFormula>TEXT(Status__c) = &quot;Failed Testing&quot; &amp;&amp;
+	 (OwnerId =  Submitter__c ||  OwnerId =  Power_User__c )</errorConditionFormula>
+    <errorMessage>Please change owner to Litify Services</errorMessage>
+</ValidationRule>

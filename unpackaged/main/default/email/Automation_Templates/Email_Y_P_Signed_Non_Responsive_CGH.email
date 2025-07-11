@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="text-align: center;"><div style="color: rgb(0, 0, 0); text-align: left;"><font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);">Hi {!Customer.FirstName},<br><br>You previously signed our retainer agreement to have a further look at your&nbsp;</font><span style="font-family: Arial, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);">{!litify_pm__Intake__c.Case_Type_Name_del__c}</span><font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);">&nbsp;case. Our prosecuting firm has been unable to reach you and it's crucial you contact them if you want to pursue potentially getting a cash settlement. If you can please reach out to Attorney, Brian, directly at 601-326-0820 or Olivia at 601-326-0898, they need to speak with you to be able to further pursue the case.&nbsp;<br><br>All the best,<br>Young &amp; Partners Law<br>{!Organization.Phone}</font></div></div>]]></td>
+</tr>
+</table>

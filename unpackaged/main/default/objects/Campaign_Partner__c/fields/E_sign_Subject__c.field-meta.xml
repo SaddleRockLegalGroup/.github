@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E_sign_Subject__c</fullName>
+    <description>Enter the subject of the email message you would like to appear in the DropboxSign signature request email notification AND as the title of the document you would like to appear in the DropboxSign signature reequest sms message</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the subject of the email message you would like to appear in the DropboxSign signature request email notification AND as the title of the document you would like to appear in the DropboxSign signature reequest sms message</inlineHelpText>
+    <label>E-sig Subject</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

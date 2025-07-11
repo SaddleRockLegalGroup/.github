@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Approximate year of last use? (JJSS) --></help>
+        <label><!-- Approximate year of last use? (JJSS) --></label>
+        <name>Question_223__c</name>
+    </CustomFieldTranslation>

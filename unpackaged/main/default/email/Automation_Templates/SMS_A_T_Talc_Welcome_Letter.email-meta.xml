@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SMS - A&amp;T Talc Welcome Letter</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>SMS - A&amp;T Talc Welcome Letter</name>
+    <style>freeForm</style>
+    <subject>message</subject>
+    <textOnly>Hi, Saddle Rock here. If you haven&#39;t received your welcome email for the Talcum Powder case, call 888-427-9607. Check your spam folder just in case.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes</fullName>
+        <default>false</default>
+        <label>Yes</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <description>Forms of documentation of evidence or examples that can be provided.  Can be used for examples of evidence or to answer if there is evidence or not.</description>
+    <masterLabel>Evidence</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

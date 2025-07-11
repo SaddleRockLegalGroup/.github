@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Client_Details_2__c</fullName>
+    <description>Used for Case Management information to collect information about client or family history of client for greater ease of collecting open ended questions.</description>
+    <inlineHelpText>Client details about family or life.</inlineHelpText>
+    <label>CM Client Details 2</label>
+    <length>10000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campaign Partner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campaign Partners</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Campaign Partner Layout</layout>
+        <sections>
+            <label><!-- Criteria --></label>
+            <section>Criteria</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- E-sig Email --></label>
+            <section>E-sig Email</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Email Details --></label>
+            <section>Referral Email Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Campaign Partner Info --></label>
+        <name>Campaign_Partner_Info</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Partner Campaign Info --></label>
+        <name>Partner_Campaign_Info</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit Issue --></label>
+        <name>Submit_Issue</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

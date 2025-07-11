@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Location where medical assistance or presciptions were provided. --></help>
+        <label><!-- State Medical Care Occurred --></label>
+        <name>State_Medical_Care_Occurred__c</name>
+    </CustomFieldTranslation>

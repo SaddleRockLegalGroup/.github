@@ -1,0 +1,7 @@
+Hello PM!
+
+Please review and assign issue to Litify Team Member
+
+{!Issue__c.issue_details__c}
+
+{!Issue__c.Link}

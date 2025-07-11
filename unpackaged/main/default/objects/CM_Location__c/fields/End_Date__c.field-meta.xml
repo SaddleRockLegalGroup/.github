@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date__c</fullName>
+    <description>Used for Exposure &amp; Medical Facility. We should consider a blank value for scenarios where they are still using them and help show that.</description>
+    <inlineHelpText>Date they stopped using product, provider or facility.</inlineHelpText>
+    <label>End Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

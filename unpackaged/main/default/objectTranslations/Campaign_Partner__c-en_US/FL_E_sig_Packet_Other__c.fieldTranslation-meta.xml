@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- FL E-sig Packet (Other) --></label>
+        <name>FL_E_sig_Packet_Other__c</name>
+        <relationshipLabel><!-- Campaign Partners (FL E-sig Packet (Other)) --></relationshipLabel>
+    </CustomFieldTranslation>

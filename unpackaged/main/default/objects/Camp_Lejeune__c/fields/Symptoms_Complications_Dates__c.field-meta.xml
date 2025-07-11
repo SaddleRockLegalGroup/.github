@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Symptoms_Complications_Dates__c</fullName>
+    <description>Used for MBM and Zach request on diagnoses post 8/10/2022 to understand the date ranges these symptoms and complications occurred.</description>
+    <inlineHelpText>Date ranges for diagnoses post 8/10/2022</inlineHelpText>
+    <label>Symptoms/Complications Dates</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

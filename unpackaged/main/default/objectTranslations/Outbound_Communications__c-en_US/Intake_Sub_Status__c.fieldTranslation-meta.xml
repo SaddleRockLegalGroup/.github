@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Only send this communication when one of these sub status values match the intake in question.  If blank then sub status will not be checked --></help>
+        <label><!-- Intake Sub-Status --></label>
+        <name>Intake_Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active Review</masterLabel>
+            <translation><!-- Active Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CV Expired</masterLabel>
+            <translation><!-- CV Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CV Expiring</masterLabel>
+            <translation><!-- CV Expiring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CV Past Due</masterLabel>
+            <translation><!-- CV Past Due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Rejected</masterLabel>
+            <translation><!-- Case Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Rejected - Dual Rep</masterLabel>
+            <translation><!-- Case Rejected - Dual Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Rejected - Partner Firm Only</masterLabel>
+            <translation><!-- Case Rejected - Partner Firm Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined by firm</masterLabel>
+            <translation><!-- Declined by firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disqualified</masterLabel>
+            <translation><!-- Disqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not have Signed Retainer Attached</masterLabel>
+            <translation><!-- Does not have Signed Retainer Attached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error on File</masterLabel>
+            <translation><!-- Error on File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error on File Review</masterLabel>
+            <translation><!-- Error on File Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expiring</masterLabel>
+            <translation><!-- Expiring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Party</masterLabel>
+            <translation><!-- External Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow Up</masterLabel>
+            <translation><!-- Follow Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Records Inquiry</masterLabel>
+            <translation><!-- Medical Records Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Records Past 30</masterLabel>
+            <translation><!-- Medical Records Past 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Responsive Clients</masterLabel>
+            <translation><!-- Non Responsive Clients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Firm Review</masterLabel>
+            <translation><!-- Partner Firm Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Rejection</masterLabel>
+            <translation><!-- Pending Rejection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retention</masterLabel>
+            <translation><!-- Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled Appointment</masterLabel>
+            <translation><!-- Scheduled Appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent E-Sign NR Mass Text</masterLabel>
+            <translation><!-- Sent E-Sign NR Mass Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent E-Sign by Mail</masterLabel>
+            <translation><!-- Sent E-Sign by Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Error on File</masterLabel>
+            <translation><!-- Third Party Error on File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable To Reach 30+ Days</masterLabel>
+            <translation><!-- Unable To Reach 30+ Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Attorney Call</masterLabel>
+            <translation><!-- Waiting Attorney Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number</masterLabel>
+            <translation><!-- Wrong Number --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

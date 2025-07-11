@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Law_Ruler_Data</fullName>
+    <fields>Name</fields>
+    <fields>Intake__c</fields>
+    <fields>LegacyId_Lead_ID__c</fields>
+    <fields>Legacy_LR_Case_Type__c</fields>
+    <label>Legacy Law Ruler Data</label>
+</CompactLayout>

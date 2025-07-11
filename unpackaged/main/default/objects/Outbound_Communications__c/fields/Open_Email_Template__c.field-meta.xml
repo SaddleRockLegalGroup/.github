@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Email_Template__c</fullName>
+    <description>Hyperlink to email template record</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot;&amp; Email_Template_ID__c, &quot;Template Link&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Hyperlink to email template record</inlineHelpText>
+    <label>Open Email Template</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

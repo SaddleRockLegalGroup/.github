@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cyclone</fullName>
+        <default>false</default>
+        <label>Cyclone</label>
+    </customValue>
+    <customValue>
+        <fullName>Firestorm</fullName>
+        <default>false</default>
+        <label>Firestorm</label>
+    </customValue>
+    <customValue>
+        <fullName>Gram ox one</fullName>
+        <default>false</default>
+        <label>Gram ox one</label>
+    </customValue>
+    <customValue>
+        <fullName>Ortho Paraquat</fullName>
+        <default>false</default>
+        <label>Ortho Paraquat</label>
+    </customValue>
+    <customValue>
+        <fullName>Prelude</fullName>
+        <default>false</default>
+        <label>Prelude</label>
+    </customValue>
+    <customValue>
+        <fullName>Surefire</fullName>
+        <default>false</default>
+        <label>Surefire</label>
+    </customValue>
+    <customValue>
+        <fullName>Roundup</fullName>
+        <default>false</default>
+        <label>Roundup</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <customValue>
+        <fullName>Dark &amp; Lovely</fullName>
+        <default>false</default>
+        <label>Dark &amp; Lovely</label>
+    </customValue>
+    <customValue>
+        <fullName>Motions</fullName>
+        <default>false</default>
+        <label>Motions</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic Root Simulator</fullName>
+        <default>false</default>
+        <label>Organic Root Simulator</label>
+    </customValue>
+    <customValue>
+        <fullName>Soft &amp; Beautiful</fullName>
+        <default>false</default>
+        <label>Soft &amp; Beautiful</label>
+    </customValue>
+    <customValue>
+        <fullName>Just for Me</fullName>
+        <default>false</default>
+        <label>Just for Me</label>
+    </customValue>
+    <customValue>
+        <fullName>Optimum</fullName>
+        <default>false</default>
+        <label>Optimum</label>
+    </customValue>
+    <customValue>
+        <fullName>Cantu Shea Butter</fullName>
+        <default>false</default>
+        <label>Cantu Shea Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>Affirm</fullName>
+        <default>false</default>
+        <label>Affirm</label>
+    </customValue>
+    <customValue>
+        <fullName>TCB</fullName>
+        <default>false</default>
+        <label>TCB</label>
+    </customValue>
+    <customValue>
+        <fullName>ORS Olive Oil</fullName>
+        <default>false</default>
+        <label>ORS Olive Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Mizani</fullName>
+        <default>false</default>
+        <label>Mizani</label>
+    </customValue>
+    <customValue>
+        <fullName>Isoplus</fullName>
+        <default>false</default>
+        <label>Isoplus</label>
+    </customValue>
+    <customValue>
+        <fullName>L&#39;Oreal</fullName>
+        <default>false</default>
+        <label>L&#39;Oreal</label>
+    </customValue>
+    <customValue>
+        <fullName>Creme of Nature</fullName>
+        <default>false</default>
+        <label>Creme of Nature</label>
+    </customValue>
+    <customValue>
+        <fullName>African Pride</fullName>
+        <default>false</default>
+        <label>African Pride</label>
+    </customValue>
+    <customValue>
+        <fullName>Hawaiian Silky</fullName>
+        <default>false</default>
+        <label>Hawaiian Silky</label>
+    </customValue>
+    <customValue>
+        <fullName>Namaste Labs</fullName>
+        <default>false</default>
+        <label>Namaste Labs</label>
+    </customValue>
+    <customValue>
+        <fullName>Revlon</fullName>
+        <default>false</default>
+        <label>Revlon</label>
+    </customValue>
+    <customValue>
+        <fullName>Similac Fortifier</fullName>
+        <default>false</default>
+        <label>Similac Fortifier</label>
+    </customValue>
+    <customValue>
+        <fullName>Enfamil Fortifier</fullName>
+        <default>false</default>
+        <label>Enfamil Fortifier</label>
+    </customValue>
+    <customValue>
+        <fullName>Similac Formula</fullName>
+        <default>false</default>
+        <label>Similac Formula</label>
+    </customValue>
+    <customValue>
+        <fullName>Enfamil Formula</fullName>
+        <default>false</default>
+        <label>Enfamil Formula</label>
+    </customValue>
+    <customValue>
+        <fullName>Both Similac &amp; Enfamil</fullName>
+        <default>false</default>
+        <label>Both Similac &amp; Enfamil</label>
+    </customValue>
+    <customValue>
+        <fullName>Prolacta Fortifier</fullName>
+        <default>false</default>
+        <label>Prolacta Fortifier</label>
+    </customValue>
+    <customValue>
+        <fullName>Prolacta Formula</fullName>
+        <default>false</default>
+        <label>Prolacta Formula</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Tylenol Brand</fullName>
+        <default>false</default>
+        <label>Tylenol Brand</label>
+    </customValue>
+    <customValue>
+        <fullName>Generic Acetaminophen</fullName>
+        <default>false</default>
+        <label>Generic Acetaminophen</label>
+    </customValue>
+    <customValue>
+        <fullName>All of the Above</fullName>
+        <default>false</default>
+        <label>All of the Above</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Pfizer</fullName>
+        <default>false</default>
+        <label>Pfizer</label>
+    </customValue>
+    <customValue>
+        <fullName>Upjohn (Pharmacia)</fullName>
+        <default>false</default>
+        <label>Upjohn (Pharmacia)</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenstone</fullName>
+        <default>false</default>
+        <label>Greenstone</label>
+    </customValue>
+    <customValue>
+        <fullName>Viatris</fullName>
+        <default>false</default>
+        <label>Viatris</label>
+    </customValue>
+    <customValue>
+        <fullName>Teva</fullName>
+        <default>false</default>
+        <label>Teva</label>
+    </customValue>
+    <customValue>
+        <fullName>Prasco</fullName>
+        <default>false</default>
+        <label>Prasco</label>
+    </customValue>
+    <description>Used to apply to lists of brands used in cases for any products used.  Should be multi-select scenarios</description>
+    <masterLabel>Brand Lists</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

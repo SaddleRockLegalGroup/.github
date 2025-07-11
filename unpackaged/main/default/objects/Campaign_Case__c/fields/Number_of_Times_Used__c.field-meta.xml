@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Times_Used__c</fullName>
+    <description>This is used for measurement of the number of times a product is used.  This should be used in conjunction of time or amount formular fields of use.  I.e. 4 times  8 year used equals 32 uses</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of times a product was used in a given period</inlineHelpText>
+    <label>Number of Times Used</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

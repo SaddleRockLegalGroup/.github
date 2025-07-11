@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>5/21 LP Removed Billable field reference.
+This flow is for Lexi Masciotti&#39;s reporting field &#39;Billable&#39;. This field needs to be set to true when an intake&#39;s status is set to &#39;Referred out&#39; or &#39;Under Review&#39;</description>
+    <environments>Default</environments>
+    <interviewLabel>SRLG | Make Billable on Update to Referred Out {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Make Billable on Update to Referred Out</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>This update will set &#39;Billable&#39; to true when status is set to &#39;Referred Out&#39;</description>
+        <name>Update_Records_1</name>
+        <label>updateIntakeBillableField</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>null__NotFound</field>
+            <operator>EqualTo</operator>
+        </filters>
+        <inputAssignments>
+            <field>null__NotFound</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Records_1</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Referred Out</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Partner Firm Review</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

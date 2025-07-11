@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+You recently signed an engagement agreement with our firm, Saddle Rock Legal Group, and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} claim.<br />
+<br />
+We appreciate your interest, but we understand that you are already represented by {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} in this matter, which occurred before contracting with Saddle Rock Legal Group. As such, because you are already under contract for your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} claim, Saddle Rock Legal Group will not be moving forward on your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. To be clear, however, {{{litify_pm__Intake__c.Referral_Partner_Name__c}}}, who you were already under contract with, will continue to represent you, and {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} will continue to be your litigation counsel on a day-to-day basis. The terms of your representation with {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} and status of your case with their firm remains the same. &nbsp;<br />
+<br />
+Should you have any questions, you can reach {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} by contacting their team.<br />
+<br />
+We appreciate the opportunity to review your information and wish you the best of luck. You are in great hands with {{{litify_pm__Intake__c.Referral_Partner_Name__c}}}’s legal team.<br />
+<br />
+Best regards,<br />
+<br />
+Shannon Overcash, Managing Partner<br />
+Saddle Rock Legal Group<br />
+888-686-6454</body>
+</html>

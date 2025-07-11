@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Screenflow - When pressed will generate an email  or sms to be sent to the client requesting that they upload a Proof Of Identification document to a DropBox file request location</description>
+    <flowDefinition>BRIO_Send_Proof_of_Id_Email_Or_SMS</flowDefinition>
+    <label>Request Doc Upload</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

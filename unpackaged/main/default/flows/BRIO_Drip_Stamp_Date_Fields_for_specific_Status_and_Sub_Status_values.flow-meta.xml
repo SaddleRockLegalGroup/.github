@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>When either of these Status and Sub Status combinations are met, update its corresponding date field on Intake. In the Outcomes below, Status is listed first, then Sub Status.</description>
+        <name>Status_and_Sub_Status_values</name>
+        <label>Status and Sub Status values</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Referred_Out_Retention</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Referred Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Retention</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stamp_Date_Referred_Out_Retention</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Referred Out&gt;Retention</label>
+        </rules>
+        <rules>
+            <name>Turned_Down_Wrong_Number</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Turned Down</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wrong Number</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stamp_Turned_Down_Wrong_Number</targetReference>
+            </connector>
+            <label>Turned Down&gt;Wrong Number</label>
+        </rules>
+        <rules>
+            <name>NOT_Referred_Out_Retention</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_Referred_Out_Retention__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Referred Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Retention</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Date_Referred_Out_Retention_Value</targetReference>
+            </connector>
+            <label>NOT Referred Out&gt;Retention</label>
+        </rules>
+        <rules>
+            <name>NOT_Turned_Down_Wrong_Number</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_Turned_Down_Wrong_Number__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Turned Down</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Wrong Number</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Turned_Down_Wrong_Number_Value</targetReference>
+            </connector>
+            <label>NOT Turned Down&gt;Wrong Number</label>
+        </rules>
+    </decisions>
+    <description>Stamp the value TODAY() in Date Referred Out&gt;Retention OR Date Turned Down&gt;Wrong Number when the Intake is updated to have specific Status and Sub Status values.</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | Drip | Stamp Date Fields for specific Status and Sub Status values {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Drip | Stamp Date Fields for specific Status and Sub Status values</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Clear_Date_Referred_Out_Retention_Value</name>
+        <label>Clear &#39;Date Referred Out&gt;Retention&#39; Value</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Date_Referred_Out_Retention__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Clear_Turned_Down_Wrong_Number_Value</name>
+        <label>Clear &#39;Turned Down&gt;Wrong Number&#39; Value</label>
+        <locationX>842</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Date_Turned_Down_Wrong_Number__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Stamp_Date_Referred_Out_Retention</name>
+        <label>Stamp &#39;Date Referred Out&gt;Retention&#39;</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Date_Referred_Out_Retention__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Stamp_Turned_Down_Wrong_Number</name>
+        <label>Stamp &#39;Turned Down&gt;Wrong Number&#39;</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Date_Turned_Down_Wrong_Number__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Status_and_Sub_Status_values</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

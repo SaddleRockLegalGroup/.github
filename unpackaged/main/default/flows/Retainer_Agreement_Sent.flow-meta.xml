@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Does_Intake_Vendor_Saddle_Rock</name>
+        <label>Does Intake Vendor = &#39;Saddle Rock&#39;?</label>
+        <locationX>1517</locationX>
+        <locationY>462</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__r.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002QcjIAE</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_the_related_Case_Type_have_a_Five9_List_defined</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_the_related_Case_Type_have_a_Five9_List_defined</name>
+        <label>Does the related Case Type have a Five9 List defined?</label>
+        <locationX>1516</locationX>
+        <locationY>832</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Five9_List__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_New_Intake_Leads_Five9_List_Item</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Automation triggered when Retainer Agreement Sent status is triggered and the retainer agreement is sent out to be signed. This is used to follow-up using the relevant five9 list to make sure the agreement is signed.</description>
+    <environments>Default</environments>
+    <interviewLabel>Retainer Agreement Sent {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Retainer Agreement Sent</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_New_Intake_Leads_Five9_List_Item</name>
+        <label>Create New Intake Leads Five9 List Item</label>
+        <locationX>1524</locationX>
+        <locationY>1067</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <elementReference>$Record.litify_pm__Case_Type__r.Five9_List__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>682</locationX>
+        <locationY>17</locationY>
+        <connector>
+            <targetReference>Does_Intake_Vendor_Saddle_Rock</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>litify_pm__Case_Type__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Retainer Agreement Sent</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sent E-Sign by Mail</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

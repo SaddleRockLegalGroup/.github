@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Age at Diagnosis, death, experience when it occurred. --></help>
+        <label><!-- Claiment Age at Occurrence --></label>
+        <name>Claiment_Age_at_Occurrence__c</name>
+    </CustomFieldTranslation>

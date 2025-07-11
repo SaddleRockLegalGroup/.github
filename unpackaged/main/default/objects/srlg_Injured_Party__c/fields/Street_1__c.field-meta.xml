@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Street_1__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+CONTAINS(Injured_Party_Address__Street__s, MID($Setup.Formula_References__c.Line_Break__c ,3,1)),
+LEFT(
+Injured_Party_Address__Street__s,
+FIND(MID($Setup.Formula_References__c.Line_Break__c,3,1), Injured_Party_Address__Street__s)
+),
+Injured_Party_Address__Street__s
+)</formula>
+    <label>Street 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>phone_mobile_or_home_required</fullName>
+    <active>true</active>
+    <description>Display an error message if an Individual party is saved without phone mobile or phone home</description>
+    <errorConditionFormula>AND( ISBLANK( litify_pm__Phone_Home__c ) , ISBLANK( litify_pm__Phone_Mobile__c )  )</errorConditionFormula>
+    <errorMessage>A party cannot  be saved without a phone mobile or phone home</errorMessage>
+</ValidationRule>

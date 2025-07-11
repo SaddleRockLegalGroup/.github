@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please be advised that this call is recorded for training and information purposes and that your responses will be recorded exactly as you state them and reviewed by our staff and counsel. The information you provide is very important should you have a case. Additionally, you may be asked to verify your responses and/or information by affidavit so your complete honesty is very important. Do you agree to provide accurate information to the best of your knowledge? --></help>
+        <label><!-- Agree to provide accurate information? --></label>
+        <name>Agree_to_provide_accurate_information__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

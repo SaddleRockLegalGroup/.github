@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Option_Fill_In__c</fullName>
+    <description>Used to fill in the &quot;other&quot; option chosen or for specific info that is required for whatever reason that no one knows.</description>
+    <inlineHelpText>Other Option or fill in section when needed.</inlineHelpText>
+    <label>Other Option Fill In</label>
+    <length>10000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

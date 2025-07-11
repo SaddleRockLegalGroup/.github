@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#243F40</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>A collection of tabs for maintaining Campaigns, Partners, and Campaign Partners</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Campaigns</label>
+    <navType>Standard</navType>
+    <tabs>Campaign__c</tabs>
+    <tabs>Partner__c</tabs>
+    <tabs>Campaign_Partner__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Outbound_Communications__c</tabs>
+    <tabs>TVStation__c</tabs>
+    <tabs>litify_docs__Node__c</tabs>
+    <tabs>litify_docs__Node_Input_Junction__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Campaigns_UtilityBar</utilityBar>
+</CustomApplication>

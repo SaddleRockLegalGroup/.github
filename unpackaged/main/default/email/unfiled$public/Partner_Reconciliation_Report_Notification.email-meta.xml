@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Reconciliation Report Notification</name>
+    <style>none</style>
+    <subject>Reminder: Saddle Rock Legal Group Monthly Reconciliation Reporting Due</subject>
+    <textOnly>Hello,
+
+This is a friendly reminder that your monthly reconciliation reports are due.
+    - If you have already submitted your reports, please disregard this message.
+    - Otherwise, please log into the portal and upload your most recent inventory reports.
+
+If you need any assistance, feel free to contact us at partner_reports@saddlerocklegal.com.
+
+Thank you for your prompt attention to this matter!
+
+Best regards,
+Saddle Rock Legal Group</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

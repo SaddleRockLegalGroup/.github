@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- State product was used in or client was exposed to case in. --></help>
+        <label><!-- State Exposure Occurred --></label>
+        <name>State_Exposure_Occurred__c</name>
+    </CustomFieldTranslation>

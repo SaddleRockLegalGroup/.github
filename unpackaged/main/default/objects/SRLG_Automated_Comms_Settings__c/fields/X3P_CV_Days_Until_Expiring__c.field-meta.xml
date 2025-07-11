@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3P_CV_Days_Until_Expiring__c</fullName>
+    <description>Days from setting intake&#39;s status to Case Verification when the intake will be updated to CV Expiring</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Days from setting intake&#39;s status to Case Verification when the intake will be updated to CV Expiring</inlineHelpText>
+    <label>3P CV Days Until Expiring</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

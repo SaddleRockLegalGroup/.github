@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Removes Error sub-status so it goes back into QC Queue</description>
+    <fieldOverrides>
+        <field>Sub_Status__c</field>
+        <formula>&quot; &quot;</formula>
+    </fieldOverrides>
+    <label>Send Back to QC</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Sub_Status__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns />
+    </quickActionLayout>
+    <successMessage>Record is now back in QC\&#39;s queue</successMessage>
+    <type>Update</type>
+</QuickAction>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>https://sts.windows.net/25224481-1567-4ee4-9f16-9f6181fc8c1a/</issuer>
+    <loginUrl>https://login.microsoftonline.com/25224481-1567-4ee4-9f16-9f6181fc8c1a/saml2</loginUrl>
+    <name>Login With SSO</name>
+    <oauthTokenEndpoint>https://saddlerock.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P1Dn00000Bl7Pv</requestSigningCertId>
+    <salesforceLoginUrl>https://saddlerock.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://saddlerock.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>RedirectBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://login.microsoftonline.com/25224481-1567-4ee4-9f16-9f6181fc8c1a/saml2</singleLogoutUrl>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQPa0mdUd9yr5A/Pyw24F10jANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMzEwMjYxOTU1MzBaFw0yNjEwMjYxOTU1MzBaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxSxNutp8wX+T+ySCbr5aqg9Oar6tUCrbxhV7Ql/oUCQJ9gIl0OGo8ZCnNNC21WZE+RWHDw6lVTiKB+bJrdNh+8pdXsad2hmILBzbKhP3Kz/ODIArtUVYEr2hrAkD614clG80973FnS2gkWiCwEqYnBt4mUPppohTrwZuog0AQUMrX8J/f9AJRl164QmWp4+vhDU4r7A+AX/s/4QwN9x7cc6hh3Qoff8Wuai518Stm/+Sjoc11iqZVDqzKlzBgr2QOoW3WT1dA0gDK2gxoeLXQ645TlQYDMNFFFnVlUiZqe7tR592iWvO55SZbVjcVWunjC8mX08fa6ghS3/fLmA2yQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDBiKImL1fOEQ0hqGle73VNMfyyS7IQsbjf/pZBcPxyUqBcDHhWH7s5NVn0BOdDaE4ZRR4IUhI4T5XOOGXqW2X5UB2IiwgutsLnPOQAFSvQBQo07vUp0vkazCQDu7nKxbOGy9W+CX4BFqPr250/okoxJQMZw9SoudkRLgh3Sw+h1pqeBK1WvGBaFtYDmS+uzGws5AnpKF4iTRaw+ZZMBmdWnxIAsL4iXPUlv80x9URBirHGP5sDDmXPbC3eYxbh6A21II8jUDoXVULvGYijNnYsZxQcUypWORe3JIY0QblqgXCORAQ33Tr8mEaocaFm/aftDjuy4+MeBb2koCXzyMO0</validationCert>
+</SamlSsoConfig>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_55__c</fullName>
+    <description>Limiting your answer to primary care, gynecology and oncology healthcare providers, identify each doctor or other health care provider who you have seen for medical care and treatment from the ten (10) years prior to your ovarian cancer diagnosis to the present. In particular, please use your best efforts to list all of the primary care providers during this period. How many providers fo you have?</description>
+    <inlineHelpText>Limiting your answer to primary care, gynecology and oncology healthcare providers, identify each doctor or other health care provider who you have seen for medical care and treatment from the ten (10) years prior to your ovarian cancer diagnosis to the present. In particular, please use your best efforts to list all of the primary care providers during this period. How many providers fo you have?</inlineHelpText>
+    <label>Question 55</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Progress_Issues</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Submitter__c</columns>
+    <columns>issue_details__c</columns>
+    <columns>Status__c</columns>
+    <columns>Litify_Owner__c</columns>
+    <columns>Type_of_Issue__c</columns>
+    <columns>Days_Open__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Open,Ready for Testing,Resolved,Duplicate,Won&#39;t Do</value>
+    </filters>
+    <label>In Progress Issues</label>
+</ListView>

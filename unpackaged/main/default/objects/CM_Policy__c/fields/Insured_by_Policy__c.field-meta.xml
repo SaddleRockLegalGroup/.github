@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insured_by_Policy__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The party that receives policy insurance coverage, but is not necessarily policyholder</description>
+    <inlineHelpText>Person insured by policy</inlineHelpText>
+    <label>Insured by Policy</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Policies Insured By</relationshipLabel>
+    <relationshipName>Policies_Insured_By</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Tylenol Strength --></label>
+        <name>Tylenol_Strength__c</name>
+        <picklistValues>
+            <masterLabel>1000mg (2 Extra Strength or 4 regular strength)</masterLabel>
+            <translation><!-- 1000mg (2 Extra Strength or 4 regular strength) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250mg (1 regular strength)</masterLabel>
+            <translation><!-- 250mg (1 regular strength) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>325mg</masterLabel>
+            <translation><!-- 325mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500mg (1 Extra Strength or 2 regular strength)</masterLabel>
+            <translation><!-- 500mg (1 Extra Strength or 2 regular strength) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>650mg</masterLabel>
+            <translation><!-- 650mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

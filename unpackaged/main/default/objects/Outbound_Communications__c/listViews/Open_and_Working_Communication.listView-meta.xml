@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_and_Working_Communication</fullName>
+    <columns>NAME</columns>
+    <columns>Call_Count_Number__c</columns>
+    <columns>Active__c</columns>
+    <columns>Case_Type__c</columns>
+    <columns>Intake_Status__c</columns>
+    <columns>Last_Call_Result__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>Open_and_Working_Status_call</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Outbound_Communications__c.Call_Count</value>
+    </filters>
+    <label>Open and Working Communication</label>
+</ListView>

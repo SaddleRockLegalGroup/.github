@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},</p>
+
+<p>I hope this message finds you well. Urgent notice: We've mailed essential documents regarding your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case, awaiting your prompt action.<br />
+<br />
+To advance your case, we kindly ask that you sign and return the documents at your earliest convenience. Please keep an eye out for them in your mailbox.<br />
+<br />
+For any assistance, feel free to call us at 888-686-6454. We're here to support you every step of the way.<br />
+<br />
+Thank you for your cooperation in this matter. We look forward to receiving the signed documents soon.</p>
+
+<p><br />
+Best regards,</p>
+Saddle Rock Legal Group<br />
+888-686-6454</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Unable to Reach 30+Day</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Unable to Reach 30+Day</name>
+    <style>freeForm</style>
+    <subject>Hi {!Contact.FirstName}, Important Notice from Saddle Rock Legal Group</subject>
+    <textOnly>Date: {!Today()}
+
+Dear {!Contact.FirstName},
+
+We have been unable to reach you about your potential {!litify_pm__Intake__c.Case_Type_Name_del__c} case. We do need to reach you as soon as possible to be able to go through our intake and hopefully file a case for you.
+
+Our intake specialists are still available for a free consultation and are very interested in your {!litify_pm__Intake__c.Case_Type_Name_del__c} case. The consultation will only take 5-10 minutes. Please don&#39;t delay calling as how quickly you reach out to us may be the difference between receiving compensation or not.
+
+Just call us at {!Organization.Phone} between 7 AM and 7 PM EST Monday through Friday or Saturday between 10 AM and 7 PM EST. If we don&#39;t hear from you, we will try you back soon.
+
+Regards,
+Saddle Rock Legal Group
+{!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

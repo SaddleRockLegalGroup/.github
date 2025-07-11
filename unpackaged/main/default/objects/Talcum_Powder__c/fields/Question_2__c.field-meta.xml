@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_2__c</fullName>
+    <description>How old are you currently?</description>
+    <inlineHelpText>How old are you currently?</inlineHelpText>
+    <label>Question 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>17 or younger</fullName>
+                <default>false</default>
+                <label>17 or younger</label>
+            </value>
+            <value>
+                <fullName>18+ years old</fullName>
+                <default>false</default>
+                <label>18+ years old</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

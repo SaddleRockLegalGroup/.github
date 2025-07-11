@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Facility Name? (Prov 4) --></help>
+        <label><!-- Question 85 --></label>
+        <name>Question_85__c</name>
+    </CustomFieldTranslation>

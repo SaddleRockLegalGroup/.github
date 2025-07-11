@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This Email Template is specifically for Round Up Kline &amp; Specter to be sent to a referral Partner when referring a completed/signed Intake.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Partner Intake Referral KS Template</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>TLM Saddle Rock Legal Group LLC | {{{litify_pm__Intake__c.Referral_Partner_Name__c}}} | {{{litify_pm__Intake__c.FX_Intake_Id__c}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

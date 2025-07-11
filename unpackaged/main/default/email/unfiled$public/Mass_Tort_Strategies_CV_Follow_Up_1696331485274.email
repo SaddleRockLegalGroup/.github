@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Hello {{{litify_pm__Intake__c.Vendor_Primary_Contact_First_Name__c}}},</p>
+
+<p>We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {{{litify_pm__Intake__c.litify_pm__Client__c}}} for the {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case. This particular item has been marked for follow-up in our system.</p>
+
+<p>The reason for this follow-up is as follows: {{{litify_pm__Intake__c.Reason_for_Follow_up__c}}}.</p>
+
+<p>We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.</p>
+
+<p>Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at 888-686-6454.</p>
+
+<p>Thank you for your attention to this urgent matter.</p>
+
+<p>Best regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454</p>
+</body>
+</html>

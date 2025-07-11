@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Check on the their health history. --></help>
+        <label><!-- Health History Check --></label>
+        <name>Health_History_Check__c</name>
+    </CustomFieldTranslation>

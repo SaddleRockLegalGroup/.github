@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Testicular Cancer</fullName>
+        <default>false</default>
+        <label>Testicular Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Kidney Cancer</fullName>
+        <default>false</default>
+        <label>Kidney Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Clear Cell Renal Carcinoma</fullName>
+        <default>false</default>
+        <label>Clear Cell Renal Carcinoma</label>
+    </customValue>
+    <description>Used to pull a vast list of cancers, separate from diagnosis as it is only related to cancers, tied to diagnosis object mainly</description>
+    <masterLabel>Cancers</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

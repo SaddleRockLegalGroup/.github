@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>DR 5/16/24 - Updated flow to use custom setting for how many days since CV 3P process started that we want to mark the record expired
+DR - 6/24/24 - Removed allow email check and followup status from start conditions</description>
+    <environments>Default</environments>
+    <interviewLabel>Brio | 3P | Update Sub Status to &#39;CV Expired&#39; | &gt; 35 Days {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Brio | 3P | Update Sub Status to &#39;CV Expired&#39;</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Intake_s_Sub_Status_to_CV_Expired</name>
+        <label>Update Intake&#39;s Sub Status to &#39;CV Expired&#39;</label>
+        <locationX>176</locationX>
+        <locationY>252</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Days_since_Date_3P_CV_Started__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>$Setup.SRLG_Automated_Comms_Settings__c.X3P_CV_Days_Until_Expired__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Date_Sub_Status_changed_to_CV_Expired__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>CV Expired</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Intake_s_Sub_Status_to_CV_Expired</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Case Verification</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CV Past Due</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>fx_Intake_Vendor_Name__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>fx_Intake_Vendor_Name__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Saddle Rock</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2024-03-20</startDate>
+            <startTime>13:15:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Case Type Routing --></label>
+        <name>Case_Type_Routing__c</name>
+        <picklistValues>
+            <masterLabel>PFAS</masterLabel>
+            <translation><!-- PFAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round Up</masterLabel>
+            <translation><!-- Round Up --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

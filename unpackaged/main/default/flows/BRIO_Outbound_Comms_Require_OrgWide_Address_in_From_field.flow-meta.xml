@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Error_to_prevent_save_with_this_value</name>
+        <label>Error to prevent save with this value</label>
+        <locationX>176</locationX>
+        <locationY>887</locationY>
+        <customErrorMessages>
+            <errorMessage>&#39;{!$Record.Email_From__c}&#39; is not listed as an Organization-Wide Address in this org. It must be added as an Organization-Wide Address in order to be populated in the &#39;Email From&#39; field.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Does_this_OrgWide_Address_Email_From_on_Outbound_Communication_record</name>
+        <label>Does this OrgWide Address = &#39;Email From&#39; on Outbound Communication record?</label>
+        <locationX>396</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>Orgwide_Addresses</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Orgwide_Addresses.Address</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Email_From__c</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>When the user populates the &#39;Email From&#39; field on the Outbound Communications object, check to see if the value is an OrgWide Address. If it is not, throw an error message and prevent the record from saving.</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | Outbound Comms | Require OrgWide Address in From field {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Drip | Require OrgWide Address in &#39;From&#39; field</label>
+    <loops>
+        <name>Orgwide_Addresses</name>
+        <label>Orgwide Addresses</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <collectionReference>Get_OrgWide_Addresses</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Does_this_OrgWide_Address_Email_From_on_Outbound_Communication_record</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Error_to_prevent_save_with_this_value</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_OrgWide_Addresses</name>
+        <label>Get OrgWide Addresses</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Orgwide_Addresses</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_OrgWide_Addresses</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email_From__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Outbound_Communications__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

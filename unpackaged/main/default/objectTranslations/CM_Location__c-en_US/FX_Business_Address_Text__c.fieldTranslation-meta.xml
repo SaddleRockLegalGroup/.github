@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Formula field - returns business compound address field as text. Used in Docrio Templates --></help>
+        <label><!-- Business Address (Text) --></label>
+        <name>FX_Business_Address_Text__c</name>
+    </CustomFieldTranslation>

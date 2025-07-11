@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type_Required</fullName>
+    <active>true</active>
+    <description>Requires Case Type when Record Type is not Template</description>
+    <errorConditionFormula>ISBLANK(Case_Type__c) &amp;&amp; RecordType.Name != &#39;Template&#39;</errorConditionFormula>
+    <errorDisplayField>Case_Type__c</errorDisplayField>
+    <errorMessage>You must have a Case Type</errorMessage>
+</ValidationRule>

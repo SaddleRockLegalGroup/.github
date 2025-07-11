@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},</p>
+
+<p>I hope this email finds you well. We've sent out crucial documents regarding your {{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case, and your prompt action is required.<br />
+<br />
+To proceed with your case, we kindly ask that you review, sign, and return the documents as soon as possible. Please be on the lookout for them in your mailbox.</p>
+
+<p>If you have any questions or concerns about the paperwork or your case, please don't hesitate to give us a call at 888-686-6454. Our team of experts is always here to help you.</p>
+
+<p><br />
+Best regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454</p>
+</body>
+</html>

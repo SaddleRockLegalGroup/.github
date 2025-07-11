@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreativeLength__c</fullName>
+    <description>This represents the length of the TV that relates the TFN to the TV station. It is represented as :xx to show seconds; xx:xx to show min and seconds; and xx:xx:xx to show hours, min, and seconds per ad</description>
+    <externalId>false</externalId>
+    <label>Creative Length</label>
+    <length>8</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

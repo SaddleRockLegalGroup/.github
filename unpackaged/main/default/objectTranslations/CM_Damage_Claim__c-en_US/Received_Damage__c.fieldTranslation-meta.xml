@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What category received damage? --></help>
+        <label><!-- Received Damage --></label>
+        <name>Received_Damage__c</name>
+        <picklistValues>
+            <masterLabel>Not Damaged</masterLabel>
+            <translation><!-- Not Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicles</masterLabel>
+            <translation><!-- Vehicles --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

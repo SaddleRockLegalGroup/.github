@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Property_Worth__c</fullName>
+    <description>This is used to verify property value.  Used in claims to determine the total value of damage caused.  Started with wildfires tort</description>
+    <inlineHelpText>Total Value of the property in question on the claim</inlineHelpText>
+    <label>Total Property Worth</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

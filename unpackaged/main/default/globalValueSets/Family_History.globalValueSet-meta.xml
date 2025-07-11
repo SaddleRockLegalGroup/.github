@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agent Orange Exposure</fullName>
+        <default>false</default>
+        <label>Agent Orange Exposure</label>
+    </customValue>
+    <customValue>
+        <fullName>HIV/AIDS</fullName>
+        <default>false</default>
+        <label>HIV/AIDS</label>
+    </customValue>
+    <customValue>
+        <fullName>Hepatitis</fullName>
+        <default>false</default>
+        <label>Hepatitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Organ Transplant</fullName>
+        <default>false</default>
+        <label>Organ Transplant</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Cancer</fullName>
+        <default>false</default>
+        <label>Prior Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Chemo</fullName>
+        <default>false</default>
+        <label>Prior Chemo</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Radiation</fullName>
+        <default>false</default>
+        <label>Prior Radiation</label>
+    </customValue>
+    <customValue>
+        <fullName>Immunosuppression</fullName>
+        <default>false</default>
+        <label>Immunosuppression</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Cancer</fullName>
+        <default>false</default>
+        <label>Family Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Reside near hazardous/toxic site</fullName>
+        <default>false</default>
+        <label>Reside near hazardous/toxic site</label>
+    </customValue>
+    <customValue>
+        <fullName>Work near hazardous/toxic site</fullName>
+        <default>false</default>
+        <label>Work near hazardous/toxic site</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetes</fullName>
+        <default>false</default>
+        <label>Diabetes</label>
+    </customValue>
+    <customValue>
+        <fullName>Breast Implants</fullName>
+        <default>false</default>
+        <label>Breast Implants</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <customValue>
+        <fullName>ADHD/ADD</fullName>
+        <default>false</default>
+        <label>ADHD/ADD</label>
+    </customValue>
+    <customValue>
+        <fullName>Autism</fullName>
+        <default>false</default>
+        <label>Autism</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestational Diabetes</fullName>
+        <default>false</default>
+        <label>Gestational Diabetes</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestational Hypertension</fullName>
+        <default>false</default>
+        <label>Gestational Hypertension</label>
+    </customValue>
+    <customValue>
+        <fullName>Infection/Fever Hospitalization</fullName>
+        <default>false</default>
+        <label>Infection/Fever Hospitalization</label>
+    </customValue>
+    <customValue>
+        <fullName>Hypertensive Disease</fullName>
+        <default>false</default>
+        <label>Hypertensive Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Tobacco Use</fullName>
+        <default>false</default>
+        <label>Tobacco Use</label>
+    </customValue>
+    <customValue>
+        <fullName>Illicit Drug Use</fullName>
+        <default>false</default>
+        <label>Illicit Drug Use</label>
+    </customValue>
+    <customValue>
+        <fullName>Placental Insufficiency</fullName>
+        <default>false</default>
+        <label>Placental Insufficiency</label>
+    </customValue>
+    <customValue>
+        <fullName>Delayed Cord Clamping</fullName>
+        <default>false</default>
+        <label>Delayed Cord Clamping</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>SSRI Drugs</fullName>
+        <default>false</default>
+        <label>SSRI Drugs</label>
+    </customValue>
+    <customValue>
+        <fullName>Alcohol</fullName>
+        <default>false</default>
+        <label>Alcohol</label>
+    </customValue>
+    <customValue>
+        <fullName>Hepatitus B</fullName>
+        <default>false</default>
+        <label>Hepatitus B</label>
+    </customValue>
+    <customValue>
+        <fullName>Hepatitus C</fullName>
+        <default>false</default>
+        <label>Hepatitus C</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocaine Use</fullName>
+        <default>false</default>
+        <label>Cocaine Use</label>
+    </customValue>
+    <customValue>
+        <fullName>Meth Use</fullName>
+        <default>false</default>
+        <label>Meth Use</label>
+    </customValue>
+    <description>Used to show a history of activity or diagnoses in the family.</description>
+    <masterLabel>Family History</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

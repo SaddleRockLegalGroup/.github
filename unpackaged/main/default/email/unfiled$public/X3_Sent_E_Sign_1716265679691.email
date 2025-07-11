@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}},<br />
+<br />
+We hope all is well. We are still awaiting your response. Since we haven't heard from you, can we assume you have questions about the e-Sign agreement we emailed to you?<br />
+<br />
+If you do have questions, we have one of our lawyers ready to assist. Feel free to text, email, or call.<br />
+<br />
+Thanks very much,&nbsp;<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454<br />
+&nbsp;</body>
+</html>

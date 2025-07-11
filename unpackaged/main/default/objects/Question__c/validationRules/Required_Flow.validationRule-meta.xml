@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Flow</fullName>
+    <active>true</active>
+    <description>Requires a flow api name and button label when multi-record lookup</description>
+    <errorConditionFormula>ISBLANK(Flow_API_Name__c) &amp;&amp; ISBLANK(Button_Label__c) &amp;&amp; ISPICKVAL(Answer_Type__c, &#39;Multi-Record&#39;)</errorConditionFormula>
+    <errorDisplayField>Flow_API_Name__c</errorDisplayField>
+    <errorMessage>You must provide a Flow API Name and Button Label for Multi-Record Lookups</errorMessage>
+</ValidationRule>

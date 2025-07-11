@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>While_at_Camp_Lejeune_please_indicated__c</fullName>
+    <description>While at Camp Lejeune, please indicated all locations where you lived, worked or were stationed:</description>
+    <label>While at Camp Lejeune, please indicated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Barracks</fullName>
+                <default>false</default>
+                <label>Barracks</label>
+            </value>
+            <value>
+                <fullName>Berkeley Manor</fullName>
+                <default>false</default>
+                <label>Berkeley Manor</label>
+            </value>
+            <value>
+                <fullName>Camp Geiger</fullName>
+                <default>false</default>
+                <label>Camp Geiger</label>
+            </value>
+            <value>
+                <fullName>Courthouse Bay</fullName>
+                <default>false</default>
+                <label>Courthouse Bay</label>
+            </value>
+            <value>
+                <fullName>Hadnot Point</fullName>
+                <default>false</default>
+                <label>Hadnot Point</label>
+            </value>
+            <value>
+                <fullName>Heroes Manor</fullName>
+                <default>false</default>
+                <label>Heroes Manor</label>
+            </value>
+            <value>
+                <fullName>Holcomb Boulevard</fullName>
+                <default>false</default>
+                <label>Holcomb Boulevard</label>
+            </value>
+            <value>
+                <fullName>Hospital Point</fullName>
+                <default>false</default>
+                <label>Hospital Point</label>
+            </value>
+            <value>
+                <fullName>Hostess House</fullName>
+                <default>false</default>
+                <label>Hostess House</label>
+            </value>
+            <value>
+                <fullName>Knox Cave</fullName>
+                <default>false</default>
+                <label>Knox Cave</label>
+            </value>
+            <value>
+                <fullName>Knox Trailer Park</fullName>
+                <default>false</default>
+                <label>Knox Trailer Park</label>
+            </value>
+            <value>
+                <fullName>Knox Landing</fullName>
+                <default>false</default>
+                <label>Knox Landing</label>
+            </value>
+            <value>
+                <fullName>Mainside Barracks</fullName>
+                <default>false</default>
+                <label>Mainside Barracks</label>
+            </value>
+            <value>
+                <fullName>Midway Park</fullName>
+                <default>false</default>
+                <label>Midway Park</label>
+            </value>
+            <value>
+                <fullName>Montford Point/Camp Johnson</fullName>
+                <default>false</default>
+                <label>Montford Point/Camp Johnson</label>
+            </value>
+            <value>
+                <fullName>New River</fullName>
+                <default>false</default>
+                <label>New River</label>
+            </value>
+            <value>
+                <fullName>Onslow Beach</fullName>
+                <default>false</default>
+                <label>Onslow Beach</label>
+            </value>
+            <value>
+                <fullName>On base temporary housing</fullName>
+                <default>false</default>
+                <label>On base temporary housing</label>
+            </value>
+            <value>
+                <fullName>Paradise Point</fullName>
+                <default>false</default>
+                <label>Paradise Point</label>
+            </value>
+            <value>
+                <fullName>Peterfield Point</fullName>
+                <default>false</default>
+                <label>Peterfield Point</label>
+            </value>
+            <value>
+                <fullName>Rifle Range</fullName>
+                <default>false</default>
+                <label>Rifle Range</label>
+            </value>
+            <value>
+                <fullName>Tarawa Terrace</fullName>
+                <default>false</default>
+                <label>Tarawa Terrace</label>
+            </value>
+            <value>
+                <fullName>Watkins Grove</fullName>
+                <default>false</default>
+                <label>Watkins Grove</label>
+            </value>
+            <value>
+                <fullName>Watkins Village</fullName>
+                <default>false</default>
+                <label>Watkins Village</label>
+            </value>
+            <value>
+                <fullName>Off base housing</fullName>
+                <default>false</default>
+                <label>Off base housing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

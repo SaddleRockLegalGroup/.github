@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOL_ACCEPTABLE_STATES__c</fullName>
+    <description>What state are you currently residing?</description>
+    <label>SOL Accept States_Caller Current States</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Florida</fullName>
+                <default>false</default>
+                <label>Florida</label>
+            </value>
+            <value>
+                <fullName>Maine</fullName>
+                <default>false</default>
+                <label>Maine</label>
+            </value>
+            <value>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+                <label>Minnesota</label>
+            </value>
+            <value>
+                <fullName>Missouri</fullName>
+                <default>false</default>
+                <label>Missouri</label>
+            </value>
+            <value>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+                <label>Nebraska</label>
+            </value>
+            <value>
+                <fullName>North Dakota</fullName>
+                <default>false</default>
+                <label>North Dakota</label>
+            </value>
+            <value>
+                <fullName>Wyoming</fullName>
+                <default>false</default>
+                <label>Wyoming</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

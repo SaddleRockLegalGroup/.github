@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked this rule will apply to all status values --></help>
+        <label><!-- Include All Statuses --></label>
+        <name>Include_All_Statuses__c</name>
+    </CustomFieldTranslation>

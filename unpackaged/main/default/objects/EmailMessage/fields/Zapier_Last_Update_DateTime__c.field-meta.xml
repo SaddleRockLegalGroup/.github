@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zapier_Last_Update_DateTime__c</fullName>
+    <description>Used in SendGrid &gt; Zapier &gt; Salesforce integration to track Open message activities from SendGrid back to Salesforce</description>
+    <inlineHelpText>Used in SendGrid &gt; Zapier &gt; Salesforce integration to track Open message activities from SendGrid back to Salesforce</inlineHelpText>
+    <label>Zapier Last Update DateTime</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

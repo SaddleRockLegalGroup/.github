@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SMS - #5c – Sent e-Sign (1 day after e-Sign is sent)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>SMS - #5c – Sent e-Sign (1 day after e-Sign is sent)</name>
+    <style>freeForm</style>
+    <subject>message</subject>
+    <textOnly>Did you see the e-Sign agreement email we sent? Please reply here, or give us a call at {!Organization.Phone}. Thanks! Saddle Rock Legal Group</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

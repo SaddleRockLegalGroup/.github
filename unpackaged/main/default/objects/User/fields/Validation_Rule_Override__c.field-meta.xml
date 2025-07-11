@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Rule_Override__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Allows the specific user to circumnavigate any validation rule as long as they have this box checked.  This is full right to circumnavigate the rules.  
+ I am adding a secondary overrirde called &quot;manager override&quot; that should be for lesser controlled scenarios.</description>
+    <inlineHelpText>Full Admin Level Override of validation rules containing this consideration</inlineHelpText>
+    <label>Validation Rule Override</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Concussion Media CV: Follow up</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Concussion Media CV: Follow up</name>
+    <style>freeForm</style>
+    <subject>Urgent Follow-up Required: {!Contact.FirstName} - {!litify_pm__Intake__c.Case_Type_Name_del__c} Case</subject>
+    <textOnly>Michael and Greg,
+
+We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!Contact.FirstName} for the {!litify_pm__Intake__c.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.
+
+The reason for this follow-up is as follows: &lt;&lt;Custom1118&gt;&gt;.
+
+We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.
+
+Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.
+
+Thank you for your attention to this urgent matter.
+
+Best regards,
+Saddle Rock Legal Group
+(888) 327-1194</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

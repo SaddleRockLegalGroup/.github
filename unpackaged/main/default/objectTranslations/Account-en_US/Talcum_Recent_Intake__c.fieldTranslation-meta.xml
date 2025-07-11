@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Dedupe Filter. Checks when 14 days or less from last intake created in the Talcum tort. --></help>
+        <label><!-- Talcum Recent Intake --></label>
+        <name>Talcum_Recent_Intake__c</name>
+    </CustomFieldTranslation>

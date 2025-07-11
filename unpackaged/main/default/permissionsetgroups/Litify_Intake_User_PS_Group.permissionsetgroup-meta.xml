@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Litify Intake User PS Group</label>
+    <mutingPermissionSets>Litify_Intake_User_PS_Group_Muted</mutingPermissionSets>
+    <permissionSets>BRIO_Automated_Comm_Intake_Agent</permissionSets>
+    <permissionSets>Litify_Intake_Agent</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

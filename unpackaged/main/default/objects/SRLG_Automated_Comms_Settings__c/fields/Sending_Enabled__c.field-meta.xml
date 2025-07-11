@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sending_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked, then the drip engine is live.  When disabled, only users with testing permissions will trigger outbound communications</description>
+    <inlineHelpText>When checked, then the drip engine is live.  When disabled, only users with testing permissions will trigger outbound communications</inlineHelpText>
+    <label>Sending Enabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

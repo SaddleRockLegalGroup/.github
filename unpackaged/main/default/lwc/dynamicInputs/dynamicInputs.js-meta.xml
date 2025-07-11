@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="answerType" type="String" label="Answer Type" description="Type of the answer (e.g., String, Integer, Picklist, Address, Encrypted, etc.)" />
+            <property name="label" type="String" label="Label" description="Label for the question" />
+            <property name="helpText" type="String" label ="Help Text" description="The help text for the question" />
+            <property name="options" type="String" label="Options" description="Comma-separated values for picklist options" />
+            <property name="required" type="Boolean" label="Required" description="Indicates if the input is required" />
+            <property name="lookupObject" type="String" label="Lookup Object" description="API name of the object for the lookup field" />
+            <property name="answer" type="String" label="Answer" description="The string representation of the input value" />
+            <property name="buttonLabel" type="String" label="Button Label" description="Label for the button to call the flow" />
+            <property name="flowApiName" type="String" label="Flow API Name" description="API name of the flow to call" />
+            <property name="intakeId" type="String" label="Intake ID" description="The Intake ID to pass to the flow" />
+            <property name="answerId" type="String" label="Answer ID" description="The ID of the Answer__c record to update" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

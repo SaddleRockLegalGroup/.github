@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Weight__c</fullName>
+    <description>Used to understand weight specifics of a client during birth or objects they used.  Might not be case management, but I am placing it as such due to not being able to report or filter off the information.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Weight</inlineHelpText>
+    <label>CM_Weight</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Case Verification Expiring</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Case Verification Expiring</name>
+    <style>freeForm</style>
+    <subject>Legal Case Follow-Up</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I hope all is well today! This is Saddle Rock Legal Group, the law firm currently working on your {!litify_pm__Intake__c.Case_Type_Name_del__c} case. We have been trying to reach you for some time regarding some missing information on your file. We, unfortunately, will have to reject your claim preventing you from receiving a potential cash settlement if we do not get a response. Call us back at {!Organization.Phone} as soon as possible; it should be a quick 5-10 minute phone call. Thanks!
+
+Regards,
+Saddle Rock Legal Group
+Office: {!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);">Hi {!Customer.FirstName},<br><br>We at Saddle Rock Legal Group hope this email finds you well.&nbsp; You have previously shown interest in a possible&nbsp;{!litify_pm__Intake__c.Case_Type_Name_del__c}&nbsp;claim. We have finished the intake questions and signed the paperwork for a preliminary review, but are still waiting to transfer you over to our attorneys. We want to be sure that we get you in contact with them so you can discuss the engagement letter and go over a few more case details. We only have 21 days to contact these attorneys, or your case will be dismissed. Please call our firm as soon as possible, this should be a pretty quick and easy call (about 3-5 minutes).&nbsp;<br><br>Our number is <strong style="">{!Organization.Phone}. </strong>We would love to hear from you&nbsp;as soon as possible so we can get you transferred!<br><br>All the best,<br>Saddle Rock Legal Group<br>{!Organization.Phone}</font>]]></td>
+</tr>
+</table>

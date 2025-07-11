@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>When an intake is created or updated and Status = &#39;Case Verification&#39; this flow will set the Date 3P CV Started to now.
+
+DR - 9/11/2024 - Every time status is changed to Case Verification, reset the start date.</description>
+    <environments>Default</environments>
+    <interviewLabel>BRIO | Intake | Set Case Verification Start Time {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | 3P | Set Case Verification Start Time</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Date_3P_CV_Started</name>
+        <label>Set Date 3P CV Started</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Date_3P_CV_Started__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Date_3P_CV_Started</targetReference>
+        </connector>
+        <filterFormula>NOT(ISBLANK({!$Record.Intake_Vendor__c})) 
+&amp;&amp; {!$Record.Intake_Vendor__r.Name} &lt;&gt; &#39;Saddle Rock&#39; 
+&amp;&amp; {!$Record.Intake_Vendor__r.Name} &lt;&gt; &#39;SaddleRock&#39; 
+&amp;&amp; (ISPICKVAL({!$Record.litify_pm__Status__c}, &#39;Case Verification&#39;) &amp;&amp; (ISCHANGED({!$Record.litify_pm__Status__c}) || ISNEW()))</filterFormula>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

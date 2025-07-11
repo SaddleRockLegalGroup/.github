@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diagnosis_2__c</fullName>
+    <description>Secondary Diagnosis to allow for clients to provide us more than one Diagnosis in cases or secondary options that can be reported on.</description>
+    <inlineHelpText>Secondary Diagnosis from Questionnaire provided by client.</inlineHelpText>
+    <label>Diagnosis 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Diagnosis</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FL_E_Sig_Packet__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Docrio merge packet that will be generated when clicking the Create E-sig Packet button on an Intake assigned to this Campaign Partner IF Case State = &#39;FL Florida&#39;</description>
+    <inlineHelpText>Docrio merge packet that will be generated when clicking the Create E-sig Packet button on an Intake assigned to this Campaign Partner IF Case State = &#39;FL Florida&#39;</inlineHelpText>
+    <label>FL E-Sig Packet (Self)</label>
+    <referenceTo>litify_docs__Packet__c</referenceTo>
+    <relationshipLabel>Campaign Partners (FL E-Sig Packet)</relationshipLabel>
+    <relationshipName>Campaign_Partners2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

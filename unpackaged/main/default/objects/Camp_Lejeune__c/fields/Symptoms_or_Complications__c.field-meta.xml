@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Symptoms_or_Complications__c</fullName>
+    <description>Requested by Zach and MBM to have additional information for diagnosis after 8/10/2022 that are having issues in court.</description>
+    <inlineHelpText>Information for diagnosis after 8/10/2022</inlineHelpText>
+    <label>Symptoms or Complications</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

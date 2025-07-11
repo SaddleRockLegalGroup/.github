@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Water Well</fullName>
+        <default>false</default>
+        <label>Water Well</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosed Post Hospital Stay</fullName>
+        <default>false</default>
+        <label>Diagnosed Post Hospital Stay</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosed Post Hospital Stay But Came Back Within 24 Hours</fullName>
+        <default>false</default>
+        <label>Diagnosed Post Hospital Stay But Came Back Within 24 Hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Residential</fullName>
+        <default>false</default>
+        <label>Residential</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial</fullName>
+        <default>false</default>
+        <label>Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Both</fullName>
+        <default>false</default>
+        <label>Both</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Red</fullName>
+        <default>false</default>
+        <label>Red</label>
+    </customValue>
+    <customValue>
+        <fullName>Black</fullName>
+        <default>false</default>
+        <label>Black</label>
+    </customValue>
+    <customValue>
+        <fullName>Grey</fullName>
+        <default>false</default>
+        <label>Grey</label>
+    </customValue>
+    <customValue>
+        <fullName>Green</fullName>
+        <default>false</default>
+        <label>Green</label>
+    </customValue>
+    <customValue>
+        <fullName>Orange</fullName>
+        <default>false</default>
+        <label>Orange</label>
+    </customValue>
+    <customValue>
+        <fullName>Place of Injury</fullName>
+        <default>false</default>
+        <label>Place of Injury</label>
+    </customValue>
+    <customValue>
+        <fullName>Home</fullName>
+        <default>false</default>
+        <label>Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Property</fullName>
+        <default>false</default>
+        <label>Personal Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Business</fullName>
+        <default>false</default>
+        <label>Commercial Business</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosed at Hospital within 3 months of birth</fullName>
+        <default>false</default>
+        <label>Diagnosed at Hospital within 3 months of birth</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnosed at Hospital</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diagnosed at Hospital</label>
+    </customValue>
+    <description>This is used to provide lists of locations and areas where exposure, product use, or other contributing factors occurred.</description>
+    <masterLabel>Locations and Areas</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

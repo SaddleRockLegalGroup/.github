@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SRLG Flow Record Deletion Access</label>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SRLG_Flow_Related_Record_Deletion</name>
+    </customPermissions>
+</PermissionSet>

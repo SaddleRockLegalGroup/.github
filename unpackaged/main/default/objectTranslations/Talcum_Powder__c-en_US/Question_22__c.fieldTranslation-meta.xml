@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What is the name of the facility where you were diagnosed? (OCT) --></help>
+        <label><!-- Question 22 --></label>
+        <name>Question_22__c</name>
+    </CustomFieldTranslation>

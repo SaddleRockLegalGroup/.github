@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- PAC value that helps determine what Partner to send to. --></help>
+        <label><!-- PAC Check 1 --></label>
+        <name>PAC_Check_1__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Get_OC_Records</name>
+        <label>Get OC Records</label>
+        <locationX>308</locationX>
+        <locationY>492</locationY>
+        <actionName>ExecuteSOQL</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Call_Sending_Subflow</targetReference>
+        </connector>
+        <dataTypeMappings>
+            <typeName>U__sObjects</typeName>
+            <typeValue>Outbound_Communications__c</typeValue>
+        </dataTypeMappings>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>soqlQuery</name>
+            <value>
+                <elementReference>tt_SOQL_outboundCommQuery</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>ExecuteSOQL</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Set variable used to look up the correct dwell time record</description>
+        <name>Set_Swell_Time_180</name>
+        <label>Set Swell Time 180</label>
+        <locationX>308</locationX>
+        <locationY>384</locationY>
+        <assignmentItems>
+            <assignToReference>var_dwellTimeDaysAfterDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>180.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_OC_Records</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>SET_ME_const_dwellTimeField</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Referred_OutDate__c</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>SET_ME_const_flowName</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>BRIO | Drip | Scheduled | Retention 180</stringValue>
+        </value>
+    </constants>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_activeForTesting</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Permission.BRIO_Automated_Comms_Tester}, &quot; Or Active_For_Testing__c = true &quot;, &quot;&quot;)</expression>
+    </formulas>
+    <interviewLabel>BRIO | Drip | Scheduled | {!SET_ME_const_dwellTimeField}: {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Drip | Scheduled | Retention 180</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Debug_Starting</name>
+        <label>Log: Debug: Starting</label>
+        <locationX>308</locationX>
+        <locationY>276</locationY>
+        <connector>
+            <targetReference>Set_Swell_Time_180</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>SET_ME_const_flowName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Log_Type__c</field>
+            <value>
+                <stringValue>debug</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Message__c</field>
+            <value>
+                <stringValue>180 Day Retention Flow Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_Id__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>BRIO_Log_Platform_Event__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <sourceTemplate>BRIO_Drip_Scheduled_Tempalte</sourceTemplate>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Retention</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>X180_Days</name>
+            <connector>
+                <targetReference>Log_Debug_Starting</targetReference>
+            </connector>
+            <label>180 Days</label>
+            <offsetNumber>180</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>litify_pm__Referred_Out_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Call_Sending_Subflow</name>
+        <label>Call Sending Subflow</label>
+        <locationX>308</locationX>
+        <locationY>600</locationY>
+        <flowName>BRIO_Drip_Comms_Sending_Subflow</flowName>
+        <inputAssignments>
+            <name>input_col_CommRecords</name>
+            <value>
+                <elementReference>Get_OC_Records.sObjects</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>input_IntakeID</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>tt_SOQL_outboundCommQuery</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>select id, name, Dwell_Time_Days_After_Date__c, Dwell_Time_Field__c, Case_Type__c,Record_Type_Name__c,RecordTypeId, BCC__c,CC__c, Email_From__c, Email_Template_ID__c, Intake_Status__c, Intake_Sub_Status__c, Last_Call_Result__c, Open_Email_Template__c, Recipient__c, SMS_Message_to_Client__c, LastModifiedById, LastModifiedDate, CreatedById, CreatedDate, Active__c, Active_For_Testing__c 
+from Outbound_Communications__c
+where record_type_name__c = &#39;Dwell Time&#39;
+and Dwell_Time_Field__c =  &#39;{!SET_ME_const_dwellTimeField}&#39;
+and Dwell_Time_Days_After_Date__c = {!var_dwellTimeDaysAfterDate}
+and ( Active__c = true {!formula_activeForTesting}) 
+and (Case_Type__c Includes (&#39;{!$Record.litify_pm__Case_Type__r.Name}&#39;) or Case_Type__c = null) 
+and (Intake_Status__c Includes(&#39;{!$Record.litify_pm__Status__c}&#39;) or Intake_Status__c = null) 
+and (Intake_Sub_Status__c Includes (&#39;{!$Record.Sub_Status__c}&#39;) or Intake_Sub_Status__c = null)</text>
+    </textTemplates>
+    <variables>
+        <name>var_dwellTimeDaysAfterDate</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fx_Email_Opened__c</fullName>
+    <description>Formula field - Returns true/checked IF FirstOpenedDate is not blank / null, ELSE false/unchecked</description>
+    <formula>NOT(ISBLANK(FirstOpenedDate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Formula field - Returns true/checked IF FirstOpenedDate is not blank / null, ELSE false/unchecked</inlineHelpText>
+    <label>fx Email Opened</label>
+    <type>Checkbox</type>
+</CustomField>

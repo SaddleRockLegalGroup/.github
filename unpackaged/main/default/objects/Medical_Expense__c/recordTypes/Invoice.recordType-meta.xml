@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice</fullName>
+    <active>true</active>
+    <label>Invoice</label>
+    <picklistValues>
+        <picklist>Expense_Category__c</picklist>
+        <values>
+            <fullName>Case Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prequalification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tranche__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transaction_Type__c</picklist>
+        <values>
+            <fullName>Bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Journal Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Credit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vendor__c</picklist>
+        <values>
+            <fullName>Ashcraft %26 Gerel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ciox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Epiq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nomos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

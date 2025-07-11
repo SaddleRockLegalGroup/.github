@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Total Value of the property in question on the claim --></help>
+        <label><!-- Total Property Worth --></label>
+        <name>Total_Property_Worth__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_93__c</fullName>
+    <description>What is their area of practice or specialty? (Prov 5)</description>
+    <inlineHelpText>What is their area of practice or specialty? (Prov 5)</inlineHelpText>
+    <label>Question 93</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

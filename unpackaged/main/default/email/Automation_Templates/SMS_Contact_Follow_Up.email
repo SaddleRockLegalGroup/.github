@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Hello&nbsp;</font><span style="font-family: arial; font-size: 16px; background-color: rgb(255, 255, 255);">{!Contact.FirstName}</span><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">, this is Saddle Rock Legal Group, calling for a possible&nbsp;</font><span style="background-color: rgb(255, 255, 255); font-size: 12pt;">{!litify_pm__Intake__c.Case_Type_Name_del__c}</span><font face="arial" style="font-size: 12pt;">&nbsp;case. Call&nbsp;</font><font face="arial" style="font-size: 12pt;">{!Organization.Phone}</font><span style="font-size: 12pt;">!</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+</table>

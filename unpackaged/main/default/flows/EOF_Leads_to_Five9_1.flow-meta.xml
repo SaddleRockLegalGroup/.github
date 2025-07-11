@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>324</locationX>
+        <locationY>658</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>ccAddresses</name>
+            <value>
+                <stringValue>15wucx6t@robot.zapier.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>Send_Email1</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>DR - 6/24/24 - Replaced by outbound comm records</description>
+    <environments>Default</environments>
+    <interviewLabel>EOF Leads to Five9 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DEPRECATED EOF Leads to Five9</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>215</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Error on File</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>Send_Email1</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>First Name : {!$Record.litify_pm__First_Name__c}
+Last Name : {!$Record.litify_pm__First_Name__c}
+Phone: {!$Record.litify_pm__Phone__c}
+Email: {!$Record.FX_Client_Email__c}
+Zip: {!$Record.litify_pm__Client__r.BillingPostalCode}
+State: {!$Record.FX_Client_Billing_State__c}
+City: {!$Record.litify_pm__Case_City__c}
+Type Of Case: {!$Record.Case_Type_Name_del__c}
+Status: {!$Record.litify_pm__Status__c}
+Lead source: {!$Record.Source_Name__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Urgent: Error in {!$Record.litify_pm__First_Name__c}&#39;s {!$Record.Case_Type_Name_del__c} Case - Credit/Replacement Required</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>tech@saddlerocklegal.com</contactEmail>
+    <description>Connector for MESA Application</description>
+    <label>Mesa_Connection</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Community/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>sfdc://oauth/jwt/success</callbackUrl>
+        <certificate>MIIDNzCCAh+gAwIBAgIUTizrtXRZOKh3JcalzB65GKQSf5MwDQYJKoZIhvcNAQELBQAwKzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDTALBgNVBAoMBFNSTEcwHhcNMjQwMTI1MTUwMDAwWhcNMjUwMTI0MTUwMDAwWjArMQswCQYDVQQGEwJVUzENMAsGA1UECAwEVXRhaDENMAsGA1UECgwEU1JMRzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANJUydmY8eEm46mWlEP213z02/eDh/47ADGd0Sur4+Ro2b2NolrGBC36tz4emXRcOmU9k1gjAMrEzVAoZkHAcew/OIK2QhhluCBeXTVjvMc2b8ayCPWRLgEQ+m8AhQFpedIMlO5wkzMZslBT/ieBRTkLSC4pSfhfkIhbny8uGwxbTTtLu0Rr6vI2nYK1fN5q4RSLf3O6SCEUd0cUxufravRts8MxSV/s654hk8AF8jRJbpJ6nh1yHXxYWVlQ7P/txls6QF0iJrP44zmtPYWEq4BtVBjbrx53iW+pvjTik8yUzn7ZAEA6cOJNuKXX6c0imRrNbnEd2S2hoPdEcGXeqH0CAwEAAaNTMFEwHQYDVR0OBBYEFCP0rqbDGi78URoSRYFv8L55QrmYMB8GA1UdIwQYMBaAFCP0rqbDGi78URoSRYFv8L55QrmYMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBACdSkEfdlNuo6aQCdXbt8VAuaNu59HOzx+IgvSscthN/gx3K3rY5N7HGC9wglHZKkajV4mhHqZRZU4T6/FUhR/GsQb4kLFuKR7BMaEZeIOEYd5gp6lpcQbHbByXLLnummmvaF1pIK4BHvQz92a57+zmhSZo793Pthm4hOP0F4N1lo2aD/zcwkkZXMJ11vyBJJin6SgHk7///J890zp09xkntyCTzDAAq3Aa8D8cPspBwwn7e8+ydxIsLL0s9giOSKCtQLdEbBz4sCvbPRnbOVkhxajrMW2qnZ1lc0K1fEOy25tpgwk3f/YbMapTD9hUbHyCQnZiyxRk3lCEk+u8JLzs=</certificate>
+        <consumerKey>3MVG9ux34Ig8G5eoSnRUgjN9K_QZPT89qxpPOGCRgsDQ4rW2xoXYcBNSiqO.Qk2nVxWByPfkqhAaed0j4ju1I</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>true</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>true</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>true</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>true</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- How often Used --></label>
+        <name>How_often_Used__c</name>
+        <picklistValues>
+            <masterLabel>Four times per year</masterLabel>
+            <translation><!-- Four times per year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than four times per year (disqualify)</masterLabel>
+            <translation><!-- Less than four times per year (disqualify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other frequency</masterLabel>
+            <translation><!-- Other frequency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

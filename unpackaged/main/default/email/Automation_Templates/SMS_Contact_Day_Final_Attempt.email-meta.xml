@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SMS - Contact Day Final Attempt</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>SMS - Contact Day Final Attempt</name>
+    <style>freeForm</style>
+    <subject>message</subject>
+    <textOnly>Hi, this is Saddle Rock Legal Group. We&#39;ve been calling about your inquiry. We will be closing the file unless we hear from you at {!Organization.Phone}.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

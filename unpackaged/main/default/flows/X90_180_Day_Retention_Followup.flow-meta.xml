@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_SMS1</name>
+        <label>Send SMS1</label>
+        <locationX>142</locationX>
+        <locationY>1156</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0</name>
+        <label>Send SMS1</label>
+        <locationX>505</locationX>
+        <locationY>1299</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0_0</name>
+        <label>Send SMS1</label>
+        <locationX>2128</locationX>
+        <locationY>1309</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0_0_0</name>
+        <label>Send SMS1</label>
+        <locationX>1843</locationX>
+        <locationY>1202</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0_0_0_0</name>
+        <label>Send SMS1</label>
+        <locationX>1093</locationX>
+        <locationY>1342</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0_0_0_0_0</name>
+        <label>Send SMS1</label>
+        <locationX>2673</locationX>
+        <locationY>1389</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0_0_0_0_0_0</name>
+        <label>Send SMS1</label>
+        <locationX>3210</locationX>
+        <locationY>1286</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_SMS1_0_0_0_0_0_0_0</name>
+        <label>Send SMS1</label>
+        <locationX>3465</locationX>
+        <locationY>1311</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_SMS_0_0_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>send_sms</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail</name>
+        <label>SendEmail</label>
+        <locationX>306</locationX>
+        <locationY>924</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0</name>
+        <label>SendEmail</label>
+        <locationX>570</locationX>
+        <locationY>1032</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>Email_SRLG_CSS_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0_0_0</name>
+        <label>SendEmail</label>
+        <locationX>1098</locationX>
+        <locationY>1032</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>YP_CSS_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Young &amp; Partners Law Firm and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0_0_0_0</name>
+        <label>SendEmail</label>
+        <locationX>3474</locationX>
+        <locationY>1032</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>Email_YP_Whitley</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Camp Lejeune Case Follow Up - Young &amp; Partners Law Firm and Whitley Law and Miller Law Group</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0_0_0_0_0</name>
+        <label>SendEmail</label>
+        <locationX>1890</locationX>
+        <locationY>924</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0_0_0_0_0_0</name>
+        <label>SendEmail</label>
+        <locationX>2154</locationX>
+        <locationY>1032</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>Email_SRLG_CSS_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0_0_0_0_0_0_0</name>
+        <label>SendEmail</label>
+        <locationX>3210</locationX>
+        <locationY>1032</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>YP_AT_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Young &amp; Partners Law Firm and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>SendEmail_0_0_0_0_0_0_0_0</name>
+        <label>SendEmail</label>
+        <locationX>2682</locationX>
+        <locationY>1140</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>YP_CSS_Talc</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Young &amp; Partners Law Firm and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.FX_Client_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>A_T_Talc</name>
+        <label>A&amp;T Talc</label>
+        <locationX>504</locationX>
+        <locationY>816</locationY>
+        <defaultConnector>
+            <targetReference>CSS_Talc</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBJIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCJIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>A_T_Talc_0_0</name>
+        <label>A&amp;T Talc</label>
+        <locationX>2088</locationX>
+        <locationY>816</locationY>
+        <defaultConnector>
+            <targetReference>CSS_Talc_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBJIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCJIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>A_T_Talc_0_0_0</name>
+        <label>A&amp;T Talc</label>
+        <locationX>3012</locationX>
+        <locationY>924</locationY>
+        <defaultConnector>
+            <targetReference>SendEmail_0_0_0_0_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBJIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCJIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CSS_Talc_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CSS_Talc</name>
+        <label>CSS Talc</label>
+        <locationX>702</locationX>
+        <locationY>924</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBQIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCKIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CSS_Talc_0</name>
+        <label>CSS Talc</label>
+        <locationX>1230</locationX>
+        <locationY>924</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBQIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCKIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CSS_Talc_0_0</name>
+        <label>CSS Talc</label>
+        <locationX>2286</locationX>
+        <locationY>924</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBQIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCKIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail_0_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CSS_Talc_0_0_0</name>
+        <label>CSS Talc</label>
+        <locationX>2814</locationX>
+        <locationY>1032</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBQIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCKIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail_0_0_0_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SLRG</name>
+        <label>SLRG</label>
+        <locationX>966</locationX>
+        <locationY>708</locationY>
+        <defaultConnector>
+            <targetReference>Y_P</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Saddle Rock Legal Group</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>A_T_Talc</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SLRG_0</name>
+        <label>SLRG</label>
+        <locationX>2699</locationX>
+        <locationY>708</locationY>
+        <defaultConnector>
+            <targetReference>Y_P_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Saddle Rock Legal Group</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>A_T_Talc_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Whitley_CL</name>
+        <label>Whitley CL</label>
+        <locationX>3606</locationX>
+        <locationY>924</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBjIAK</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a03Dn0000054CCJIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SendEmail_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Y_P</name>
+        <label>Y&amp;P</label>
+        <locationX>1428</locationX>
+        <locationY>816</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Young &amp; Partners</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CSS_Talc_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Y_P_0</name>
+        <label>Y&amp;P</label>
+        <locationX>3309</locationX>
+        <locationY>816</locationY>
+        <defaultConnector>
+            <targetReference>Whitley_CL</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Young &amp; Partners</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>A_T_Talc_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>DR - 6/24/24 Replaced by automated comms</description>
+    <environments>Default</environments>
+    <interviewLabel>90/180 day re {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DEPRECATE 90/180 Day Retention Followup</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Email</name>
+        <label>Log Email</label>
+        <locationX>306</locationX>
+        <locationY>1032</locationY>
+        <connector>
+            <targetReference>Send_SMS1</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0</name>
+        <label>Log Email</label>
+        <locationX>570</locationX>
+        <locationY>1140</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_CSS_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0</name>
+        <label>Log Email</label>
+        <locationX>1098</locationX>
+        <locationY>1140</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>YP_CSS_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Young &amp; Partners Law Firm and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>1890</locationX>
+        <locationY>1032</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>2154</locationX>
+        <locationY>1140</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_CSS_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>3210</locationX>
+        <locationY>1140</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0_0_0_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>YP_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Young &amp; Partners Law Firm and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>2682</locationX>
+        <locationY>1248</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0_0_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>YP_CSS_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Young &amp; Partners Law Firm and Childers, Schlueter &amp; Smith</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>3474</locationX>
+        <locationY>1140</locationY>
+        <connector>
+            <targetReference>Send_SMS1_0_0_0_0_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_YP_Whitley</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Camp Lejeune Case Follow Up - Young &amp; Partners Law Firm and Whitley Law and Miller Law Group</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS</name>
+        <label>Log SMS</label>
+        <locationX>50</locationX>
+        <locationY>1278</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0</name>
+        <label>Log SMS</label>
+        <locationX>413</locationX>
+        <locationY>1420</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0_0</name>
+        <label>Log SMS</label>
+        <locationX>2035</locationX>
+        <locationY>1430</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0_0_0</name>
+        <label>Log SMS</label>
+        <locationX>1750</locationX>
+        <locationY>1323</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0_0_0_0</name>
+        <label>Log SMS</label>
+        <locationX>1000</locationX>
+        <locationY>1463</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0_0_0_0_0</name>
+        <label>Log SMS</label>
+        <locationX>2580</locationX>
+        <locationY>1510</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0_0_0_0_0_0</name>
+        <label>Log SMS</label>
+        <locationX>3118</locationX>
+        <locationY>1408</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_SMS_0_0_0_0_0_0_0</name>
+        <label>Log SMS</label>
+        <locationX>3373</locationX>
+        <locationY>1433</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>Email_SRLG_AT_Talc</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Talcum Powder Case Follow Up - Saddle Rock Legal and Andrews &amp; Thornton</stringValue>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>1761</locationX>
+        <locationY>50</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Retention</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>ninety_days</name>
+            <connector>
+                <targetReference>SLRG</targetReference>
+            </connector>
+            <label>ninety days</label>
+            <offsetNumber>90</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>one_hundred_eighty_days</name>
+            <connector>
+                <targetReference>SLRG_0</targetReference>
+            </connector>
+            <label>one hundred eighty days</label>
+            <offsetNumber>180</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>Email_SRLG_AT_Talc</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.litify_pm__First_Name__c},
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. At Saddle Rock Legal Group, along with our partner firm Andrews &amp; Thornton, we understand the importance of providing personalized attention to our clients, and we wanted to check in with you regarding your Talcum Powder case.
+&lt;br&gt;&lt;br&gt;
+As we navigate through this crucial process, we need to ensure that we have the most current and accurate contact information for you. Can you please take a moment to give us a call at 888-427-9607 or reach out by email at clientrelations@saddlerocklegal.com to verify your contact information, including your address, phone #, email address and emergency contacts?
+&lt;br&gt;&lt;br&gt;
+We understand that each case is unique, and there may be other details that you feel are important to include in your case file. We encourage you to let us know about any additional information that you think may be relevant.
+&lt;br&gt;&lt;br&gt;
+Having precise and up-to-date contact details is vital to ensure that we can communicate with you promptly, and avoid any potential delays in your case.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or concerns about your case, please do not hesitate to reach out to Saddle Rock Legal Group at 888-427-9607 or Andrews &amp; Thornton at 800-664-1734. Our team of legal professionals is here to provide you with the support you need.
+&lt;br&gt;
+Thank you for your trust in us. We look forward to continuing to work with you on your case.
+&lt;br&gt;&lt;br&gt;
+Respectfully,&lt;br&gt;
+Saddle Rock Legal Group and Andrews &amp; Thornton&lt;br&gt;
+clientrelations@saddlerocklegal.com&lt;br&gt;
+888-427-9607&lt;br&gt;
+800-664-1734</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_SRLG_CSS_Talc</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.litify_pm__First_Name__c},
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. At Saddle Rock Legal Group, along with our partner firm Childers, Schlueter &amp; Smith, we understand the importance of providing personalized attention to our clients, and we wanted to check in with you regarding your Talcum Powder case.
+&lt;br&gt;&lt;br&gt;
+As we navigate through this crucial process, we need to ensure that we have the most current and accurate contact information for you. Can you please take a moment to give us a call at 888-427-9607 or reach out by email at clientrelations@saddlerocklegal.com to verify your contact information, including your address, phone #, email address and emergency contacts?
+&lt;br&gt;&lt;br&gt;
+We understand that each case is unique, and there may be other details that you feel are important to include in your case file. We encourage you to let us know about any additional information that you think may be relevant.
+&lt;br&gt;&lt;br&gt;
+Having precise and up-to-date contact details is vital to ensure that we can communicate with you promptly, and avoid any potential delays in your case.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or concerns about your case, please do not hesitate to reach out to Saddle Rock Legal Group at 888-427-9607 or Childers, Schlueter &amp; Smith at 800-641-0098. Our team of legal professionals is here to provide you with the support you need.
+&lt;br&gt;&lt;br&gt;
+Thank you for your trust in us. We look forward to continuing to work with you on your case.
+&lt;br&gt;&lt;br&gt;
+Respectfully,&lt;br&gt;
+Saddle Rock Legal Group and Childers, Schlueter &amp; Smith &lt;br&gt;
+clientrelations@saddlerocklegal.com&lt;br&gt;
+888-427-9607&lt;br&gt;
+800-641-0098</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_YP_Whitley</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.litify_pm__First_Name__c},
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. At Young &amp; Partners, along with our partner firm Whitley Law and Miller Law Group, we understand the importance of providing personalized attention to our clients, and we wanted to check in with you regarding your Camp Lejeune case.
+&lt;br&gt;&lt;br&gt;
+As we navigate through this crucial process, we need to ensure that we have the most current and accurate contact information for you. Can you please take a moment to give us a call at 888-427-9607 or reach out by email at clientrelations@saddlerocklegal.com to verify your contact information, including your address, phone #, email address and emergency contacts?
+&lt;br&gt;&lt;br&gt;
+We understand that each case is unique, and there may be other details that you feel are important to include in your case file. We encourage you to let us know about any additional information that you think may be relevant.
+&lt;br&gt;&lt;br&gt;
+Having precise and up-to-date contact details is vital to ensure that we can communicate with you promptly, and avoid any potential delays in your case.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or concerns about your case, please do not hesitate to reach out to Young &amp; Partners at 888-427-9607 or Whitley Law and Miller Law Group at 919-785-5000. Our team of legal professionals is here to provide you with the support you need.
+&lt;br&gt;&lt;br&gt;
+Thank you for your trust in us. We look forward to continuing to work with you on your case.
+&lt;br&gt;&lt;br&gt;
+Respectfully,&lt;br&gt;
+Young &amp; Partners Law Firm and Whitley Law and Miller Law Group&lt;br&gt;
+clientrelations@saddlerocklegal.com&lt;br&gt;
+888-427-9607&lt;br&gt;
+919-785-5000</text>
+    </textTemplates>
+    <textTemplates>
+        <name>send_sms</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.Internal_Name__c} following up on your ongoing {!$Record.Case_Type_Name_del__c}, let us know if there are any updates to your file @ 888-427-9607.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>YP_AT_Talc</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.litify_pm__First_Name__c},
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you in high spirits. At Young &amp; Partners Law Firm, we understand the importance of this Talcum Powder case to you and your family, and wanted to check in. Andrews &amp; Thornton is working diligently to gather all the necessary material in pursuance of your case.
+&lt;br&gt;&lt;br&gt;
+As you are aware, while we are navigating this process, it is paramount that we have the most current and up-to-date information for you. Can you please take a moment to give us a call at 888-427-9607 or reach out by email at clientrelations@saddlerocklegal.com to verify your contact information, including your address, phone #, email address and emergency contacts?
+&lt;br&gt;&lt;br&gt;
+Making sure we have accurate and up-to-date details is essential to ensure that we can communicate with you promptly and avoid any delays in your case.
+&lt;br&gt;&lt;br&gt;
+With each case being unique, there may be other details you feel are pertinent to include in your file, we ask that you please reach out to let us know about any additional information you may feel is relevant.
+&lt;br&gt;&lt;br&gt;
+Should you have questions or concerns about your case, please do not hesitate to reach out. Again our number is 888-427-9607 or Andrews &amp; Thornton at 800-664-1734. Our team of legal professionals is here to provide you with the support you need.
+&lt;br&gt;&lt;br&gt;
+Thank you for your trust in us. We look forward to continuing to work with you on your case.
+&lt;br&gt;&lt;br&gt;
+Warm Regards,&lt;br&gt;
+Young &amp; Partners Law Firm and Andrews &amp; Thornton&lt;br&gt;
+clientrelations@saddlerocklegal.com&lt;br&gt;
+888-427-9607&lt;br&gt;
+800-664-1734</text>
+    </textTemplates>
+    <textTemplates>
+        <name>YP_CSS_Talc</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.litify_pm__First_Name__c},
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. At Young &amp; Partners, along with our partner firm Childers, Schlueter &amp; Smith, we understand the importance of providing personalized attention to our clients, and we wanted to check in with you regarding your Talcum Powder case.
+&lt;br&gt;&lt;br&gt;
+As we navigate through this crucial process, we need to ensure that we have the most current and accurate contact information for you. Can you please take a moment to give us a call at 888-427-9607 or reach out by email at clientrelations@saddlerocklegal.com to verify your contact information, including your address, phone #, email address and emergency contacts?
+&lt;br&gt;&lt;br&gt;
+We understand that each case is unique, and there may be other details that you feel are important to include in your case file. We encourage you to let us know about any additional information that you think may be relevant.
+&lt;br&gt;&lt;br&gt;
+Having precise and up-to-date contact details is vital to ensure that we can communicate with you promptly, and avoid any potential delays in your case.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or concerns about your case, please do not hesitate to reach out to Young &amp; Partners at 888-427-9607 or Childers, Schlueter &amp; Smith at 800-641-0098. Our team of legal professionals is here to provide you with the support you need.
+&lt;br&gt;&lt;br&gt;
+Thank you for your trust in us. We look forward to continuing to work with you on your case.
+&lt;br&gt;&lt;br&gt;
+Respectfully,&lt;br&gt;
+Young &amp; Partners and Childers, Schlueter &amp; Smith &lt;br&gt;
+clientrelations@saddlerocklegal.com&lt;br&gt;
+888-427-9607&lt;br&gt;
+800-641-0098</text>
+    </textTemplates>
+    <triggerOrder>1450</triggerOrder>
+</Flow>

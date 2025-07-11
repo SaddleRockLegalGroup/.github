@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recent_Matter__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Most recent matter that is tied to Party, this is used to pass document folders across all related objects.  TESTING</description>
+    <label>Recent Matter</label>
+    <referenceTo>litify_pm__Matter__c</referenceTo>
+    <relationshipLabel>Parties</relationshipLabel>
+    <relationshipName>Parties</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

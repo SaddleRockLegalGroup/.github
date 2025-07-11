@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_of_Diagnosis__c</fullName>
+    <description>This is used to capture the facility on the case that the client received their official diagnosis.  This can be used as Diagnosis and Treatment if they are the same and if it doesn&#39;t matter to the case.  If Treatment should be considered different use the &quot;Facility of Treatment&quot; to indicate this information.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Facility that the client received their official Diagnosis.</inlineHelpText>
+    <label>Facility of Diagnosis</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- All states that exposure to product took place. --></help>
+        <label><!-- Country States of Occurence --></label>
+        <name>Country_States_of_Occurence__c</name>
+    </CustomFieldTranslation>

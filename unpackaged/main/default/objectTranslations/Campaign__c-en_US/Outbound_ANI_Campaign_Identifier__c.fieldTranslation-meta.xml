@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Outbound ANI Campaign Identifier - will be passed into the outgoing Assign ANI API Post if this field is not null and an Intake is associated with this campaign. --></help>
+        <label><!-- Five9 Campaign Name --></label>
+        <name>Outbound_ANI_Campaign_Identifier__c</name>
+    </CustomFieldTranslation>

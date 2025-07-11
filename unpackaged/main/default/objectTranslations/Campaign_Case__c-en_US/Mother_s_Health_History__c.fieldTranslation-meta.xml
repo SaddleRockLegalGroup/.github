@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Health History specific to the mother --></help>
+        <label><!-- Mother&apos;s Health History --></label>
+        <name>Mother_s_Health_History__c</name>
+    </CustomFieldTranslation>

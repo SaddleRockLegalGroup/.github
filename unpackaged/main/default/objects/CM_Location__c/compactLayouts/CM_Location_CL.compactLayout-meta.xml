@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Location_CL</fullName>
+    <fields>Name</fields>
+    <fields>Intake__c</fields>
+    <fields>Facility_Type__c</fields>
+    <fields>Medical_Type__c</fields>
+    <fields>Category_Type__c</fields>
+    <label>CM Location CL</label>
+</CompactLayout>

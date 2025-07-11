@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fx_Tranche__c</fullName>
+    <description>Pulls the value of the Tranche Override picklist from the related Intake record, converted to text for use in formulas, reports, or comparisons.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  RecordType.DeveloperName = &quot;Invoice&quot;,
+  TEXT(Tranche__c),
+  TEXT(Intake__r.Tranche_Override__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Displays the Tranche Override selected on the related Intake. Used for reference, filtering, or automation. This value is shown as text and mirrors the selection made on the Intake record.</inlineHelpText>
+    <label>fx_Tranche</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

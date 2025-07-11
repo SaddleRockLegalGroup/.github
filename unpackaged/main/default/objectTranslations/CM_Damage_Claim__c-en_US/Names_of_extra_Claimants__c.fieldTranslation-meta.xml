@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Names of people that have rights to claim value from the damage occurred. --></help>
+        <label><!-- Names of extra Claimants --></label>
+        <name>Names_of_extra_Claimants__c</name>
+    </CustomFieldTranslation>

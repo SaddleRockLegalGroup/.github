@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Mass Tort Strategies CV: Error on File</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Mass Tort Strategies CV: Error on File</name>
+    <style>freeForm</style>
+    <subject>Correction Required for {!Contact.FirstName} - {!litify_pm__Intake__c.Case_Type_Name_del__c} Case</subject>
+    <textOnly>Kelly, Sean, Hannah, and Tim,
+
+An error has been identified in the case of {!Contact.FirstName} for the {!litify_pm__Intake__c.Case_Type_Name_del__c} case, marked as an &quot;error on file&quot; in our system.
+
+The error reason is: &lt;&lt;Custom1118&gt;&gt;
+
+Contact Information:
+{!Contact.FirstName}
+{!litify_pm__Intake__c.litify_pm__Phone__c}
+{!litify_pm__Intake__c.litify_pm__Email__c}
+DOB: {!Account.litify_pm__Date_of_birth__c}
+Lead ID: {!litify_pm__Intake__c.Id}
+
+Your prompt action in resolving this matter is greatly appreciated. You have 7 days to complete this request before a final notification will be sent.
+
+Best Regards,
+Saddle Rock Legal Group
+888-686-6454</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

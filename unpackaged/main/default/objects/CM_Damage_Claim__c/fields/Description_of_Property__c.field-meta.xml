@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_of_Property__c</fullName>
+    <description>Provide a description of the objects in question, edifice or property owned by the client.  Allows for further descriptions to help identify them and reference them properly.</description>
+    <inlineHelpText>Description of the property that will be referenced in policy and falls under the claim.</inlineHelpText>
+    <label>Description of Property</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

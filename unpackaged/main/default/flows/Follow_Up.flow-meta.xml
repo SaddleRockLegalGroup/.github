@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>974</locationX>
+        <locationY>603</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>BridgelegalCV</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_0</name>
+        <label>Send Email</label>
+        <locationX>1049</locationX>
+        <locationY>678</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_0_0</name>
+        <label>Send Email</label>
+        <locationX>1124</locationX>
+        <locationY>753</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_0_0_0</name>
+        <label>Send Email</label>
+        <locationX>1199</locationX>
+        <locationY>828</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_0_0_0_0</name>
+        <label>Send Email</label>
+        <locationX>1274</locationX>
+        <locationY>903</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_0_0_0_0_0</name>
+        <label>Send Email</label>
+        <locationX>1349</locationX>
+        <locationY>978</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_0_0_0_0_0_0</name>
+        <label>Send Email</label>
+        <locationX>1424</locationX>
+        <locationY>1053</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email_0_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Record ID for Bridge Legal</description>
+        <name>Bridge_Legal_CV_Follow_up</name>
+        <label>Bridge Legal CV: Follow up</label>
+        <locationX>594</locationX>
+        <locationY>620</locationY>
+        <defaultConnector>
+            <targetReference>Transport_CV_Follow_up</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002KqNIAU</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Concussion_Media_CV_Follow_up</name>
+        <label>Concussion Media CV: Follow up</label>
+        <locationX>679</locationX>
+        <locationY>1965</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002KqFIAU</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_0_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Mass_Tort_CV_Follow_up</name>
+        <label>Mass Tort CV: Follow up</label>
+        <locationX>677</locationX>
+        <locationY>1727</locationY>
+        <defaultConnector>
+            <targetReference>Concussion_Media_CV_Follow_up</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002KqBIAU</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Mischeia_CV_Follow_up</name>
+        <label>Mischeia CV: Follow up</label>
+        <locationX>672</locationX>
+        <locationY>1474</locationY>
+        <defaultConnector>
+            <targetReference>Mass_Tort_CV_Follow_up</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002QDUIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_0_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>NIB_CV_Follow_up</name>
+        <label>NIB CV: Follow up</label>
+        <locationX>667</locationX>
+        <locationY>1239</locationY>
+        <defaultConnector>
+            <targetReference>Mischeia_CV_Follow_up</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002KpyIAE</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_0_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Tort_Experts_CV_Follow_up</name>
+        <label>Tort Experts CV: Follow up</label>
+        <locationX>667</locationX>
+        <locationY>1030</locationY>
+        <defaultConnector>
+            <targetReference>NIB_CV_Follow_up</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002KpxIAE</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Transport_CV_Follow_up</name>
+        <label>Transport CV: Follow up</label>
+        <locationX>616</locationX>
+        <locationY>812</locationY>
+        <defaultConnector>
+            <targetReference>Tort_Experts_CV_Follow_up</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2pDn0000002QDKIA2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>DR - 6/24/24 - Replaced by outbound comm records</description>
+    <environments>Default</environments>
+    <interviewLabel>Follow Up {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DEPRECATED Follow Up</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Email</name>
+        <label>Log Email</label>
+        <locationX>1306</locationX>
+        <locationY>536</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>BridgelegalCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0</name>
+        <label>Log Email</label>
+        <locationX>1381</locationX>
+        <locationY>609</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>TransportDigitalCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0</name>
+        <label>Log Email</label>
+        <locationX>1456</locationX>
+        <locationY>686</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>TortExpertsCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>1529</locationX>
+        <locationY>761</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>NIBCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>1606</locationX>
+        <locationY>836</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>MischeiaCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>1681</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>MassTortCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Email_0_0_0_0_0_0</name>
+        <label>Log Email</label>
+        <locationX>1756</locationX>
+        <locationY>986</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>c.mcafee@youngpartnerslaw.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>ConcussionMediaCV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Owner_Email__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>251</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Bridge_Legal_CV_Follow_up</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Follow Up</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>BridgelegalCV</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Meghan,
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.
+&lt;br&gt;&lt;br&gt;
+The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}
+&lt;br&gt;&lt;br&gt;
+We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.
+&lt;br&gt;&lt;br&gt;
+Thank you for your attention to this urgent matter.
+&lt;br&gt;&lt;br&gt;
+Best regards,&lt;br&gt;
+Saddle Rock Legal Group&lt;br&gt;
+(888) 327-1194</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ConcussionMediaCV</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0);&quot;&gt;Michael and Greg,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Thank you for your attention to this urgent matter.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Best regards,&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Saddle Rock Legal Group&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;(888) 327-1194&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>MassTortCV</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Dear Kelly, Sean, Hannah, and Tim,&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Thank you for your attention to this urgent matter.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Best regards,&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Saddle Rock Legal Group&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;(888) 327-1194&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>MischeiaCV</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0);&quot;&gt;Michael&lt;/span&gt;,&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Thank you for your attention to this urgent matter.&lt;/p&gt;&lt;p&gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Best regards,&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;Saddle Rock Legal Group&amp;lt;br&amp;gt;&lt;/p&gt;&lt;p&gt;(888) 327-1194&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NIBCV</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Coryn,
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.
+&lt;br&gt;&lt;br&gt;
+The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}
+&lt;br&gt;&lt;br&gt;
+We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.
+&lt;br&gt;&lt;br&gt;
+Thank you for your attention to this urgent matter.
+&lt;br&gt;&lt;br&gt;
+Best regards,&lt;br&gt;
+Saddle Rock Legal Group&lt;br&gt;
+(888) 327-1194</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SendEmail</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.Vendor_Primary_Contact_First_Name__c},
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.
+&lt;br&gt;&lt;br&gt;
+The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}
+&lt;br&gt;&lt;br&gt;
+We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.
+&lt;br&gt;&lt;br&gt;
+Thank you for your attention to this urgent matter.
+&lt;br&gt;&lt;br&gt;
+Best regards,&lt;br&gt;
+Saddle Rock Legal Group&lt;br&gt;
+(888) 327-1194</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Urgent Follow-up Required: {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} - {!$Record.Case_Type_Name_del__c} Case</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TortExpertsCV</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Janice and Client Services,
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.
+&lt;br&gt;&lt;br&gt;
+The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}
+&lt;br&gt;&lt;br&gt;
+We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.
+&lt;br&gt;&lt;br&gt;
+Thank you for your attention to this urgent matter.
+&lt;br&gt;&lt;br&gt;
+Best regards,&lt;br&gt;
+Saddle Rock Legal Group&lt;br&gt;
+(888) 327-1194</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TransportDigitalCV</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Holden, Adam, and Zack,
+&lt;br&gt;&lt;br&gt;
+We hope this message finds you well. We would like to draw your attention to a follow-up item concerning the case of {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c} for the {!$Record.Case_Type_Name_del__c} case. This particular item has been marked for follow-up in our system.
+&lt;br&gt;&lt;br&gt;
+The reason for this follow-up is as follows: {!$Record.Reason_for_Follow_up__c}
+&lt;br&gt;&lt;br&gt;
+We kindly request your assistance in establishing communication with the client involved in this case to rectify the issue at hand. Your support in resolving this matter promptly is greatly appreciated.
+&lt;br&gt;&lt;br&gt;
+Should you have any questions or require further information, please do not hesitate to reach out to our team at Saddle Rock Legal Group. We can be contacted at (888) 327-1194.
+&lt;br&gt;&lt;br&gt;
+Thank you for your attention to this urgent matter.
+&lt;br&gt;&lt;br&gt;
+Best regards,&lt;br&gt;
+Saddle Rock Legal Group&lt;br&gt;
+(888) 327-1194</text>
+    </textTemplates>
+</Flow>

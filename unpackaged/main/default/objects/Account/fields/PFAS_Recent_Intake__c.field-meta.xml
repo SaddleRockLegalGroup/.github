@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PFAS_Recent_Intake__c</fullName>
+    <description>Takes todays date minus the &quot;PFAS Recent Intake Date&quot;. Checks if less than 14 days. Unchecks after. Used for Deduping process</description>
+    <formula>TODAY() - DATEVALUE(PFAS_Recent_Intake_Date__c) &lt;= 14</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Dedupe Filter. Checks when 14 days or less from last intake created in the PFAS tort.</inlineHelpText>
+    <label>PFAS Recent Intake</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

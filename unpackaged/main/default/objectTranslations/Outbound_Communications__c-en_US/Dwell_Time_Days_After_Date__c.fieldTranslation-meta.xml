@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This represents the number of days after the date field indicated in the Dwell Time Date field picklist.  This values is used to MATCH the already scheduled flow paths.  Chaning this value will not change the schedule.  The schedule must be changed in the corresponding flow --></help>
+        <label><!-- Dwell Time Days After Date --></label>
+        <name>Dwell_Time_Days_After_Date__c</name>
+    </CustomFieldTranslation>

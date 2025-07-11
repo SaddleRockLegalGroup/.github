@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Period_Date_Format__c</fullName>
+    <description>Converts Invoice_Period__c text (in MM/YYYY format) into a standard date on the 15th of that month for use in filters and reporting.</description>
+    <formula>DATE(
+  VALUE(RIGHT(Invoice_Period__c, 4)),       /* Year: last 4 characters */
+  VALUE(LEFT(Invoice_Period__c, 2)),        /* Month: first 2 characters */
+  15                                        /* Fixed day */
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Used for relative date filtering on dashboards and reports. Takes the Invoice Period Month and Year and converts it to a Date Format with the day set as 15th.</inlineHelpText>
+    <label>Invoice Period Date Format</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

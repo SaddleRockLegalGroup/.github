@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Lung Cancer</fullName>
+        <default>false</default>
+        <label>Lung Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Parkinson&#39;s</fullName>
+        <default>false</default>
+        <label>Parkinson&#39;s</label>
+    </customValue>
+    <customValue>
+        <fullName>Bradykinesia</fullName>
+        <default>false</default>
+        <label>Bradykinesia</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Hodgkins Lymphoma (NHL)</fullName>
+        <default>false</default>
+        <label>Non-Hodgkins Lymphoma (NHL)</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <customValue>
+        <fullName>Endometrial Cancer</fullName>
+        <default>false</default>
+        <label>Endometrial Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Ovarian Cancer</fullName>
+        <default>false</default>
+        <label>Ovarian Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Uterine Cancer</fullName>
+        <default>false</default>
+        <label>Uterine Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>ADHD/ADD</fullName>
+        <default>false</default>
+        <label>ADHD/ADD</label>
+    </customValue>
+    <customValue>
+        <fullName>Autism Spectrum Disorder</fullName>
+        <default>false</default>
+        <label>Autism Spectrum Disorder</label>
+    </customValue>
+    <customValue>
+        <fullName>Kanner’s Syndrome</fullName>
+        <default>false</default>
+        <label>Kanner’s Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Asperger’s Syndrome</fullName>
+        <default>false</default>
+        <label>Asperger’s Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Childhood Disintegrative Disorder</fullName>
+        <default>false</default>
+        <label>Childhood Disintegrative Disorder</label>
+    </customValue>
+    <customValue>
+        <fullName>Pervasive Developmental Disorder</fullName>
+        <default>false</default>
+        <label>Pervasive Developmental Disorder</label>
+    </customValue>
+    <customValue>
+        <fullName>Down Syndrome</fullName>
+        <default>false</default>
+        <label>Down Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Fragile X Syndrome</fullName>
+        <default>false</default>
+        <label>Fragile X Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Tourette Syndrome</fullName>
+        <default>false</default>
+        <label>Tourette Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Tuberous Sclerosis</fullName>
+        <default>false</default>
+        <label>Tuberous Sclerosis</label>
+    </customValue>
+    <customValue>
+        <fullName>Necrotizing Enterocolitis</fullName>
+        <default>false</default>
+        <label>Necrotizing Enterocolitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Acquiring Official Diagnosis Shortly</fullName>
+        <default>false</default>
+        <label>Acquiring Official Diagnosis Shortly</label>
+    </customValue>
+    <customValue>
+        <fullName>Bladder</fullName>
+        <default>false</default>
+        <label>Bladder</label>
+    </customValue>
+    <customValue>
+        <fullName>Esophageal</fullName>
+        <default>false</default>
+        <label>Esophageal</label>
+    </customValue>
+    <customValue>
+        <fullName>Stomach/Gastric</fullName>
+        <default>false</default>
+        <label>Stomach/Gastric</label>
+    </customValue>
+    <customValue>
+        <fullName>Liver</fullName>
+        <default>false</default>
+        <label>Liver</label>
+    </customValue>
+    <customValue>
+        <fullName>Pancreatic</fullName>
+        <default>false</default>
+        <label>Pancreatic</label>
+    </customValue>
+    <customValue>
+        <fullName>Breast</fullName>
+        <default>false</default>
+        <label>Breast</label>
+    </customValue>
+    <customValue>
+        <fullName>Colorectal</fullName>
+        <default>false</default>
+        <label>Colorectal</label>
+    </customValue>
+    <customValue>
+        <fullName>Kidney Cancer</fullName>
+        <default>false</default>
+        <label>Kidney Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Lung</fullName>
+        <default>false</default>
+        <label>Lung</label>
+    </customValue>
+    <customValue>
+        <fullName>No Other Cancer</fullName>
+        <default>false</default>
+        <label>No Other Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Prostate</fullName>
+        <default>false</default>
+        <label>Prostate</label>
+    </customValue>
+    <customValue>
+        <fullName>Meningioma</fullName>
+        <default>false</default>
+        <label>Meningioma</label>
+    </customValue>
+    <customValue>
+        <fullName>Breast Cancer</fullName>
+        <default>false</default>
+        <label>Breast Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Cervical Cancer</fullName>
+        <default>false</default>
+        <label>Cervical Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaginal Cancer</fullName>
+        <default>false</default>
+        <label>Vaginal Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Vulvar Cancer</fullName>
+        <default>false</default>
+        <label>Vulvar Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Fallopian Tube Cancer</fullName>
+        <default>false</default>
+        <label>Fallopian Tube Cancer</label>
+    </customValue>
+    <customValue>
+        <fullName>Liver Disease</fullName>
+        <default>false</default>
+        <label>Liver Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Testicular Cancer</fullName>
+        <default>false</default>
+        <label>Testicular Cancer</label>
+    </customValue>
+    <description>Types of Diagnosis accepted to be used as a standard for all intakes</description>
+    <masterLabel>Diagnosis</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

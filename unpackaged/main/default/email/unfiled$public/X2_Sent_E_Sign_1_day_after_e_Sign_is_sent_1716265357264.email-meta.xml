@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent e-Sign (1 day after e-Sign is sent)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>#2 Sent e-Sign</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>Hi {{{litify_pm__Intake__c.FX_Caller_First_Name__c}}}, re: Saddle Rock Legal Group / IMPORTANT</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Migration_from_Caller_to_Client</fullName>
+    <columns>Active__c</columns>
+    <columns>NAME</columns>
+    <columns>Recipient__c</columns>
+    <columns>Update_Notes__c</columns>
+    <columns>Case_Type__c</columns>
+    <columns>Intake_Status__c</columns>
+    <columns>Intake_Sub_Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>SMS_Message_to_Client__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Recipient__c</field>
+        <operation>equals</operation>
+        <value>Caller</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Outbound_Communications__c.Dwell_Time</value>
+    </filters>
+    <label>Migration from Caller to Client</label>
+</ListView>

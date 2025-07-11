@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Converts Question 120 from picklist to number (i.e. Limiting your response to visits for issues related to cancer and to gynecologic issues other than pregnancy, identify each hospital, clinic, or health care facility where you were hospitalized (inpatient, out-patient, or emergency room visit) from the (1) --></help>
+        <label><!-- How Many Hospitalizations? --></label>
+        <name>FX_How_Many_Hospitalizations__c</name>
+    </CustomFieldTranslation>

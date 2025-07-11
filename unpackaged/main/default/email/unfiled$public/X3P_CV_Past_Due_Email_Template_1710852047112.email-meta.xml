@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Non Responsive for 7 days, need 3P to reach out to client</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>3P: Past Due Email</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>{{{litify_pm__Intake__c.Caller__c}}}: Past Due</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

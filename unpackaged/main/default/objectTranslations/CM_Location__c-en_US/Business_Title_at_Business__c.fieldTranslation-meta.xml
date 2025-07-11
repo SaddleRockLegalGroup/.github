@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Business - Title at Business --></label>
+        <name>Business_Title_at_Business__c</name>
+    </CustomFieldTranslation>

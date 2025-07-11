@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Disposition__c</fullName>
+    <label>Call Disposition</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+                <label>No Answer</label>
+            </value>
+            <value>
+                <fullName>Left Voicemail</fullName>
+                <default>false</default>
+                <label>Left Voicemail</label>
+            </value>
+            <value>
+                <fullName>Voicemail Full</fullName>
+                <default>false</default>
+                <label>Voicemail Full</label>
+            </value>
+            <value>
+                <fullName>Suspected Fraud</fullName>
+                <default>false</default>
+                <label>Suspected Fraud</label>
+            </value>
+            <value>
+                <fullName>Contacted Client</fullName>
+                <default>false</default>
+                <label>Contacted Client</label>
+            </value>
+            <value>
+                <fullName>Refused Help</fullName>
+                <default>false</default>
+                <label>Refused Help</label>
+            </value>
+            <value>
+                <fullName>Disconnected Number</fullName>
+                <default>false</default>
+                <label>Disconnected Number</label>
+            </value>
+            <value>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Number</label>
+            </value>
+            <value>
+                <fullName>End Call</fullName>
+                <default>false</default>
+                <label>End Call</label>
+            </value>
+            <value>
+                <fullName>No Disposition</fullName>
+                <default>false</default>
+                <label>No Disposition</label>
+            </value>
+            <value>
+                <fullName>Caller_Disconnected</fullName>
+                <default>false</default>
+                <label>Caller_Disconnected</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

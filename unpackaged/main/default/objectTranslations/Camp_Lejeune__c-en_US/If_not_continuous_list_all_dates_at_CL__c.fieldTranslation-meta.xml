@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If not continuous, please list all dates you were at Camp Lejeune --></help>
+        <label><!-- If not continuous list all dates at CL --></label>
+        <name>If_not_continuous_list_all_dates_at_CL__c</name>
+    </CustomFieldTranslation>

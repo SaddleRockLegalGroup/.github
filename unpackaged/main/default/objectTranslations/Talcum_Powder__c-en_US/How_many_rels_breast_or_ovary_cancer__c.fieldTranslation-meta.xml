@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- How many rels breast or ovary cancer --></label>
+        <name>How_many_rels_breast_or_ovary_cancer__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <choices>
+        <name>c_CampaignCheck</name>
+        <choiceText>Campaign: {!Get_Intake.Campaign__r.Name} -- {!fx_Verify_Readiness_Check}</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>c_ClientDOBCheck</name>
+        <choiceText>Client Date of Birth: {!Get_Intake.fx_Client_Date_of_Birth__c}</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>c_ClientFirstNameCheck</name>
+        <choiceText>Client First Name: {!Get_Intake.litify_pm__First_Name__c}</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>c_ClientLastNameCheck</name>
+        <choiceText>Client Last Name: {!Get_Intake.litify_pm__Last_Name__c}</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>c_MatterCheck</name>
+        <choiceText>Matter Value: {!Get_Intake.litify_pm__Matter__c}</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <elementReference>fx_MatterIDValueCheck</elementReference>
+        </value>
+    </choices>
+    <choices>
+        <name>c_MatterValueCheck_Test</name>
+        <choiceText>Matter Value</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <elementReference>fx_MatterIDValueCheck</elementReference>
+        </value>
+    </choices>
+    <choices>
+        <name>c_RetainerSignedCheck</name>
+        <choiceText>Retainer Agreement: {!Get_Intake.litify_pm__Retainer_Agreement_Signed__c}</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Choice_3rdPartyErrorOnFile</name>
+        <choiceText>Third Party Error On File (Errors from Case Verification Intakes caused by Vendors)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Third Party Error On File</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_ClientForm</name>
+        <choiceText>Client Form (Section of Clients Personal Information)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Client Form</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_ConflictingAnswers</name>
+        <choiceText>Conflicting Answers</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Conflicting Answers</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_Document</name>
+        <choiceText>Document (Attached File/Signature)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Document</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_ErrorOnFile</name>
+        <choiceText>Error On File (Errors Caused by our Internal Teams)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Error On File</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_ErrorOnFileUpdate</name>
+        <choiceText>Error On file</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Choice_IntakeForm</name>
+        <choiceText>Intake Form</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Intake Form</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_MilitaryForm</name>
+        <choiceText>Military Form (Camp Lejeune only)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Military Form</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_MissingAnswers</name>
+        <choiceText>Missing Information</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Missing Information</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_MissingDocuments</name>
+        <choiceText>Missing Documents</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Missing Documents</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_ProblemswithDocument</name>
+        <choiceText>Data in Document</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data in Document</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_QualifyingForm</name>
+        <choiceText>Qualifying Information</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Qualifying Form</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_ReferIntakeOut</name>
+        <choiceText>Refer Intake Out</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Choice_TakeOwnership</name>
+        <choiceText>Assign to Me</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Choice_TurnDownIntake</name>
+        <choiceText>Turn Down Intake (Disqualify)</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Choice_Unfinished</name>
+        <choiceText>Unfinished</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Unfinished</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_WrongName_Spelling</name>
+        <choiceText>Wrong Name/Spelling</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Wrong Name/Spelling</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Coice_ErrorwithSignature</name>
+        <choiceText>Error with Signature</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Error with Signature</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>turn</name>
+        <choiceText>turn</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>turn</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>Determines if a packet should be created or not.</description>
+        <name>Decision_3</name>
+        <label>Referral Pack Creation Routing</label>
+        <locationX>1194</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Send_Referral_out</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Ready_to_Refer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fx_Verify_Readiness_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NotReadyForReferralScreen</targetReference>
+            </connector>
+            <label>Not Ready to Refer</label>
+        </rules>
+        <rules>
+            <name>Create_Packet</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Intake.Referral_Packet_is_Generated__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Referral_pack_for_Sending</targetReference>
+            </connector>
+            <label>Create Packet</label>
+        </rules>
+        <rules>
+            <name>Create_Extra_Packet_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Intake.Referral_Packet_is_Generated__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Referral_out</targetReference>
+            </connector>
+            <label>Create Extra Packet Check</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Route_the_Error</name>
+        <label>Route the Error</label>
+        <locationX>314</locationX>
+        <locationY>890</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>X3rd_Party</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Choice_3rdPartyErrorOnFile</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>X3rd_Party_Update_Intake</targetReference>
+            </connector>
+            <label>3rd Party</label>
+        </rules>
+        <rules>
+            <name>Internal_Error</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Choice_ErrorOnFile</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Intake</targetReference>
+            </connector>
+            <label>Internal Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Update_Chosen_Decision</name>
+        <label>Update Chosen Decision</label>
+        <locationX>1282</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Unable_to_move_forward</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Error_On_File_Chosen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Choice_ErrorOnFileUpdate</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Intake.litify_pm__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Referred Out</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Type_of_Error</targetReference>
+            </connector>
+            <label>Error On File Chosen</label>
+        </rules>
+        <rules>
+            <name>Refer_Out_Chosen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Choice_ReferIntakeOut</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_3</targetReference>
+            </connector>
+            <label>Refer Out Chosen</label>
+        </rules>
+        <rules>
+            <name>TurnDown_Chosen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Choice_TurnDownIntake</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_status</targetReference>
+            </connector>
+            <label>TurnDown Chosen</label>
+        </rules>
+        <rules>
+            <name>Take_Ownership_Chosen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Choice_TakeOwnership</leftValueReference>
+                <operator>WasSelected</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Intake.litify_pm__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Referred Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Intake.litify_pm__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Turned Down</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_QC_User_Info_on_Intake</targetReference>
+            </connector>
+            <label>Take Ownership Chosen</label>
+        </rules>
+    </decisions>
+    <description>This flow manages all of the QC qorkflow for processing all intakes that have been moved up into &quot;Under Review&quot; to allow them to quickly and properly manage them based on their processes.  Should help reduce training/tribal knowledge needs and improve overall outcomes.</description>
+    <dynamicChoiceSets>
+        <name>Note_Topic_List</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>litify_pm__lit_Topic__c</picklistField>
+        <picklistObject>litify_pm__lit_Note__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Selection_Sub_Status</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>Sub_Status__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>StatusOptions</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>litify_pm__Status__c</picklistField>
+        <picklistObject>litify_pm__Intake__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>fx_Default_Check_Off_Values</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!Get_Intake.litify_pm__Matter__c})), &quot;Matter Value: Get_Intake.litify_pm__Matter__c&quot;, &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_MatterIDValueCheck</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(NOT(ISBLANK({!Get_Intake.litify_pm__Matter__c})), TRUE, FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Verify_Readiness_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(OR(NOT(ISBLANK({!Get_Intake.litify_pm__Matter__c})),ISBLANK({!Get_Intake.Campaign__c}), ISBLANK({!Get_Intake.litify_pm__Retainer_Agreement_Signed__c}), ISBLANK({!Get_Intake.litify_pm__First_Name__c}), ISBLANK({!Get_Intake.litify_pm__Last_Name__c}), ISBLANK({!Get_Intake.fx_Client_Date_of_Birth__c}), ISBLANK({!Get_Intake.litify_pm__Email__c}), ISBLANK({!Get_Intake.litify_pm__Phone__c}), ISBLANK({!Get_Intake.Injured_Party_Full_Name__c})), FALSE, TRUE)</expression>
+    </formulas>
+    <formulas>
+        <name>NoteLabel</name>
+        <dataType>String</dataType>
+        <expression>&quot;Error On File | QC NOTE | &quot; + TEXT(TODAY())</expression>
+    </formulas>
+    <interviewLabel>SRLG | Intake | QC | Error On File Screen {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Intake | QC | Managed Workflow Processes</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_QC_Note</name>
+        <label>Create QC Note</label>
+        <locationX>314</locationX>
+        <locationY>782</locationY>
+        <connector>
+            <targetReference>Route_the_Error</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>NoteLabel</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__lit_Intake__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__lit_Note__c</field>
+            <value>
+                <elementReference>Error_On_File_Notes</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__lit_Topic__c</field>
+            <value>
+                <stringValue>QC Notes</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__lit_Note__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Intake</name>
+        <label>Get Intake</label>
+        <locationX>1282</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_to_Perform</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Intake</name>
+        <label>Update Intake</label>
+        <locationX>314</locationX>
+        <locationY>998</locationY>
+        <connector>
+            <targetReference>Successful_Submission</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Error_On_File_Note__c</field>
+            <value>
+                <elementReference>Error_On_File_Notes</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Error_on_File_Reason__c</field>
+            <value>
+                <elementReference>Define_Errors_on_Intake</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Note_Used_In_Emails__c</field>
+            <value>
+                <elementReference>Create_QC_Note</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Error on File</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Status__c</field>
+            <value>
+                <stringValue>Under Review</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_QC_User_Info_on_Intake</name>
+        <label>Update QC User Info on Intake</label>
+        <locationX>1986</locationX>
+        <locationY>458</locationY>
+        <connector>
+            <targetReference>Assigned_Success</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Active Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Under_Review_Assignee__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>X3rd_Party_Update_Intake</name>
+        <label>3rd Party Update Intake</label>
+        <locationX>50</locationX>
+        <locationY>998</locationY>
+        <connector>
+            <targetReference>Successful_Submission</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Error_On_File_Note__c</field>
+            <value>
+                <elementReference>Error_On_File_Notes</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Error_on_File_Reason__c</field>
+            <value>
+                <elementReference>Define_Errors_on_Intake</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Note_Used_In_Emails__c</field>
+            <value>
+                <elementReference>Create_QC_Note</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sub_Status__c</field>
+            <value>
+                <stringValue>Third Party Error on File</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>litify_pm__Status__c</field>
+            <value>
+                <stringValue>Under Review</stringValue>
+            </value>
+        </inputAssignments>
+        <object>litify_pm__Intake__c</object>
+    </recordUpdates>
+    <screens>
+        <name>Assigned_Success</name>
+        <label>Assigned Success</label>
+        <locationX>1986</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Success_notice_assignee</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;You have been successfully assigned the record&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;Sub-status is now &quot;Active Review&quot;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;This should now show up in your personal queue&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Error On File Options</description>
+        <name>Error_On_File</name>
+        <label>Error On File</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Note_Creation</targetReference>
+        </connector>
+        <fields>
+            <name>Error_On_File_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Error_On_File_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Areas_Errors_Need_to_be_Addressed</name>
+                    <choiceReferences>Choice_Document</choiceReferences>
+                    <choiceReferences>Choice_QualifyingForm</choiceReferences>
+                    <choiceReferences>Choice_ClientForm</choiceReferences>
+                    <choiceReferences>Choice_IntakeForm</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Areas Where Errors Exist (Select all that Apply)</fieldText>
+                    <fieldType>MultiSelectCheckboxes</fieldType>
+                    <helpText>&lt;p&gt;Select every option that applies to where errors need to be fixed.&lt;/p&gt;</helpText>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Error_On_File_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Define_Errors_on_Intake</name>
+                    <choiceReferences>Choice_MissingAnswers</choiceReferences>
+                    <choiceReferences>Coice_ErrorwithSignature</choiceReferences>
+                    <choiceReferences>Choice_ProblemswithDocument</choiceReferences>
+                    <choiceReferences>Choice_ConflictingAnswers</choiceReferences>
+                    <choiceReferences>Choice_MissingDocuments</choiceReferences>
+                    <choiceReferences>Choice_WrongName_Spelling</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Define Errors on Intake (Select all that Apply)</fieldText>
+                    <fieldType>MultiSelectCheckboxes</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Note_Creation</name>
+        <label>Note Creation</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Create_QC_Note</targetReference>
+        </connector>
+        <fields>
+            <name>NoteInformation</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;This Creates a Detailed Note that will show up in emails sent out to vendors and in the Note Section on the Intake for Intake Agents to use to solve the errors.﻿&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 12px; color: rgb(255, 0, 0);&quot;&gt;Example: &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Missing Answers:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;-Diagnosis is missing&lt;/p&gt;&lt;p&gt;-Age of Mother is missing&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Conflicting Answers:&lt;/p&gt;&lt;p&gt;-Age of father does not match birth of child&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Error_On_File_Notes</name>
+            <defaultValue>
+                <stringValue>{!Define_Errors_on_Intake}</stringValue>
+            </defaultValue>
+            <fieldText>Error On File Notes (Write details under each problem selected)</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>NotReadyForReferralScreen</name>
+        <label>NotReadyForReferralScreen</label>
+        <locationX>842</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>Return to Options</backButtonLabel>
+        <connector>
+            <targetReference>Send_Referral_out</targetReference>
+        </connector>
+        <fields>
+            <name>ReferralCheck_DisplayText</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;You are not ready for a referall just yet.  &lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;Please return to select from other options&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;Or&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;Review missing items and come back when ready.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Referred_out_Success</name>
+        <label>Referred out Success</label>
+        <locationX>1194</locationX>
+        <locationY>866</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ReferredOut_SuccessNotice</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Your Intake has been successfully referred out!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Successful_Submission</name>
+        <label>Successful Submission</label>
+        <locationX>314</locationX>
+        <locationY>1190</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Success_notice</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Error on File Note has been created&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Your Intake has been successfully updated&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Use for routing and determine what type of error they are facing.</description>
+        <name>Type_of_Error</name>
+        <label>Type of Error</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Error_On_File</targetReference>
+        </connector>
+        <fields>
+            <name>What_type_of_Error_is_this</name>
+            <choiceReferences>Choice_ErrorOnFile</choiceReferences>
+            <choiceReferences>Choice_3rdPartyErrorOnFile</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>What type of Error is this?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Unable_to_move_forward</name>
+        <label>Unable to move forward</label>
+        <locationX>2250</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Turn_Back_Notice</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;This choice of update can only occur if the intake has not been referred out&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Decides what update will occur for QC to select from.</description>
+        <name>Update_to_Perform</name>
+        <label>Update to Perform</label>
+        <locationX>1282</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_Chosen_Decision</targetReference>
+        </connector>
+        <fields>
+            <name>How_would_you_like_to_update_this_Intake_today</name>
+            <choiceReferences>Choice_ReferIntakeOut</choiceReferences>
+            <choiceReferences>Choice_TurnDownIntake</choiceReferences>
+            <choiceReferences>Choice_ErrorOnFileUpdate</choiceReferences>
+            <choiceReferences>Choice_TakeOwnership</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>How would you like to update this Intake today?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Updated_status_success</name>
+        <label>Updated status success</label>
+        <locationX>1722</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>UpdateStatus_SuccessNotice</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;You have successfully updated the Status of the Intake!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>1156</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Intake</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <subflows>
+        <name>Create_Referral_pack_for_Sending</name>
+        <label>Create Referral pack for Sending</label>
+        <locationX>1106</locationX>
+        <locationY>566</locationY>
+        <connector>
+            <targetReference>Send_Referral_out</targetReference>
+        </connector>
+        <flowName>SRLG_Intake_QC_Generate_Referral_Packet</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <description>Uses Brio&#39;s send referral open matter flow to continue the work.</description>
+        <name>Send_Referral_out</name>
+        <label>Send Referral out</label>
+        <locationX>1194</locationX>
+        <locationY>758</locationY>
+        <connector>
+            <targetReference>Referred_out_Success</targetReference>
+        </connector>
+        <flowName>BRIO_Send_Referral_Open_Matter</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <description>Used to turn down the record or just update the status as needed.</description>
+        <name>Update_the_status</name>
+        <label>Update the status</label>
+        <locationX>1722</locationX>
+        <locationY>458</locationY>
+        <connector>
+            <targetReference>Updated_status_success</targetReference>
+        </connector>
+        <flowName>BRIO_Update_Status_and_Sub_Status_on_Intake</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>TestingTextTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;IF(ISBLANK({!Get_Intake.litify_pm__Matter__c}), &lt;img src=&quot;https://saddlerock.file.force.com/sfc/servlet.shepherd/version/download/068UJ00000MrSuM?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;redxverysmall.png&quot;&gt;,&lt;img src=&quot;https://saddlerock.file.force.com/sfc/servlet.shepherd/version/download/068UJ00000MrdGI?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;greencheckverysmall.png&quot;&gt;)&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

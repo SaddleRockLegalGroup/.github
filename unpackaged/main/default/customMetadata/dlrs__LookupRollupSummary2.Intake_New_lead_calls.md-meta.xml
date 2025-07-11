@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Intake | New Lead Calls</label>
+    <protected>false</protected>
+    <values>
+        <field>dlrs__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>dlrs__AggregateAllRows__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>dlrs__AggregateOperation__c</field>
+        <value xsi:type="xsd:string">Count</value>
+    </values>
+    <values>
+        <field>dlrs__AggregateResultField__c</field>
+        <value xsi:type="xsd:string">DLRS_Total_New_Lead_Calls__c</value>
+    </values>
+    <values>
+        <field>dlrs__CalculationMode__c</field>
+        <value xsi:type="xsd:string">Realtime</value>
+    </values>
+    <values>
+        <field>dlrs__CalculationSharingMode__c</field>
+        <value xsi:type="xsd:string">System</value>
+    </values>
+    <values>
+        <field>dlrs__ChildObject__c</field>
+        <value xsi:type="xsd:string">Task</value>
+    </values>
+    <values>
+        <field>dlrs__ConcatenateDelimiter__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>dlrs__Description__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>dlrs__FieldToAggregate__c</field>
+        <value xsi:type="xsd:string">Id</value>
+    </values>
+    <values>
+        <field>dlrs__FieldToOrderBy__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>dlrs__ParentObject__c</field>
+        <value xsi:type="xsd:string">litify_pm__Intake__c</value>
+    </values>
+    <values>
+        <field>dlrs__RelationshipCriteriaFields__c</field>
+        <value xsi:type="xsd:string">Intake_Stage_at_Time_of_Call__c
+Call_Disposition__c</value>
+    </values>
+    <values>
+        <field>dlrs__RelationshipCriteria__c</field>
+        <value xsi:type="xsd:string">Intake_Stage_at_Time_of_Call__c in (&#39;Open&#39; , &#39;Working&#39;) and  Call_Disposition__c in(&#39;Disconnected Number&#39;, &#39;Wrong Number&#39;, &#39;Voicemail Full&#39; ,&#39;Left Voicemail&#39; ,&#39;No Answer&#39; ,&#39;Contacted Client&#39;, &#39;End Call&#39;)</value>
+    </values>
+    <values>
+        <field>dlrs__RelationshipField__c</field>
+        <value xsi:type="xsd:string">Intake__c</value>
+    </values>
+    <values>
+        <field>dlrs__RowLimit__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>dlrs__TestCode2__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>dlrs__TestCodeParent__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>dlrs__TestCodeSeeAllData__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>dlrs__TestCode__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

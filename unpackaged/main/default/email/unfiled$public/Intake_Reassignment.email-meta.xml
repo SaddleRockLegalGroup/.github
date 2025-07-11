@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use this template as part of the Intake Reassignment process</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Intake Reassignment</name>
+    <style>none</style>
+    <subject>Case Reassignment</subject>
+    <textOnly>Hello {litify_pm__Intake__r.Intake_Vendor__r.X3P_Email_To_Contact__c.Name},
+
+Please close out the lead and remove the following individual from your dialer:
+
+Name: {litify_pm__Intake__c.litify_pm__Client__c}
+Email: {litify_pm__Intake__c.FX_Caller_Email__c}
+Phone Number: {litify_pm__Intake__c.FX_Client_Phone_Mobile__c}
+Campaign: {litify_pm__Intake__c.Case_Type_Name_del__c}
+
+This individual was known to us before we received a file from your team.
+
+We appreciate your prompt attention to this matter.
+
+Best regards,,
+
+Saddle Rock Legal Group
+Phone: 888-686-6454</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

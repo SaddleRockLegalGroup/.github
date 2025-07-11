@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- DLRS Rollup of all Intakes where Campaign Partner lookup on Intake matches this Campaign/Partner record AND Status equals &apos;Referred Out&apos; --></help>
+        <label><!-- Intakes Sent --></label>
+        <name>Intakes_Sent__c</name>
+    </CustomFieldTranslation>

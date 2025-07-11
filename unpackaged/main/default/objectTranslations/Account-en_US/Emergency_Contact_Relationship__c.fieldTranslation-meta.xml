@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Emergency Contact Relationship (for someone who lives with the client) --></help>
+        <label><!-- Emergency Contact Relationship --></label>
+        <name>Emergency_Contact_Relationship__c</name>
+    </CustomFieldTranslation>

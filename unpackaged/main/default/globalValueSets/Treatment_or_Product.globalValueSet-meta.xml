@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tamoxifen</fullName>
+        <default>false</default>
+        <label>Tamoxifen</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <customValue>
+        <fullName>Antibiotics</fullName>
+        <default>false</default>
+        <label>Antibiotics</label>
+    </customValue>
+    <customValue>
+        <fullName>Blood Transfusion</fullName>
+        <default>false</default>
+        <label>Blood Transfusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Assisted Ventilation</fullName>
+        <default>false</default>
+        <label>Assisted Ventilation</label>
+    </customValue>
+    <customValue>
+        <fullName>Penrose Drain</fullName>
+        <default>false</default>
+        <label>Penrose Drain</label>
+    </customValue>
+    <customValue>
+        <fullName>Exploratory Laparotomy</fullName>
+        <default>false</default>
+        <label>Exploratory Laparotomy</label>
+    </customValue>
+    <customValue>
+        <fullName>Ostomy Surgery</fullName>
+        <default>false</default>
+        <label>Ostomy Surgery</label>
+    </customValue>
+    <customValue>
+        <fullName>PICC Line</fullName>
+        <default>false</default>
+        <label>PICC Line</label>
+    </customValue>
+    <customValue>
+        <fullName>Unrelated Surgeries</fullName>
+        <default>false</default>
+        <label>Unrelated Surgeries</label>
+    </customValue>
+    <customValue>
+        <fullName>No Treatment / Wants Treatment</fullName>
+        <default>false</default>
+        <label>No Treatment / Wants Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>No Treatment / Rejected Treatment</fullName>
+        <default>false</default>
+        <label>No Treatment / Rejected Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>Surgery</fullName>
+        <default>false</default>
+        <label>Surgery</label>
+    </customValue>
+    <customValue>
+        <fullName>Radiation</fullName>
+        <default>false</default>
+        <label>Radiation</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemotherapy</fullName>
+        <default>false</default>
+        <label>Chemotherapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes</fullName>
+        <default>false</default>
+        <label>Yes</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>Estrogens</fullName>
+        <default>false</default>
+        <label>Estrogens</label>
+    </customValue>
+    <customValue>
+        <fullName>Progestins</fullName>
+        <default>false</default>
+        <label>Progestins</label>
+    </customValue>
+    <customValue>
+        <fullName>Combination Estrogen-Progestin</fullName>
+        <default>false</default>
+        <label>Combination Estrogen-Progestin</label>
+    </customValue>
+    <customValue>
+        <fullName>Testosterone</fullName>
+        <default>false</default>
+        <label>Testosterone</label>
+    </customValue>
+    <customValue>
+        <fullName>Bioidentical Hormones</fullName>
+        <default>false</default>
+        <label>Bioidentical Hormones</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Any Treatment Drug or Product used in cases</description>
+    <masterLabel>Treatment or Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

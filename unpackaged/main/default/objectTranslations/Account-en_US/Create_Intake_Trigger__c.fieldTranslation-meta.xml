@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- When checked an intake will be created through automations, then unchecked when the intake was created --></help>
+        <label><!-- Create Intake Trigger --></label>
+        <name>Create_Intake_Trigger__c</name>
+    </CustomFieldTranslation>

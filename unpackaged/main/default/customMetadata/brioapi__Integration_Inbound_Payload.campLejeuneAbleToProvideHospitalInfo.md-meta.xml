@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>campLejeuneAbleToProvideHospitalInfo</label>
+    <protected>false</protected>
+    <values>
+        <field>brioapi__Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>brioapi__Child_Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>brioapi__Integration__c</field>
+        <value xsi:type="xsd:string">Intake_Webhook_Mapping</value>
+    </values>
+    <values>
+        <field>brioapi__Is_Identifier__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>brioapi__JSON_Key__c</field>
+        <value xsi:type="xsd:string">campLejeuneAbleToProvideHospitalInfo</value>
+    </values>
+    <values>
+        <field>brioapi__JSON_Parent__c</field>
+        <value xsi:type="xsd:string">campLejeune</value>
+    </values>
+    <values>
+        <field>brioapi__JSON_Type__c</field>
+        <value xsi:type="xsd:string">Field</value>
+    </values>
+    <values>
+        <field>brioapi__Lookup_Field_From_Child_Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>brioapi__SObject__c</field>
+        <value xsi:type="xsd:string">Camp_Lejeune__c</value>
+    </values>
+    <values>
+        <field>brioapi__Target_Field__c</field>
+        <value xsi:type="xsd:string">Able_to_provide_hospital_info__c</value>
+    </values>
+</CustomMetadata>

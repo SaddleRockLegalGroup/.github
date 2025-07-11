@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Post_to_Chatter</name>
+        <label>Post to Chatter</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>ChatterMessageBodyWithTag</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>0F9UJ0000002NQL0A2</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>group</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>chatterPost</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>On creation of a Twilio Message record, IF Direction = Inbound notify a chatter group of the new incoming message.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Formula to construct the Chatter Message Body that is being posted to Chatter</description>
+        <name>ChatterMessageBody</name>
+        <dataType>String</dataType>
+        <expression>BR() +
+&quot;New Incoming SMS Message From: &quot; + BR() +
+&quot;Name: &quot; + {!$Record.FX_Contact_Name__c} + BR() +
+&quot;Number: &quot; + {!$Record.TwilioSF__From_Number_Unformatted__c} + BR() +
+&quot;Message: &quot; + {!$Record.TwilioSF__Body__c}</expression>
+    </formulas>
+    <interviewLabel>BRIO | Twilio Message | Create Chatter Notif On Incoming SMS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Twilio Message | Create Chatter Notif On Incoming SMS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get the id of the Chatter Group so that the group can be tagged in the chatter post</description>
+        <name>Get_Chatter_Group</name>
+        <label>Get Chatter Group</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Post_to_Chatter</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Incoming SMS Notifications</stringValue>
+            </value>
+        </filters>
+        <object>CollaborationGroup</object>
+        <outputAssignments>
+            <assignToReference>ChatterGroupId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>Id</sortField>
+        <sortOrder>Desc</sortOrder>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Chatter_Group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>TwilioSF__Direction__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>inbound</stringValue>
+            </value>
+        </filters>
+        <object>TwilioSF__Message__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ChatterGroupId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ChatterMessageBodyWithTag</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>@[{!ChatterGroupId}] {!ChatterMessageBody}</stringValue>
+        </value>
+    </variables>
+</Flow>

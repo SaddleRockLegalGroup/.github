@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);">Hi {!Contact.FirstName},</font><div style=""><font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);"><br>You previously signed our retainer agreement to have a further look at your {!litify_pm__Intake__c.Case_Type_Name_del__c}&nbsp;case. Our prosecuting firm has been unable to reach you and it's crucial you contact them if you want to pursue potentially getting a cash settlement. If you can please reach out to&nbsp;our partnering firm, Keller Postman, at (312) 741-5220, they need to speak with you to be able to further pursue the case.&nbsp;<br><br>All the best,<br>Saddle Rock Legal Group<br>{!Organization.Name}</font></div>]]></td>
+</tr>
+</table>

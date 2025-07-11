@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Frame_of_Use__c</fullName>
+    <description>This pulls in info to help determine Statute of Limitations type questions and any specific data for the case itself.  Used as a picklist to ensure accuracy and remove doubt of options.</description>
+    <inlineHelpText>The Time Frame the product in question was used.</inlineHelpText>
+    <label>Time Frame of Use</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Time_Frame_Values</valueSetName>
+    </valueSet>
+</CustomField>

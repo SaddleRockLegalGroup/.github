@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Patient&apos;s Mother&apos;s date of birth --></help>
+        <label><!-- Mother&apos;s Date of Birth --></label>
+        <name>Mother_s_Date_of_Birth__c</name>
+    </CustomFieldTranslation>

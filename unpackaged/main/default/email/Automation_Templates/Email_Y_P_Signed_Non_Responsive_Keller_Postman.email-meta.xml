@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Y&amp;P Signed Non-Responsive Keller Postman</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email -Y&amp;P Signed Non-Responsive Keller Postman</name>
+    <style>freeForm</style>
+    <subject>URGENT - {!litify_pm__Intake__c.Case_Type_Name_del__c} Case Update - Young &amp; Partners, LLP</subject>
+    <textOnly>Hi {!Customer.FirstName},
+
+You previously signed our retainer agreement to have a further look at your {!litify_pm__Intake__c.Case_Type_Name_del__c} case. Our prosecuting firm has been unable to reach you and it&#39;s crucial you contact them if you want to pursue potentially getting a cash settlement. If you can please reach out to our partnering firm, Keller Postman, at (312) 741-5220, they need to speak with you to be able to further pursue the case.
+
+All the best,
+Young &amp; Partners, LLP
+1-888-463-0699</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

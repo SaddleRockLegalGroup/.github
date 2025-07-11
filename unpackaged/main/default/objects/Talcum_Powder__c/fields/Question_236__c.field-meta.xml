@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_236__c</fullName>
+    <description>When did you begin smoking?</description>
+    <inlineHelpText>When did you begin smoking?</inlineHelpText>
+    <label>Question 236</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

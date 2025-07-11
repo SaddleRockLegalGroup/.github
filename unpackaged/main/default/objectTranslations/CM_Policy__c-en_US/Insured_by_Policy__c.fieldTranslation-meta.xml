@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Person insured by policy --></help>
+        <label><!-- Insured by Policy --></label>
+        <name>Insured_by_Policy__c</name>
+        <relationshipLabel><!-- Policies Insured By --></relationshipLabel>
+    </CustomFieldTranslation>

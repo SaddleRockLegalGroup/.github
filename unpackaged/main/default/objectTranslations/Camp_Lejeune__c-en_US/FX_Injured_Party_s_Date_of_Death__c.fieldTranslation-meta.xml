@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Formula field - Date of death field of related Intake &gt; Client --></help>
+        <label><!-- Injured Party&apos;s Date of Death --></label>
+        <name>FX_Injured_Party_s_Date_of_Death__c</name>
+    </CustomFieldTranslation>

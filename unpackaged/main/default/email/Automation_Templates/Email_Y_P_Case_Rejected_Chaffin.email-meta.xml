@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Y&amp;P Case Rejected- Chaffin</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Y&amp;P Case Rejected- Chaffin</name>
+    <style>freeForm</style>
+    <subject>Hi {!Customer.FirstName}, Important Notice from {!litify_pm__Intake__c.Referral_Partner_Name__c}</subject>
+    <textOnly>Date: {!Today()}
+
+Dear {!Customer.Name}:
+
+We are sorry, but Young &amp; Partners, LLP and Chaffin Luhana, LLP are unable to accept your case. Unfortunately, we cannot take every case and have determined that yours falls into this category. Our decision does not mean that you do or do not have a claim. This was strictly a business decision from our firm.
+
+The practice of law is an art, not a science, and we may be wrong. You are certainly free to contact another attorney for a second opinion, and in fact we encourage you to do this. We have found in the past that another lawyer reviewing the same case may arrive at a different conclusion.
+
+Please understand that any claims you might have will be governed by a statute of limitation. A statute of limitation operates in such a way that if you do not file your claims in the appropriate court within the time specified by law, your claim(s) will be forever barred regardless of their merit. Please also understand that if you do not preserve the statute of limitation by filing the appropriate actions in the appropriate court, you and your family may be forever barred. You should immediately seek counsel to learn what that date is as we do not have enough information to determine that.
+
+If it is your intention to proceed with this claim, you should act immediately, without hesitation or delay. We apologize again that we could not help you and you owe us nothing for our time and services.
+
+Just so there is no misunderstanding, we will not be pursuing any claim on your behalf. Young &amp; Partners does not represent you in this matter. We do wish you the best of luck.
+
+Regards,
+Young &amp; Partners, LLP
+Chaffin Luhana, LLP
+{!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

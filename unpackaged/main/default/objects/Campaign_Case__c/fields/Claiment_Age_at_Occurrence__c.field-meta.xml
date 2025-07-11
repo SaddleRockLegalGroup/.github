@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claiment_Age_at_Occurrence__c</fullName>
+    <description>Used to calculate the age of when the diagnosis, death, or expience occurred</description>
+    <externalId>false</externalId>
+    <formula>IF(Date_of_Diagnosis__c &lt; ADDMONTHS(Patient_Date_of_Birth__c, 12), TEXT(MONTH(Date_of_Diagnosis__c) - MONTH(Patient_Date_of_Birth__c)) + &quot; Months&quot;,
+
+IF(Date_of_Diagnosis__c &gt; ADDMONTHS(Patient_Date_of_Birth__c, 12),
+TEXT(FLOOR( (MONTH( Date_of_Diagnosis__c ) + (( 12 * (YEAR(Date_of_Diagnosis__c)- YEAR(Patient_Date_of_Birth__c)))) - MONTH(Patient_Date_of_Birth__c)) / 12 )) + &quot; Years&quot;,
+
+IF(  Patient_Date_of_Death__c &lt; ADDMONTHS(Patient_Date_of_Birth__c, 12), TEXT(MONTH(Patient_Date_of_Death__c) - MONTH(Patient_Date_of_Birth__c)) + &quot; Months&quot;,
+
+ 
+
+TEXT(FLOOR( (MONTH( Patient_Date_of_Death__c ) + (( 12 * (YEAR(Patient_Date_of_Death__c)- YEAR(Patient_Date_of_Birth__c)))) - MONTH(Patient_Date_of_Birth__c)) / 12 )) + &quot; Years&quot;
+
+
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Age at Diagnosis, death, experience when it occurred.</inlineHelpText>
+    <label>Claiment Age at Occurrence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

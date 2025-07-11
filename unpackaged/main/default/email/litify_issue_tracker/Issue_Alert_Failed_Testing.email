@@ -1,0 +1,8 @@
+Hello PM!
+
+The following issue has failed testing. Please investigate. 
+
+
+{!Issue__c.issue_details__c}
+
+{!Issue__c.Link}

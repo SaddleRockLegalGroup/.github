@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Qualifying question if a product was used prior to DX or not. --></help>
+        <label><!-- Used Prior to DX --></label>
+        <name>Used_Prior_to_DX__c</name>
+    </CustomFieldTranslation>

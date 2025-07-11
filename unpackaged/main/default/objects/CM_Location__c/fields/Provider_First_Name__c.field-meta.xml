@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provider_First_Name__c</fullName>
+    <description>First name of the provider seen at that location, whether it is a doctor, pharmacist, staff, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>First name of the primary provider at the location</inlineHelpText>
+    <label>Provider First Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to allow the user access to manage public list views so they can add and delete them.  This is its own permission set to help contain this ability.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>List View Manager</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateCustomizeFilters</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditPublicFilters</name>
+    </userPermissions>
+</PermissionSet>

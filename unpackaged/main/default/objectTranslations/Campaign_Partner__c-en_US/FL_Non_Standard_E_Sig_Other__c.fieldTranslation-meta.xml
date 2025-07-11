@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Florida based documents for Non Standard file for Next of Kin Signer. A variation to the standard that requires separate considerations. --></help>
+        <label><!-- FL Non-Standard E-Sig (Other) --></label>
+        <name>FL_Non_Standard_E_Sig_Other__c</name>
+        <relationshipLabel><!-- Campaign Partners (FL Non-Standard E-Sig (Other)) --></relationshipLabel>
+    </CustomFieldTranslation>

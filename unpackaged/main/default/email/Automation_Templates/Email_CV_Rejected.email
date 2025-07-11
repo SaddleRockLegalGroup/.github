@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hi&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Contact.FirstName}</span>,<br><br>I hope all is well! I am with Saddle Rock Legal Group, your law firm for your&nbsp;<span style="background-color: rgb(255, 255, 255);">{!litify_pm__Intake__c.Case_Type_Name_del__c}</span>&nbsp;case. We appreciate your trust to represent you in this matter and look forward to working with you. We have a few additional questions and remaining information we need to verify to begin working on your claim. Please call us back as soon as possible at&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Organization.Phone}</span>. Thanks!<br><br>Regards,<br><br>Saddle Rock Legal Group<br>Office:&nbsp;<span style="background-color: rgb(255, 255, 255);">{!Organization.Phone}</span>]]></td>
+</tr>
+</table>

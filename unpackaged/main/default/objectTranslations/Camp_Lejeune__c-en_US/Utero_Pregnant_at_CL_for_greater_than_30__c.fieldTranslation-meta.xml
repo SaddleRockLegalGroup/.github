@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Fatal Utero if Pregnant at CL 30 --></label>
+        <name>Utero_Pregnant_at_CL_for_greater_than_30__c</name>
+        <picklistValues>
+            <masterLabel>Less than 30 days</masterLabel>
+            <translation><!-- Less than 30 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 30 days</masterLabel>
+            <translation><!-- More than 30 days --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

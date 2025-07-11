@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Symptom__c</fullName>
+    <description>Used to show related symptoms to any work or treatments performed along with non official diagnosis considerations.</description>
+    <inlineHelpText>Symptom related to treatment, illness, or non official diagnosis</inlineHelpText>
+    <label>Related Symptom</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Related_Symptom</valueSetName>
+    </valueSet>
+</CustomField>

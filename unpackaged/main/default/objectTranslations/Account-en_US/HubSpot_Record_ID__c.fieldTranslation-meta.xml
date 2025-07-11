@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Field to Receive HubSpot Record ID from HubSpot on their &quot;Company&quot; Object from field &quot;Record ID&quot;. --></help>
+        <label><!-- HubSpot Record ID --></label>
+        <name>HubSpot_Record_ID__c</name>
+    </CustomFieldTranslation>

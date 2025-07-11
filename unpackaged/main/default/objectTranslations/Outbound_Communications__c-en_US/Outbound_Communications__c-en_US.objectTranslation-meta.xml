@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Outbound Communication</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Outbound Communications</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Call Count</layout>
+        <sections>
+            <label><!-- Communication Specifics --></label>
+            <section>Communication Specifics</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Status</layout>
+        <sections>
+            <label><!-- Communication Specifics --></label>
+            <section>Communication Specifics</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Call Count --></label>
+        <name>Call_Count</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dwell Time --></label>
+        <name>Dwell_Time</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Status --></label>
+        <name>Status</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

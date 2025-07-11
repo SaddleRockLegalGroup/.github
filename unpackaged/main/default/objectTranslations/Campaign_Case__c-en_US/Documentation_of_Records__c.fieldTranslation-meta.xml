@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Records the client has of documentation of incidences and/or treatment --></help>
+        <label><!-- Documentation of Records --></label>
+        <name>Documentation_of_Records__c</name>
+    </CustomFieldTranslation>

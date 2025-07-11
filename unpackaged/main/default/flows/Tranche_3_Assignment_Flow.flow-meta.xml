@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>6-13-2025 LP -Will Assign Tranche 4 to intakes when created or updated and Referral Partner is D&amp;C and tranche override does not already equal 4. Added condition that status must be referred out or Imported as well.</description>
+    <environments>Default</environments>
+    <interviewLabel>Tranche Assignment Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Intake | Tranche Assignments</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Intake_Tranche</name>
+        <label>Update Intake Tranche</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Tranche_Override__c</field>
+            <value>
+                <stringValue>4</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Intake_Tranche</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4)</filterLogic>
+        <filters>
+            <field>Referral_Partner_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Duddy &amp; Czarnecki PLLC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Tranche_Override__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>4</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Referred Out</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Imported</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

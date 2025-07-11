@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Saddle Rock Legal Group LLC has uploaded new file(s) to an intake that was previously referred to you.</p>
+
+<p>Please download and review the details below. If you have any questions, feel free to reply to this email.<br />
+&nbsp;</p>
+
+<p><strong><u>Referral Details</u></strong></p>
+
+<p><strong>Name:</strong>&nbsp;{{{litify_pm__Intake__c.Caller__c}}}</p>
+
+<p><strong>Case Type:</strong>&nbsp;{{{litify_pm__Intake__c.Case_Type_Name_del__c}}}</p>
+
+<p><strong>Client Phone #:</strong>&nbsp;{{{litify_pm__Intake__c.Caller_Phone__c}}}</p>
+
+<p><strong>Email:</strong>&nbsp;{{{litify_pm__Intake__c.FX_Caller_Email__c}}}</p>
+
+<p><strong>State:</strong>&nbsp;{{{litify_pm__Intake__c.FX_Client_Billing_State__c}}}</p>
+
+<p><strong>Case Description:</strong>&nbsp;{{{litify_pm__Intake__c.litify_pm__Description__c}}}</p>
+
+<p><strong>Intake Name:</strong>&nbsp;{{{litify_pm__Intake__c.Name}}}</p>
+
+<p><strong>Intake ID (i.e.,&nbsp;unique identifier):</strong>&nbsp;{{{litify_pm__Intake__c.FX_Intake_Id__c}}}</p>
+
+<p><strong>Referral Partner</strong>:&nbsp;{{{litify_pm__Intake__c.Referral_Partner_Name__c}}}</p>
+
+<p>&nbsp;</p>
+
+<p>You can access all files related to this intake, including the new or updated ones, via the link below:</p>
+
+<p>{{{litify_pm__Intake__c.External_Link_URL__c}}}</p>
+
+<p>&nbsp;</p>
+
+<p>Any questions?</p>
+
+<p>Contact:</p>
+
+<p>888-686-6454</p>
+</body>
+</html>

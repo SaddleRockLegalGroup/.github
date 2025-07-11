@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Client follow up from vendor needed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CV Vendor: Past Due Notification</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>{{{Recipient.Name}}}: Past Due</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

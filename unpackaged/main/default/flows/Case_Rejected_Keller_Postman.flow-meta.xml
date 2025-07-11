@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>313</locationX>
+        <locationY>829</locationY>
+        <actionName>SendEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Log_Email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HtmlBody</name>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OrgWideEmailAddress</name>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ToAddresses</name>
+            <value>
+                <elementReference>Email_Recipient</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendEmail</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Keller_Postman</name>
+        <label>Keller Postman</label>
+        <locationX>385</locationX>
+        <locationY>530</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Partner__r.Partner__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>a2rDn000000JiBWIA0</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Email_Recipient</name>
+        <dataType>String</dataType>
+        <expression>IF(ISPICKVAL({!$Record.Calling_on_behalf_of_you_or_loved_one__c}, &quot;Self&quot;), {!$Record.litify_pm__Client__r.litify_pm__Email__c}, {!$Record.Caller__r.litify_pm__Email__c})</expression>
+    </formulas>
+    <interviewLabel>Case Rejected - Keller Postman {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Rejected - Keller Postman</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Email</name>
+        <label>Log Email</label>
+        <locationX>510</locationX>
+        <locationY>1032</locationY>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>info@saddlerocklegal.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HtmlBody</field>
+            <value>
+                <elementReference>SendEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RelatedToId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>529</locationX>
+        <locationY>75</locationY>
+        <connector>
+            <targetReference>Keller_Postman</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Case Rejected</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>SendEmail</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.litify_pm__First_Name__c} {!$Record.litify_pm__Last_Name__c}:
+&lt;br&gt;&lt;br&gt;
+We are sorry, but Young &amp; Partners, LLP and Keller Lenkner, LLC are unable to accept your case. Unfortunately, we cannot take every case and have determined that yours falls into this category. Our decision does not mean that you do or do not have a claim. This was strictly a business decision from our firm. 
+&lt;br&gt;&lt;br&gt;
+The practice of law is an art, not a science, and we may be wrong. You are certainly free to contact another attorney for a second opinion, and in fact we encourage you to do this. We have found in the past that another lawyer reviewing the same case may arrive at a different conclusion. 
+&lt;br&gt;&lt;br&gt;
+Please understand that any claims you might have will be governed by a statute of limitation. A statute of limitation operates in such a way that if you do not file your claims in the appropriate court within the time specified by law, your claim(s) will be forever barred regardless of their merit. Please also understand that if you do not preserve the statute of limitation by filing the appropriate actions in the appropriate court, you and your family may be forever barred. You should immediately seek counsel to learn what that date is as we do not have enough information to determine that.
+&lt;br&gt;&lt;br&gt;
+If it is your intention to proceed with this claim, you should act immediately, without hesitation or delay. We apologize again that we could not help you and you owe us nothing for our time and services.
+&lt;br&gt;&lt;br&gt;
+Just so there is no misunderstanding, we will not be pursuing any claim on your behalf.  Young &amp; Partners does not represent you in this matter.  We do wish you the best of luck.
+&lt;br&gt;&lt;br&gt;
+Regards, &lt;br&gt;
+Young &amp; Partners, LLP&lt;br&gt;
+Keller Lenkner, LLC&lt;br&gt;
+info@youngandpartnerslawfirm.com&lt;br&gt;
+{!$Organization.Phone}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hi {!$Record.litify_pm__First_Name__c}, Important Notice from {!$Record.Referral_Partner_Name__c}</text>
+    </textTemplates>
+</Flow>

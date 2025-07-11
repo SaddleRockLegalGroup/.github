@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template to be sent to a referral Partner when new documents have been uploaded to a referred out intake</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Default Partner Intake Updated Files Template</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>IMPORTANT: New Medical Records from Saddle Rock Legal Group LLC | {{{litify_pm__Intake__c.Caller__c}}} | {{{litify_pm__Intake__c.Case_Type_Name_del__c}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

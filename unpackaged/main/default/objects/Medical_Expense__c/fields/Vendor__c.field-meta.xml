@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor__c</fullName>
+    <label>Vendor</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case Works</fullName>
+                <default>false</default>
+                <label>Case Works</label>
+            </value>
+            <value>
+                <fullName>Ciox</fullName>
+                <default>false</default>
+                <label>Ciox</label>
+            </value>
+            <value>
+                <fullName>CMDS</fullName>
+                <default>false</default>
+                <label>CMDS</label>
+            </value>
+            <value>
+                <fullName>Epiq</fullName>
+                <default>false</default>
+                <label>Epiq</label>
+            </value>
+            <value>
+                <fullName>Nomos</fullName>
+                <default>false</default>
+                <label>Nomos</label>
+            </value>
+            <value>
+                <fullName>NRR</fullName>
+                <default>false</default>
+                <label>NRR</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Legal Support Services</fullName>
+                <default>false</default>
+                <label>Legal Support Services</label>
+            </value>
+            <value>
+                <fullName>Ashcraft &amp; Gerel</fullName>
+                <default>false</default>
+                <label>Ashcraft &amp; Gerel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

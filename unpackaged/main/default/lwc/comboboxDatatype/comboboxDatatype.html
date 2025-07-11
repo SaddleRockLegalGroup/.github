@@ -1,0 +1,17 @@
+<template>
+    <div class="picklistBlock" id="picklist">
+        <div class="picklist-container">
+            <lightning-combobox 
+                class="slds-popover slds-popover_edit slds-popover__body"
+                variant={variant} 
+                name={name} 
+                value={value} 
+                placeholder={placeholder} 
+                options={options}
+                onchange={handleChange}
+                onblur={handleBlur}
+                dropdown-alignment="auto">
+            </lightning-combobox>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The address/location that the policy may cover. --></help>
+        <label><!-- Location covered in Policy --></label>
+        <name>Location_covered_in_Policy__c</name>
+        <relationshipLabel><!-- CM Policies --></relationshipLabel>
+    </CustomFieldTranslation>

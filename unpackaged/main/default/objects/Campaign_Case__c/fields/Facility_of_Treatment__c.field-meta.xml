@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_of_Treatment__c</fullName>
+    <description>Used to determine the facility they were treated at.  This can be used separate from the facility they were diagnosed at.  Depends on the needs of the case.  If the Client was diagnosed and treated in the same facility, it should be used as a default to &quot;Facility of Diagnosis&quot; and not this.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Facility the client was treated at, not diagnosed.</inlineHelpText>
+    <label>Facility of Treatment</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

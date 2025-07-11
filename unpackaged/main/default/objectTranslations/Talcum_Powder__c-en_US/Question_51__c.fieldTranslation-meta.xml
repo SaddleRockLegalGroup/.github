@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Please provide me with the name of your relative with BRCA1/BRCA2? (REL BRCA 1) --></help>
+        <label><!-- Question 51 --></label>
+        <name>Question_51__c</name>
+    </CustomFieldTranslation>

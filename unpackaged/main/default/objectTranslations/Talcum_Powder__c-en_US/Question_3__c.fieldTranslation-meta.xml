@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How many years did you use Johnsons Baby powder or Shower to shower in your genital area before you were diagnosed? --></help>
+        <label><!-- Question 3 --></label>
+        <name>Question_3__c</name>
+        <picklistValues>
+            <masterLabel>3 years or less</masterLabel>
+            <translation><!-- 3 years or less --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4+ years</masterLabel>
+            <translation><!-- 4+ years --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

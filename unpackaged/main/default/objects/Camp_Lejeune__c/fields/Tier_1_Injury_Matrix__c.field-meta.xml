@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tier_1_Injury_Matrix__c</fullName>
+    <description>Have you been dx with any of the following cancers, diseases or syndromes? (TIER 1)</description>
+    <label>Tier-1 Injury Matrix</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bladder cancer</fullName>
+                <default>false</default>
+                <label>Bladder cancer</label>
+            </value>
+            <value>
+                <fullName>Kidney cancer</fullName>
+                <default>false</default>
+                <label>Kidney cancer</label>
+            </value>
+            <value>
+                <fullName>Kidney disease (End stage renal (ESRD), Renal Toxicity, Chronic Kidney Disease, etc.)</fullName>
+                <default>false</default>
+                <label>Kidney disease (End stage renal (ESRD), Renal Toxicity, Chronic Kidney Disease, etc.)</label>
+            </value>
+            <value>
+                <fullName>Leukemia (All types, adult or childhood)</fullName>
+                <default>false</default>
+                <label>Leukemia (All types, adult or childhood)</label>
+            </value>
+            <value>
+                <fullName>Liver cancer</fullName>
+                <default>false</default>
+                <label>Liver cancer</label>
+            </value>
+            <value>
+                <fullName>Multiple myeloma and myelodysplastic Syndromes</fullName>
+                <default>false</default>
+                <label>Multiple myeloma and myelodysplastic Syndromes</label>
+            </value>
+            <value>
+                <fullName>Non-Hodgkin lymphoma</fullName>
+                <default>false</default>
+                <label>Non-Hodgkin lymphoma</label>
+            </value>
+            <value>
+                <fullName>Parkinson&#39;s disease</fullName>
+                <default>false</default>
+                <label>Parkinson&#39;s disease</label>
+            </value>
+            <value>
+                <fullName>Systemic sclerosis</fullName>
+                <default>false</default>
+                <label>Systemic sclerosis</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+            <value>
+                <fullName>Multiple myeloma and myelodysplastic Syndromes (incl. myeloid cancers and myeloproliferative syndromes)</fullName>
+                <default>false</default>
+                <label>Multiple myeloma and myelodysplastic Syndromes (incl. myeloid cancers and myeloproliferative syndromes)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

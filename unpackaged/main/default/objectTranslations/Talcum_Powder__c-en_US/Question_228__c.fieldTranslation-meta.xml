@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Approximate year of first use? (OCPP) --></help>
+        <label><!-- Approximate year of first use? (OCPP) --></label>
+        <name>Question_228__c</name>
+    </CustomFieldTranslation>

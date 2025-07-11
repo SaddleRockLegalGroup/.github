@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- What was your frequency of use during this time? (i.e., # of times per week or month)  (JJSS) --></help>
+        <label><!-- Question 224 --></label>
+        <name>Question_224__c</name>
+    </CustomFieldTranslation>

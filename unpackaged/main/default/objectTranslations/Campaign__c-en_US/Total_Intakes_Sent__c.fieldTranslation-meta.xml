@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- DLRS Rollup of all Intakes Sent fields on Campaign Partner records associated with this Campaign. --></help>
+        <label><!-- Total Intakes Sent --></label>
+        <name>Total_Intakes_Sent__c</name>
+    </CustomFieldTranslation>

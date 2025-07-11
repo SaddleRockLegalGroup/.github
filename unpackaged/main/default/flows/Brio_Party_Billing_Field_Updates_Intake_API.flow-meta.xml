@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Abbreviated_Check</name>
+        <label>Abbreviated Check</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Map_to_Billing_Fields</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NOT_Abbreviated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AbbreviatedCheck</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>2.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Map_to_Billing_Fields</targetReference>
+            </connector>
+            <label>NOT Abbreviated</label>
+        </rules>
+        <rules>
+            <name>Blank_State</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_API_Temp_State__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Copy_1_of_Map_to_Billing_Fields</targetReference>
+            </connector>
+            <label>Blank State</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>billing_address_fields_are_null</name>
+        <label>billing address fields are null?</label>
+        <locationX>578</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.BillingAddress</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BillingCity</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BillingState</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BillingStreet</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BillingPostalCode</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BillingCountry</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__lit_Billing_County__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Abbreviated_Check</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <description>Updated to be created or updated since etech was updating and it wouldn&#39;t fill out billing address. - 10/7/24</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AbbreviatedCheck</name>
+        <dataType>Number</dataType>
+        <expression>LEN({!$Record.Intake_API_Temp_State__c})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>fxStreetAddress</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Intake_API_Temp_Street_Address_1__c} + BR() + {!$Record.Intake_API_Temp_Street_Address_2__c}</expression>
+    </formulas>
+    <formulas>
+        <description>converts the abbreviated state forms to full names</description>
+        <name>StateConversion</name>
+        <dataType>String</dataType>
+        <expression>CASE({!$Record.Intake_API_Temp_State__c},
+ &quot;AL&quot;, &quot;Alabama&quot;,
+ &quot;AK&quot;, &quot;Alaska&quot;,
+&quot;AZ&quot;, &quot;Arizona&quot;,
+&quot;AR&quot;, &quot;Arkansas&quot;,
+&quot;AS&quot;, &quot;American Samoa&quot;,
+&quot;CA&quot;, &quot;California&quot;,
+&quot;CO&quot;, &quot;Colorado&quot;,
+&quot;CT&quot;, &quot;Connecticut&quot;,
+&quot;DE&quot;, &quot;Delaware&quot;,
+&quot;DC&quot;, &quot;District of Columbia&quot;,
+&quot;FL&quot;, &quot;Florida&quot;,
+&quot;GA&quot;, &quot;Georgia&quot;,
+&quot;GU&quot;, &quot;Guam&quot;,
+&quot;HI&quot;, &quot;Hawaii&quot;,
+&quot;ID&quot;, &quot;Idaho&quot;,
+&quot;IL&quot;, &quot;Illinois&quot;,
+&quot;IN&quot;, &quot;Indiana&quot;,
+&quot;IA&quot;, &quot;Iowa&quot;,
+&quot;KS&quot;, &quot;Kansas&quot;,
+&quot;KY&quot;, &quot;Kentucky&quot;,
+&quot;LA&quot;, &quot;Louisiana&quot;,
+&quot;ME&quot;, &quot;Maine&quot;,
+&quot;MD&quot;, &quot;Maryland&quot;,
+&quot;MA&quot;, &quot;Massachusetts&quot;,
+&quot;MI&quot;, &quot;Michigan&quot;,
+&quot;MN&quot;, &quot;Minnesota&quot;,
+&quot;MS&quot;, &quot;Mississippi&quot;,
+&quot;MO&quot;, &quot;Missouri&quot;,
+&quot;MT&quot;, &quot;Montana&quot;,
+&quot;NE&quot;, &quot;Nebraska&quot;,
+&quot;NV&quot;, &quot;Nevada&quot;,
+&quot;NH&quot;, &quot;New Hampshire&quot;,
+&quot;NJ&quot;, &quot;New Jersey&quot;,
+&quot;NM&quot;, &quot;New Mexico&quot;,
+&quot;NY&quot;, &quot;New York&quot;,
+&quot;NC&quot;, &quot;North Carolina&quot;,
+&quot;ND&quot;, &quot;North Dakota&quot;,
+&quot;MP&quot;, &quot;Northern Mariana Islands&quot;,
+&quot;OH&quot;, &quot;Ohio&quot;,
+&quot;OK&quot;, &quot;Oklahoma&quot;,
+&quot;OR&quot;, &quot;Oregon&quot;,
+&quot;PA&quot;, &quot;Pennsylvania&quot;,
+&quot;PR&quot;, &quot;Puerto Rico&quot;,
+&quot;RI&quot;, &quot;Rhode Island&quot;,
+&quot;SC&quot;, &quot;South Carolina&quot;,
+&quot;SD&quot;, &quot;South Dakota&quot;,
+&quot;TN&quot;, &quot;Tennessee&quot;,
+&quot;TX&quot;, &quot;Texas&quot;,
+&quot;TT&quot;, &quot;Trust Territories&quot;,
+&quot;UT&quot;, &quot;Utah&quot;,
+&quot;VT&quot;, &quot;Vermont&quot;,
+&quot;VA&quot;, &quot;Virginia&quot;,
+&quot;VI&quot;, &quot;Virgin Islands&quot;,
+&quot;WA&quot;, &quot;Washington&quot;,
+&quot;WV&quot;, &quot;West Virginia&quot;,
+&quot;WI&quot;, &quot;Wisconsin&quot;,
+&quot;WY&quot;, &quot;Wyoming&quot;,
+
+&quot;Unknown&quot;)</expression>
+    </formulas>
+    <interviewLabel>Brio - Party Billing Field Updates Intake API {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Brio - Party Billing Field Updates Intake API</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_1_of_Map_to_Billing_Fields</name>
+        <label>Copy 1 of Map to Billing Fields</label>
+        <locationX>578</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>BillingCity</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_City__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingCountry</field>
+            <value>
+                <stringValue>United States</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingPostalCode</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_Zip__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingState</field>
+            <value>
+                <elementReference>StateConversion</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingStreet</field>
+            <value>
+                <elementReference>fxStreetAddress</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_2_of_Copy_1_of_Map_to_Billing_Fields</name>
+        <label>Copy 2 of Copy 1 of Map to Billing Fields</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>BillingCity</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_City__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingCountry</field>
+            <value>
+                <stringValue>United States</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingPostalCode</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_Zip__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingStateCode</field>
+            <value>
+                <stringValue>UK</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingStreet</field>
+            <value>
+                <elementReference>fxStreetAddress</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Map_to_Billing_Fields</name>
+        <label>Map to Billing Fields</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>BillingCity</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_City__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingCountry</field>
+            <value>
+                <stringValue>United States</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingPostalCode</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_Zip__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingState</field>
+            <value>
+                <elementReference>$Record.Intake_API_Temp_State__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BillingStreet</field>
+            <value>
+                <elementReference>fxStreetAddress</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>billing_address_fields_are_null</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8</filterLogic>
+        <filters>
+            <field>Intake_API_Temp_Street_Address_1__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_API_Temp_Street_Address_2__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_API_Temp_City__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_API_Temp_State__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_API_Temp_County__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_API_Temp_Country__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_API_Temp_Zip__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>BillingStreet</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>testCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>testState</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

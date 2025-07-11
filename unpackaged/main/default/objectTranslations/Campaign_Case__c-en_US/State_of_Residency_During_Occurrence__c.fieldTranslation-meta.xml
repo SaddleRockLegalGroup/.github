@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- State in which a client was residing in when an exposure, use, or incident occurred related to the case. --></help>
+        <label><!-- State of Residency During Occurrence --></label>
+        <name>State_of_Residency_During_Occurrence__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- If checked this rule will apply to all case types --></help>
+        <label><!-- Include All Case Types --></label>
+        <name>Include_All_Case_Types__c</name>
+    </CustomFieldTranslation>

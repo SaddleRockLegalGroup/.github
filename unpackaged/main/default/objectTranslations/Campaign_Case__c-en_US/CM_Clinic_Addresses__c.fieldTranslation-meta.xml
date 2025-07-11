@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Clinic addresses visited by client --></help>
+        <label><!-- CM Clinic Addresses --></label>
+        <name>CM_Clinic_Addresses__c</name>
+    </CustomFieldTranslation>

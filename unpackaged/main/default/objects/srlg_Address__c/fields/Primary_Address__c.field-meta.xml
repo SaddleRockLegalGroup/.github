@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Address__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether this address is the primary address for the related record.</description>
+    <inlineHelpText>Select this checkbox to designate this address as the primary address for the record. Only one address should be marked as primary per record. Use this to identify the main address used for correspondence, or other primary communications.</inlineHelpText>
+    <label>Primary Address</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

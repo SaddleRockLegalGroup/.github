@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_Age_at_Diagnosis__c</fullName>
+    <description>Used to auto calculate the age of the injured party during their diagnosis based on information provided so it can be compared to what may be provided by the client themselves. Either use for 100% accuracy or to check for any discrepancies.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(  Intake__r.Injured_Party_Birthdate__c  ) , NULL ,
+
+  IF( DATE( 2000 , MONTH( Intake__r.Injured_Party_Birthdate__c ) , DAY( Intake__r.Injured_Party_Birthdate__c ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+
+     YEAR (TODAY()) - YEAR ( Intake__r.Injured_Party_Birthdate__c ),
+
+     YEAR (TODAY()) - YEAR ( Intake__r.Injured_Party_Birthdate__c ) -1 )
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Auto-calculated age at diagnosis of the injured party.</inlineHelpText>
+    <label>FX Age at Diagnosis</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

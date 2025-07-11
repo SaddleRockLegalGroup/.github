@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Clinic_Addresses__c</fullName>
+    <description>Used to place numerous amounts of clinic addresses for later case management work and provide extensive information law firms.</description>
+    <inlineHelpText>Clinic addresses visited by client</inlineHelpText>
+    <label>CM Clinic Addresses</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

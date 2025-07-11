@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Mass Tort Strategies: Error on File 7 Day Warning</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Mass Tort Strategies: Error on File 7 Day Warning</name>
+    <style>freeForm</style>
+    <subject>Urgent: Final Reminder of Error in {!Contact.FirstName}&#39;s {!litify_pm__Intake__c.Case_Type_Name_del__c} Case</subject>
+    <textOnly>Kelly, Sean, Hannah, and Tim,
+
+This is a critical reminder that {!Contact.FirstName} for the {!litify_pm__Intake__c.Case_Type_Name_del__c} case has been in an &quot;error on file&quot; status for the past seven days, and the designated time for correction is nearing expiration.
+
+As per the terms outlined in the governing IO and MSA, we will have no alternative but to request a credit or replacement for this case if not corrected within the next 3 days.
+
+Your immediate attention to this matter is of utmost importance, and we trust you will take necessary action promptly.
+
+Best Regards, 
+Saddle Rock Legal Group 
+888-686-6454</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+Saddle Rock Legal Group LLC has identified an error on an intake referred by Intake Desk for a potential Round Up claim.
+
+Please review the details below and notify our Quality Assurance team with any updates. If you have any questions, feel free to reply to this email.
+
+Referral Details:
+Client's Name: {!litify_pm__Intake__c.Client_Name__c}
+Injured Party's Name: {!litify_pm__Intake__c.Injured_Party_Full_Name__c}
+Case Type: {!litify_pm__Intake__c.Case_Type_Name_del__c}
+Client Phone #: {!litify_pm__Intake__c.Caller_Phone__c}
+Email: {!litify_pm__Intake__c.FX_Caller_Email__c}
+State: {!litify_pm__Intake__c.State__c}
+Litify Intake ID: {!litify_pm__Intake__c.Id}
+Referral Partner: {!litify_pm__Intake__c.Referral_Partner_Name__c}
+Identified Errors:
+[Please review the failed elements below:]
+{!litify_pm__Intake__c.Automated_QC_Notes__c}
+
+For any questions, please email qualitycontrol@saddlerocklegal.com.
+
+Best,
+Saddle Rock Legal Group LLC

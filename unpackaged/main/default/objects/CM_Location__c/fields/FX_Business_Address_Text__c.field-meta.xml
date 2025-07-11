@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FX_Business_Address_Text__c</fullName>
+    <description>Formula field - returns business compound address field as text. Used in Docrio Templates</description>
+    <externalId>false</externalId>
+    <formula>Business_CompoundAddress__Street__s &amp; BR() &amp;
+Business_CompoundAddress__City__s &amp;
+IF(ISBLANK(Business_CompoundAddress__City__s), &quot;&quot;, &quot;, &quot;) &amp;
+TEXT(Business_CompoundAddress__StateCode__s) &amp;
+IF(ISBLANK(TEXT(Business_CompoundAddress__StateCode__s)), &quot;&quot;, &quot; &quot;) &amp;
+Business_CompoundAddress__PostalCode__s &amp; BR() &amp;
+TEXT(Business_CompoundAddress__CountryCode__s)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Formula field - returns business compound address field as text. Used in Docrio Templates</inlineHelpText>
+    <label>Business Address (Text)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

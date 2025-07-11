@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Structures_Damaged__c</fullName>
+    <description>FLOW ONLY: This is used to determine the structures damaged via the incident/event.  This can be a simple Yes or No check or very specific to the type of structure/structures damaged.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Were other structures or improvements on a property damaged?</inlineHelpText>
+    <label>Other Structures Damaged</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

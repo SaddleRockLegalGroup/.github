@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Case_Type</name>
+        <label>Case Type</label>
+        <locationX>1568</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Talcum_Powder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Talcum Powder</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Intake_Score</targetReference>
+            </connector>
+            <label>Talcum Powder</label>
+        </rules>
+        <rules>
+            <name>Camp_Lejeune</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Camp Lejeune</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Intake_Score_CL</targetReference>
+            </connector>
+            <label>Camp Lejeune</label>
+        </rules>
+        <rules>
+            <name>Round_Up</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Round Up</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_with_RoundUp_Litify</targetReference>
+            </connector>
+            <label>Round Up</label>
+        </rules>
+        <rules>
+            <name>Hair_Relaxer_NEC_Tylenol_Paraquat</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hair Relaxers</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NEC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tylenol</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Case_Type__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Paraquat</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_From_Case_Type</targetReference>
+            </connector>
+            <label>Hair Relaxer, NEC, Tylenol, Paraquat</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Intake_Vendor_Saddle_Rock</name>
+        <label>Does Intake Vendor = &#39;Saddle Rock&#39;?</label>
+        <locationX>2459</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Vendor__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Saddle Rock</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Type</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Create a specific List Item with a certain List determined by the Intake Score value on the Intake.</description>
+        <name>Intake_Score</name>
+        <label>Intake Score</label>
+        <locationX>50</locationX>
+        <locationY>492</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tier_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 1</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Tier 1</label>
+        </rules>
+        <rules>
+            <name>Tier_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 2</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Tier 2</label>
+        </rules>
+        <rules>
+            <name>Tier_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 3</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Tier 3</label>
+        </rules>
+        <rules>
+            <name>Tier_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 4</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Tier 4</label>
+        </rules>
+        <rules>
+            <name>No_Intake_Score</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_with_TL_Litify</targetReference>
+            </connector>
+            <label>No Intake Score</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Create a specific List Item with a certain List determined by the Intake Score value on the Intake.</description>
+        <name>Intake_Score_CL</name>
+        <label>Intake Score</label>
+        <locationX>1634</locationX>
+        <locationY>492</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tier_1_CL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 1</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_with_CL_Litify_T1</targetReference>
+            </connector>
+            <label>Tier 1</label>
+        </rules>
+        <rules>
+            <name>Tier_2_CL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 2</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_with_CL_Litify_T2</targetReference>
+            </connector>
+            <label>Tier 2</label>
+        </rules>
+        <rules>
+            <name>Tier_3_CL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 3</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_with_CL_Litify_T3</targetReference>
+            </connector>
+            <label>Tier 3</label>
+        </rules>
+        <rules>
+            <name>Tier_4_CL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 4</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Tier 4</label>
+        </rules>
+        <rules>
+            <name>No_Intake_Score_CL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Score__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_List_Item_with_CL_Litify</targetReference>
+            </connector>
+            <label>No Intake Score</label>
+        </rules>
+    </decisions>
+    <description>Account for Lists based on Case Type AND Tier. Start conditions added around Case Type and Status | Intake Vendor must be &#39;Saddle Rock&#39;</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>This is the list id for round up from the five9 list object</description>
+        <name>RoundUpListId</name>
+        <dataType>String</dataType>
+        <expression>&quot;a2bUJ000000BXYXYA4&quot;</expression>
+    </formulas>
+    <interviewLabel>BRIO | Intake | Create Five9 List Item - New Leads List {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BRIO | Intake | Create Five9 List Item - New Leads List</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_List_Item_From_Case_Type</name>
+        <label>Create List Item From Case Type</label>
+        <locationX>2822</locationX>
+        <locationY>492</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <elementReference>$Record.litify_pm__Case_Type__r.Five9_List__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>Flow_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_List_Item_with_CL_Litify</name>
+        <label>Create List Item with CL_Litify</label>
+        <locationX>2030</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <stringValue>a2bDn0000007PgeIAE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>Flow_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_List_Item_with_CL_Litify_T1</name>
+        <label>Create List Item with CL_Litify_T1</label>
+        <locationX>974</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <stringValue>a2bUJ0000000C1BYAU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_List_Item_with_CL_Litify_T2</name>
+        <label>Create List Item with CL_Litify_T2</label>
+        <locationX>1238</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <stringValue>a2bUJ0000000C2nYAE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_List_Item_with_CL_Litify_T3</name>
+        <label>Create List Item with CL_Litify_T3</label>
+        <locationX>1502</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <stringValue>a2bUJ0000000C4PYAU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_List_Item_with_RoundUp_Litify</name>
+        <label>Create List Item with RoundUp_Litify</label>
+        <locationX>2558</locationX>
+        <locationY>492</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <elementReference>RoundUpListId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>Flow_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_List_Item_with_TL_Litify</name>
+        <label>Create List Item with TL_Litify</label>
+        <locationX>446</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Five9LSP__Five9_List__c</field>
+            <value>
+                <stringValue>a2bDn0000007PcrIAE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <elementReference>Flow_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Five9LSP__Five9_List_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>666</locationX>
+        <locationY>0</locationY>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6)</filterLogic>
+        <filters>
+            <field>litify_pm__Case_Type__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Working</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Retainer Agreement Sent</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Retainer Agreement Signed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Case Verification</stringValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Does_Intake_Vendor_Saddle_Rock</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>Flow_Name</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>BRIO | Intake | Create Five9List Item - New Leads List</stringValue>
+        </value>
+    </variables>
+</Flow>

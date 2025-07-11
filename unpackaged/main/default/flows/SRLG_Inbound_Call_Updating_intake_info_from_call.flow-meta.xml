@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>This decision will route the Asbestos intake to be assigned to Simmons Hanly Conroy which is currently out only Asbestos Partner.</description>
+        <name>Is_Asbestos_Case_Type</name>
+        <label>Is Asbestos Case Type?</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_Type_is_Asbestos</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getUpdatedIntake.Case_Type_Name_del__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Asbestos</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Intake_Vendor_Record</targetReference>
+            </connector>
+            <label>Case Type is Asbestos</label>
+        </rules>
+    </decisions>
+    <description>Updates the intake created from the inbound call with the related five9 data for users and reports to reference. | Added LAWildfires 2/18/25 | Added Asbestos Case Type</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Pulls the phone number from inbound call and routes it to assigned case type.</description>
+        <name>fx_DNIS_Phone_to_Case_Type</name>
+        <dataType>String</dataType>
+        <expression>IF(CONTAINS({!$Record.five9DNIS__c}, &#39;3725&#39;), &#39;a03UJ000003vZnKYAU&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;3474&#39;), &#39;a03Dn0000054CCKIA2&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;2462&#39;), &#39;a03UJ00000Nx22KYAR&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;4479&#39;), &#39;a03UJ000003vZnMYAU&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;4511&#39;), &#39;a03UJ000003vZnLYAU&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;0882&#39;), &#39;a03UJ000003vZnNYAU&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;1927&#39;), &#39;a03UJ00000bHU2nYAG&#39;,
+IF(CONTAINS({!$Record.five9DNIS__c}, &#39;1821&#39;), &#39;a03UJ00000imChYYAU&#39;,
+&quot;&quot;
+))))))))</expression>
+    </formulas>
+    <interviewLabel>SRLG | Inbound Call | {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SRLG | Inbound Call | Updating intake info from call</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This will retrieve the External Intake Record Type which is the default record type for Asbestos Intakes</description>
+        <name>Get_External_Record_Type</name>
+        <label>Get External Record Type</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Referral_Partner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>External</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>This will retrieve the Simmons Hanly Conrad Intake Vendor as I prefer not to hardcode the ID</description>
+        <name>Get_Intake_Vendor_Record</name>
+        <label>Get Intake Vendor Record</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_External_Record_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Simmons Hanly Conroy, LLP</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Intake_Vendor__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the Simmons Hanly Conroy Referral Partner Record</description>
+        <name>Get_Referral_Partner</name>
+        <label>Get Campaign Partner</label>
+        <locationX>50</locationX>
+        <locationY>863</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Intake_for_Asbestos</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CP-000093</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Campaign_Partner__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Intake to check the new Case Type assigned</description>
+        <name>getUpdatedIntake</name>
+        <label>getUpdatedIntake</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Asbestos_Case_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update intake with case type and potentially source</description>
+        <name>Update_Intake</name>
+        <label>Update Intake</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>getUpdatedIntake</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>litify_pm__Case_Type__c</field>
+            <value>
+                <elementReference>fx_DNIS_Phone_to_Case_Type</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Intake_for_Asbestos</name>
+        <label>Update Intake for Asbestos</label>
+        <locationX>50</locationX>
+        <locationY>971</locationY>
+        <inputAssignments>
+            <field>Campaign_Partner__c</field>
+            <value>
+                <elementReference>Get_Referral_Partner.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake_Vendor__c</field>
+            <value>
+                <elementReference>Get_Intake_Vendor_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_External_Record_Type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Intake</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2) AND 3</filterLogic>
+        <filters>
+            <field>five9DNIS__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>five9DNIS__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Case_Type__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

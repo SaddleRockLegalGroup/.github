@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email - Waiting Attorney Call</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>SRLG</letterhead>
+    <name>Email - Waiting Attorney Call</name>
+    <style>freeForm</style>
+    <subject>***URGENT- Attorney Transfer**</subject>
+    <textOnly>Hi {!Customer.FirstName},
+
+We at Saddle Rock Legal Group hope this email finds you well.  You have previously shown interest in a possible {!litify_pm__Intake__c.Case_Type_Name_del__c} claim. We have finished the intake questions and signed the paperwork for a preliminary review, but are still waiting to transfer you over to our attorneys. We want to be sure that we get you in contact with them so you can discuss the engagement letter and go over a few more case details. We only have 21 days to contact these attorneys, or your case will be dismissed. Please call our firm as soon as possible, this should be a pretty quick and easy call (about 3-5 minutes).
+
+Our number is {!Organization.Phone}. We would love to hear from you as soon as possible so we can get you transferred!
+
+All the best,
+Saddle Rock Legal Group
+{!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

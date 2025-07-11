@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merge_Packet__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Docrio merge packet that will be generated when clicking the Create Referral Packet button on an Intake assigned to this Campaign Partner</description>
+    <inlineHelpText>Docrio merge packet that will be generated when clicking the Create Referral Packet button on an Intake assigned to this Campaign Partner</inlineHelpText>
+    <label>Referral Packet</label>
+    <referenceTo>litify_docs__Packet__c</referenceTo>
+    <relationshipLabel>Campaign Partners</relationshipLabel>
+    <relationshipName>Campaign_Partners</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

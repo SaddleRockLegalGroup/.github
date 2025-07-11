@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Doctor&#39;s Office</fullName>
+        <default>false</default>
+        <label>Doctor&#39;s Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital</fullName>
+        <default>false</default>
+        <label>Hospital</label>
+    </customValue>
+    <customValue>
+        <fullName>Urgent Care Center</fullName>
+        <default>false</default>
+        <label>Urgent Care Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Planning / Fertility Clinic</fullName>
+        <default>false</default>
+        <label>Family Planning / Fertility Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Laboratory Testing Facility</fullName>
+        <default>false</default>
+        <label>Laboratory Testing Facility</label>
+    </customValue>
+    <customValue>
+        <fullName>Rehabilitation Facility</fullName>
+        <default>false</default>
+        <label>Rehabilitation Facility</label>
+    </customValue>
+    <customValue>
+        <fullName>Telehealth</fullName>
+        <default>false</default>
+        <label>Telehealth</label>
+    </customValue>
+    <customValue>
+        <fullName>Oncology Clinic</fullName>
+        <default>false</default>
+        <label>Oncology Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Women&#39;s Health Clinic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Women&#39;s Health Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Care Center</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Specialty Care Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnostic Imaging Center</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diagnostic Imaging Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Fertility Clinic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fertility Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Behavioral Health Center</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Behavioral Health Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Clinic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Health Clinic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Retail Health Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Health Center</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Community Health Center</label>
+    </customValue>
+    <description>Information on the type of facility discussed. Used for lists about Facilities.</description>
+    <masterLabel>Facility Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

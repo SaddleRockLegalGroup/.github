@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Date__c</fullName>
+    <description>This is the collection of the purchase date of land/home/item where the occurrence or exposure occurred, this is not a treatment question, but rather exposure.</description>
+    <inlineHelpText>Exposure Question on the date purchased for land or home.</inlineHelpText>
+    <label>Purchase Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

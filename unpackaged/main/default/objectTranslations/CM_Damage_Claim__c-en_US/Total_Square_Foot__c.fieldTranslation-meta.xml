@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Total Square Footage of the edifice that was damaged --></help>
+        <label><!-- Total Square Foot --></label>
+        <name>Total_Square_Foot__c</name>
+    </CustomFieldTranslation>

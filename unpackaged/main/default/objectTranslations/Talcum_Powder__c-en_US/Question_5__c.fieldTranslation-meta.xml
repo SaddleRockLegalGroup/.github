@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How many years did you use the powder before getting your tubes tied? --></help>
+        <label><!-- Question 5 --></label>
+        <name>Question_5__c</name>
+        <picklistValues>
+            <masterLabel>Used powder 0-3 years prior to procedure</masterLabel>
+            <translation><!-- Used powder 0-3 years prior to procedure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used powder 4+ years prior to procedure</masterLabel>
+            <translation><!-- Used powder 4+ years prior to procedure --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

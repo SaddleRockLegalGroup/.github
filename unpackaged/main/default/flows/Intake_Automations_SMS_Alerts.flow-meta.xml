@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Case_Verification_Action</name>
+        <label>Case Verification Action</label>
+        <locationX>1011</locationX>
+        <locationY>636</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>SMS_Case_Verification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Case_Verification_Action_0</name>
+        <label>Case Verification Action</label>
+        <locationX>1515</locationX>
+        <locationY>647</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>SMS_Case_Verification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Case_Verification_Action_0_0</name>
+        <label>Case Verification Action</label>
+        <locationX>1616</locationX>
+        <locationY>540</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>SMS_Case_Verification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Case_Verification_Expiring_Action</name>
+        <label>Case Verification Expiring Action</label>
+        <locationX>1017</locationX>
+        <locationY>1006</locationY>
+        <actionName>TwilioSF__TwilioSendSMS</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>SMS_Case_Verification_Expiring</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toNumber</name>
+            <value>
+                <elementReference>$Record.litify_pm__Phone__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSF__TwilioSendSMS</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Case_Verification</name>
+        <label>Case Verification</label>
+        <locationX>786</locationX>
+        <locationY>638</locationY>
+        <defaultConnector>
+            <targetReference>Case_Verification_Expiring</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Case Verification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Verification_Action</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_Verification_0</name>
+        <label>Case Verification</label>
+        <locationX>1290</locationX>
+        <locationY>648</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Case Verification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Verification_Action_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_Verification_0_0</name>
+        <label>Case Verification</label>
+        <locationX>1391</locationX>
+        <locationY>541</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Case Verification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Verification_Action_0_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_Verification_Expiring</name>
+        <label>Case Verification Expiring</label>
+        <locationX>787</locationX>
+        <locationY>1005</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Case Verification</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Case_Verification_Expiring_Action</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Intake Automations - SMS Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Intake Automations - SMS Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>668</locationX>
+        <locationY>147</locationY>
+        <connector>
+            <targetReference>Case_Verification</targetReference>
+        </connector>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>Case_Verification_Schedule_1d</name>
+            <connector>
+                <targetReference>Case_Verification_0</targetReference>
+            </connector>
+            <label>Case Verification Schedule 1d</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Case_Verification_Schedule_2d</name>
+            <connector>
+                <targetReference>Case_Verification_0_0</targetReference>
+            </connector>
+            <label>Case Verification Schedule 2d</label>
+            <offsetNumber>2</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Case_Verification_Schedule_3d</name>
+            <label>Case Verification Schedule 3d</label>
+            <offsetNumber>3</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Case_Verification_Schedule_4d</name>
+            <label>Case Verification Schedule 4d</label>
+            <offsetNumber>-4</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Case_Verification_Schedule_5d</name>
+            <label>Case Verification Schedule 5d</label>
+            <offsetNumber>5</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+    <textTemplates>
+        <description>SMS - #5b – Sent e-sign (4 hours after e-sign is sent)</description>
+        <name>SMS_5b_Sent_e_sign_4_hours_after_e_sign_is_sent</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;We sent paperwork awhile ago, wanted to make sure you received it. Please call {!$Organization.Phone} with questions. Saddle Rock Legal Group&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - #5c – Sent e-Sign (1 day after e-Sign is sent)</description>
+        <name>SMS_5c_Sent_e_Sign_1_day_after_e_Sign_is_sent</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Did you see the e-Sign agreement email we sent? Please reply here, or give us a call at {!$Organization.Phone}. Thanks! Saddle Rock Legal Group&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - A&amp;T Talc Welcome Letter</description>
+        <name>SMS_A_T_Talc_Welcome_Letter</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi, Saddle Rock here. If you haven&#39;t received your welcome email for the Talcum Powder case, call 888-427-9607. Check your spam folder just in case.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Case Verification</description>
+        <name>SMS_Case_Verification</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi, this is Saddle Rock Legal Group, your law firm for your {!$Record.Case_Type_Name_del__c} case. Please call us immediately at {!$Organization.Phone}. Thanks!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Case Verification Expiring</description>
+        <name>SMS_Case_Verification_Expiring</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;This is Saddle Rock Legal Group, the firm working on your {!$Record.Case_Type_Name_del__c} case. Call us at {!$Organization.Phone} as quickly as possible, thanks!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Contact Day Final Attempt</description>
+        <name>SMS_Contact_Day_Final_Attempt</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi, this is Saddle Rock Legal Group. We&#39;ve been calling about your inquiry. We will be closing the file unless we hear from you at {!$Organization.Phone}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Contact Follow Up</description>
+        <name>SMS_Contact_Follow_Up</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello {!$Record.litify_pm__First_Name__c}, this is Saddle Rock Legal Group, calling for a possible {!$&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Record&lt;/span&gt;.Case_Type_Name_del__c} case. Call {!$Organization.Phone}!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Error on file</description>
+        <name>SMS_Error_on_file</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi this is Saddle Rock Legal Group, we signed with you for a preliminary review. We need to clarify some information. Please call {!$Organization.Phone}!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Sent by Mail</description>
+        <name>SMS_Sent_by_Mail</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;We mailed out important paperwork regarding your {!$Record.Case_Type_Name_del__c} case. If you have any questions, please call {!$Organization.Phone}. Thank you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Sent E-Sign</description>
+        <name>SMS_Sent_E_Sign</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;We recently sent out paperwork to get your {!$Record.Case_Type_Name_del__c} case moving forward. Please call {!$Organization.Phone} as soon as possible!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG A&amp;T Talc 180 Day Follow Up</description>
+        <name>SMS_SRLG_A_T_Talc_180_Day_Follow_Up</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Saddle Rock Legal following up on your ongoing Talcum Powder case, let us know if there are any updates to your file @ 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG A&amp;T Talc 90 Day</description>
+        <name>SMS_SRLG_A_T_Talc_90_Day</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Saddle Rock Legal following up on your ongoing Talcum Powder case, let us know if there are any updates to your file @ 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG CSS Talc 180 Day Follow Up</description>
+        <name>SMS_SRLG_CSS_Talc_180_Day_Follow_Upf</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Saddle Rock Legal following up on your ongoing Talcum Powder case, let us know if there are any updates to your file @ 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG CSS Talc 90 Day</description>
+        <name>SMS_SRLG_CSS_Talc_90_Day</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Saddle Rock Legal here, your Talcum Powder case is still in process. If you have information to update your file, please call 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Signed Non-Responsive CSS</description>
+        <name>SMS_SRLG_Signed_Non_Responsive_CSS</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c}&amp;nbsp;case. Our firm has been unable to reach you. Please dial 888-427-9607. Saddle Rock Legal&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Signed Non-Responsive Keller Postman</description>
+        <name>SMS_SRLG_Signed_Non_Responsive_Keller_Postman</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial {!$Organization.Phone}. Saddle Rock Legal&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Signed Non-Responsive Kline &amp; Specter</description>
+        <name>SMS_SRLG_Signed_Non_Responsive_Kline_Specter</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial 888-427-9607. Saddle Rock Legal Group&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Signed Non-Responsive Levin Pap</description>
+        <name>SMS_SRLG_Signed_Non_Responsive_Levin_Pap</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c}&amp;nbsp;case. Our firm has been unable to reach you. Please dial 888-427-9607. Saddle Rock Legal&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Signed Non-Responsive MMAG</description>
+        <name>SMS_SRLG_Signed_Non_Responsive_MMAG</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial {!$Organization.Phone}. Saddle Rock Legal&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Signed Non-Responsive Whitley</description>
+        <name>SMS_SRLG_Signed_Non_Responsive_Whitley</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial 888-427-9607. Saddle Rock Legal&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - SRLG Whitley CL 180 Day</description>
+        <name>SMS_SRLG_Whitley_CL_180_Day</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Saddle Rock Legal here, your Camp Lejeune case is still in process. If you have information to update your file, please call 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Waiting Attorney Call</description>
+        <name>SMS_Waiting_Attorney_Call</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi this is Saddle Rock Legal Group, and we need to transfer you to our attorneys! Please call {!$Organization.Phone} right away!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Whitley CL Welcome Letter</description>
+        <name>SMS_Whitley_CL_Welcome_Letterf</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi, Saddle Rock here. If you haven&#39;t received your welcome email for the Camp Lejeune case, call 888-427-9607. Check your spam folder just in case.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P 90CSS Talc 90 Day</description>
+        <name>SMS_Y_P_90CSS_Talc_90_Day</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Young &amp;amp; Partners Law here, your Talcum Powder case is still in process. If you have information to update your file, please call 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P A&amp;T Talc 180 Day Follow Up</description>
+        <name>SMS_Y_P_A_T_Talc_180_Day_Follow_Up</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Young &amp;amp; Partners Law following up on your ongoing Talcum Powder case, let us know if there are any updates to your file @ 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P CSS Talc 180 Day Follow Up</description>
+        <name>SMS_Y_P_CSS_Talc_180_Day_Follow_Up</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Young &amp;amp; Partners Law following up on your ongoing Talcum Powder case, let us know if there are any updates to your file @ 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non-Responsive CGH</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_CGH</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We need to speak with you. Please dial {!$Organization.Phone}. Young &amp;amp; Partners, LLP.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS -Y&amp;P Signed Non-Responsive Chaffin</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_Chaffin</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial 888-427-9607. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non Responsive CSS</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_CSS</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c}&amp;nbsp;case. Our firm has been unable to reach you. Please dial 888-427-9607. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non-Responsive Cunningham Bounds</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_Cunningham_Bounds</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. Our firm has been unable to reach you. Please dial {!$Organization.Phone}. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non-Responsive Keller Postman</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_Keller_Postman</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial 888-427-9607. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non Responsive Levin Pap</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_Levin_Pap</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. Our firm has been unable to reach you. Please dial 888-427-9607. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS_Y_P_Signed_Non_Responsive_MMAG</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_MMAG</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial 888-463-0699. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non-Responsive Whitehead</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_Whitehead</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. Our firm has been unable to reach you. Please dial {!$Organization.Phone}. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Signed Non-Responsive Whitley</description>
+        <name>SMS_Y_P_Signed_Non_Responsive_Whitley</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;You previously signed paperwork for your {!$Record.Case_Type_Name_del__c} case. We have been unable to reach you. Please dial 888-427-9607. Young &amp;amp; Partners, LLP&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>SMS - Y&amp;P Whitley CL 180 Day</description>
+        <name>SMS_Y_P_Whitley_CL_180_Day</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Young &amp;amp; Partners Law here, your Camp Lejeune case is still in process. If you have information to update your file, please call 888-427-9607.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

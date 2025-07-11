@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Dear {{{litify_pm__Intake__c.Vendor_Primary_Contact_First_Name__c}}},</p>
+
+<p>I am writing to bring to your attention that&nbsp; for a&nbsp;{{{litify_pm__Intake__c.Case_Type_Name_del__c}}} case has been non-responsive for the past seven days and has been marked as past due. Despite our repeated attempts to contact, we have not received any response.</p>
+
+<p>We kindly request your assistance in establishing communication with {{{litify_pm__Intake__c.litify_pm__Client__c}}},{{{litify_pm__Intake__c.FX_Caller_Email__c}}}, {{{litify_pm__Intake__c.FX_Client_Phone_Mobile__c}}}.<br />
+<br />
+If you are able to reach them, please warm transfer them to our team at 888-686-6454. Our standard hours of operation are Monday-Friday 6:00am MST- 9:00pm MST and Saturday-Sunday 8:00am MST- 4:30pm MST. Your support in resolving this matter promptly is greatly appreciated.</p>
+
+<p>Please note that this email serves as notice of a potential case that either needs to be credited or replaced based on the terms of the governing IO and MSA.</p>
+
+<p>Thank you for your attention to this urgent issue.<br />
+<br />
+Best Regards,<br />
+<br />
+Saddle Rock Legal Group<br />
+888-686-6454<br />
+&nbsp;</p>
+</body>
+</html>

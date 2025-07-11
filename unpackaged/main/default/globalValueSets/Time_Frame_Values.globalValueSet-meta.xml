@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>After 1964</fullName>
+        <default>false</default>
+        <label>After 1964</label>
+    </customValue>
+    <customValue>
+        <fullName>Before 1964</fullName>
+        <default>false</default>
+        <label>Before 1964</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>2+ Years</fullName>
+        <default>false</default>
+        <label>2+ Years</label>
+    </customValue>
+    <customValue>
+        <fullName>Below Required Timeframe</fullName>
+        <default>false</default>
+        <label>Below Required Timeframe</label>
+    </customValue>
+    <customValue>
+        <fullName>Seasonally</fullName>
+        <default>false</default>
+        <label>Seasonally</label>
+    </customValue>
+    <customValue>
+        <fullName>Yearly</fullName>
+        <default>false</default>
+        <label>Yearly</label>
+    </customValue>
+    <customValue>
+        <fullName>Monthly</fullName>
+        <default>false</default>
+        <label>Monthly</label>
+    </customValue>
+    <customValue>
+        <fullName>24</fullName>
+        <default>false</default>
+        <label>24</label>
+    </customValue>
+    <customValue>
+        <fullName>25</fullName>
+        <default>false</default>
+        <label>25</label>
+    </customValue>
+    <customValue>
+        <fullName>26</fullName>
+        <default>false</default>
+        <label>26</label>
+    </customValue>
+    <customValue>
+        <fullName>27</fullName>
+        <default>false</default>
+        <label>27</label>
+    </customValue>
+    <customValue>
+        <fullName>28</fullName>
+        <default>false</default>
+        <label>28</label>
+    </customValue>
+    <customValue>
+        <fullName>29</fullName>
+        <default>false</default>
+        <label>29</label>
+    </customValue>
+    <customValue>
+        <fullName>30</fullName>
+        <default>false</default>
+        <label>30</label>
+    </customValue>
+    <customValue>
+        <fullName>31</fullName>
+        <default>false</default>
+        <label>31</label>
+    </customValue>
+    <customValue>
+        <fullName>32</fullName>
+        <default>false</default>
+        <label>32</label>
+    </customValue>
+    <customValue>
+        <fullName>33</fullName>
+        <default>false</default>
+        <label>33</label>
+    </customValue>
+    <customValue>
+        <fullName>34</fullName>
+        <default>false</default>
+        <label>34</label>
+    </customValue>
+    <customValue>
+        <fullName>35</fullName>
+        <default>false</default>
+        <label>35</label>
+    </customValue>
+    <customValue>
+        <fullName>36</fullName>
+        <default>false</default>
+        <label>36</label>
+    </customValue>
+    <customValue>
+        <fullName>37</fullName>
+        <default>false</default>
+        <label>37</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsure</fullName>
+        <default>false</default>
+        <label>Unsure</label>
+    </customValue>
+    <customValue>
+        <fullName>38+</fullName>
+        <default>false</default>
+        <label>38+</label>
+    </customValue>
+    <customValue>
+        <fullName>Less than 10 uses, 10 hours, and 2 years of exposure</fullName>
+        <default>false</default>
+        <label>Less than 10 uses, 10 hours, and 2 years of exposure</label>
+    </customValue>
+    <customValue>
+        <fullName>Over 2 years, 10 uses, and 10 hours total exposure</fullName>
+        <default>false</default>
+        <label>Over 2 years, 10 uses, and 10 hours total exposure</label>
+    </customValue>
+    <customValue>
+        <fullName>None of the Above</fullName>
+        <default>false</default>
+        <label>None of the Above</label>
+    </customValue>
+    <description>Set values for the time frame limits for use or causes.</description>
+    <masterLabel>Time Frame Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

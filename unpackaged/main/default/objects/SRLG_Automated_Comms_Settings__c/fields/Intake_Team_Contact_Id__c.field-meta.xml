@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Team_Contact_Id__c</fullName>
+    <description>Contact record with email address used to notify when an outbound comm record has recipient listed as Intake Team</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact record with email address used to notify when an outbound comm record has recipient listed as Intake Team</inlineHelpText>
+    <label>Intake Team Contact Id</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

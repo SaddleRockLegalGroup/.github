@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Firefighting Service Details</masterLabel>
+            <translation><!-- Firefighting Service Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Military Service Details</masterLabel>
+            <translation><!-- Military Service Details --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E_sig_CC_Email_Address_es__c</fullName>
+    <description>Enter a list of comma-separated email addresses to CC on the DropboxSign signature request email notification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a list of comma-separated email addresses to CC on the DropboxSign signature request email notification.</inlineHelpText>
+    <label>E-sig CC Email Address(es)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

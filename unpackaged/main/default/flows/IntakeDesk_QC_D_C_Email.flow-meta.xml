@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>duplicate_record_email</name>
+        <label>duplicate record email</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>litify_pm__Intake__c.IntakeDesk_EOF_DQ_Dupe</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>mark_email_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>litify_pm__Intake__c.IntakeDesk_EOF_DQ_Dupe</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>send_to_D_C</name>
+        <label>send to D&amp;C</label>
+        <locationX>842</locationX>
+        <locationY>431</locationY>
+        <actionName>litify_pm__Intake__c.IntakeDeskReview_EOF_QC_D_C</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>mark_email_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>litify_pm__Intake__c.IntakeDeskReview_EOF_QC_D_C</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>send_to_ID</name>
+        <label>send to ID</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <actionName>litify_pm__Intake__c.IntakeDeskReview_EOF_QC_ID</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>mark_email_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>litify_pm__Intake__c.IntakeDeskReview_EOF_QC_ID</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>sent_to_all</name>
+        <label>sent to all</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <actionName>litify_pm__Intake__c.IntakeDeskReview_EOF_ID_D_C</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>mark_email_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>litify_pm__Intake__c.IntakeDeskReview_EOF_ID_D_C</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>what_type_of_qc_error</name>
+        <label>what type of qc error</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>none</defaultConnectorLabel>
+        <rules>
+            <name>EOF_DQ_Dupe</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Potential_Duplicate_IntakeId__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QC_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Duplicate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QC_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DQ</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>duplicate_record_email</targetReference>
+            </connector>
+            <label>EOF - DQ/Dupe</label>
+        </rules>
+        <rules>
+            <name>EOD_QC_ID</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Desk_Review__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EOF - ID</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>send_to_ID</targetReference>
+            </connector>
+            <label>EOD - QC/ID</label>
+        </rules>
+        <rules>
+            <name>EOF_QC_ID_D_C</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Desk_Review__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EOF - ID/D&amp;C</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>sent_to_all</targetReference>
+            </connector>
+            <label>EOF - QC/ID/D&amp;C</label>
+        </rules>
+        <rules>
+            <name>EOF_QC_D_C</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Intake_Desk_Review__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EOF - D&amp;C</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>send_to_D_C</targetReference>
+            </connector>
+            <label>EOF - QC/D&amp;C</label>
+        </rules>
+    </decisions>
+    <description>This send an email to both D&amp;C and Intake Desk when an intake from IntakeDesk is either a Dupe or has Errors
+4/10/25 added dont send email if the field EOF Email Sent is populated</description>
+    <environments>Default</environments>
+    <interviewLabel>IntakeDesk QC D&amp;C Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>IntakeDesk QC D&amp;C Email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>activity_log</name>
+        <label>activity log</label>
+        <locationX>578</locationX>
+        <locationY>731</locationY>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>$Record.Outbound_Email_Text__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Outbound Email</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>mark_email_sent</name>
+        <label>mark email sent</label>
+        <locationX>578</locationX>
+        <locationY>623</locationY>
+        <connector>
+            <targetReference>activity_log</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EOF_Email_Sent__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>what_type_of_qc_error</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>(1 OR 2 OR 3 OR 4 OR 5 )AND 6 AND 7</filterLogic>
+        <filters>
+            <field>Intake_Desk_Review__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EOF - ID</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Send_EOF_Notification_to_ID_D_C__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_Desk_Review__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EOF - ID/D&amp;C</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_Desk_Review__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EOF - D&amp;C</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intake_Desk_Review__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>EOF - QA/Dupe</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Referral_Partner_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Duddy &amp; Czarnecki PLLC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>EOF_Email_Sent__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>litify_pm__Intake__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

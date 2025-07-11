@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Portal_Parties</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>litify_pm__Email__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>litify_pm__Phone_Mobile__c</columns>
+    <columns>litify_pm__Vendor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>litify_pm__Email__c</field>
+        <operation>startsWith</operation>
+        <value>r.evans</value>
+    </filters>
+    <label>Partner Portal Parties</label>
+    <sharedTo>
+        <roleAndSubordinates>Leadership</roleAndSubordinates>
+    </sharedTo>
+</ListView>

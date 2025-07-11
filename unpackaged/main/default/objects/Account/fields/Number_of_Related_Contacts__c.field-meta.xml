@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Related_Contacts__c</fullName>
+    <description>DRLS Rollup to count the number of Contacts this Party/Account has related to it.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>DRLS Rollup to count the number of Contacts this Party/Account has related to it.</inlineHelpText>
+    <label>Number of Related Contacts</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

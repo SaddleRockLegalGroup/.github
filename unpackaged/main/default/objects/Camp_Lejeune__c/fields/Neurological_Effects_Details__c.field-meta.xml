@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Neurological_Effects_Details__c</fullName>
+    <description>Breaking down NE to capture its granularity</description>
+    <label>Neurological_Effects_Details</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delayed reaction times</fullName>
+                <default>false</default>
+                <label>Delayed reaction times</label>
+            </value>
+            <value>
+                <fullName>Problems with short-term memory</fullName>
+                <default>false</default>
+                <label>Problems with short-term memory</label>
+            </value>
+            <value>
+                <fullName>Visual perception</fullName>
+                <default>false</default>
+                <label>Visual perception</label>
+            </value>
+            <value>
+                <fullName>Attention</fullName>
+                <default>false</default>
+                <label>Attention</label>
+            </value>
+            <value>
+                <fullName>Color vision</fullName>
+                <default>false</default>
+                <label>Color vision</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

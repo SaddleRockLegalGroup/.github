@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>NumVerifyValidation</name>
+        <label>NumVerifyValidation</label>
+        <locationX>314</locationX>
+        <locationY>492</locationY>
+        <actionName>NumVerifyValidation</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>decisionPhoneType</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>phoneNumbers</name>
+            <value>
+                <elementReference>varCorrectNumberFormat</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>NumVerifyValidation</nameSegment>
+        <offset>0</offset>
+        <outputParameters>
+            <assignToReference>varCarrier</assignToReference>
+            <name>carrier</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>varCountryCode</assignToReference>
+            <name>countryCode</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>varInternationalFormat</assignToReference>
+            <name>internationalFormat</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>varIsValid</assignToReference>
+            <name>isValid</name>
+        </outputParameters>
+        <outputParameters>
+            <assignToReference>varLineType</assignToReference>
+            <name>lineType</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>assignCorrectNumberFormat</name>
+        <label>assignCorrectNumberFormat</label>
+        <locationX>578</locationX>
+        <locationY>276</locationY>
+        <assignmentItems>
+            <assignToReference>varCorrectNumberFormat</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formNumberFormatPlus1</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>decisionPhoneNumberValidation</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>decisionPhoneNumberValidation</name>
+        <label>decisionPhoneNumberValidation</label>
+        <locationX>578</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Phone_Other_No_Issues</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.litify_pm__Phone_Other__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formNumberFormatPlus1</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Invalid Phone Number</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NumVerifyValidation</targetReference>
+            </connector>
+            <label>Phone Other No Issues</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decisionPhoneType</name>
+        <label>decisionPhoneType</label>
+        <locationX>314</locationX>
+        <locationY>600</locationY>
+        <defaultConnector>
+            <targetReference>createInvalidBriolabLog</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mobile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varLineType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mobile</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varIsValid</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateMobileNumber</targetReference>
+            </connector>
+            <label>Mobile</label>
+        </rules>
+        <rules>
+            <name>Landline</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varLineType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Landline</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varIsValid</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateLandlineNumber</targetReference>
+            </connector>
+            <label>Landline</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>formFullOutput</name>
+        <dataType>String</dataType>
+        <expression>&quot;Carrier: &quot; &amp; {!varCarrier} &amp; &quot; | Country Code: &quot; &amp; {!varCountryCode} &amp; &quot; | International Format: &quot; &amp; {!varInternationalFormat} &amp; &quot; | Line Type: &quot; &amp; {!varLineType}</expression>
+    </formulas>
+    <formulas>
+        <name>formNumberFormatPlus1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    AND(
+        LEFT({!$Record.litify_pm__Phone_Other__c}, 2) = &quot;+1&quot;,
+        LEN(
+            SUBSTITUTE(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE({!$Record.litify_pm__Phone_Other__c}, &quot;(&quot;, &quot;&quot;),
+                        &quot;)&quot;, &quot;&quot;
+                    ),
+                    &quot;-&quot;, &quot;&quot;
+                ),
+                &quot; &quot;, &quot;&quot;
+            )
+        ) = 12
+    ),
+    {!$Record.litify_pm__Phone_Other__c},
+    IF(
+        AND(
+            LEFT({!$Record.litify_pm__Phone_Other__c}, 2) = &quot;+2&quot;,
+            LEN(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE(
+                            SUBSTITUTE({!$Record.litify_pm__Phone_Other__c}, &quot;(&quot;, &quot;&quot;),
+                            &quot;)&quot;, &quot;&quot;
+                        ),
+                        &quot;-&quot;, &quot;&quot;
+                    ),
+                    &quot; &quot;, &quot;&quot;
+                )
+            ) = 11
+        ),
+        &quot;+1&quot; &amp; RIGHT(
+            SUBSTITUTE(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE({!$Record.litify_pm__Phone_Other__c}, &quot;(&quot;, &quot;&quot;),
+                        &quot;)&quot;, &quot;&quot;
+                    ),
+                    &quot;-&quot;, &quot;&quot;
+                ),
+                &quot; &quot;, &quot;&quot;
+            ),
+            10
+        ),
+        IF(
+            LEN(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE(
+                            SUBSTITUTE({!$Record.litify_pm__Phone_Other__c}, &quot;(&quot;, &quot;&quot;),
+                            &quot;)&quot;, &quot;&quot;
+                        ),
+                        &quot;-&quot;, &quot;&quot;
+                    ),
+                    &quot; &quot;, &quot;&quot;
+                )
+            ) = 10,
+            &quot;+1&quot; &amp; SUBSTITUTE(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE({!$Record.litify_pm__Phone_Other__c}, &quot;(&quot;, &quot;&quot;),
+                        &quot;)&quot;, &quot;&quot;
+                    ),
+                    &quot;-&quot;, &quot;&quot;
+                ),
+                &quot; &quot;, &quot;&quot;
+            ),
+            &quot;Invalid Phone Number&quot;
+        )
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formOtherPhoneLen</name>
+        <dataType>Number</dataType>
+        <expression>LEN({!$Record.litify_pm__Phone_Other__c})</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Brio | Party | Phone Number Verification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Brio | Party | Phone Number Verification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>createInvalidBriolabLog</name>
+        <label>createInvalidBriolabLog</label>
+        <locationX>578</locationX>
+        <locationY>708</locationY>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <stringValue>Brio | Party | Phone Number Verification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Log_Type__c</field>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Message__c</field>
+            <value>
+                <elementReference>textInvalidNumber</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_Id__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>BRIO_Log_Platform_Event__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>createValidBriolabLog</name>
+        <label>createValidBriolabLog</label>
+        <locationX>314</locationX>
+        <locationY>1008</locationY>
+        <inputAssignments>
+            <field>Flow_Name__c</field>
+            <value>
+                <stringValue>Brio | Party | Phone Number Verification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Log_Type__c</field>
+            <value>
+                <stringValue>Debug</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Message__c</field>
+            <value>
+                <elementReference>textValidNumber</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_Id__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>BRIO_Log_Platform_Event__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>updateLandlineNumber</name>
+        <label>updateLandlineNumber</label>
+        <locationX>314</locationX>
+        <locationY>708</locationY>
+        <connector>
+            <targetReference>createValidBriolabLog</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>litify_pm__Phone_Home__c</field>
+            <value>
+                <elementReference>$Record.litify_pm__Phone_Other__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updateMobileNumber</name>
+        <label>updateMobileNumber</label>
+        <locationX>50</locationX>
+        <locationY>708</locationY>
+        <connector>
+            <targetReference>createValidBriolabLog</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>litify_pm__Phone_Mobile__c</field>
+            <value>
+                <elementReference>$Record.litify_pm__Phone_Other__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>brioapi__API_External_ID__c</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>SRLG-</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>litify_pm__Phone_Other__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>assignCorrectNumberFormat</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>textFullOutput</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Carrier: {!varCarrier}
+Country Code: {!varCountryCode}
+Line Type: {!varLineType}
+Number: {!varCorrectNumberFormat}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>textInvalidNumber</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The number associated to this party is invalid
+{!textFullOutput}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>textValidNumber</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The number associated to this party is valid
+{!textFullOutput}</text>
+    </textTemplates>
+    <variables>
+        <name>varCarrier</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varCorrectNumberFormat</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varCountryCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varInternationalFormat</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varIsValid</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varLineType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

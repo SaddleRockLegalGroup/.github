@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unmatched_Intake</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ANI__c</columns>
+    <columns>Station__c</columns>
+    <columns>Media_Agency__c</columns>
+    <columns>Campaign__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Intake__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Unmatched Intake</label>
+    <sharedTo>
+        <role>Leadership</role>
+    </sharedTo>
+</ListView>

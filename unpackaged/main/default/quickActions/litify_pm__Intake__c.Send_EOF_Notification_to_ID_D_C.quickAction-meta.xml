@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Send_EOF_Notification_to_ID_D_C__c</field>
+        <formula>true</formula>
+    </fieldOverrides>
+    <label>Send EOF Notification to ID/ D&amp;C</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns/>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Email was sent succesfully</successMessage>
+    <type>Update</type>
+</QuickAction>

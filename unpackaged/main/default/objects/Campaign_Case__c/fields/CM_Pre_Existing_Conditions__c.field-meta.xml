@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Pre_Existing_Conditions__c</fullName>
+    <description>Used for case management notes to note any pre-exisitng conditions that are not reportable or need to be defined. These serve as catch all questions to dtermine any extra factors that may need to be considered.</description>
+    <inlineHelpText>Any potential pre-existing conditions a client brings up.</inlineHelpText>
+    <label>CM Pre-Existing Conditions</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Split_Fee_Percentage__c</fullName>
+    <description>This field has been DEPRECATED. Please use the Split/Fee Object on the Campaign Partner instead. The split / fee percentage agreed to with the Partner for this Campaign. This value will be stamped on Intake when the Intake is assigned to a Campaign Partner record.</description>
+    <inlineHelpText>This field has been DEPRECATED. Please use the Split/Fee Object on the Campaign Partner instead. The split / fee percentage agreed to with the Partner for this Campaign. This value will be stamped on Intake when the Intake is assigned to a Campaign Partner record.</inlineHelpText>
+    <label>Split / Fee Percentage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

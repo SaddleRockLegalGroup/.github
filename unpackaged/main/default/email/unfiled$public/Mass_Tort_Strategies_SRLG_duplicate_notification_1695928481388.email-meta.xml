@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Duplicate lead received from vendor</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CV Vendor: SRLG Duplicate Notification</name>
+    <relatedEntityType>litify_pm__Intake__c</relatedEntityType>
+    <style>none</style>
+    <subject>{{{litify_pm__Intake__c.litify_pm__Client__c}}}: Duplicate</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>
