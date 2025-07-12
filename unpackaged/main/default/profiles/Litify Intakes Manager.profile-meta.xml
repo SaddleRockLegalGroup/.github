@@ -9501,6 +9501,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>srlg_Exposure__c.Exposure_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>srlg_Exposure__c.Hours_Per_Use__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9512,6 +9517,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>srlg_Exposure__c.Intake__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>srlg_Exposure__c.Licensed_Individuals__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>srlg_Exposure__c.Licensing_Information__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9657,6 +9672,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>srlg_Injured_Party__c.Gender__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>srlg_Injured_Party__c.Hold_Death_Certificate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

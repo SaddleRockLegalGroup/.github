@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Exposure Type --></label>
+        <name>Exposure_Type__c</name>
+        <picklistValues>
+            <masterLabel>Direct Contact</masterLabel>
+            <translation><!-- Direct Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indirect Contact</masterLabel>
+            <translation><!-- Indirect Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

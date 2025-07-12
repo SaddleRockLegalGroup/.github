@@ -5,7 +5,7 @@
     <decisions>
         <name>Check_If_Within_30_Days</name>
         <label>Check If Within 30 Days</label>
-        <locationX>50</locationX>
+        <locationX>490</locationX>
         <locationY>755</locationY>
         <defaultConnector>
             <targetReference>Search_for_Intakes_with_Same_Source_ID</targetReference>
@@ -22,8 +22,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+                <targetReference>Lead_Rejected_1</targetReference>
             </connector>
             <label>Less Than 30 Days</label>
         </rules>
@@ -31,10 +30,10 @@
     <decisions>
         <name>Check_Most_Recent_Intake_Date</name>
         <label>Check Most Recent Intake Date</label>
-        <locationX>534</locationX>
-        <locationY>1421</locationY>
+        <locationX>974</locationX>
+        <locationY>1529</locationY>
         <defaultConnector>
-            <targetReference>CPL_Intake_Vendor_Distro</targetReference>
+            <targetReference>Lead_Accepted</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>More Than 30 Days</defaultConnectorLabel>
         <rules>
@@ -48,7 +47,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+                <targetReference>Lead_Rejected_2</targetReference>
             </connector>
             <label>Less Than 30 Days</label>
         </rules>
@@ -57,8 +56,8 @@
         <description>Distributes off of the &quot;HS Intake Vendor&quot; field. This is auto assigned in HubSpot workflows when a form is filled.</description>
         <name>CPL_Intake_Vendor_Distro</name>
         <label>CPL - Intake Vendor Distro</label>
-        <locationX>798</locationX>
-        <locationY>1529</locationY>
+        <locationX>1238</locationX>
+        <locationY>1745</locationY>
         <defaultConnector>
             <targetReference>CPL_SRLG_Create_Roundup_Intake</targetReference>
         </defaultConnector>
@@ -80,13 +79,44 @@
         </rules>
     </decisions>
     <decisions>
+        <name>CPL_Tier_2</name>
+        <label>CPL - Tier 2</label>
+        <locationX>1766</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Lead_Accepted_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Non-CPL</defaultConnectorLabel>
+        <rules>
+            <name>CPL</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.HS_Marketing_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>114</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.HS_Marketing_Source__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>67</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lead_Rejected</targetReference>
+            </connector>
+            <label>CPL</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>CPL_Vendor</name>
         <label>Sold - CPL Vendor?</label>
-        <locationX>699</locationX>
+        <locationX>1205</locationX>
         <locationY>431</locationY>
         <defaultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+            <targetReference>CPL_Tier_2</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
@@ -108,7 +138,7 @@
     <decisions>
         <name>Intake_Phone_Match_Exists</name>
         <label>Intake Phone Match Exists?</label>
-        <locationX>204</locationX>
+        <locationX>644</locationX>
         <locationY>647</locationY>
         <defaultConnector>
             <targetReference>Search_for_Intakes_with_Same_Source_ID</targetReference>
@@ -133,8 +163,8 @@
     <decisions>
         <name>Intake_Source_Match_Exist</name>
         <label>Intake Source Match Exist?</label>
-        <locationX>204</locationX>
-        <locationY>1205</locationY>
+        <locationX>644</locationX>
+        <locationY>1313</locationY>
         <defaultConnector>
             <targetReference>Get_Most_Recent_Associated_Intake</targetReference>
         </defaultConnector>
@@ -150,8 +180,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+                <targetReference>Lead_Rejected_Same_Source</targetReference>
             </connector>
             <label>Source Match Found</label>
         </rules>
@@ -160,8 +189,8 @@
         <description>Distributes off of the &quot;HS Intake Vendor&quot; field. This is auto assigned in HubSpot workflows when a form is filled.</description>
         <name>No_CPL_Intake_Vendor_Distro</name>
         <label>No CPL - Intake Vendor Distro</label>
-        <locationX>270</locationX>
-        <locationY>1529</locationY>
+        <locationX>710</locationX>
+        <locationY>1745</locationY>
         <defaultConnector>
             <targetReference>No_CPL_SRLG_Create_Roundup_Intake</targetReference>
         </defaultConnector>
@@ -185,7 +214,7 @@
     <decisions>
         <name>Recent_Roundup_Intake</name>
         <label>Recent Roundup Intake</label>
-        <locationX>198</locationX>
+        <locationX>627</locationX>
         <locationY>323</locationY>
         <defaultConnector>
             <targetReference>CPL_Vendor</targetReference>
@@ -202,7 +231,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Create_Intake_Trigger</targetReference>
+                <targetReference>Update_Party_Triggers_to_False</targetReference>
             </connector>
             <label>Yes - 14 Days</label>
         </rules>
@@ -252,8 +281,8 @@
         <description>Creates an intake with the data received from HubSpot on the Party.</description>
         <name>CPL_Etech_Create_Roundup_Intake</name>
         <label>CPL - Etech - Create Roundup Intake</label>
-        <locationX>666</locationX>
-        <locationY>1637</locationY>
+        <locationX>1106</locationX>
+        <locationY>1853</locationY>
         <connector>
             <targetReference>Update_Create_Intake_Trigger</targetReference>
         </connector>
@@ -492,8 +521,8 @@
         <description>Creates an intake with the data received from HubSpot on the Party.</description>
         <name>CPL_SRLG_Create_Roundup_Intake</name>
         <label>CPL - SRLG - Create Roundup Intake</label>
-        <locationX>930</locationX>
-        <locationY>1637</locationY>
+        <locationX>1370</locationX>
+        <locationY>1853</locationY>
         <connector>
             <targetReference>Update_Create_Intake_Trigger</targetReference>
         </connector>
@@ -732,8 +761,8 @@
         <description>Creates an intake with the data received from HubSpot on the Party.</description>
         <name>No_CPL_Etech_Create_Roundup_Intake</name>
         <label>No CPL - Etech - Create Roundup Intake</label>
-        <locationX>138</locationX>
-        <locationY>1637</locationY>
+        <locationX>578</locationX>
+        <locationY>1853</locationY>
         <connector>
             <targetReference>Update_Create_Intake_Trigger</targetReference>
         </connector>
@@ -966,8 +995,8 @@
         <description>Creates an intake with the data received from HubSpot on the Party.</description>
         <name>No_CPL_SRLG_Create_Roundup_Intake</name>
         <label>No CPL - SRLG - Create Roundup Intake</label>
-        <locationX>402</locationX>
-        <locationY>1637</locationY>
+        <locationX>842</locationX>
+        <locationY>1853</locationY>
         <connector>
             <targetReference>Update_Create_Intake_Trigger</targetReference>
         </connector>
@@ -1199,8 +1228,8 @@
     <recordLookups>
         <name>Get_Most_Recent_Associated_Intake</name>
         <label>Get Most Recent Associated Intake</label>
-        <locationX>534</locationX>
-        <locationY>1313</locationY>
+        <locationX>974</locationX>
+        <locationY>1421</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_Most_Recent_Intake_Date</targetReference>
@@ -1229,7 +1258,7 @@
     <recordLookups>
         <name>Search_for_Intakes_with_Same_Phone</name>
         <label>Search for Intakes with Same Phone</label>
-        <locationX>204</locationX>
+        <locationX>644</locationX>
         <locationY>539</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -1280,8 +1309,8 @@
     <recordLookups>
         <name>Search_for_Intakes_with_Same_Source_ID</name>
         <label>Search for Intakes with Same Source ID</label>
-        <locationX>204</locationX>
-        <locationY>1097</locationY>
+        <locationX>644</locationX>
+        <locationY>1205</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Intake_Source_Match_Exist</targetReference>
@@ -1315,11 +1344,135 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
+        <name>Lead_Accepted</name>
+        <label>Lead Accepted</label>
+        <locationX>1238</locationX>
+        <locationY>1637</locationY>
+        <connector>
+            <targetReference>CPL_Intake_Vendor_Distro</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>accepted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Lead_Accepted_1</name>
+        <label>Lead Accepted</label>
+        <locationX>1898</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>accepted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Lead_Rejected</name>
+        <label>Lead Rejected</label>
+        <locationX>1634</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intake_Creation_Unqualifying_Reason__c</field>
+            <value>
+                <stringValue>CPL - Tier 2</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Lead_Rejected_1</name>
+        <label>Lead Rejected</label>
+        <locationX>358</locationX>
+        <locationY>863</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intake_Creation_Unqualifying_Reason__c</field>
+            <value>
+                <stringValue>Roundup intake with same phone number in last 30 days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Lead_Rejected_2</name>
+        <label>Lead Rejected</label>
+        <locationX>710</locationX>
+        <locationY>1637</locationY>
+        <connector>
+            <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intake_Creation_Unqualifying_Reason__c</field>
+            <value>
+                <stringValue>Roundup intake for same party in last 30 days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Lead_Rejected_Same_Source</name>
+        <label>Lead Rejected - Same Source</label>
+        <locationX>314</locationX>
+        <locationY>1421</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Intake_Creation_Unqualifying_Reason__c</field>
+            <value>
+                <stringValue>Source provided the same Roundup lead before</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
         <description>Unchecks the field &quot;Create Intake Trigger&quot; on the triggering party to reset the intake creation process if a new intake needs to be created in the future for the same party.</description>
         <name>Update_Create_Intake_Trigger</name>
         <label>Update &quot;Create Intake Trigger&quot;, &quot;HS Sold - CPL&quot;, and &quot;HS Test Intake&quot; on Party</label>
-        <locationX>198</locationX>
-        <locationY>2165</locationY>
+        <locationX>974</locationX>
+        <locationY>2129</locationY>
         <inputAssignments>
             <field>Create_Intake_Trigger__c</field>
             <value>
@@ -1340,8 +1493,46 @@
         </inputAssignments>
         <inputReference>$Record</inputReference>
     </recordUpdates>
+    <recordUpdates>
+        <description>Unchecks the field &quot;Create Intake Trigger&quot; on the triggering party to reset the intake creation process if a new intake needs to be created in the future for the same party.</description>
+        <name>Update_Party_Triggers_to_False</name>
+        <label>Update Party Triggers to False</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Create_Intake_Trigger__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HS_Sold_CPL__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HS_Test_Intake__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Intake_Creation_Unqualifying_Reason__c</field>
+            <value>
+                <stringValue>Roundup intake in last 14 days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead_Disposition__c</field>
+            <value>
+                <stringValue>rejected</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <start>
-        <locationX>72</locationX>
+        <locationX>501</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Recent_Roundup_Intake</targetReference>

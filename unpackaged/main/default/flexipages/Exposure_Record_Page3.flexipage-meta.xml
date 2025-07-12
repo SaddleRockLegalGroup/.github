@@ -244,6 +244,24 @@
                 <identifier>RecordCase_Type_Routing__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Exposure_Type__c</fieldItem>
+                <identifier>RecordExposure_Type__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Licensing_Information__c</fieldItem>
+                <identifier>RecordLicensing_Information__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Licensed_Individuals__c</fieldItem>
+                <identifier>RecordLicensed_Individuals__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-2e1346dd-4cc9-4bbc-a68d-5c3e5f2c2bf2</name>
         <type>Facet</type>
     </flexiPageRegions>

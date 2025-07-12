@@ -212,7 +212,7 @@
             <assignToReference>Get_Intake.litify_pm__Turn_Down_Details__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Death date not within 2 years of dx &amp; death was greater than 2 years ago.</stringValue>
+                <stringValue>Death date not within 2 years of dx or death was greater than 1 year 8 months ago.</stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -1043,7 +1043,7 @@
         </rules>
         <rules>
             <name>Death_Qualification</name>
-            <conditionLogic>1 AND ((2 AND 7) OR 3) AND 4 AND 5 AND 6</conditionLogic>
+            <conditionLogic>1 AND ((2 AND 7 AND 5) OR 3) AND 4 AND 6</conditionLogic>
             <conditions>
                 <leftValueReference>Get_Intake.Is_your_loved_one_still_living__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -1060,9 +1060,9 @@
             </conditions>
             <conditions>
                 <leftValueReference>Get_Intake.Injured_Party_Date_of_Death__c</leftValueReference>
-                <operator>GreaterThan</operator>
+                <operator>LessThan</operator>
                 <rightValue>
-                    <elementReference>twoYearsAgo</elementReference>
+                    <elementReference>oneYear8MonthsAgo</elementReference>
                 </rightValue>
             </conditions>
             <conditions>
@@ -1288,7 +1288,8 @@
             <label>One Qualified Exposure</label>
         </rules>
     </decisions>
-    <description>7/7 AV- Fixed NOK issue some of the resources were off.
+    <description>7/11 AV- Added criteria update, that death cases, now have to be within 1 year and 8 months in order to qualify.
+7/7 AV- Fixed NOK issue some of the resources were off.
 7/1 AV- Added &quot;Thyroid Cancer&quot; as an accepted cancer per criteria update.
 6/19 AV- Changed &quot;Kidney Transplant&quot; mapping to be based of off the new mapping in &#39;Additional Case Detail&#39; per D&amp;C&#39;s request.
 6/9- AV - Added &quot;Kidney Transplant&quot; assignment to the DQ flow.
@@ -1366,6 +1367,15 @@ CQC for PFAS</description>
         <expression>ADDMONTHS(TODAY(), -20 * 12)</expression>
     </formulas>
     <formulas>
+        <name>oneYear8MonthsAgo</name>
+        <dataType>Date</dataType>
+        <expression>DATE(
+  YEAR(TODAY()) - IF(MONTH(TODAY()) &lt;= 8, 2, 1),
+  MOD(MONTH(TODAY()) + 4, 12),
+  DAY(TODAY())
+)</expression>
+    </formulas>
+    <formulas>
         <name>RemissionOver10Years</name>
         <dataType>Boolean</dataType>
         <expression>NOT( ISBLANK( {!Get_Campaign_Case.Date_of_Second_Diagnosis__c}) ) &amp;&amp;
@@ -1403,11 +1413,6 @@ CQC for PFAS</description>
     NOT(ISBLANK( {!Get_Campaign_Case.Hours_Used__c}))
   ), ( ( (IF( {!Get_Campaign_Case.Date_of_Diagnosis__c} &lt; {!Get_Campaign_Case.Date_of_Last_Exposure__c}, {!Get_Campaign_Case.Date_of_Diagnosis__c}, {!Get_Campaign_Case.Date_of_Last_Exposure__c} )- {!Get_Campaign_Case.Date_of_First_Exposure__c}) / 365.25 )  * {!Get_Campaign_Case.Number_of_Times_Used__c} ) &gt; 10, False
 )</expression>
-    </formulas>
-    <formulas>
-        <name>twoYearsAgo</name>
-        <dataType>Date</dataType>
-        <expression>DATE(YEAR(TODAY()-2),MONTH(TODAY()),DAY(TODAY()))</expression>
     </formulas>
     <formulas>
         <name>x19MonthsAgo</name>
@@ -1706,7 +1711,7 @@ CQC for PFAS</description>
             <targetReference>Get_Intake</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>countTotalInjuryRecords</name>
         <dataType>Number</dataType>

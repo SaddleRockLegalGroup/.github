@@ -130,7 +130,8 @@ Type__c
 , Chemotherapy_Details__c
 , Years_In_Remission__c
 , Remission_Check__c
-FROM Injuries__r)
+FROM Injuries__r
+WHERE Type__c != 'None of the Above')
 
 , (SELECT
 envExposureAgentOrange__c

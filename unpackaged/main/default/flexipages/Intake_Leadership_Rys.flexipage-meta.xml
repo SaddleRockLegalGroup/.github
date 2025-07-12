@@ -2850,7 +2850,7 @@
                 <componentName>flowruntime:interview</componentName>
                 <identifier>flowruntime_interview5</identifier>
                 <visibilityRule>
-                    <booleanFilter>1 OR 2</booleanFilter>
+                    <booleanFilter>1 OR 2 OR 3</booleanFilter>
                     <criteria>
                         <leftValue>{!Record.litify_pm__Case_Type__r.Name}</leftValue>
                         <operator>EQUAL</operator>
@@ -2860,6 +2860,11 @@
                         <leftValue>{!Record.litify_pm__Case_Type__r.Name}</leftValue>
                         <operator>CONTAINS</operator>
                         <rightValue>Round Up</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.litify_pm__Case_Type__r.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Test CT</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>

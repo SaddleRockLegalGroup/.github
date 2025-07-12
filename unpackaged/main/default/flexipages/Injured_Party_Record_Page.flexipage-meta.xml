@@ -177,6 +177,12 @@
                 <identifier>RecordhasFirefightingService__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Hold_Death_Certificate__c</fieldItem>
+                <identifier>RecordHold_Death_Certificate__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-634e2e02-bb5e-4214-a781-b0b0788e15aa</name>
         <type>Facet</type>
     </flexiPageRegions>

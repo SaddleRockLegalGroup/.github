@@ -1377,6 +1377,12 @@
             <targetReference>No_CPL_Intake_Vendor_Distro</targetReference>
         </connector>
         <inputAssignments>
+            <field>Intake_Creation_Unqualifying_Reason__c</field>
+            <value>
+                <stringValue>CPL - Tier 2</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Lead_Disposition__c</field>
             <value>
                 <stringValue>rejected</stringValue>
@@ -1396,7 +1402,7 @@
         <inputAssignments>
             <field>Intake_Creation_Unqualifying_Reason__c</field>
             <value>
-                <stringValue>PFAS intake in last 30 days</stringValue>
+                <stringValue>PFAS intake with same phone number in last 30 days</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1418,7 +1424,7 @@
         <inputAssignments>
             <field>Intake_Creation_Unqualifying_Reason__c</field>
             <value>
-                <stringValue>PFAS intake in last 30 days</stringValue>
+                <stringValue>PFAS intake for same party in last 30 days</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
