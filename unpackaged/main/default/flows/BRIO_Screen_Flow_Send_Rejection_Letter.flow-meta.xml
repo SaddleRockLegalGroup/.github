@@ -1,20 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Rejection_Email_Better_Email</name>
+        <label>Send Rejection Email (Better Email)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Confirmation_Screen</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>bcc</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_bcc</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsActivity</name>
+            <value>
+                <stringValue>CB_TRUE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_saveAsTask</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cb_setTreatTargetObjectAsRecipient</name>
+            <value>
+                <stringValue>CB_FALSE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HTMLbody</name>
+            <value>
+                <elementReference>tt_emailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messageID</name>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>var_fromAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsActivity</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>saveAsTask</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>var_toAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>setTreatTargetObjectAsRecipient</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>tt_emailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>templateID</name>
+        </inputParameters>
+        <inputParameters>
+            <name>templateTargetObjectId</name>
+        </inputParameters>
+        <nameSegment>SendBetterEmail</nameSegment>
+        <offset>0</offset>
+        <outputParameters>
+            <assignToReference>var_emailTemplateId</assignToReference>
+            <name>templateUsed</name>
+        </outputParameters>
+    </actionCalls>
     <apiVersion>64.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
-    <constants>
-        <name>con_defaultEmailTemplateId</name>
-        <dataType>String</dataType>
-        <value>
-            <stringValue>00XDn000000e1G8MAI</stringValue>
-        </value>
-    </constants>
+    <assignments>
+        <name>Assign_From_Address</name>
+        <label>Assign From Address</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>var_fromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Org_Wide.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Rejection_Email_Better_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_To_Address</name>
+        <label>Assign To Address</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>var_toAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Intake.litify_pm__Client__r.litify_pm__Email__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_From_Address</targetReference>
+        </connector>
+    </assignments>
     <customProperties>
         <name>ScreenProgressIndicator</name>
         <value>
             <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
         </value>
     </customProperties>
+    <description>Send Better Email</description>
     <environments>Default</environments>
     <interviewLabel>BRIO | Screen Flow | Send Rejection Letter {!$Flow.CurrentDateTime}</interviewLabel>
     <label>BRIO | Intake | SF - Send Rejection Letter</label>
@@ -38,64 +169,13 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordLookups>
-        <name>Get_Email_Template</name>
-        <label>Get Email Template</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Send_Rejection_Letter</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>con_defaultEmailTemplateId</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>EmailTemplate</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_EmailMessage</name>
-        <label>Get EmailMessage</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Update_EmailMessage</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>CreatedById</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$User.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>ToAddress</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Get_Intake.litify_pm__Email__c</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>EmailMessage</object>
-        <sortField>CreatedDate</sortField>
-        <sortOrder>Desc</sortOrder>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
         <name>Get_Intake</name>
         <label>Get Intake</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Get_Email_Template</targetReference>
+            <targetReference>Get_Org_Wide</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -109,131 +189,38 @@
         <object>litify_pm__Intake__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordUpdates>
-        <name>Update_EmailMessage</name>
-        <label>Update EmailMessage</label>
+    <recordLookups>
+        <name>Get_Org_Wide</name>
+        <label>Get Org Wide Address</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_To_Address</targetReference>
+        </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>ReplyToEmailMessageId</field>
+            <field>Address</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Get_EmailMessage.Id</elementReference>
+                <stringValue>info@saddlerocklegal.com</stringValue>
             </value>
         </filters>
-        <inputAssignments>
-            <field>EmailTemplateId</field>
-            <value>
-                <elementReference>con_defaultEmailTemplateId</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Email_Template_Id__c</field>
-            <value>
-                <elementReference>con_defaultEmailTemplateId</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Intake__c</field>
-            <value>
-                <elementReference>recordId</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Is_Rejection_Email__c</field>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>RelatedToId</field>
-            <value>
-                <elementReference>recordId</elementReference>
-            </value>
-        </inputAssignments>
-        <object>EmailMessage</object>
-    </recordUpdates>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <screens>
-        <description>Send Rejection Letter to</description>
-        <name>Send_Rejection_Letter</name>
-        <label>Send Rejection Letter</label>
+        <name>Confirmation_Screen</name>
+        <label>Confirmation Screen</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <connector>
-            <targetReference>Get_EmailMessage</targetReference>
-        </connector>
+        <allowPause>true</allowPause>
         <fields>
-            <name>SendRejectionDisplay</name>
-            <fieldText>&lt;p&gt;&lt;strong&gt;Send Rejection Letter to {!Get_Intake.litify_pm__Client__r.Name}&lt;/strong&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <fields>
-            <name>RejectionLetter</name>
-            <extensionName>Email_Composer:FlowEmailComposer</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>toAddresses</name>
-                <value>
-                    <elementReference>Get_Intake.litify_pm__Email__c</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>fromAddress</name>
-                <value>
-                    <elementReference>$Setup.SRLG_Automated_Comms_Settings__c.Default_Org_Wide_Email_From_Address__c</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>hideTemplateSelection</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>logEmail</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>whatId</name>
-                <value>
-                    <elementReference>Get_Intake.Id</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>emailTemplateId</name>
-                <value>
-                    <elementReference>con_defaultEmailTemplateId</elementReference>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>ResetValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <fields>
-            <name>CloseScreenWarning</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;NOTE&lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;: In order to send the email, you must click the &#39;Send&#39; button above. Closing the flow before clicking &#39;Send&#39; will end the flow without sending the email.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <name>Rejection_email_sent_successfully</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Rejection email sent successfully.&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -255,11 +242,48 @@
         </connector>
     </start>
     <status>Active</status>
+    <textTemplates>
+        <name>tt_emailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Dear {!Get_Intake.litify_pm__Client__r.litify_pm__First_Name__c},&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We are sorry, but Saddle Rock Legal Group, LLC and {!Get_Intake.Referral_Partner_Name__c} are unable to accept your case. Unfortunately, we cannot take every case and have determined that yours falls into this category. Our decision does not mean that you do or do not have a claim. This was strictly a business decision from our firm.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The practice of law is an art, not a science, and we may be wrong. You are certainly free to contact another attorney for a second opinion, and in fact we encourage you to do this. We have found in the past that another lawyer reviewing the same case may arrive at a different conclusion.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please understand that any claims you might have will be governed by a statute of limitation. A statute of limitation operates in such a way that if you do not file your claims in the appropriate court within the time specified by law, your claim(s) will be forever barred regardless of their merit. Please also understand that if you do not preserve the statute of limitation by filing the appropriate actions in the appropriate court, you and your family may be forever barred. You should immediately seek counsel to learn what that date is as we do not have enough information to determine that.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If it is your intention to proceed with this claim, you should act immediately, without hesitation or delay. We apologize again that we could not help you and you owe us nothing for our time and services.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Just so there is no misunderstanding, we will not be pursuing any claim on your behalf. Saddle Rock Legal Group and {!Get_Intake.Referral_Partner_Name__c} do not represent you in this matter.&amp;nbsp;We do wish you the best of luck.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Best regards,&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Saddle Rock Legal Group, LLC&lt;/p&gt;&lt;p&gt;{!Get_Intake.Referral_Partner_Name__c}&lt;/p&gt;&lt;p&gt;888-686-6454&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tt_emailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hi {!Get_Intake.litify_pm__Client__r.Name} Important Notice from {!Get_Intake.Referral_Partner_Name__c}</text>
+    </textTemplates>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_emailTemplateId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>00XDn000000e1G8MAI</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>var_fromAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>info@sallerocklegal.com</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>var_toAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
 </Flow>

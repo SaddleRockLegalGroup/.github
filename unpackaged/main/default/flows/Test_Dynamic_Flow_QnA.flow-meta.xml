@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Evaluate_Answer_Criteria</name>
         <label>Evaluate Answer Criteria</label>
-        <locationX>1282</locationX>
-        <locationY>1382</locationY>
+        <locationX>1326</locationX>
+        <locationY>1598</locationY>
         <actionName>DynamicAnswerCriteriaEvaluator</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -29,8 +29,8 @@
     <actionCalls>
         <name>Refresh_After_Ending_Values</name>
         <label>Refresh After Ending Values</label>
-        <locationX>622</locationX>
-        <locationY>4622</locationY>
+        <locationX>666</locationX>
+        <locationY>4838</locationY>
         <actionName>c:refreshPageData</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -40,8 +40,8 @@
     <actionCalls>
         <name>Refresh_After_Recent_Section</name>
         <label>Refresh After Recent Section</label>
-        <locationX>930</locationX>
-        <locationY>1814</locationY>
+        <locationX>974</locationX>
+        <locationY>2030</locationY>
         <actionName>c:refreshPageData</actionName>
         <actionType>component</actionType>
         <connector>
@@ -54,8 +54,8 @@
     <actionCalls>
         <name>Refresh_After_Update</name>
         <label>Refresh After Update</label>
-        <locationX>1150</locationX>
-        <locationY>3422</locationY>
+        <locationX>1194</locationX>
+        <locationY>3638</locationY>
         <actionName>c:refreshPageData</actionName>
         <actionType>component</actionType>
         <connector>
@@ -68,8 +68,8 @@
     <actionCalls>
         <name>Refresh_After_Working_Status</name>
         <label>Refresh After Working Status</label>
-        <locationX>666</locationX>
-        <locationY>566</locationY>
+        <locationX>754</locationX>
+        <locationY>866</locationY>
         <actionName>c:refreshPageData</actionName>
         <actionType>component</actionType>
         <connector>
@@ -82,8 +82,8 @@
     <actionCalls>
         <name>Refresh_Page_Data</name>
         <label>Refresh Page Data</label>
-        <locationX>1150</locationX>
-        <locationY>3938</locationY>
+        <locationX>1194</locationX>
+        <locationY>4154</locationY>
         <actionName>c:refreshPageData</actionName>
         <actionType>component</actionType>
         <connector>
@@ -98,8 +98,8 @@
     <assignments>
         <name>Apply_Relaunch_Variables</name>
         <label>Apply Relaunch Variables</label>
-        <locationX>622</locationX>
-        <locationY>2138</locationY>
+        <locationX>666</locationX>
+        <locationY>2354</locationY>
         <assignmentItems>
             <assignToReference>lastSectionOverride</assignToReference>
             <operator>Assign</operator>
@@ -122,8 +122,8 @@
     <assignments>
         <name>Clear_Relaunch_Variable</name>
         <label>Clear Relaunch Variable</label>
-        <locationX>358</locationX>
-        <locationY>1058</locationY>
+        <locationX>402</locationX>
+        <locationY>1274</locationY>
         <assignmentItems>
             <assignToReference>varRelaunch</assignToReference>
             <operator>Assign</operator>
@@ -138,7 +138,7 @@
     <assignments>
         <name>Override_Last_Section_and_DQ</name>
         <label>Override Last Section and DQ</label>
-        <locationX>666</locationX>
+        <locationX>754</locationX>
         <locationY>350</locationY>
         <assignmentItems>
             <assignToReference>lastSectionOverride</assignToReference>
@@ -155,14 +155,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_Intake_Working_Status</targetReference>
+            <targetReference>Get_End_Date</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Set_Variable_To_False</name>
         <label>Set Variable To False</label>
-        <locationX>1370</locationX>
-        <locationY>2738</locationY>
+        <locationX>1414</locationX>
+        <locationY>2954</locationY>
         <assignmentItems>
             <assignToReference>hasUnansweredRequiredQuestions</assignToReference>
             <operator>Assign</operator>
@@ -177,8 +177,8 @@
     <assignments>
         <name>Set_Variable_To_True</name>
         <label>Set Variable To True</label>
-        <locationX>1326</locationX>
-        <locationY>2354</locationY>
+        <locationX>1370</locationX>
+        <locationY>2570</locationY>
         <assignmentItems>
             <assignToReference>hasUnansweredRequiredQuestions</assignToReference>
             <operator>Assign</operator>
@@ -193,8 +193,8 @@
     <assignments>
         <name>Update_Section_Variables</name>
         <label>Update Section Variables</label>
-        <locationX>1282</locationX>
-        <locationY>3614</locationY>
+        <locationX>1326</locationX>
+        <locationY>3830</locationY>
         <assignmentItems>
             <assignToReference>lastSectionOverride</assignToReference>
             <operator>Assign</operator>
@@ -209,8 +209,8 @@
     <decisions>
         <name>All_Required_Questions_Answered</name>
         <label>All Required Questions Answered?</label>
-        <locationX>1238</locationX>
-        <locationY>2630</locationY>
+        <locationX>1282</locationX>
+        <locationY>2846</locationY>
         <defaultConnector>
             <targetReference>Set_Variable_To_False</targetReference>
         </defaultConnector>
@@ -235,8 +235,8 @@
     <decisions>
         <name>Fast_Forward_To_Section</name>
         <label>Fast Forward To Section?</label>
-        <locationX>864</locationX>
-        <locationY>1274</locationY>
+        <locationX>908</locationX>
+        <locationY>1490</locationY>
         <defaultConnector>
             <targetReference>Evaluate_Answer_Criteria</targetReference>
         </defaultConnector>
@@ -286,9 +286,34 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Intake_End_Date_Not_Null</name>
+        <label>Intake End Date Not Null?</label>
+        <locationX>754</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Update_Intake_Working_Status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Is Null</defaultConnectorLabel>
+        <rules>
+            <name>Is_Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_End_Date.litify_pm__Questionnaire_End_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Refresh_After_Working_Status</targetReference>
+            </connector>
+            <label>Is Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Intake_Is</name>
         <label>Intake Is</label>
-        <locationX>358</locationX>
+        <locationX>402</locationX>
         <locationY>134</locationY>
         <defaultConnector>
             <targetReference>DQ_Screen</targetReference>
@@ -356,8 +381,8 @@
     <decisions>
         <name>Intake_Was</name>
         <label>Intake Was...</label>
-        <locationX>358</locationX>
-        <locationY>4298</locationY>
+        <locationX>402</locationX>
+        <locationY>4514</locationY>
         <defaultConnector>
             <targetReference>Generate_Output_Field</targetReference>
         </defaultConnector>
@@ -398,8 +423,8 @@
     <decisions>
         <name>Launching_Questionnaire_1st_Time</name>
         <label>Launching Questionnaire 1st Time?</label>
-        <locationX>1282</locationX>
-        <locationY>3206</locationY>
+        <locationX>1326</locationX>
+        <locationY>3422</locationY>
         <defaultConnector>
             <targetReference>Update_Section_Variables</targetReference>
         </defaultConnector>
@@ -430,8 +455,8 @@
     <decisions>
         <name>Questions_Found_For_Section</name>
         <label>Questions Found For Section?</label>
-        <locationX>1282</locationX>
-        <locationY>1598</locationY>
+        <locationX>1326</locationX>
+        <locationY>1814</locationY>
         <defaultConnector>
             <targetReference>Launching_Questionnaire_1st_Time</targetReference>
         </defaultConnector>
@@ -462,8 +487,8 @@
     <decisions>
         <name>Relaunch_Flow</name>
         <label>Relaunch Flow?</label>
-        <locationX>930</locationX>
-        <locationY>2030</locationY>
+        <locationX>974</locationX>
+        <locationY>2246</locationY>
         <defaultConnector>
             <targetReference>Required_Completed</targetReference>
         </defaultConnector>
@@ -494,8 +519,8 @@
     <decisions>
         <name>Required_Question_Answered</name>
         <label>Required Question Answered?</label>
-        <locationX>1458</locationX>
-        <locationY>2246</locationY>
+        <locationX>1502</locationX>
+        <locationY>2462</locationY>
         <defaultConnector>
             <targetReference>Required_Completed</targetReference>
         </defaultConnector>
@@ -526,8 +551,8 @@
     <decisions>
         <name>Run_CQC</name>
         <label>Run CQC?</label>
-        <locationX>1282</locationX>
-        <locationY>3722</locationY>
+        <locationX>1326</locationX>
+        <locationY>3938</locationY>
         <defaultConnector>
             <targetReference>Loop_Sections</targetReference>
         </defaultConnector>
@@ -587,8 +612,8 @@
     <loops>
         <name>Loop_Sections</name>
         <label>Loop Sections</label>
-        <locationX>358</locationX>
-        <locationY>1166</locationY>
+        <locationX>402</locationX>
+        <locationY>1382</locationY>
         <collectionReference>Get_Sections</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -601,8 +626,8 @@
     <loops>
         <name>Required_Completed</name>
         <label>Required Completed?</label>
-        <locationX>1238</locationX>
-        <locationY>2138</locationY>
+        <locationX>1282</locationX>
+        <locationY>2354</locationY>
         <collectionReference>QuestionsRepeater.AllItems</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -659,8 +684,8 @@
     <recordLookups>
         <name>Get_Case_Type_Questionnaire</name>
         <label>Get Case Type Questionnaire</label>
-        <locationX>358</locationX>
-        <locationY>842</locationY>
+        <locationX>402</locationX>
+        <locationY>1058</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Sections</targetReference>
@@ -694,10 +719,33 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>Get_End_Date</name>
+        <label>Get End Date</label>
+        <locationX>754</locationX>
+        <locationY>458</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Intake_End_Date_Not_Null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FX_Id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>litify_pm__Intake__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>litify_pm__Questionnaire_End_Date__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_Section_Answers</name>
         <label>Get Section Answers</label>
-        <locationX>1282</locationX>
-        <locationY>1490</locationY>
+        <locationX>1326</locationX>
+        <locationY>1706</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Questions_Found_For_Section</targetReference>
@@ -733,8 +781,8 @@
     <recordLookups>
         <name>Get_Sections</name>
         <label>Get Sections</label>
-        <locationX>358</locationX>
-        <locationY>950</locationY>
+        <locationX>402</locationX>
+        <locationY>1166</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Clear_Relaunch_Variable</targetReference>
@@ -756,8 +804,8 @@
     <recordUpdates>
         <name>Update_Intake</name>
         <label>Update Intake</label>
-        <locationX>1150</locationX>
-        <locationY>3314</locationY>
+        <locationX>1194</locationX>
+        <locationY>3530</locationY>
         <connector>
             <targetReference>Refresh_After_Update</targetReference>
         </connector>
@@ -786,8 +834,8 @@
     <recordUpdates>
         <name>Update_Intake_Ending_Values</name>
         <label>Update Intake Ending Values</label>
-        <locationX>622</locationX>
-        <locationY>4514</locationY>
+        <locationX>666</locationX>
+        <locationY>4730</locationY>
         <connector>
             <targetReference>Refresh_After_Ending_Values</targetReference>
         </connector>
@@ -810,8 +858,8 @@
     <recordUpdates>
         <name>Update_Intake_Working_Status</name>
         <label>Update Intake Working Status</label>
-        <locationX>666</locationX>
-        <locationY>458</locationY>
+        <locationX>842</locationX>
+        <locationY>674</locationY>
         <connector>
             <targetReference>Refresh_After_Working_Status</targetReference>
         </connector>
@@ -843,8 +891,8 @@
     <recordUpdates>
         <name>Update_Recent_Section</name>
         <label>Update Recent Section</label>
-        <locationX>930</locationX>
-        <locationY>1706</locationY>
+        <locationX>974</locationX>
+        <locationY>1922</locationY>
         <connector>
             <targetReference>Refresh_After_Recent_Section</targetReference>
         </connector>
@@ -932,8 +980,8 @@
         <description>So Litify Can Catch up</description>
         <name>Delay_Screen</name>
         <label>Delay Screen</label>
-        <locationX>1370</locationX>
-        <locationY>2846</locationY>
+        <locationX>1414</locationX>
+        <locationY>3062</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -981,7 +1029,7 @@
     <screens>
         <name>DQ_Screen</name>
         <label>DQ Screen</label>
-        <locationX>666</locationX>
+        <locationX>754</locationX>
         <locationY>242</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1038,8 +1086,8 @@
     <screens>
         <name>QnA_Screen</name>
         <label>QnA Screen</label>
-        <locationX>930</locationX>
-        <locationY>1922</locationY>
+        <locationX>974</locationX>
+        <locationY>2138</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1324,7 +1372,7 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>232</locationX>
+        <locationX>276</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Intake_Is</targetReference>
@@ -1334,8 +1382,8 @@
     <subflows>
         <name>CQC_Router</name>
         <label>CQC Router</label>
-        <locationX>1150</locationX>
-        <locationY>3830</locationY>
+        <locationX>1194</locationX>
+        <locationY>4046</locationY>
         <connector>
             <targetReference>Refresh_Page_Data</targetReference>
         </connector>
@@ -1383,8 +1431,8 @@
     <subflows>
         <name>Generate_Output_Field</name>
         <label>Generate Output Field</label>
-        <locationX>622</locationX>
-        <locationY>4406</locationY>
+        <locationX>666</locationX>
+        <locationY>4622</locationY>
         <connector>
             <targetReference>Update_Intake_Ending_Values</targetReference>
         </connector>

@@ -6285,36 +6285,16 @@
         <flows>
             <screens>
                 <fields>
-                    <name>CloseScreenWarning</name>
+                    <name>Rejection_email_sent_successfully</name>
                 </fields>
-                <fields>
-                    <inputParameters>
-                        <name>fromAddress</name>
-                        <value />
-                    </inputParameters>
-                    <inputParameters>
-                        <name>hideTemplateSelection</name>
-                        <value />
-                    </inputParameters>
-                    <inputParameters>
-                        <name>logEmail</name>
-                        <value />
-                    </inputParameters>
-                    <inputParameters>
-                        <name>toAddresses</name>
-                        <value />
-                    </inputParameters>
-                    <inputParameters>
-                        <name>whatId</name>
-                        <value />
-                    </inputParameters>
-                    <name>RejectionLetter</name>
-                </fields>
-                <fields>
-                    <name>SendRejectionDisplay</name>
-                </fields>
-                <name>Send_Rejection_Letter</name>
+                <name>Confirmation_Screen</name>
             </screens>
+            <textTemplates>
+                <name>tt_emailBody</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tt_emailSubject</name>
+            </textTemplates>
         </flows>
         <fullName>BRIO_Screen_Flow_Send_Rejection_Letter</fullName>
     </flowDefinitions>

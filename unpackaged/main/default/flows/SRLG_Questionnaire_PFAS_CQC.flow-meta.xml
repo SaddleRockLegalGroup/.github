@@ -1043,19 +1043,12 @@
         </rules>
         <rules>
             <name>Death_Qualification</name>
-            <conditionLogic>1 AND ((2 AND 7 AND 5) OR 3) AND 4 AND 6</conditionLogic>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Get_Intake.Is_your_loved_one_still_living__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>No</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Time_Between_Dx_And_Death</leftValueReference>
-                <operator>GreaterThan</operator>
-                <rightValue>
-                    <numberValue>730.0</numberValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -1067,13 +1060,6 @@
             </conditions>
             <conditions>
                 <leftValueReference>Get_Intake.Is_your_loved_one_still_living__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Get_Injury_Qualified_most_recent.Diagnosis_Date__c</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -1711,7 +1697,7 @@ CQC for PFAS</description>
             <targetReference>Get_Intake</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>countTotalInjuryRecords</name>
         <dataType>Number</dataType>
