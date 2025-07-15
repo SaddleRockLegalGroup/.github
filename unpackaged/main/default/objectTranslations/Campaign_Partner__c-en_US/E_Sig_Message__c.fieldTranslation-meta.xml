@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Enter the email message you would like to appear in the DropboxSign signature request email notification. --></help>
-        <label><!-- E-Sig Message --></label>
-        <name>E_Sig_Message__c</name>
-    </CustomFieldTranslation>

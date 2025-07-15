@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Pharmacy Zip (Rx 5) --></help>
-        <label><!-- Question 199 --></label>
-        <name>Question_199__c</name>
-    </CustomFieldTranslation>

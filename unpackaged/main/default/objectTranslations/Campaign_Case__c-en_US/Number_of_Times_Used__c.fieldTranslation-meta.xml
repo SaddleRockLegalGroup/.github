@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Number of times a product was used in a given period --></help>
-        <label><!-- Number of Times Used --></label>
-        <name>Number_of_Times_Used__c</name>
-    </CustomFieldTranslation>

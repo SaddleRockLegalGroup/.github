@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Converts Question 55 from picklist to number (i.e. Limiting your answer to primary care, gynecology and oncology healthcare providers, identify each doctor or other health care provider who you have seen for medical care and treatment from the ten (10) years prior to your ovarian cancer diagnosis to the p) --></help>
-        <label><!-- How many drs last 10 years? --></label>
-        <name>FX_How_many_drs_last_10_years__c</name>
-    </CustomFieldTranslation>

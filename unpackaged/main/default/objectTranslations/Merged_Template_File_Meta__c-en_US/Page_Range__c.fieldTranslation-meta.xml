@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- The range field should define the page range of the document being defined. Page ranges can be defined with a mixture of comma separated lists of page numbers and/or ranges using hyphens (ex: 1,2,5-8). --></help>
-        <label><!-- Page Range --></label>
-        <name>Page_Range__c</name>
-    </CustomFieldTranslation>

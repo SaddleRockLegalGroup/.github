@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Check for qualification criteria. --></help>
-        <label><!-- Exposure/Use Check 3 --></label>
-        <name>Exposure_Use_Check_3__c</name>
-    </CustomFieldTranslation>

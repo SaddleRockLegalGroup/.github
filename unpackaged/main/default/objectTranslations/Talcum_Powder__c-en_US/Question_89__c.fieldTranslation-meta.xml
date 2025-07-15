@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Facility Zip (Prov 4) --></help>
-        <label><!-- Question 89 --></label>
-        <name>Question_89__c</name>
-    </CustomFieldTranslation>

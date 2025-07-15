@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- Nature Of Presence At Camp Lejeune --></label>
-        <name>Nature_Of_Presence_At_Camp_Lejeune__c</name>
-    </CustomFieldTranslation>

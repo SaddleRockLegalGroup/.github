@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Beginning of second product or experience they were exposed to related to the case. --></help>
-        <label><!-- Start Date of Second Exposure --></label>
-        <name>Start_Date_of_Second_Exposure__c</name>
-    </CustomFieldTranslation>

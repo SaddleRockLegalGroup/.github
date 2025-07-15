@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Predetermined checks on a type of exposure or use experience in the case. --></help>
-        <label><!-- Exposure/Use Check 5 --></label>
-        <name>Exposure_Use_Check_5__c</name>
-    </CustomFieldTranslation>

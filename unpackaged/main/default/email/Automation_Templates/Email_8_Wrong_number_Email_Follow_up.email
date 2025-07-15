@@ -1,6 +1,0 @@
-<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
-<tr valign="top" height="400" >
-<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
-<![CDATA[<font face="Arial, sans-serif" style="background-color: rgb(255, 255, 255);">Hello {!Customer.FirstName},<br><br>We at Saddle Rock Legal Group appreciate you submitting your information to us for a free case review related to your potential&nbsp;{!litify_pm__Intake__c.Case_Type_Name_del__c}&nbsp;Case.&nbsp; Unfortunately, the number you provided is a non-working number and we aren't able to potentially help you without having a brief call.&nbsp;&nbsp;<br><br>Please either call us at {!Organization.Phone} during normal business hours between 10 AM and 8 PM EST or email back with your correct contact information. We look forward to hearing from you.<br><br>Best regards,<br>{!litify_pm__Intake__c.OwnerFirstName}<br>Intake Specialist<br>Saddle Rock Legal Group<br>{!litify_pm__Intake__c.OwnerEmail}<br>{!Organization.Phone}</font>]]></td>
-</tr>
-</table>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Used for relative date filtering on dashboards and reports. Takes the Invoice Period Month and Year and converts it to a Date Format with the day set as 15th. --></help>
-        <label><!-- Invoice Period Date Format --></label>
-        <name>Invoice_Period_Date_Format__c</name>
-    </CustomFieldTranslation>

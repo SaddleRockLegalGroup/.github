@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- On creation, if no sequence order then it&apos;ll add 5 to the existing number in that section --></help>
-        <label><!-- Sequence Order --></label>
-        <name>Sequence_Order__c</name>
-    </CustomFieldTranslation>

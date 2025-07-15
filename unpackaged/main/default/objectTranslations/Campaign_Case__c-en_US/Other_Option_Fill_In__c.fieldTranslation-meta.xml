@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Other Option or fill in section when needed. --></help>
-        <label><!-- Other Option Fill In --></label>
-        <name>Other_Option_Fill_In__c</name>
-    </CustomFieldTranslation>

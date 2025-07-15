@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Date the diagnosis was provided to the injured party --></help>
-        <label><!-- Date of Diagnosis --></label>
-        <name>Date_of_Diagnosis__c</name>
-    </CustomFieldTranslation>

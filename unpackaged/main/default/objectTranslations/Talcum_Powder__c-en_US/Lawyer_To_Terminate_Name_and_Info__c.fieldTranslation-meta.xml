@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Please provide the name and contact information for the lawyer you wish to terminate: --></help>
-        <label><!-- Lawyer To Terminate Name and Info --></label>
-        <name>Lawyer_To_Terminate_Name_and_Info__c</name>
-    </CustomFieldTranslation>

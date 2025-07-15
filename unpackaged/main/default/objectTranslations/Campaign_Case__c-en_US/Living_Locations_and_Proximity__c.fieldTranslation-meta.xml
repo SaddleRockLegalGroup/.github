@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- Living Locations and Proximity --></label>
-        <name>Living_Locations_and_Proximity__c</name>
-    </CustomFieldTranslation>

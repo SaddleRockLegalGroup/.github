@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Criteria that would need to be met to be visible. If blank then always visible. --></help>
-        <label><!-- Conditional Value --></label>
-        <name>Conditional_Value__c</name>
-    </CustomFieldTranslation>

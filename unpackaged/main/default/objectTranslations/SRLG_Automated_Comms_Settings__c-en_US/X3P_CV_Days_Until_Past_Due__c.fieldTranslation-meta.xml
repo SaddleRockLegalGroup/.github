@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Days from setting intake&apos;s status to Case Verification when the intake will be updated to CV Past Due --></help>
-        <label><!-- 3P CV Days Until Past Due --></label>
-        <name>X3P_CV_Days_Until_Past_Due__c</name>
-    </CustomFieldTranslation>

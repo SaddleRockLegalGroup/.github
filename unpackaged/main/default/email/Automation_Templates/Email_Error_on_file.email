@@ -1,6 +1,0 @@
-<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
-<tr valign="top" height="400" >
-<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
-<![CDATA[<font face="Arial, sans-serif" style="">Hi {!Contact.FirstName},<br><br>We at Saddle Rock Legal Group hope this email finds you well.&nbsp; You have previously shown interest in a possible {!litify_pm__Intake__c.Case_Type_Name_del__c}&nbsp;claim and we had signed with you for a preliminary review.<br><br>Unfortunately, we have noticed a slight error on file, and need to clarify just a few additional pieces of information with you before we can get you transferred to our attorneys. Please call our firm as soon as possible so we can get this corrected. Our number is {!Organization.Phone}. Thanks!<br><br>Best Regards,<br>Saddle Rock Legal Group<br>{!Organization.Phone}</font>]]></td>
-</tr>
-</table>

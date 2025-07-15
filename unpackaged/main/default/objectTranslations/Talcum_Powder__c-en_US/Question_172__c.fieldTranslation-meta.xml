@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Pharmacy first date of use? (Rx 1) --></help>
-        <label><!-- Question 172 --></label>
-        <name>Question_172__c</name>
-    </CustomFieldTranslation>

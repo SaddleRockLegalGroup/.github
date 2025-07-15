@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- What will be shown as the question label for this particular Case Type --></help>
-        <label><!-- Question Label Override --></label>
-        <name>Question_Label_Override__c</name>
-    </CustomFieldTranslation>

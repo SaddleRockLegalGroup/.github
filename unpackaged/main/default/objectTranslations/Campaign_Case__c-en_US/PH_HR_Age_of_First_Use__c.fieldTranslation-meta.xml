@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- PH HR Age of First Use --></label>
-        <name>PH_HR_Age_of_First_Use__c</name>
-    </CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- What type of cancer where they diagnosed with? (REL 3) --></help>
-        <label><!-- Question 47 --></label>
-        <name>Question_47__c</name>
-    </CustomFieldTranslation>

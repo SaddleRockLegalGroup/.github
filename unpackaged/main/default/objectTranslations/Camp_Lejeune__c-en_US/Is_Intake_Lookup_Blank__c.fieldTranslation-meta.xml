@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- Is Intake Lookup Blank? --></label>
-        <name>Is_Intake_Lookup_Blank__c</name>
-    </CustomFieldTranslation>

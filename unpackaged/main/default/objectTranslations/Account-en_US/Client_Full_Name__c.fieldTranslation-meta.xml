@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Full name that will show up on Signature Documents for the Client --></help>
-        <label><!-- Client Full Name --></label>
-        <name>Client_Full_Name__c</name>
-    </CustomFieldTranslation>

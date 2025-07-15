@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Type of insurance coverage that is had by injured party --></help>
-        <label><!-- Insurance Coverage --></label>
-        <name>Insurance_Coverage__c</name>
-    </CustomFieldTranslation>

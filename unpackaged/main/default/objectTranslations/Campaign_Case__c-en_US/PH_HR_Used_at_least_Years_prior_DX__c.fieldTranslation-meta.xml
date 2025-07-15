@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- PH HR Used at least Years prior DX --></label>
-        <name>PH_HR_Used_at_least_Years_prior_DX__c</name>
-    </CustomFieldTranslation>

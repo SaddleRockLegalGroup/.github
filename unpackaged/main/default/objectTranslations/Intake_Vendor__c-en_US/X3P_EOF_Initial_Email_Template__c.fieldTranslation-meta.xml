@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- The 18-digit salesforce id of the email template to be used --></help>
-        <label><!-- 3P EOF Initial Email Template --></label>
-        <name>X3P_EOF_Initial_Email_Template__c</name>
-    </CustomFieldTranslation>

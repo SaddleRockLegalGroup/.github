@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Non Standard file for NOK (Other) Signer. A variation to the standard that requires separate considerations. --></help>
-        <label><!-- Non-Standard E-Sig Packet (Other) --></label>
-        <name>Non_Standard_E_Sig_Packet_Other__c</name>
-        <relationshipLabel><!-- Campaign Partners (Non-Standard E-Sig Packet (Other)) --></relationshipLabel>
-    </CustomFieldTranslation>

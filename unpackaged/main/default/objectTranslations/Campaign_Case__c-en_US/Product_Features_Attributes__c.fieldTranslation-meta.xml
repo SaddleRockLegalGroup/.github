@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Features and Attributes related to the product and how it can be used --></help>
-        <label><!-- Product Features/Attributes --></label>
-        <name>Product_Features_Attributes__c</name>
-    </CustomFieldTranslation>

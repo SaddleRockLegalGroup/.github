@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- This shows how much contact a client had with a particular product/case. --></help>
-        <label><!-- Type of Exposure --></label>
-        <name>Type_of_Exposure__c</name>
-    </CustomFieldTranslation>

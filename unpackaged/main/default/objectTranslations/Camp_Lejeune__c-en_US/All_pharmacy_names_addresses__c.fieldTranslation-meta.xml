@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- All pharmacy names &amp; addresses --></label>
-        <name>All_pharmacy_names_addresses__c</name>
-    </CustomFieldTranslation>

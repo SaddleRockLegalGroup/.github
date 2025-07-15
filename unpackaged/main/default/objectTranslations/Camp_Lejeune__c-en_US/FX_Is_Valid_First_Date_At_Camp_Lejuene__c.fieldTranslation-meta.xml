@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- IF First Date is before 8/1/1953 OR After 12/31/1987 THEN False ELSE True --></help>
-        <label><!-- Is Valid First Date At Camp Lejeune? --></label>
-        <name>FX_Is_Valid_First_Date_At_Camp_Lejuene__c</name>
-    </CustomFieldTranslation>

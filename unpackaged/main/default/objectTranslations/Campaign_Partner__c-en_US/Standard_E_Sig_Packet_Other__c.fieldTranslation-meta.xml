@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Standard file for Other party acting on behalf of Signer. See variation for unique circumstances for Partner firms. --></help>
-        <label><!-- Standard E-Sig Packet (Other) --></label>
-        <name>Standard_E_Sig_Packet_Other__c</name>
-        <relationshipLabel><!-- Campaign Partners (Standard E-Sig Packet (Other)) --></relationshipLabel>
-    </CustomFieldTranslation>

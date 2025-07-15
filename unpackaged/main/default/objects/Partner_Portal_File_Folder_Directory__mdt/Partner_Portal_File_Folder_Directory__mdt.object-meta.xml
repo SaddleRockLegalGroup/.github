@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Mapping for the Folder where the File should be moved to based on the User using the Partner Portal document upload</description>
-    <label>Partner Portal File Folder Directory</label>
-    <pluralLabel>Partner Portal File Folder Directories</pluralLabel>
-    <visibility>Public</visibility>
-</CustomObject>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Pharmacy City (Rx 3) --></help>
-        <label><!-- Question 183 --></label>
-        <name>Question_183__c</name>
-    </CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Comma-separated list of email addresses to blind copy 3P Case Verification emails to. --></help>
-        <label><!-- 3P Email BCC --></label>
-        <name>X3P_Email_BCC__c</name>
-    </CustomFieldTranslation>

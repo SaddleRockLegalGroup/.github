@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Last_Texted_At__c</fullName>
-    <description>DLRS rollup MAX Created Date of Twilio Message associated with the Contact record</description>
-    <inlineHelpText>DLRS rollup MAX Created Date of Twilio Message associated with the Contact record</inlineHelpText>
-    <label>Last Texted At</label>
-    <required>false</required>
-    <type>DateTime</type>
-</CustomField>

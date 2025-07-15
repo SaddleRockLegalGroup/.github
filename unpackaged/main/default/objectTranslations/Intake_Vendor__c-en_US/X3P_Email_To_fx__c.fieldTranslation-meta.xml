@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- 3P Email To --></label>
-        <name>X3P_Email_To_fx__c</name>
-    </CustomFieldTranslation>

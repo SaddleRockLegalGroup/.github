@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- How many cigarettes/packs per day do you smoke? --></help>
-        <label><!-- Question 234 --></label>
-        <name>Question_234__c</name>
-    </CustomFieldTranslation>

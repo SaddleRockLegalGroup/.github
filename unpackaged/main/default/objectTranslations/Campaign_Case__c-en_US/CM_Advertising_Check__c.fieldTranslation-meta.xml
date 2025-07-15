@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Advertising question check. --></help>
-        <label><!-- CM Advertising Check --></label>
-        <name>CM_Advertising_Check__c</name>
-    </CustomFieldTranslation>

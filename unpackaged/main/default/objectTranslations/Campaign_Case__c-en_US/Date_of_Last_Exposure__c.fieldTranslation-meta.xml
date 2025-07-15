@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Date client last used or was exposured of product. --></help>
-        <label><!-- Date of Last Exposure --></label>
-        <name>Date_of_Last_Exposure__c</name>
-    </CustomFieldTranslation>

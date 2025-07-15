@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Is_Rejection_Email__c</fullName>
-    <defaultValue>false</defaultValue>
-    <description>Field to manually set an EmailMessage record as a Rejection Email.</description>
-    <inlineHelpText>Field to manually set an EmailMessage record as a Rejection Email.</inlineHelpText>
-    <label>Is Rejection Email</label>
-    <type>Checkbox</type>
-</CustomField>

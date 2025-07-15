@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- What is the name of the doctor who diagnosed you with obsesity or as clinically overweight? (OW) --></help>
-        <label><!-- Question 29 --></label>
-        <name>Question_29__c</name>
-    </CustomFieldTranslation>

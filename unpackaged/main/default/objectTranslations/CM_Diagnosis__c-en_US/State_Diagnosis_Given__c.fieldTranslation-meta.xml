@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- The state in which the injured party received their diagnosis. --></help>
-        <label><!-- State Diagnosis Given --></label>
-        <name>State_Diagnosis_Given__c</name>
-    </CustomFieldTranslation>

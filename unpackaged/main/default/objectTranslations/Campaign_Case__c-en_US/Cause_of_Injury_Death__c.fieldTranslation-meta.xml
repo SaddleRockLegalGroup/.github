@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- The defining factor that lead to the injury or death of the client. --></help>
-        <label><!-- Cause of Injury/Death --></label>
-        <name>Cause_of_Injury_Death__c</name>
-    </CustomFieldTranslation>

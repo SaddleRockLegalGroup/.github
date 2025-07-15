@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- For your attorneys to determine your potential filing deadline, we need to explore when you learned about a potential connection between you and your case. --></help>
-        <label><!-- How First Learned Of Cause --></label>
-        <name>How_First_Learned_Of_Cause__c</name>
-    </CustomFieldTranslation>

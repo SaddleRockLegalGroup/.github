@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Docrio merge packet that will be generated when clicking the Create E-sig Packet button on an Intake assigned to this Campaign Partner IF Case State != &apos;FL Florida&apos; --></help>
-        <label><!-- Non FL E-sig Packet (Self) --></label>
-        <name>Non_FL_E_sig_Template__c</name>
-        <relationshipLabel><!-- Campaign Partners (Non FL E-sig Template) --></relationshipLabel>
-    </CustomFieldTranslation>

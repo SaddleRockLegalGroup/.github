@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Stage of cancer provided during diagnosis --></help>
-        <label><!-- Cancer Stage --></label>
-        <name>Cancer_Stage__c</name>
-    </CustomFieldTranslation>

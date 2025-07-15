@@ -1,3 +1,0 @@
-<apex:page contentType="text/plain" controller="BRIOWebhookVFPage_Controller" cache="false" showHeader="false" sidebar="false" action="{!init}">Hello API Event Received
-<p><apex:outputText value="{!outputText}"></apex:outputText></p>
-</apex:page>

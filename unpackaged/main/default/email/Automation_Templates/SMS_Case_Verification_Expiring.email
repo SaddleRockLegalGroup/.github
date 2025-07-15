@@ -1,6 +1,0 @@
-<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
-<tr valign="top" height="400" >
-<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
-<![CDATA[<font face="arial" style=""><span style="font-size: 12pt;">This is Saddle Rock Legal Group, the firm working on your {!litify_pm__Intake__c.Case_Type_Name_del__c}&nbsp;case. Call us at </span>{!Organization.Phone}<span style="font-size: 12pt;">&nbsp;as quickly as possible, thanks!</span></font>]]></td>
-</tr>
-</table>

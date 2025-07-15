@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- DLRS Rollup of all Intakes where Campaign Partner lookup on Intake matches this Campaign/Partner record. --></help>
-        <label><!-- Intakes Assigned --></label>
-        <name>Intakes_Assigned__c</name>
-    </CustomFieldTranslation>

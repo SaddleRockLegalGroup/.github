@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Meant to map to legacy Litify object&apos;s field --></help>
-        <label><!-- Related Object Field --></label>
-        <name>Related_Object_Field__c</name>
-    </CustomFieldTranslation>

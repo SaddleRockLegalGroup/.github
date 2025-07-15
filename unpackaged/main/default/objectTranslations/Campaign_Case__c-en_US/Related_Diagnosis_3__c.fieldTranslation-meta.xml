@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Sub-Category of the primary diagnosis. Related illness. --></help>
-        <label><!-- Related Diagnosis 3 --></label>
-        <name>Related_Diagnosis_3__c</name>
-    </CustomFieldTranslation>

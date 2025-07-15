@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Last year of visit to provider? (PC Prov 3) --></help>
-        <label><!-- Question 147 --></label>
-        <name>Question_147__c</name>
-    </CustomFieldTranslation>

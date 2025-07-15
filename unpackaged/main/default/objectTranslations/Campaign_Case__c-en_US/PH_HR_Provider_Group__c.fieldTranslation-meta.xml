@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- PH HR Provider Group # --></label>
-        <name>PH_HR_Provider_Group__c</name>
-    </CustomFieldTranslation>

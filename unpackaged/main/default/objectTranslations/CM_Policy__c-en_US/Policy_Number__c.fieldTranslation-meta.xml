@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Insurance Policy Number related to the specific policy --></help>
-        <label><!-- Policy Number --></label>
-        <name>Policy_Number__c</name>
-    </CustomFieldTranslation>

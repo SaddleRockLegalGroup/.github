@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Criteria that must be met to be considered qualified. If let blank then this is not a qualifying question. --></help>
-        <label><!-- Qualifier Criteria --></label>
-        <name>Qualifier_Criteria__c</name>
-    </CustomFieldTranslation>

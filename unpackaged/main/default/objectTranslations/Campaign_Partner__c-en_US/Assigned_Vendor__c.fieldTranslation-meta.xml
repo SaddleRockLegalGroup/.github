@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Designated Vendor that all intakes submitted by vendor during CV process should be attached to this Campaign Partner. --></help>
-        <label><!-- Assigned Vendor --></label>
-        <name>Assigned_Vendor__c</name>
-        <relationshipLabel><!-- Campaign Partners --></relationshipLabel>
-    </CustomFieldTranslation>

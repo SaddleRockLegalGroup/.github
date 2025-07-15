@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Date the client was diagnosed. Januar 1, should be used as a default date if the client does not know the exact date, but the Year is required. --></help>
-        <label><!-- Date of Diagnosis --></label>
-        <name>Date_of_Diagnosis__c</name>
-    </CustomFieldTranslation>

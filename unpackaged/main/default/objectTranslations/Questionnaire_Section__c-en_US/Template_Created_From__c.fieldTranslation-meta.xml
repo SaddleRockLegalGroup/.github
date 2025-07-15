@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- Template Created From --></label>
-        <lookupFilter>
-            <errorMessage><!-- Record must be a Templated Section --></errorMessage>
-        </lookupFilter>
-        <name>Template_Created_From__c</name>
-        <relationshipLabel><!-- Questionnaire Sections --></relationshipLabel>
-    </CustomFieldTranslation>

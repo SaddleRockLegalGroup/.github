@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Brio</fullName>
-    <fields>Status__c</fields>
-    <fields>Partner__c</fields>
-    <fields>Campaign__c</fields>
-    <fields>Name</fields>
-    <label>Brio</label>
-</CompactLayout>

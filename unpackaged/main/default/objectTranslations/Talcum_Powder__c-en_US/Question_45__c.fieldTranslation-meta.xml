@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Please provide me with the full name of your third relative with Breast or Ovarian Cancer? (REL 3) --></help>
-        <label><!-- Question 45 --></label>
-        <name>Question_45__c</name>
-    </CustomFieldTranslation>

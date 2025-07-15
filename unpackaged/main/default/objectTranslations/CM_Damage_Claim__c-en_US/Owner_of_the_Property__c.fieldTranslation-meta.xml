@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- Owner of the Property --></label>
-        <name>Owner_of_the_Property__c</name>
-        <relationshipLabel><!-- CM Damage Claims --></relationshipLabel>
-    </CustomFieldTranslation>

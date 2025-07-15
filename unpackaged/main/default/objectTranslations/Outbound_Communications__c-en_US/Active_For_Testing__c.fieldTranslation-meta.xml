@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- If checked, and the user who is triggering this communication is a testing user, then this rule will be applied.  The Active field will override this field. --></help>
-        <label><!-- Active For Testing --></label>
-        <name>Active_For_Testing__c</name>
-    </CustomFieldTranslation>

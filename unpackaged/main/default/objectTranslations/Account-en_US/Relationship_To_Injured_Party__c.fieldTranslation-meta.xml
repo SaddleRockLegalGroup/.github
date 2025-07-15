@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <label><!-- Relationship To Injured Party --></label>
-        <name>Relationship_To_Injured_Party__c</name>
-        <picklistValues>
-            <masterLabel>Wife</masterLabel>
-            <translation><!-- Wife --></translation>
-        </picklistValues>
-    </CustomFieldTranslation>

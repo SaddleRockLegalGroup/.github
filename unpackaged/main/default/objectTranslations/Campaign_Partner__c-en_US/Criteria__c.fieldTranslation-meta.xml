@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- SOQL query constructed by the Campaign Partner Query Builder. This query will determine whether an individual Intake meets the criteria to be referred to this Campaign/Partner combination or not. --></help>
-        <label><!-- Criteria --></label>
-        <name>Criteria__c</name>
-    </CustomFieldTranslation>

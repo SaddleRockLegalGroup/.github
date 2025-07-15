@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- From HubSpot intake creation process, checked when it is cleared to add a CPL total on the intake. This will uncheck once intake is created. --></help>
-        <label><!-- HS Sold - CPL --></label>
-        <name>HS_Sold_CPL__c</name>
-    </CustomFieldTranslation>

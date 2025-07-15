@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Cannot_Set_number_1</fullName>
-    <active>true</active>
-    <errorConditionFormula>Signing_Order__c = 1</errorConditionFormula>
-    <errorDisplayField>Signing_Order__c</errorDisplayField>
-    <errorMessage>You cannot set a signer as #1.</errorMessage>
-</ValidationRule>

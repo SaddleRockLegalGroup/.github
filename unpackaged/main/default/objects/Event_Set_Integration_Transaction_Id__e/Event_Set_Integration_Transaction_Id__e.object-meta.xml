@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Platform Event to store Integration Transaction salesforce id and external id. Attempt to avoid row lock errors on update to Integration Transaction records.</description>
-    <eventType>HighVolume</eventType>
-    <label>Event Set Integration Transaction Id</label>
-    <pluralLabel>vent Set Integration Transaction Ids</pluralLabel>
-    <publishBehavior>PublishAfterCommit</publishBehavior>
-</CustomObject>

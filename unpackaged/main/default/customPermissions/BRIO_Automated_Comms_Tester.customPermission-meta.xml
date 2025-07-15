@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Allows user to trigger automated comms when comms are in testing mode</description>
-    <isLicensed>false</isLicensed>
-    <label>BRIO | Automated Comms Tester</label>
-</CustomPermission>

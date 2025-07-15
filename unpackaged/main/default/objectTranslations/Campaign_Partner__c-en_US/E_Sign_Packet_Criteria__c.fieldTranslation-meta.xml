@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Update this to Determine what E-Sign packet should be selected when a partner is added to intake --></help>
-        <label><!-- E-Sign Packet Criteria --></label>
-        <name>E_Sign_Packet_Criteria__c</name>
-    </CustomFieldTranslation>

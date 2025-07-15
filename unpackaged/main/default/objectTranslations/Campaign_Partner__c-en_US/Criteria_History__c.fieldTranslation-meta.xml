@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Field to store history / changes to the Criteria field so that changes can be easily reverted. Must be populated manually. --></help>
-        <label><!-- Criteria History --></label>
-        <name>Criteria_History__c</name>
-    </CustomFieldTranslation>

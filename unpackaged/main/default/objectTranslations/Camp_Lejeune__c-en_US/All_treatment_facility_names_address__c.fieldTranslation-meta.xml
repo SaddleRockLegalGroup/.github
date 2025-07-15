@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Please list all treatment facility names and addresses --></help>
-        <label><!-- All treatment facility names &amp; address --></label>
-        <name>All_treatment_facility_names_address__c</name>
-    </CustomFieldTranslation>
